@@ -49,7 +49,7 @@ p.title { color: #111;
 p.subtitle {
     text-align:center;
     font-size: 12px;}
-li {
+li.entry {
      padding: 2px;
      padding-left: 15px;
      margin-bottom: 3px;
