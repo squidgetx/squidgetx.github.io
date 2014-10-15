@@ -69,24 +69,34 @@ p {
      font-size: 18px;
      margin-top: 1em;
      text-decoration: none;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+
   }
+
+a.title:hover {
+  letter-spacing: 5px;
+  color: #333;
+}
+
 p.subtitle {
     text-align:center;
     font-size: 12px;
   }
+
 li.entry {
      padding: 2px;
      padding-left: 15px;
      margin-bottom: 3px;
      display:block;
-     width:50%;
-     background-color: #F0F0F0;
      overflow: hidden;
      transition: all 1s;
      -webkit-transition: all 1s;
 }
 li:hover {
-     background-color: #DDE;
      transition: all 1s;
      -webkit-transition: all 1s;
 }
