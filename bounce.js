@@ -1,7 +1,6 @@
 var requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
 
-var c;
-var ctx;
+var c, ctx, cW, cH;
 var balls = [];
 var g = 1;
 var floor;
@@ -17,26 +16,27 @@ var draw_circle = function(ctx, x, y, r, color) {
 
 var animate = function() {
     requestAnimationFrame(animate);
-    ctx.clearRect(0,0,c.width,c.height);
+    ctx.clearRect(0,0,cW,cH);
     for(i = 0; i < n; i++) {
-      if (balls[i].ypos/acc + balls[i].r > floor) {
-        balls[i].ypos = (floor - balls[i].r)*acc;
-        balls[i].yvel = (-.8) * balls[i].yvel;
-        balls[i].xvel = .96 * balls[i].xvel;
+      ball = balls[i];
+      if (ball.ypos/acc + ball.r > floor) {
+        ball.ypos = (floor - ball.r)*acc;
+        ball.yvel = (-.8) * ball.yvel;
+        ball.xvel = .96 * ball.xvel;
       }
-      if (balls[i].xpos - balls[i].r < 0) {
-        balls[i].xvel = -.8 * balls[i].xvel;
-        balls[i].xpos = balls[i].r;
+      if (ball.xpos - ball.r < 0) {
+        ball.xvel = -.8 * ball.xvel;
+        ball.xpos = ball.r;
       }
-      if (balls[i].xpos + balls[i].r > c.width) {
-        balls[i].xvel = -.8 * balls[i].xvel;
-        balls[i].xpos = c.width - balls[i].r;
+      if (ball.xpos + ball.r > cW) {
+        ball.xvel = -.8 * ball.xvel;
+        ball.xpos = cW - ball.r;
       }
-      balls[i].yvel += g;
-      balls[i].ypos += balls[i].yvel;
-      balls[i].xpos += balls[i].xvel;
+      ball.yvel += g;
+      ball.ypos += ball.yvel;
+      ball.xpos += ball.xvel;
       
-      draw_circle(ctx, balls[i].xpos, balls[i].ypos/acc, balls[i].r, balls[i].color);
+      draw_circle(ctx, ball.xpos, ball.ypos/acc, ball.r, ball.color);
     }
     ctx.font = '40pt Calibri';
     ctx.fillStyle = '#FFFFFF';
@@ -52,7 +52,9 @@ window.onload = function() {
   c.style.backgroundColor = randomColor();
   c.width = window.innerWidth;
   c.height = window.innerHeight;
-  floor = c.height;
+  cW = c.width;
+  cH = c.height;
+  floor = cH;
   ctx = c.getContext("2d");
 
   c.addEventListener("mousemove", function(event) {
