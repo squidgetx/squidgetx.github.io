@@ -9,4 +9,10 @@ body {
 
 canvas {
   background-color: red;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+
 }
