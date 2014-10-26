@@ -1,0 +1,80 @@
+var requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+
+var c, ctx, cW, cH;
+var n = 0;
+  var g = 1;
+var floor;
+var particles = []
+
+var draw_circle = function(ctx, x, y, r, color) {
+  ctx.fillStyle = color;
+  ctx.beginPath();
+  ctx.arc(x, y, r, 0, Math.PI *2, false);
+  ctx.fill();
+}
+
+var detectParticle = function(particle) {
+  var x = particle.xpos;
+  var y = particle.ypos;
+  
+  var positions = [false, false, false];
+  if (y == floor) {
+    positions[1] = true;
+  }
+
+  for(j = 0; j < n; j++) {
+    if (particles[j].ypos == y + 1 && particles[j].xpos == x) {
+      positions[1] = true;
+    }
+    if (particles[j].xpos == x + 1 && particles[j].ypos == y {
+      positions[2] = true;
+    }
+    if (particles[j].xpos == x - 1 && particles[j].ypos == y) {
+      positions[0] = true;
+    }
+  }
+  return positions;
+}
+
+var animate = function() {
+  requestAnimationFrame(animate);
+  ctx.clearRect(0,0,cW,cH);
+  for(i = 0; i < n; i++) {
+    var p = particles[i];
+    var pos =  detectParticle(p);
+    
+    if (pos[1]) {
+      if (pos[2]) {
+        p.xpos += 1;
+      } else if (pos[0]) {
+        p.xpos -= 1;
+      }
+    } else {
+      p.ypos += 1;
+    }
+    draw_circle(ctx, p.xpos, p.ypos, 3, "#0000FF");
+  }
+}
+
+var randomColor = function() {
+  return '#'+(0x1000000+(Math.random())*0xffffff).toString(16).substr(1,6);
+}
+
+window.onload = function() {
+  c = document.getElementById("canvas");
+  c.style.backgroundColor = randomColor();
+  c.width = window.innerWidth;
+  c.height = window.innerHeight;
+  cW = c.width;
+  cH = c.height;
+  floor = cH;
+
+  ctx = c.getContext("2d");
+  c.addEventListener("mousemove", function(event) {
+    particles.push({xpos: event.pageX, ypos: event.pageY});
+    console.log('particle added');
+    n += 1;
+  });
+
+  animate();
+}

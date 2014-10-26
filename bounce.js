@@ -58,7 +58,7 @@ window.onload = function() {
   ctx = c.getContext("2d");
 
   c.addEventListener("mousemove", function(event) {
-    balls.push({xpos: event.pageX, ypos: event.pageY*acc, r: Math.random()*24 + 1, yvel: 0, xvel: 0, color: randomColor()});
+    balls.push({xpos: event.pageX, ypos: event.pageY*acc, r: Math.random()*24 + 3, yvel: 0, xvel: 0, color: randomColor()});
     n += 1;
   });
 
