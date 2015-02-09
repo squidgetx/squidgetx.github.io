@@ -199,14 +199,19 @@ body {
   display: inline-block;
 }
 
+@media only screen and (max-device-width: 568px) {
+  // remove clouds for iphone 5 and lower devices
+ .c {
+    display: none;
+  }
+}
+
 @media only screen and (max-device-width: 960px) {
   .widget {
     width: 80%;
     left: 10%;
   }
-  .c {
-    display: none;
-  }
+  
   .logo {
     width: 500px;
     height: 250px;
