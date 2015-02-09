@@ -231,13 +231,12 @@ body {
 }
 
 
-@media only screen and (max-device-width: 568px) {
-  // remove clouds for iphone 5 and lower devices
+@media only screen and (max-device-width: 480px), only screen and (min-device-width: 560px) and (max-device-width: 1136px) and (-webkit-min-device-pixel-ratio: 2) {
+    /* iPhone only */
  .c {
     display: none;
   }
 }
-
 @media only screen and (max-device-width: 960px) {
   .widget {
     width: 80%;
