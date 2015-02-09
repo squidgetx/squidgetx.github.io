@@ -165,7 +165,7 @@ background-size: cover;
 
 .logo {
   background-image: url('logo.png');
-  background-size: cover;
+  background-size: contain;
   position: absolute;
   top: 15%;
   left: 35%;
@@ -224,11 +224,12 @@ background-size: cover;
     width: 500px;
     height: 250px;
     top: 10%;
-    left: 20%;
+    left: 23%;
   }
   .sun {
     width: 200px;
     height: 200px;
+    bottom: 40%;
   }
 }
 
