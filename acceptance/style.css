@@ -206,7 +206,7 @@ background-size: cover;
   display: inline-block;
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-device-width: 568px) {
   .widget {
     width: 80%;
     left: 10%;
