@@ -33,11 +33,12 @@ body {
 .sun {
   pointer-events: auto !important;
   background-image: url('sun2.png');
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   position: fixed;
   bottom: 35%;
   left: 32%;
-  height: 25%;
+  height: 35%;
   width: 25%;
   margin: 0;
   opacity: 0.8;
@@ -64,7 +65,7 @@ body {
   opacity: 1;
   cursor: pointer;
   width: 30%;
-  height: 30%;
+  height: 40%;
 }
 
 .mtn0 {
