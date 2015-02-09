@@ -64,8 +64,6 @@ body {
   transition: all 0.3s;
   opacity: 1;
   cursor: pointer;
-  width: 30%;
-  height: 40%;
 }
 
 .mtn0 {
