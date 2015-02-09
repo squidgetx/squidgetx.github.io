@@ -1,0 +1,67 @@
+body {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  background-color: black;
+}
+
+.wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.layer {
+  display: block;
+  height: 900px;
+  width: 120%;
+  padding: 0;
+  margin-top: -10%;
+  margin-left: -10%;
+  background-position: -20%;
+  background-size: cover;
+}
+
+.sky {
+  background-image: url('bg.jpg');
+}
+
+.sun {
+  background-image: url('sun.png');
+}
+
+.mtn0 {
+  background-image: url('layer0.png');
+}
+
+.mtn1 {
+  background-image: url('layer1.png');
+}
+
+.c1 {
+  background-image: url('clouds1.png');
+}
+
+.c2 {
+  background-image: url('clouds2.png');
+}
+
+.c3 {
+  background-image: url('clouds3.png');
+}
+
+.c4 {
+  background-image: url('clouds4.png');
+}
+
+.c5 {
+  background-image: url('clouds5.png');
+}
+
+.scene ul {
+  list-style-type: none;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
