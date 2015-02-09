@@ -206,7 +206,7 @@ background-size: cover;
   display: inline-block;
 }
 
-@media only screen and (max-device-width: 568px) {
+@media only screen and (max-device-width: 960px) {
   .widget {
     width: 80%;
     left: 10%;
@@ -224,6 +224,16 @@ background-size: cover;
     width: 500px;
     height: 250px;
     top: 10%;
-    left: 100px;
+    left: 20%;
+  }
+  .sun {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media only screen and (max-device-width: 960px) and (orientation: landscape) {
+  .logo {
+    left: 30%;
   }
 }
