@@ -27,7 +27,7 @@
         </div>
       </div>
       <div id="letter" class='letter'>
-        <div id='dismiss'></div>
+        <div id='dismiss' class='dismiss' onclick='dismiss()' ontouchstart='dismiss()'>X</div>
         <div class='letter-inside'>
           <p class='title'>Congratulations!</p>
         <p class='subtitle'>You've been selected to join the ranks of Yale Outdoors as one of our new leaders! We're excited to get to know you better and help you lead some incredible trips around New Haven, the northeast, and the world.
@@ -66,7 +66,18 @@
       letter.style.top = 0;
       var widget = document.getElementById('widget');
       widget.style.display = 'none';
+      var dismiss = document.getElementById('dismiss');
+      dismiss.style.display = 'block';
     }
+    var dismiss = function() {
+      var letter = document.getElementById('letter');
+      letter.style.top = '100%';
+      var widget = document.getElementById('widget');
+      widget.style.display = 'block';
+      var dismiss = document.getElementById('dismiss');
+      dismiss.style.display = 'none';
+    }
+
     </script>
 
       </body>
