@@ -51,12 +51,11 @@ body {
   pointer-events: auto !important;
   background-image: url('sun2.png');
   background-size: cover;
-  background-position: 0;
   position: fixed;
-  bottom: 25%;
+  bottom: 35%;
   left: 32%;
-  height: 250px;
-  width: 250px;
+  height: 25%;
+  width: 25%;
   margin: 0;
   opacity: 0.8;
   -webkit-transition: all 0.3s;
