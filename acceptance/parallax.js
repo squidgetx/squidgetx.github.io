@@ -181,7 +181,7 @@
           if (!document.body) {
             documentElement.style.overflow = 'hidden';
             documentElement.appendChild(body);
-            body.style.overflow = 'hidden';
+            body.style.overflow = 'scroll';
             body.style.background = '';
           }
           body.appendChild(element);
@@ -493,3 +493,4 @@
   window[NAME] = Parallax;
 
 })(window, document);
+(window, document);
