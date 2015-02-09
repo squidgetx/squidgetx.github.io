@@ -204,13 +204,7 @@ body {
     width: 80%;
     left: 10%;
   }
-  .c1 {
-    display: none;
-  }
-  .c3 {
-    display: none;
-  }
-  .c6 {
+  .c {
     display: none;
   }
   .logo {
