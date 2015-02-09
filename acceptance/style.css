@@ -166,6 +166,7 @@ background-size: cover;
 .logo {
   background-image: url('logo.png');
   background-size: contain;
+  background-repeat: no-repeat;
   position: absolute;
   top: 15%;
   left: 35%;
