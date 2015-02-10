@@ -160,7 +160,7 @@ body {
   top: 101%;
   left: 0;
   box-sizing: border-box;
-  padding: 30px;
+  padding-top: 30px;
   color: white;
   width: 100%;
   text-align: center;
@@ -175,25 +175,37 @@ body {
   font-size: 16px;
   background-color: #070506;
   box-shadow: 0 -5px 15px 15px #070506
+  line-height: 1.wem;
+}
+
+
+.letter2 {
+  background-color: #fefdfd;
+  color: black;
+  width: 100%;
 }
 
 .letter-inside {
   width: 640px;
   display: inline-block;
   margin: auto;
-  text-align: justify;
+  text-align: left;
+  padding-bottom: 30px;
 }
 
 .subtitle {
   font-size: 2em;
   font-weight: 100;
   text-align: center;
+  padding-bottom: 50px;
+  color: #eee;
 }
 
 .subsubtitle {
-  font-size: 1.5em;
+  font-size: 2em;
   font-weight: 100;
   text-transform: small-caps;
+  color: #555;
 }
 
 .title {
@@ -215,6 +227,15 @@ body {
 .dismiss:hover {
   cursor: pointer;
   color: #aaa;
+}
+
+li {
+  padding: 10px;
+  list-style-type: none;
+}
+
+li, p {
+  font-size: 20px;
 }
 
 @media only screen and (max-device-width: 480px), only screen and (min-device-width: 560px) and (max-device-width: 1136px) and (-webkit-min-device-pixel-ratio: 2) {
