@@ -9,6 +9,13 @@ var n = 0;
 var count = 1;
 var speed = 2;
 var mask = new Image();
+var enviro;
+
+
+require(["lib/flocking-all.js"], function() {
+  enviro = flock.init();
+  enviro.play();
+});
 
 var start_capture = function() {
   cc = new CanvasCapture({
@@ -35,6 +42,29 @@ var draw_circle = function(ctx, x, y, r, color) {
   ctx.fill();
 }
 
+var random_exp = function(rate) {
+  var n = Math.log(Math.random())/(-rate)*220 + 110;
+  if (n > 880) {
+    n = [110,220,440,880][Math.floor(Math.random() * 4)]
+  }
+  return n;
+}
+
+var play_sound = function() {
+  var synth = flock.synth({
+    synthDef: {
+      ugen: "flock.ugen.sin",
+      freq: random_exp(1),
+      mul: {
+          ugen: "flock.ugen.line",
+          start: 0.5,
+          end: 0,
+          duration: 2.0
+      }
+    }
+  });
+}
+
 var add_ball = function() {
   balls.push({
     xpos: Math.random() * cW,
@@ -47,12 +77,14 @@ var add_ball = function() {
   });
   n += 1;
   bgcolor = randomColor();
+  play_sound();
 }
 
 var remove_ball = function() {
   balls.shift();
   n--;
   bgcolor = randomColor();
+  play_sound();
 }
 
 var animate = function() {
@@ -93,4 +125,5 @@ window.onload = function() {
   }, 2500);
 
   animate();
+
 }
