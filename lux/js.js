@@ -17,24 +17,6 @@ require(["lib/flocking-all.js"], function() {
   enviro.play();
 });
 
-var start_capture = function() {
-  cc = new CanvasCapture({
-    debug: false,
-    fps: 24,
-    inCanvasEl: c,
-    outWidth: cW,
-    outHeight: cH
-  });
-  cc.start();
-}
-  
-require(['lib/capture.js'], start_capture);
-
-var finish_capture = function () {
-  cc.stop();
-  cc.getImage();
-}
-
 var draw_circle = function(ctx, x, y, r, color) {
   ctx.fillStyle = color;
   ctx.beginPath();
@@ -43,9 +25,9 @@ var draw_circle = function(ctx, x, y, r, color) {
 }
 
 var random_exp = function(rate) {
-  var n = Math.log(Math.random())/(-rate)*220 + 110;
-  if (n > 880) {
-    n = [110,220,440,880][Math.floor(Math.random() * 4)]
+  var n = Math.log(Math.random())/(-rate)*220 + 165;
+  if (n > 660) {
+    n = [165,220,440,660][Math.floor(Math.random() * 4)]
   }
   return n;
 }
@@ -57,9 +39,10 @@ var play_sound = function() {
       freq: random_exp(1),
       mul: {
           ugen: "flock.ugen.line",
+          rate: 'control',
           start: 0.5,
-          end: 0,
-          duration: 2.0
+          end: 0.0,
+          duration: 2.5
       }
     }
   });
@@ -69,10 +52,10 @@ var add_ball = function() {
   balls.push({
     xpos: Math.random() * cW,
     ypos: Math.random() * cH,
-    r: Math.random() * 32 + 16,
+    r: Math.random() * 128 + 32,
     yvel: 0, 
     xvel: 0, 
-    speed: Math.random() * 2,
+    speed: Math.random() * 3,
     color: randomColor()
   });
   n += 1;
@@ -97,7 +80,7 @@ var animate = function() {
       ball.ypos += Math.random() * ball.speed * 2 - ball.speed;
       draw_circle(ctx, ball.xpos, ball.ypos, ball.r, ball.color);
     }
-    ctx.drawImage(mask, 0, 0, cW, cH);
+    //ctx.drawImage(mask, 0, 0, cW, cH);
 
    }
 
@@ -107,18 +90,38 @@ var randomColor = function() {
 
 window.onload = function() {
   c = document.getElementById("canvas");
-  bgcolor = randomColor();
+  bgcolor = '#000000';
+  
+  c.width = window.innerWidth;
+  c.height = window.innerHeight;
+
   cW = c.width;
   cH = c.height;
   floor = cH;
   ctx = c.getContext("2d");
-  mask.src = 'mask.png'
+
+  var rate = 0.65
+
+  window.setTimeout(function() {
+    rate = 0.5;
+    console.log("1 minute");
+  }, 60000);
+
+  window.setTimeout(function() {
+    rate = 0.4;
+    console.log("2 minutesk");
+  }, 120000);
+
+  window.setTimeout(function() {
+    rate = 0;
+    console.log("3 minutesk");
+  }, 180000);
 
   window.setInterval(function() {
     if (Math.random() < 0.7) {
-      if (Math.random() < 0.6) {
+      if (Math.random() < rate) {
         add_ball();
-      } else if (n > 1) { 
+      } else if (n > 0) { 
         remove_ball();
       }
     }
