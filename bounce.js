@@ -14,6 +14,10 @@ var draw_circle = function(ctx, x, y, r, color) {
   ctx.fill();
 }
 
+var play_sound = function(ball) {
+  T("sin", {freq: ball.note, mul: 0.5}).play();
+}
+
 var animate = function() {
     requestAnimationFrame(animate);
     ctx.clearRect(0,0,cW,cH);
@@ -23,12 +27,15 @@ var animate = function() {
         ball.ypos = (floor - ball.r)*acc;
         ball.yvel = (-.8) * ball.yvel;
         ball.xvel = .96 * ball.xvel;
+        play_sound(ball);
       }
       if (ball.xpos - ball.r < 0) {
+        play_sound(ball);
         ball.xvel = -.8 * ball.xvel;
         ball.xpos = ball.r;
       }
       if (ball.xpos + ball.r > cW) {
+        play_sound(ball);
         ball.xvel = -.8 * ball.xvel;
         ball.xpos = cW - ball.r;
       }
@@ -47,6 +54,12 @@ var randomColor = function() {
   return '#'+(0x1000000+(Math.random())*0xffffff).toString(16).substr(1,6);
 }
 
+var randomNote = function() {
+  var n = Math.floor(Math.random() * 100);
+  console.log(n);
+  return Math.pow(2, n/12)*110;
+}
+
 window.onload = function() {
   c = document.getElementById("canvas");
   c.style.backgroundColor = randomColor();
@@ -58,7 +71,7 @@ window.onload = function() {
   ctx = c.getContext("2d");
 
   c.addEventListener("mousemove", function(event) {
-    balls.push({xpos: event.pageX, ypos: event.pageY*acc, r: Math.random()*24 + 3, yvel: 0, xvel: 0, color: randomColor()});
+    balls.push({xpos: event.pageX, ypos: event.pageY*acc, r: Math.random()*24 + 3, yvel: 0, xvel: 0, color: randomColor(), note: randomNote()});
     n += 1;
   });
 

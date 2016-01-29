@@ -12,7 +12,7 @@ var mask = new Image();
 var enviro;
 
 
-require(["lib/flocking-all.js"], function() {
+require(["../lib/flocking-all.js"], function() {
   enviro = flock.init();
   enviro.play();
 });
