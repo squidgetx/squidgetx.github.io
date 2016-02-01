@@ -8,7 +8,7 @@ body {
 }
 
 canvas {
-  background-color: red;
+  background-color: white;
   -webkit-transition: all .3s;
   -moz-transition: all .3s;
   -ms-transition: all .3s;
