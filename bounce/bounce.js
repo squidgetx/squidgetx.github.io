@@ -45,7 +45,7 @@ var chords = [[0,4,7,9,11],
               [0,7],
               [0,2,4,7,11]];
 
-require(["lib/flocking-all.min.js"], function() {
+require(["../lib/flocking-all.min.js"], function() {
   enviro = flock.init();
   var context = enviro.audioSystem.context;
  var compressor = flock.environment.audioSystem.nativeNodeManager.createOutputNode({

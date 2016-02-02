@@ -12,9 +12,61 @@ var mask = new Image();
 var enviro;
 
 
-require(["../lib/flocking-all.js"], function() {
+require(["../lib/flocking-all.min.js"], function() {
   enviro = flock.init();
+  var context = enviro.audioSystem.context;
+  var compressor = flock.environment.audioSystem.nativeNodeManager.createOutputNode({
+    node: "DynamicsCompressor",
+    props: {}
+  });
+  compressor.knee.value = 0;
+  compressor.threshold.value = -3;
+  compressor.ratio.value = 20;
+  compressor.attack.value = 0;
+  compressor.release.value = 200;
   enviro.play();
+
+  c = document.getElementById("canvas");
+  bgcolor = '#000000';
+  
+  c.width = window.innerWidth;
+  c.height = window.innerHeight;
+
+  cW = c.width;
+  cH = c.height;
+  floor = cH;
+  ctx = c.getContext("2d");
+
+  var rate = 0.65
+
+  window.setTimeout(function() {
+    rate = 0.5;
+    console.log("1 minute");
+  }, 60000);
+
+  window.setTimeout(function() {
+    rate = 0.4;
+    console.log("2 minutesk");
+  }, 120000);
+
+  window.setTimeout(function() {
+    rate = 0;
+    console.log("3 minutesk");
+  }, 180000);
+
+  window.setInterval(function() {
+    if (Math.random() < 0.7) {
+      if (Math.random() < rate) {
+        add_ball();
+      } else if (n > 0) { 
+        remove_ball();
+      }
+    }
+  }, 2500);
+
+  animate();
+
+
 });
 
 var draw_circle = function(ctx, x, y, r, color) {
@@ -38,11 +90,16 @@ var play_sound = function() {
       ugen: "flock.ugen.sin",
       freq: random_exp(1),
       mul: {
-          ugen: "flock.ugen.line",
-          rate: 'control',
-          start: 0.5,
-          end: 0.0,
-          duration: 2.5
+          ugen: "flock.ugen.envGen",
+          envelope: {
+            type: "flock.envelope.adsr",
+            attack: 0.01,
+            decay: 2,
+            peak: 0.8,
+            sustain: 0,
+            release: 0.5
+          },
+          gate: 1
       }
     }
   });
@@ -88,45 +145,3 @@ var randomColor = function() {
   return '#'+(0x1000000+(Math.random())*0xffffff).toString(16).substr(1,6);
 }
 
-window.onload = function() {
-  c = document.getElementById("canvas");
-  bgcolor = '#000000';
-  
-  c.width = window.innerWidth;
-  c.height = window.innerHeight;
-
-  cW = c.width;
-  cH = c.height;
-  floor = cH;
-  ctx = c.getContext("2d");
-
-  var rate = 0.65
-
-  window.setTimeout(function() {
-    rate = 0.5;
-    console.log("1 minute");
-  }, 60000);
-
-  window.setTimeout(function() {
-    rate = 0.4;
-    console.log("2 minutesk");
-  }, 120000);
-
-  window.setTimeout(function() {
-    rate = 0;
-    console.log("3 minutesk");
-  }, 180000);
-
-  window.setInterval(function() {
-    if (Math.random() < 0.7) {
-      if (Math.random() < rate) {
-        add_ball();
-      } else if (n > 0) { 
-        remove_ball();
-      }
-    }
-  }, 2500);
-
-  animate();
-
-}
