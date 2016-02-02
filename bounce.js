@@ -24,6 +24,8 @@ function removeClass(el, className) {
   }
 }
 
+var flelastic = 0.9;
+
 var c, ctx, cW, cH;
 var balls = [];
 var g = 1;
@@ -178,7 +180,7 @@ var animate = function() {
       ball = balls[i];
       if (ball.ypos/acc + ball.r > floor) {
         ball.ypos = (floor - ball.r)*acc;
-        ball.yvel = (-.8) * ball.yvel;
+        ball.yvel = (-flelastic) * ball.yvel;
         ball.xvel = .96 * ball.xvel;
         play_sound(ball);
       }
