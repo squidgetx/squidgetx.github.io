@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Sylvan Zheng</title>
-  <meta name="description" content="">
+  <title>GrainPlane</title>
+  <meta name="description" content="I’m quite happy with how my granular synthesis engine turned out, but something was bothering me: it just wasn’t very good for any kind of live performance. ...">
 
   <link rel="stylesheet" href="/assets/main.css">
-  <link rel="canonical" href="http://localhost:4000/">
+  <link rel="canonical" href="http://localhost:4000/project/2016/08/13/grainplane.html">
   <link rel="alternate" type="application/rss+xml" title="Sylvan Zheng" href="/feed.xml">
   
   
@@ -173,14 +173,57 @@ You may NOT sub-license, resell, rent, redistribute or otherwise transfer the ic
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <div class="home">
-  
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <a href="/work"><img class="cover-left" src="/images/gp-perf.jpg" /></a>
-  <h5>Software/Sound/Web Artist/Engineer/Designer</h5>
-  <a href="/amusements/bounce/bounce.html"><img class="cover-sm" src="/images/bounce.png" /></a>
-  <a href="/tag/climbing"><img class="cover-right" src="/images/bouldering.jpg" /></a>
-</div>
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">GrainPlane</h1>
+    <p class="post-meta"><time datetime="2016-08-13T00:12:42-04:00" itemprop="datePublished">Aug 13, 2016</time></p>
+    
+    
+      <p class="post-meta">
+        
+          <a class='tag' href="/tag/code">code</a>
+
+        
+          <a class='tag' href="/tag/Max/MSP">Max/MSP</a>
+
+        
+          <a class='tag' href="/tag/audio">audio</a>
+
+        
+          <a class='tag' href="/tag/instrument">instrument</a>
+
+        
+          <a class='tag' href="/tag/interactive">interactive</a>
+
+        
+      </p>
+    
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p>I’m quite happy with how my <a href="/project/2016/01/01/granular4.html">granular synthesis engine</a> turned out, but something was bothering me: it just wasn’t very good for any kind of live performance. There are so many parameters - which is great for a studio context but I can’t imagine trying to improvise or perform live with it. Even with a MIDI controller of some kind I would still only be able to reasonably change two parameters at a time.</p>
+
+<p><img src="/images/grainplane.jpg" /></p>
+
+<p>GrainPlane is my response to this problem: it’s a physical interface built specifically for granular synthesis. It’s more or less a mechanism for creating a one to one mapping of physical grain action in the real world (rice, beans, sand, etc.) to auditory grains. Dropping a single grain onto the surface of the instrument triggers a single audio grain to play back. Letting a stream flow onto the surface creates a more densely layered texture. I was able to get the latency down to a pretty impressive 5ms or so - it’s relatively CPU heavy since all the calculations are being done at audio rate but I think it’s worth it.</p>
+
+<p>The way it works is relatively simple, and has been done before for other applications: a set of Piezo contact mics are attached to the back of the surface and this audio information is processed by the Max/MSP patch running on the computer. With the combination of audio information from multiple sources and Max’s DSP engine, I can not only detect the impact of grains hitting the surface but I can also make some reasonable guesses at the grain’s relative size (or speed at which it strikes the surface) as well as its approximate X and Y coordinate location on the surface.</p>
+
+<p>The software interface allows you to map any of the controller features to synthesis features. Grain pitch, pan, sample source, and length are all quite fun to play with.</p>
+
+<p>I got the opportunity to present this instrument at the <a href="http://audiomostly.com/">Audio Mostly</a> conference in Sweden.</p>
+
+<p><img src="/images/audiomostly.jpg" /></p>
+
+<p>Download paper from ACM:</p>
+<div class="acmdlitem" id="item2986419"><img src="http://dl.acm.org/images/oa.gif" width="25" height="25" border="0" alt="ACM DL Author-ize service" style="vertical-align:middle" /><a href="http://dl.acm.org/authorize?N27128" title="GrainPlane: Intuitive Tactile Interface for Granular Synthesis">GrainPlane: Intuitive Tactile Interface for Granular Synthesis</a><div style="margin-left:25px"><a href="http://dl.acm.org/author_page.cfm?id=99659085726">Sylvan Zheng</a><br />AM '16 Proceedings of the Audio Mostly 2016, 2016</div></div>
+<div class="acmdlstat" id="stats2986419"><iframe src="http://dl.acm.org/authorizestats?N27128" width="100%" height="30" scrolling="no" frameborder="0">frames are not supported</iframe></div>
+
+  </div>
+
+  
+</article>
 
       </div>
     </main>
