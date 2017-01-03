@@ -1,0 +1,15 @@
+ <span class="post-meta">{{ include.post.date | date: "%Y %m %d" }}</span>
+          <a class="post-link" href="{{ post.url | relative_url }}">{{ include.post.title | escape }}</a>
+
+    {% if include.post.tags %}
+      <p class="post-meta">
+        {% for tag in include.post.tags %}
+          {% include tag.html tag=tag %}
+        {% endfor %}
+      </p>
+    {% endif %}
+    <p class="post-meta excerpt">
+    {{ post.content | strip_html | truncatewords: 25 }}
+    </p>
+
+
