@@ -17,6 +17,10 @@ I'm quite happy with how my [granular synthesis engine](/project/2016/01/01/gran
 
 GrainPlane is my response to this problem: it's a physical interface built specifically for granular synthesis. It's more or less a mechanism for creating a one to one mapping of physical grain action in the real world (rice, beans, sand, etc.) to auditory grains. Dropping a single grain onto the surface of the instrument triggers a single audio grain to play back. Letting a stream flow onto the surface creates a more densely layered texture. I was able to get the latency down to a pretty impressive 5ms or so - it's relatively CPU heavy since all the calculations are being done at audio rate but I think it's worth it. 
 
+<iframe src="https://player.vimeo.com/video/198137599" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+<iframe src="https://player.vimeo.com/video/198137561" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
 The way it works is relatively simple, and has been done before for other applications: a set of Piezo contact mics are attached to the back of the surface and this audio information is processed by the Max/MSP patch running on the computer. With the combination of audio information from multiple sources and Max's DSP engine, I can not only detect the impact of grains hitting the surface but I can also make some reasonable guesses at the grain's relative size (or speed at which it strikes the surface) as well as its approximate X and Y coordinate location on the surface.
 
 The software interface allows you to map any of the controller features to synthesis features. Grain pitch, pan, sample source, and length are all quite fun to play with.
