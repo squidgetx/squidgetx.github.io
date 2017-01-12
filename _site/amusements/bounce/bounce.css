@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+}
+
+canvas {
+  background-color: white;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+.button, .nbutton {
+  position: relative;
+  padding: 15px;
+  cursor: pointer;
+  text-align: center;
+  height: 50px;
+  text-decoration: none;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-left: -5px;
+  font-family: sans-serif;
+  color: white;
+  opacity: 1;
+}
+
+.button:hover, .nbutton:hover {
+  opacity: 0.75;
+}
+
+.off {
+  opacity: 0.4;
+}
+
+.navbar {
+  z-index: 10;
+  position: absolute;
+  top: -50;
+  left: 0;
+  height: 50px;
+  width: 100%;
+  background-color: rgba(0,0,0,0.1);
+  -webkit-transition: all 0.3;
+  -moz-transition: all 0.3;
+  -ms-transition: all 0.3;
+  -o-transition: all 0.3;
+  transition: all 0.3;
+}
+
+#pull {
+  position: absolute;
+  bottom: -20;
+  left: 50%;
+  cursor: pointer;
+  color: white;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 20px solid rgba(0,0,0,0.1);
+}
+
+.navbar-active {
+  top: 0;
+  -webkit-transition: all 0.3;
+  -moz-transition: all 0.3;
+  -ms-transition: all 0.3;
+  -o-transition: all 0.3;
+  transition: all 0.3;
+}
+
+  
