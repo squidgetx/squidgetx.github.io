@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Synplay: synchronous audio broadcast streaming</title>
-  <meta name="description" content="Would it be cool if everyone’s computers were playing the same song at exactly the same time?">
+  <title>As Space Expanded, The Universe Cooled</title>
+  <meta name="description" content="This piece is an audiovisual effort inspired by Laurie Spiegel’s The Expanding Universe to both visualize and sonify the complex and often chaotic movements ...">
 
   <link rel="stylesheet" href="/assets/main.css">
-  <link rel="canonical" href="/project/2016/05/11/synplay.html">
+  <link rel="canonical" href="/project/2016/12/20/universe.html">
   <link rel="alternate" type="application/rss+xml" title="Sylvan Zheng" href="/feed.xml">
   
   
@@ -182,10 +182,8 @@ You may NOT sub-license, resell, rent, redistribute or otherwise transfer the ic
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">Synplay: synchronous audio broadcast streaming</h1>
-    <p class="post-meta"><time datetime="2016-05-11T22:23:43-04:00" itemprop="datePublished">May 11, 2016</time></p>
-    
-      <p class="post-meta"><i>In collaboration with David Hatch, Charlie Proctor, and Richard Yang</i></p>
+    <h1 class="post-title" itemprop="name headline">As Space Expanded, The Universe Cooled</h1>
+    <p class="post-meta"><time datetime="2016-12-20T13:00:12-05:00" itemprop="datePublished">Dec 20, 2016</time></p>
     
     
       <p class="post-meta">
@@ -193,13 +191,16 @@ You may NOT sub-license, resell, rent, redistribute or otherwise transfer the ic
           <a class='tag' href="/tag/code">code</a>
 
         
-          <a class='tag' href="/tag/networking">networking</a>
-
-        
           <a class='tag' href="/tag/audio">audio</a>
 
         
-          <a class='tag' href="/tag/C++">C++</a>
+          <a class='tag' href="/tag/supercollider">supercollider</a>
+
+        
+          <a class='tag' href="/tag/visual">visual</a>
+
+        
+          <a class='tag' href="/tag/kinect">kinect</a>
 
         
       </p>
@@ -207,15 +208,13 @@ You may NOT sub-license, resell, rent, redistribute or otherwise transfer the ic
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    <p>Would it be cool if everyone’s computers were playing the same song at <em>exactly the same time</em>?</p>
+    <p>This piece is an audiovisual effort inspired by Laurie Spiegel’s <i>The Expanding Universe</i> to both visualize and sonify the complex and often chaotic movements that arise from the effects of gravity. The motion of planets as they orbit stars and other large masses is often periodic, dependably repeatable, a good base upon which to build a piece of music. But orbits shift, slowly, imperceptibly sometimes, they collapse and destabilize, only sometimes returning to periodicity.</p>
 
-<p>We designed a network protocol based on a client-server architecture that would allow audio streaming from a single broadcaster to multiple receivers over a UDP connection. The protocol ensures that the clients are constantly recalibrating their clocks to sync up with each other, since the margin of error in terms of latency is relatively critical in audio applications. The protocol also ensures that a packet loss due to standard UDP network failure is a non-issue.</p>
+<iframe src="https://player.vimeo.com/video/220900067" width="640" height="360" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
 
-<p>Of course, it’s not actually that much louder thanks to destructive interference. The most interesting application of this project I think would be the streaming and synchronization of different parts of a larger sonic whole across multiple network nodes.</p>
+<p>This project also uses the xbox kinect as an interface through which to intuitively add planets or stars to the system.</p>
 
-<p><a href="https://github.com/squidgetx/synplay">Github</a></p>
-
-<p><a href="/docs/synplay.pdf">View the full paper</a></p>
+<p><a href="https://github.com/squidgetx/space-expands">Github</a></p>
 
   </div>
 
