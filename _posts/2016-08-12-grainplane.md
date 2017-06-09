@@ -8,7 +8,7 @@ tags:
 - Max/MSP
 - audio
 - instrument
-- interactive
+- granular
 ---
 
 I'm quite happy with how my [granular synthesis engine](/project/2016/01/01/granular4.html) turned out, but something was bothering me: it just wasn't very good for any kind of live performance. There are so many parameters - which is great for a studio context but I can't imagine trying to improvise or perform live with it. Even with a MIDI controller of some kind I would still only be able to reasonably change two parameters at a time.
