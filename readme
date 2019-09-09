@@ -1,0 +1,5 @@
+To update the blog:
+
+jekyll build;
+cp -r _site/ squidgetx.github.io
+
