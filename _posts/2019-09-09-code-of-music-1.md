@@ -1,6 +1,5 @@
 ---
 layout: post
-title: code_of_music
 date: 2019-09-09
 tags: itp code_of_music
 title: Code of Music - Anxiety of Machination (Concept)
@@ -42,4 +41,4 @@ There are three primary musical elements:
   - The participant can press a button prominently labeled "Emergency Stop".
   - This triggers the "self destruct" of many of the mechanical components and the silencing of the vocalization.)
   - The self destruct sounds should be intense, chaotic, full-audio spectrum sounds that last for thirty seconds or less.
-  - After the thirty seconds a quiet, high pitched exhaust hiss sound should be heard, lasting for a few minutes before gradually fading out. 
+  - After the thirty seconds a quiet, high pitched exhaust hiss sound should be heard, lasting for a few minutes before gradually fading out.

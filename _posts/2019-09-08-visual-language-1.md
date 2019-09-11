@@ -1,6 +1,5 @@
 ---
 layout: post
-title: visual_language_1
 date: 2019-09-08
 tags: itp visual_language comics analysis
 title: Visual Language Design Analysis - Watchmen
@@ -24,6 +23,6 @@ The cover uses a simple color palette of just three main colors: yellow, black a
 
 ![Graphic slide](/images/visual_lang_watchmen_slides/5.png)
 
-The title graphic consists of an offset black oval covered with a red splatter. Unlike the rest of the design, the red splatter is drawn with shading and highlights that suggest a 3D character. The title graphic, aside from these two elements, is fairly empty of other visual pieces. This contrasts with the left hand column, which is relatively densely packed. This allows the eye to linger on the somewhat abstract but foreboding character of the title graphic. The red splatter is certainly blood, and combined with the caution-tape reminiscent design of the rest of the cover already succeeds in telling a story. Something is wrong, despite warning signs and cautionary efforts. The black oval, disconcertingly tilted, lends further unsteadiness to the image. We are looking at the eye of a smiley face pin or sticker, another piece of iconic yellow and black imagery. This carefree, childlike cartoon symbol of happiness has been stained with blood. It stares unblinkingly at us, the audience. This illustration ties together themes of violated innocence, unsteadiness and calm, accusation and guilt in a clean and incredibly simple way. 
+The title graphic consists of an offset black oval covered with a red splatter. Unlike the rest of the design, the red splatter is drawn with shading and highlights that suggest a 3D character. The title graphic, aside from these two elements, is fairly empty of other visual pieces. This contrasts with the left hand column, which is relatively densely packed. This allows the eye to linger on the somewhat abstract but foreboding character of the title graphic. The red splatter is certainly blood, and combined with the caution-tape reminiscent design of the rest of the cover already succeeds in telling a story. Something is wrong, despite warning signs and cautionary efforts. The black oval, disconcertingly tilted, lends further unsteadiness to the image. We are looking at the eye of a smiley face pin or sticker, another piece of iconic yellow and black imagery. This carefree, childlike cartoon symbol of happiness has been stained with blood. It stares unblinkingly at us, the audience. This illustration ties together themes of violated innocence, unsteadiness and calm, accusation and guilt in a clean and incredibly simple way.
 
 ![other covers slide](/images/visual_lang_watchmen_slides/6.png)
