@@ -1,4 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-09-25T10:45:35-04:00</updated><id>//</id><title type="html">Sylvan Zheng</title><subtitle></subtitle><entry><title type="html">Physical Computing - Push Button Synthesizer</title><link href="/2019/09/24/pcomp-2.html" rel="alternate" type="text/html" title="Physical Computing - Push Button Synthesizer" /><published>2019-09-24T00:00:00-04:00</published><updated>2019-09-24T00:00:00-04:00</updated><id>/2019/09/24/pcomp-2</id><content type="html" xml:base="/2019/09/24/pcomp-2.html">&lt;p&gt;&lt;img src=&quot;/images/pcomp/synth1.jpg&quot; alt=&quot;gif&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-09-25T14:06:56-04:00</updated><id>//</id><title type="html">Sylvan Zheng</title><subtitle></subtitle><entry><title type="html">Visual Language - Color Palette Compositions</title><link href="/2019/09/24/visual-3.html" rel="alternate" type="text/html" title="Visual Language - Color Palette Compositions" /><published>2019-09-24T00:00:00-04:00</published><updated>2019-09-24T00:00:00-04:00</updated><id>/2019/09/24/visual-3</id><content type="html" xml:base="/2019/09/24/visual-3.html">&lt;p&gt;Bars &lt;img src=&quot;/images/vl/1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Square &lt;img src=&quot;/images/vl/2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/amusements/sketches/face.html&quot;&gt;Face &lt;img src=&quot;https://media.giphy.com/media/VJNQ2DqBtAgi6lO6gw/giphy.gif&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/amusements/sketches/circles.html&quot;&gt;Circles &lt;img src=&quot;https://media.giphy.com/media/j6B9bHHFaHe6WnKMTf/giphy.gif&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/amusements/sketches/type.html&quot;&gt;Type &lt;img src=&quot;https://media.giphy.com/media/kHBw68KBBvTtMHRYFv/giphy.gif&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/amusements/sketches/shatter.html&quot;&gt;Shatter &lt;img src=&quot;https://media.giphy.com/media/U3sk7GOrENoTgF0qyO/giphy.gif&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;</content><category term="itp" /><category term="visual_lang" /><summary type="html">Bars</summary></entry><entry><title type="html">Physical Computing - Push Button Synthesizer</title><link href="/2019/09/24/pcomp-2.html" rel="alternate" type="text/html" title="Physical Computing - Push Button Synthesizer" /><published>2019-09-24T00:00:00-04:00</published><updated>2019-09-24T00:00:00-04:00</updated><id>/2019/09/24/pcomp-2</id><content type="html" xml:base="/2019/09/24/pcomp-2.html">&lt;p&gt;&lt;img src=&quot;/images/pcomp/synth1.jpg&quot; alt=&quot;gif&quot; /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;basic-io-with-the-arduino-nano-33-iot&quot;&gt;Basic I/O with the Arduino Nano 33 IOT&lt;/h1&gt;
 &lt;p&gt;I started with wiring a push button and LED - the simplest form of Arduino I/O. The LED is connected to the D3 pin and the push button is wired to the D2 pin. I added a small resistor to the LED to ensure the 3.3V from the board doesn’t burn it out, and a larger 10K resistor from the D2 input pin to ground to ensure the pin has a stable connection to ground while still diverting power to the pin (instead of causing it to go straight to ground).&lt;/p&gt;
@@ -285,51 +295,4 @@ Many of these are relatively minor issues that could be solved or prevented with
 
 &lt;p&gt;I couldn’t help but feel somewhat disappointed by the selection and placement of city sounds by the artist. This kind of musical pastiche dates itself back all the way to the early 20th century with the beginnings of musique concrete. Gershwin’s &lt;em&gt;An American In Paris&lt;/em&gt; was musicalizing city sounds as early as 1928. More recently, Steve Reich’s &lt;em&gt;City Life&lt;/em&gt;, from 1995, also layers typical city noises over ambient drone as a recorded piece of music. What &lt;em&gt;Soundwalk 9:09&lt;/em&gt; offers over &lt;em&gt;City Life&lt;/em&gt; is a promise of a site-specific physical experience, but the only section that actually feels tied to the particular geographic location of the walk are the first few seconds of &lt;em&gt;Downtown&lt;/em&gt;, which feature the water tinkling of the fountains in the Met plaza.&lt;/p&gt;
 
-&lt;p&gt;Perhaps if you are a big fan of the Met or have been totally checked out of the 20th century contemporary music and sound art scene &lt;em&gt;Soundwalk 9:09&lt;/em&gt; is a worthwhile adventure. But on top of the relatively uninspired composition you’ll have to look at the Met Breur at the end of it, a brutalist upside-down staircase that looks like it was built in the 80s and not as recently as 2016.&lt;/p&gt;</content><category term="itp" /><category term="video_sound" /><summary type="html">Soundwalk 9:09 by John Luther Adams is an ambient musical soundwalk that takes place between the 5th Avenue Metropolitan Museum of Art on 5th Avenue in New York City and the Met Breur, a few blocks south and east. You can listen to the audio and read the artist’s note here.</summary></entry><entry><title type="html">Code of Music - Anxiety of Machination (Concept)</title><link href="/2019/09/09/code-of-music-1.html" rel="alternate" type="text/html" title="Code of Music - Anxiety of Machination (Concept)" /><published>2019-09-09T00:00:00-04:00</published><updated>2019-09-09T00:00:00-04:00</updated><id>/2019/09/09/code-of-music-1</id><content type="html" xml:base="/2019/09/09/code-of-music-1.html">&lt;p&gt;&lt;em&gt;The Anxiety Of Machination&lt;/em&gt; is an interactive installation piece and performance tool inspired by the track “Intro” by the experimental hiphop group clipping.&lt;/p&gt;
-
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/n4HQb7DZI0I&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;h3 id=&quot;installation-overview&quot;&gt;Installation Overview&lt;/h3&gt;
-
-&lt;p&gt;The installation features a small space, roughly 10’ by 10’ square in the center of the stage or a gallery space. The space is delineated with glass walls and is filled with industrial machinery - gears, floor levers, steam pipes, etc. The participant enters and can freely play with the machinery, adjusting the levers, spinning gears, and so on. The different pieces of machinery control different elements of sound, some primarily through the physical vibrations created by the machine pieces rubbing or clanking, but others may trigger changes to audio being played by a computer-controlled speaker system. The participant can control the tempo, abrasiveness of the background instrumental, internal rhythm of the computer-generated hip-hop vocal part, and can also choose to trigger the breakdown/self-destruct sequence which will end the piece. However, aside from this self-destruct mechanism there is no way for the participant to actually calm or slow the musical tension being built; like a runaway train the participant’s choices are limited to various stylistic adjustments within the larger narrative arc of rising tension followed by (destructive) release.&lt;/p&gt;
-
-&lt;p&gt;This piece aims to explore the relationship between human and machine; the anxiety produced by their interaction and the power dynamics between them.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/anxiety_of_machination_1.jpg&quot; alt=&quot;Typography slide&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/anxiety_of_machination_2.jpg&quot; alt=&quot;Typography slide&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;sound-elements-and-control-detail&quot;&gt;Sound Elements and Control Detail&lt;/h3&gt;
-&lt;p&gt;Note all controls should require moderate to significant physical effort to move (reminiscent of rusted controls)&lt;/p&gt;
-
-&lt;p&gt;There are three primary musical elements:&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;miscellaneous machine sounds (clanks and clunks)
-    &lt;ul&gt;
-      &lt;li&gt;These sounds are generally lower in register and roughly percussive in nature.&lt;/li&gt;
-      &lt;li&gt;Some machines are continuously producing sounds at a low level. The intensity and rhythm is adjustable through levers and control panels.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;a harsh pitched drone.
-    &lt;ul&gt;
-      &lt;li&gt;This drone is triggered by the pressing of a button prominently labeled “Start.” The participant is free to reject the decision to press this button. This could represent a rejection of participation in mechanical life.&lt;/li&gt;
-      &lt;li&gt;Once the “Start” button has been pushed, there is no way to turn the drone off.&lt;/li&gt;
-      &lt;li&gt;A hand crank adjusts the pitch and harmonic levels (timbre) of the drone sound. All the settings are more or less unpleasant.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;computer generated rap vocalization
-    &lt;ul&gt;
-      &lt;li&gt;The vocalization is triggered automatically a few seconds after the “Start” button has been pushed by the participant.&lt;/li&gt;
-      &lt;li&gt;A floor lever with multiple positions adjusts the rhythmic pattern of the vocalization delivery.&lt;/li&gt;
-      &lt;li&gt;The text of the vocalization is synthesized from typewriters stationed outside of the glass walls. Additional participants are able to type into the typewriter and hear snippets of their input vocalized by the computer.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;breakdown
-    &lt;ul&gt;
-      &lt;li&gt;The participant can press a button prominently labeled “Emergency Stop”.&lt;/li&gt;
-      &lt;li&gt;This triggers the “self destruct” of many of the mechanical components and the silencing of the vocalization.)&lt;/li&gt;
-      &lt;li&gt;The self destruct sounds should be intense, chaotic, full-audio spectrum sounds that last for thirty seconds or less.&lt;/li&gt;
-      &lt;li&gt;After the thirty seconds a quiet, high pitched exhaust hiss sound should be heard, lasting for a few minutes before gradually fading out.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;</content><category term="itp" /><category term="code_of_music" /><summary type="html">The Anxiety Of Machination is an interactive installation piece and performance tool inspired by the track “Intro” by the experimental hiphop group clipping.</summary></entry></feed>
+&lt;p&gt;Perhaps if you are a big fan of the Met or have been totally checked out of the 20th century contemporary music and sound art scene &lt;em&gt;Soundwalk 9:09&lt;/em&gt; is a worthwhile adventure. But on top of the relatively uninspired composition you’ll have to look at the Met Breur at the end of it, a brutalist upside-down staircase that looks like it was built in the 80s and not as recently as 2016.&lt;/p&gt;</content><category term="itp" /><category term="video_sound" /><summary type="html">Soundwalk 9:09 by John Luther Adams is an ambient musical soundwalk that takes place between the 5th Avenue Metropolitan Museum of Art on 5th Avenue in New York City and the Met Breur, a few blocks south and east. You can listen to the audio and read the artist’s note here.</summary></entry></feed>
