@@ -1,4 +1,69 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-09-25T14:06:56-04:00</updated><id>//</id><title type="html">Sylvan Zheng</title><subtitle></subtitle><entry><title type="html">Visual Language - Color Palette Compositions</title><link href="/2019/09/24/visual-3.html" rel="alternate" type="text/html" title="Visual Language - Color Palette Compositions" /><published>2019-09-24T00:00:00-04:00</published><updated>2019-09-24T00:00:00-04:00</updated><id>/2019/09/24/visual-3</id><content type="html" xml:base="/2019/09/24/visual-3.html">&lt;p&gt;Bars &lt;img src=&quot;/images/vl/1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-10-02T11:55:21-04:00</updated><id>//</id><title type="html">Sylvan Zheng</title><subtitle></subtitle><entry><title type="html">Physical Computing - Nervous Servo</title><link href="/2019/10/01/pcomp-3.html" rel="alternate" type="text/html" title="Physical Computing - Nervous Servo" /><published>2019-10-01T00:00:00-04:00</published><updated>2019-10-01T00:00:00-04:00</updated><id>/2019/10/01/pcomp-3</id><content type="html" xml:base="/2019/10/01/pcomp-3.html">&lt;iframe src=&quot;https://player.vimeo.com/video/363843319&quot; width=&quot;640&quot; height=&quot;360&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;h1 id=&quot;preparing-the-power-supply&quot;&gt;Preparing the Power Supply&lt;/h1&gt;
+
+&lt;p&gt;The servo motor runs best on 5V DC - since the Arduino Nano only supplies 3.3V out, we’ll need a separate way of powering the motor. I found a 120VAC to 5V DC phone charger in the junk pile and figured that it would be a useful exercise to convert this into a usable power source. I snipped off the USB end revealing a copper stranded wire sheath and a copper stranded core with its own insulation sleeve. After stripping the internal sleeve, A quick multimeter test confirmed that the outside sheath was the ground connection and the inside core was the +5V DC connection. I soldered a pair of color-coordinated jumper leads to the pair of copper strands and sealed the connections with heatshrink.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/pcomp/solder1.jpg&quot; alt=&quot;overview&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;controlling-the-servo-with-a-photoresistor&quot;&gt;Controlling the servo with a photoresistor&lt;/h1&gt;
+
+&lt;p&gt;I wired a photoresistor into the A0 pin, with a parallel resistor allowing a connection to ground. At first I had the resistor in series with the photoresistor, but this gave me some trouble reading meangingful values from the photoresistor. My current thought is that the voltage read by the A0 pin never actually changes if the second resistor is in series. With the second resistor in parallel, the balance of voltage shifts as the resistance of the variable resistor changes which ultimately translates to usable data for the Arduino.&lt;/p&gt;
+
+&lt;p&gt;After fixing this mistake we can control the position of the servo by adjusting the amount of light the photoresistor is exposed to! It’s not a very fine level of control, but it works nonetheless.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/UuwKypRSJZ25ojYwDX/giphy.gif&quot; alt=&quot;servo&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;nervous-servo&quot;&gt;Nervous Servo&lt;/h1&gt;
+
+&lt;p&gt;I thought it might be fun to introduce some self-reference into this system. The photoresistor responds to light, and the servo’s rotation has the potential to effect change in the physical space. Is it possible to create a sort of feedback loop, out of which some more interesting behavior might emerge?&lt;/p&gt;
+
+&lt;p&gt;Paper affixed to the servo with scotch tape and careful positioning allows the rotation of the servo to shade the photoresistor. To accentuate the difference in light, I wired an LED in right next to the photoresistor. When the servo arm is set to about 40 degrees, the paper blocks the photoresistor from sensing the light from the LED. When the servo arm is set to about 80 degrees, the paper is lifted. So, with careful mapping of light sensing values, we can make the servo arm lift up when it can’t see the LED and go down when it can, causing an endless loop of movement.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/pcomp/servo_closeup.jpg&quot; alt=&quot;closeup&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/pcomp/servo_overview.jpg&quot; alt=&quot;overview&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The fun part is that since the photoresistor responds to all environmental light and not just the light from the LED, movement and gestures of an observer have the potential to affect the pace of the servo’s motion, and in some cases can stop it entirely.&lt;/p&gt;
+
+&lt;iframe src=&quot;https://player.vimeo.com/video/363843888&quot; width=&quot;640&quot; height=&quot;1138&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#include &amp;lt;Servo.h&amp;gt;
+
+Servo servo;
+int servoPin = 2;
+
+void setup() {
+  servo.attach(servoPin);
+  Serial.begin(9600);
+
+}
+
+int T = 4500;
+void loop() {
+  int lightSensor = analogRead(A0);
+
+  // Map the light sensor value to a velocity of the servo arm
+  // so that the movement is a bit smoother and less jerky
+  int dT = map(lightSensor, 350, 400, 10, -10);
+  T = T + dT;
+  Serial.print(lightSensor);
+  Serial.print(&quot; &quot;);
+  Serial.print(dT);
+  Serial.print(&quot; &quot;);
+  Serial.print(T);
+  Serial.print(&quot;\n&quot;);
+  if (T &amp;lt; 4500) {
+    T  = 4500;
+  }
+  if (T &amp;gt; 8000) {
+    T  = 8000;
+  }
+  servo.write(T/100);
+
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;</content><category term="itp" /><category term="phys_comp" /><summary type="html"></summary></entry><entry><title type="html">Visual Language - Color Palette Compositions</title><link href="/2019/09/24/visual-3.html" rel="alternate" type="text/html" title="Visual Language - Color Palette Compositions" /><published>2019-09-24T00:00:00-04:00</published><updated>2019-09-24T00:00:00-04:00</updated><id>/2019/09/24/visual-3</id><content type="html" xml:base="/2019/09/24/visual-3.html">&lt;p&gt;Bars &lt;img src=&quot;/images/vl/1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Square &lt;img src=&quot;/images/vl/2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
@@ -130,9 +195,7 @@ void loop() {
 }
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
-
-&lt;video&gt;
-&lt;/video&gt;</content><category term="itp" /><category term="phys_comp" /><category term="audio" /><summary type="html"></summary></entry><entry><title type="html">Code of Music - Rhythm Platform</title><link href="/2019/09/24/code-music-rhythm.html" rel="alternate" type="text/html" title="Code of Music - Rhythm Platform" /><published>2019-09-24T00:00:00-04:00</published><updated>2019-09-24T00:00:00-04:00</updated><id>/2019/09/24/code-music-rhythm</id><content type="html" xml:base="/2019/09/24/code-music-rhythm.html">&lt;p&gt;&lt;a href=&quot;/amusements/bounce2/index.html&quot;&gt;&lt;img class=&quot;cover-sm&quot; src=&quot;/images/platform.png&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;iframe title=&quot;vimeo-player&quot; src=&quot;https://player.vimeo.com/video/362367321&quot; width=&quot;640&quot; height=&quot;360&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><category term="itp" /><category term="phys_comp" /><category term="audio" /><summary type="html"></summary></entry><entry><title type="html">Code of Music - Rhythm Platform</title><link href="/2019/09/24/code-music-rhythm.html" rel="alternate" type="text/html" title="Code of Music - Rhythm Platform" /><published>2019-09-24T00:00:00-04:00</published><updated>2019-09-24T00:00:00-04:00</updated><id>/2019/09/24/code-music-rhythm</id><content type="html" xml:base="/2019/09/24/code-music-rhythm.html">&lt;p&gt;&lt;a href=&quot;/amusements/bounce2/index.html&quot;&gt;&lt;img class=&quot;cover-sm&quot; src=&quot;/images/platform.png&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;1-rhythm-interface-concept-sketches&quot;&gt;1: Rhythm Interface Concept Sketches&lt;/h1&gt;
 
@@ -286,13 +349,4 @@ Many of these are relatively minor issues that could be solved or prevented with
 &lt;p&gt;&lt;img src=&quot;/images/van_parking.jpg&quot; alt=&quot;Van Parking&quot; /&gt;
 &lt;em&gt;My occasional home&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;The experience of urban vanlife, understanding what it takes to live comfortably, re-evaluating nearly everything about your daily life and reducing it to the bare essentials, is an incredible learning opportunity. But now I’m looking forward to planting my feet firmly in the Northeast for the next few years at minimum - it’s time to settle down!&lt;/p&gt;</content><category term="vanlife" /><category term="personal" /><summary type="html">October will mark the seventh month of full time living in my custom built 2008 Dodge Sprinter van. It will also mark my return to a proper apartment and rent-paying. I’ve been negligent of documenting the build and living process so far, but I’ll start here with some reflection on the more subtle drawbacks of urban vanlife and why I ended up signing a lease this fall.</summary></entry><entry><title type="html">Video/Sound- Soundwalk 9:09 Response</title><link href="/2019/09/11/video-sound-909-soundwalk-response.html" rel="alternate" type="text/html" title="Video/Sound- Soundwalk 9:09 Response" /><published>2019-09-11T00:00:00-04:00</published><updated>2019-09-11T00:00:00-04:00</updated><id>/2019/09/11/video-sound-909-soundwalk-response</id><content type="html" xml:base="/2019/09/11/video-sound-909-soundwalk-response.html">&lt;p&gt;&lt;em&gt;Soundwalk 9:09&lt;/em&gt; by John Luther Adams is an ambient musical soundwalk that takes place between the 5th Avenue Metropolitan Museum of Art on 5th Avenue in New York City and the Met Breur, a few blocks south and east. You can listen to the audio and read the artist’s note &lt;a href=&quot;https://www.metmuseum.org/events/programs/met-live-arts/soundwalk&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://www.metmuseum.org/-/media/images/visit/plan-your-visit/individual-locations/breuer/locations_breuer_1520x1520.jpg?la=en&amp;amp;hash=5E31C0226D0A8CB3F76FCFD9C12D07636D996646&quot; alt=&quot;The Met Breur&quot; /&gt;
-&lt;em&gt;The Met Breur building&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;The piece consists of two “movements”, one uptown direction (walking from Met Breur to the 5th Avenue Met) and one downtown (heading the opposite direction). Adams intermingles ambient, shimmering drone voices with city sounds that almost feel cliche - murmuring voices, car honks, police sirens, and so on. The resulting experience succeeds in highlighting the musicality inherent in street noises, the ebb and flow of traffic which contrasts with occasional  quieter passages that are perhaps drawing from the presence of Central Park on the left (or right, depending on which direction you are moving).&lt;/p&gt;
-
-&lt;p&gt;I couldn’t help but feel somewhat disappointed by the selection and placement of city sounds by the artist. This kind of musical pastiche dates itself back all the way to the early 20th century with the beginnings of musique concrete. Gershwin’s &lt;em&gt;An American In Paris&lt;/em&gt; was musicalizing city sounds as early as 1928. More recently, Steve Reich’s &lt;em&gt;City Life&lt;/em&gt;, from 1995, also layers typical city noises over ambient drone as a recorded piece of music. What &lt;em&gt;Soundwalk 9:09&lt;/em&gt; offers over &lt;em&gt;City Life&lt;/em&gt; is a promise of a site-specific physical experience, but the only section that actually feels tied to the particular geographic location of the walk are the first few seconds of &lt;em&gt;Downtown&lt;/em&gt;, which feature the water tinkling of the fountains in the Met plaza.&lt;/p&gt;
-
-&lt;p&gt;Perhaps if you are a big fan of the Met or have been totally checked out of the 20th century contemporary music and sound art scene &lt;em&gt;Soundwalk 9:09&lt;/em&gt; is a worthwhile adventure. But on top of the relatively uninspired composition you’ll have to look at the Met Breur at the end of it, a brutalist upside-down staircase that looks like it was built in the 80s and not as recently as 2016.&lt;/p&gt;</content><category term="itp" /><category term="video_sound" /><summary type="html">Soundwalk 9:09 by John Luther Adams is an ambient musical soundwalk that takes place between the 5th Avenue Metropolitan Museum of Art on 5th Avenue in New York City and the Met Breur, a few blocks south and east. You can listen to the audio and read the artist’s note here.</summary></entry></feed>
+&lt;p&gt;The experience of urban vanlife, understanding what it takes to live comfortably, re-evaluating nearly everything about your daily life and reducing it to the bare essentials, is an incredible learning opportunity. But now I’m looking forward to planting my feet firmly in the Northeast for the next few years at minimum - it’s time to settle down!&lt;/p&gt;</content><category term="vanlife" /><category term="personal" /><summary type="html">October will mark the seventh month of full time living in my custom built 2008 Dodge Sprinter van. It will also mark my return to a proper apartment and rent-paying. I’ve been negligent of documenting the build and living process so far, but I’ll start here with some reflection on the more subtle drawbacks of urban vanlife and why I ended up signing a lease this fall.</summary></entry></feed>

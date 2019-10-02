@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Posts Tagged &amp;ldquo;visual_language&amp;rdquo;</title>
+  <title>Physical Computing - Nervous Servo</title>
   <meta name="description" content="">
 
   <link rel="stylesheet" href="/assets/main.css">
-  <link rel="canonical" href="/tag/visual_language/">
+  <link rel="canonical" href="/2019/10/01/pcomp-3.html">
   <link rel="alternate" type="application/rss+xml" title="Sylvan Zheng" href="/feed.xml">
   
   
@@ -211,329 +211,96 @@ You may NOT sub-license, resell, rent, redistribute or otherwise transfer the ic
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <article class="post">
-  <div class="post-content">
-    <h2 class="post_title">Posts Tagged &ldquo;visual_language&rdquo;</h2>
-<ul>
-  
-    
-      
-    
-      
-     
-  
-    
-      
-    
-      
-     
-  
-    
-      
-    
-      
-    
-      
-     
-  
-    
-      
-    
-      
-    
-      
-     
-  
-    
-      
-    
-      
-        <li>
-           <span class="post-meta">2019 09 19</span>
-          <a class="post-link" href="/2019/09/19/words.html">Visual Language - Word Art</a>
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Physical Computing - Nervous Servo</h1>
+    <p class="post-meta"><time datetime="2019-10-01T00:00:00-04:00" itemprop="datePublished">Oct 1, 2019</time></p>
+    
     
       <p class="post-meta">
         
           <a class='tag' href="/tag/itp">itp</a>
 
         
-          <a class='tag' href="/tag/visual_language">visual_language</a>
+          <a class='tag' href="/tag/phys_comp">phys_comp</a>
 
         
       </p>
     
-    <p class="post-meta excerpt">
-    ![Capitalism](/images/vl/capitalism.png)
+  </header>
 
-![Anarchy](/images/vl/anarchy.png)
+  <div class="post-content" itemprop="articleBody">
+    <iframe src="https://player.vimeo.com/video/363843319" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe>
 
-![Nimby](/images/vl/nimby.png)
+<h1 id="preparing-the-power-supply">Preparing the Power Supply</h1>
 
-    </p>
+<p>The servo motor runs best on 5V DC - since the Arduino Nano only supplies 3.3V out, we’ll need a separate way of powering the motor. I found a 120VAC to 5V DC phone charger in the junk pile and figured that it would be a useful exercise to convert this into a usable power source. I snipped off the USB end revealing a copper stranded wire sheath and a copper stranded core with its own insulation sleeve. After stripping the internal sleeve, A quick multimeter test confirmed that the outside sheath was the ground connection and the inside core was the +5V DC connection. I soldered a pair of color-coordinated jumper leads to the pair of copper strands and sealed the connections with heatshrink.</p>
 
+<p><img src="/images/pcomp/solder1.jpg" alt="overview" /></p>
 
+<h1 id="controlling-the-servo-with-a-photoresistor">Controlling the servo with a photoresistor</h1>
 
-        </li>
-       
-     
-  
-    
-      
-    
-      
-    
-      
-     
-  
-    
-      
-    
-      
-    
-      
-     
-  
-    
-      
-    
-      
-        <li>
-           <span class="post-meta">2019 09 15</span>
-          <a class="post-link" href="/2019/09/15/visual-language-plane-redesign.html">Visual Language - Redesigning A Plane Ticket</a>
+<p>I wired a photoresistor into the A0 pin, with a parallel resistor allowing a connection to ground. At first I had the resistor in series with the photoresistor, but this gave me some trouble reading meangingful values from the photoresistor. My current thought is that the voltage read by the A0 pin never actually changes if the second resistor is in series. With the second resistor in parallel, the balance of voltage shifts as the resistance of the variable resistor changes which ultimately translates to usable data for the Arduino.</p>
 
-    
-      <p class="post-meta">
-        
-          <a class='tag' href="/tag/itp">itp</a>
+<p>After fixing this mistake we can control the position of the servo by adjusting the amount of light the photoresistor is exposed to! It’s not a very fine level of control, but it works nonetheless.</p>
 
-        
-          <a class='tag' href="/tag/visual_language">visual_language</a>
+<p><img src="https://media.giphy.com/media/UuwKypRSJZ25ojYwDX/giphy.gif" alt="servo" /></p>
 
-        
-      </p>
-    
-    <p class="post-meta excerpt">
-    *The pre-2012 Delta boarding pass*:
-![Older boarding pass](https://www.flyertalk.com/the-gate/wp-content/uploads/2012/02/Delta-Boarding-Pass-Old-Design.jpg)
+<h1 id="nervous-servo">Nervous Servo</h1>
 
-*2012 Delta redesign*:
-![Old boarding pass](http://images.nymag.com/news/intelligencer/boardingpass120226_560.jpg)
+<p>I thought it might be fun to introduce some self-reference into this system. The photoresistor responds to light, and the servo’s rotation has the potential to effect change in the physical space. Is it possible to create a sort of feedback loop, out of which some more interesting behavior might emerge?</p>
 
+<p>Paper affixed to the servo with scotch tape and careful positioning allows the rotation of the servo to shade the photoresistor. To accentuate the difference in light, I wired an LED in right next to the photoresistor. When the servo arm is set to about 40 degrees, the paper blocks the photoresistor from sensing the light from the LED. When the servo arm is set to about 80 degrees, the paper is lifted. So, with careful mapping of light sensing values, we can make the servo arm lift up when it can’t see the LED and go down when it can, causing an endless loop of movement.</p>
 
-*My attempt at the redesign*:
-![Plane Ticket](/images/PlaneTicket_exercise.png)
+<p><img src="/images/pcomp/servo_closeup.jpg" alt="closeup" /></p>
 
-    </p>
+<p><img src="/images/pcomp/servo_overview.jpg" alt="overview" /></p>
 
+<p>The fun part is that since the photoresistor responds to all environmental light and not just the light from the LED, movement and gestures of an observer have the potential to affect the pace of the servo’s motion, and in some cases can stop it entirely.</p>
 
+<iframe src="https://player.vimeo.com/video/363843888" width="640" height="1138" frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe>
 
-        </li>
-       
-     
-  
-    
-      
-    
-      
-     
-  
-    
-      
-    
-      
-     
-  
-    
-      
-    
-      
-     
-  
-    
-      
-    
-      
-     
-  
-    
-      
-    
-      
-        <li>
-           <span class="post-meta">2019 09 08</span>
-          <a class="post-link" href="/2019/09/08/visual-language-1.html">Visual Language Design Analysis - Watchmen</a>
+<div class="highlighter-rouge"><pre class="highlight"><code>#include &lt;Servo.h&gt;
 
-    
-      <p class="post-meta">
-        
-          <a class='tag' href="/tag/itp">itp</a>
+Servo servo;
+int servoPin = 2;
 
-        
-          <a class='tag' href="/tag/visual_language">visual_language</a>
+void setup() {
+  servo.attach(servoPin);
+  Serial.begin(9600);
 
-        
-          <a class='tag' href="/tag/comics">comics</a>
+}
 
-        
-          <a class='tag' href="/tag/analysis">analysis</a>
+int T = 4500;
+void loop() {
+  int lightSensor = analogRead(A0);
 
-        
-      </p>
-    
-    <p class="post-meta excerpt">
-    ![Cover of Watchmen graphic novel](/images/visual_lang_watchmen_slides/1.png) *Watchmen* by Alan Moore and Dave Gibbons is a fantastic graphic novel heavily centered on themes of irony and contradiction....
-    </p>
+  // Map the light sensor value to a velocity of the servo arm
+  // so that the movement is a bit smoother and less jerky
+  int dT = map(lightSensor, 350, 400, 10, -10);
+  T = T + dT;
+  Serial.print(lightSensor);
+  Serial.print(" ");
+  Serial.print(dT);
+  Serial.print(" ");
+  Serial.print(T);
+  Serial.print("\n");
+  if (T &lt; 4500) {
+    T  = 4500;
+  }
+  if (T &gt; 8000) {
+    T  = 8000;
+  }
+  servo.write(T/100);
 
-
-
-        </li>
-       
-    
-      
-    
-      
-     
-  
-    
-      
-    
-      
-    
-      
-     
-  
-    
-      
-    
-      
-     
-  
-    
-      
-    
-      
-     
-  
-    
-      
-    
-      
-    
-      
-     
-  
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-     
-  
-    
-      
-    
-      
-    
-      
-    
-      
-     
-  
-    
-      
-    
-      
-     
-  
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-     
-  
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-     
-  
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-     
-  
-    
-      
-    
-      
-    
-      
-    
-      
-     
-  
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-     
-  
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-     
-  
-    
-      
-    
-      
-    
-      
-    
-      
-     
-  
-</ul>
+}
+</code></pre>
+</div>
 
   </div>
+
+  
 </article>
 
       </div>
