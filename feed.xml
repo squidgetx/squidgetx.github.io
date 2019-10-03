@@ -1,4 +1,75 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-10-02T20:33:05-04:00</updated><id>//</id><title type="html">Sylvan Zheng</title><subtitle></subtitle><entry><title type="html">Physical Computing - Nervous Servo</title><link href="/2019/10/01/pcomp-3.html" rel="alternate" type="text/html" title="Physical Computing - Nervous Servo" /><published>2019-10-01T00:00:00-04:00</published><updated>2019-10-01T00:00:00-04:00</updated><id>/2019/10/01/pcomp-3</id><content type="html" xml:base="/2019/10/01/pcomp-3.html">&lt;iframe src=&quot;https://player.vimeo.com/video/363843319&quot; width=&quot;640&quot; height=&quot;360&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-10-02T22:04:27-04:00</updated><id>//</id><title type="html">Sylvan Zheng</title><subtitle></subtitle><entry><title type="html">Visual Language - Postcard</title><link href="/2019/10/02/visual-4.html" rel="alternate" type="text/html" title="Visual Language - Postcard" /><published>2019-10-02T00:00:00-04:00</published><updated>2019-10-02T00:00:00-04:00</updated><id>/2019/10/02/visual-4</id><content type="html" xml:base="/2019/10/02/visual-4.html">&lt;p&gt;&lt;img src=&quot;/images/vl/postcard.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I went with a relatively simple concept for the show poster, aiming to give the most visual weight to the manipulated photograph, which is itself an object I felt was representative of the spirit of ITP - the intersection of human arts with technology.&lt;/p&gt;
+
+&lt;p&gt;The initial photograph (of current student, used with permission) is already beautifully shot and composed, capturing a spirit of quiet reflection and angst in an urban landscape. I used p5.js to interlace the mirrored version of the photograph with itself, creating a somewhat ghostly mirror reflection in the image.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/vl/original.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/* initialize Global state */
+function preload() {
+  img = loadImage('postcard.png');
+}
+
+function getRow(pixels, i) {
+  // returns a regular array of size 4 * width
+  let result = new Array();
+  let d = pixelDensity();
+  for(let j = 0; j &amp;lt; width; j++) {
+    let n = (i * width + j) * d * d;
+    for(let offset = 0; offset &amp;lt; 4; offset++) {
+      result[j * 4 + offset] = pixels[n * 4 + offset];
+    }
+  }
+  return result;
+}
+
+function writeRow(pixels, i, row) {
+  // writes a row of pixels of size 4 * width into pixels
+  let d = pixelDensity();
+  for(let j = 0; j &amp;lt; width; j++) {
+    let n = (i * width + j) * d * d * 4;
+    for (let pdx = 0; pdx &amp;lt; d; pdx++) {
+      for (let pdy = 0; pdy &amp;lt; d; pdy++) {
+        for(let offset = 0; offset &amp;lt; 4; offset++) {
+          // n*4 is the starting point of the d*d*width*4 size row
+          // each pixel row is d * width * 4
+          pixels[n + offset + pdx * d * 4 + pdy * 4 * width * d] = row[j * 4 + offset];
+        }
+      }
+    }
+  }
+  return pixels;
+}
+
+function sortRow(row) {
+  let row_colors = new Array();
+  for(let i = 0; i &amp;lt; width; i++) {
+    row_colors[i] = row.slice(i * 4, i * 4 + 4);
+  }
+  row_colors = row_colors.reverse();
+  for(let i = 0; i &amp;lt; width; i++) {
+    row[i * 4] = row_colors[i][0];
+    row[i * 4 + 1] = row_colors[i][1];
+    row[i * 4 + 2] = row_colors[i][2];
+    row[i * 4 + 3] = row_colors[i][3];
+  }
+  return row;
+}
+
+function setup() {
+  createCanvas(3295,2232);
+  image(img, 0, 0, width, height);
+  let d = pixelDensity();
+  loadPixels();
+  for (let i = 0; i &amp;lt; height; i++) {
+    pixels=writeRow(pixels, i, sortRow(getRow(pixels, i)));
+  }
+  updatePixels();
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;</content><category term="itp" /><category term="visual_lang" /><summary type="html"></summary></entry><entry><title type="html">Physical Computing - Nervous Servo</title><link href="/2019/10/01/pcomp-3.html" rel="alternate" type="text/html" title="Physical Computing - Nervous Servo" /><published>2019-10-01T00:00:00-04:00</published><updated>2019-10-01T00:00:00-04:00</updated><id>/2019/10/01/pcomp-3</id><content type="html" xml:base="/2019/10/01/pcomp-3.html">&lt;iframe src=&quot;https://player.vimeo.com/video/363843319&quot; width=&quot;640&quot; height=&quot;360&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
 &lt;h1 id=&quot;preparing-the-power-supply&quot;&gt;Preparing the Power Supply&lt;/h1&gt;
 
@@ -195,7 +266,7 @@ void loop() {
 }
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
-&lt;iframe title=&quot;vimeo-player&quot; src=&quot;https://player.vimeo.com/video/362367321&quot; width=&quot;640&quot; height=&quot;360&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><category term="itp" /><category term="phys_comp" /><category term="audio" /><summary type="html"></summary></entry><entry><title type="html">Code of Music - Rhythm Platform</title><link href="/2019/09/24/code-music-rhythm.html" rel="alternate" type="text/html" title="Code of Music - Rhythm Platform" /><published>2019-09-24T00:00:00-04:00</published><updated>2019-09-24T00:00:00-04:00</updated><id>/2019/09/24/code-music-rhythm</id><content type="html" xml:base="/2019/09/24/code-music-rhythm.html">&lt;p&gt;&lt;a href=&quot;/amusements/bounce2/index.html&quot;&gt;&lt;img class=&quot;cover-sm&quot; src=&quot;/images/platform.png&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;iframe title=&quot;vimeo-player&quot; src=&quot;https://player.vimeo.com/video/362367321&quot; width=&quot;640&quot; height=&quot;360&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><category term="itp" /><category term="physical_computing" /><category term="audio" /><summary type="html"></summary></entry><entry><title type="html">Code of Music - Rhythm Platform</title><link href="/2019/09/24/code-music-rhythm.html" rel="alternate" type="text/html" title="Code of Music - Rhythm Platform" /><published>2019-09-24T00:00:00-04:00</published><updated>2019-09-24T00:00:00-04:00</updated><id>/2019/09/24/code-music-rhythm</id><content type="html" xml:base="/2019/09/24/code-music-rhythm.html">&lt;p&gt;&lt;a href=&quot;/amusements/bounce2/index.html&quot;&gt;&lt;img class=&quot;cover-sm&quot; src=&quot;/images/platform.png&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;1-rhythm-interface-concept-sketches&quot;&gt;1: Rhythm Interface Concept Sketches&lt;/h1&gt;
 
@@ -294,59 +365,4 @@ void loop() {
   &lt;li&gt;&lt;em&gt;Feedback Modalities&lt;/em&gt;: There are two, visual and auditory.&lt;/li&gt;
   &lt;li&gt;&lt;em&gt;Inter-cators&lt;/em&gt;: Pretty much this interface is only for a single person to use, although different patterns can be shared between different users over the Internet.&lt;/li&gt;
   &lt;li&gt;&lt;em&gt;Distribution in Space&lt;/em&gt;: Strictly local&lt;/li&gt;
-&lt;/ul&gt;</content><category term="itp" /><category term="code_of_music" /><summary type="html">Groove Pizza</summary></entry><entry><title type="html">Seven Months of Van life</title><link href="/2019/09/13/seven-months-of-vanlife.html" rel="alternate" type="text/html" title="Seven Months of Van life" /><published>2019-09-13T00:00:00-04:00</published><updated>2019-09-13T00:00:00-04:00</updated><id>/2019/09/13/seven-months-of-vanlife</id><content type="html" xml:base="/2019/09/13/seven-months-of-vanlife.html">&lt;p&gt;October will mark the seventh month of full time living in my custom built 2008 Dodge Sprinter van. It will also mark my return to a proper apartment and rent-paying. I’ve been negligent of documenting the build and living process so far, but I’ll start here with some reflection on the more subtle drawbacks of urban vanlife and why I ended up signing a lease this fall.&lt;/p&gt;
-
-&lt;p&gt;I spent five months full time living in and building my van in the SF Bay area while working a full time job, one month vacation roadtripping, and another month living and starting a graduate program in NYC. This post will focus mostly on urban vanlife (Roadtrip vanlife is actually amazing).&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van_fins.jpg&quot; alt=&quot;Van in the Fins, ID&quot; /&gt;
-&lt;em&gt;The van in the Fins, ID&lt;/em&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;1-vanlife-is-its-own-hobby&quot;&gt;1. Vanlife is its own hobby&lt;/h2&gt;
-&lt;p&gt;The challenge of engineering a comfortable living space out of a van is something that drew me intially to the vanlife project in the first place. However alongside the challenge of building the space exists an equally important engineering exercise in daily habit and routine that is required to elevate vanlife from merely tolerable to actually livable. Off the top of my head,&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;I need to fill the freshwater tank monthly&lt;/li&gt;
-  &lt;li&gt;I need to empty the graywater tank weekly&lt;/li&gt;
-  &lt;li&gt;I need to go somewhere to shower daily&lt;/li&gt;
-  &lt;li&gt;I need to go somewhere to #2 daily&lt;/li&gt;
-  &lt;li&gt;I need to go somewhere to empty my #1 bottle(s) daily&lt;/li&gt;
-  &lt;li&gt;I need to go somewhere to sanitize my #1 bottle(s) daily&lt;/li&gt;
-  &lt;li&gt;I need to manage my limited fridge space, which leads to twice weekly grocery trips&lt;/li&gt;
-  &lt;li&gt;I need to wash my dishes in an undersized sink with weak water flow&lt;/li&gt;
-  &lt;li&gt;I need to cook on an undersized counter area&lt;/li&gt;
-  &lt;li&gt;I need to be anal about cleanliness and tidyness&lt;/li&gt;
-  &lt;li&gt;I need to monitor battery levels constantly thanks to the weak solar on the East Caost&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;Many of these tasks aren’t incredibly time consuming, and in my van layout are honestly not that bad. However, in aggregate I felt that maintaining an acceptable quality of vanlife requires not an insignificant amount of time, and more importantly mental energy on a regular basis. On the road this wasn’t a big deal, but in an urban environment it’s important to consider if the benefits of vanlife are worth the increased regular time and willpower. I decided that I wanted to give as much time as possible to my schoolwork, music, climbing, and social life, and began to consider if it was worth the considerable drawback of starting to pay rent to gain this time back.&lt;/p&gt;
-
-&lt;p&gt;Starting in the wintertime I knew that this would only get worse, as I would have to install a heater, worry even more about solar availability (or spend time driving around for alternator charging, which I don’t actually have set up yet), worry about water line winterization, and so forth.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van_kitchen.jpg&quot; alt=&quot;Van Kitchen&quot; /&gt;
-&lt;em&gt;The kitchen area at full capacity&lt;/em&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;2-vanlife-is-not-consistent&quot;&gt;2. Vanlife is not consistent&lt;/h2&gt;
-&lt;p&gt;Despite my best efforts to maintain the van’s living space, living in a van means depending on many factors outside of my own control. Sometimes I draw a shit hand.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;My usual cafe or other standard #2 bathroom spot is closed for holidays or special events.&lt;/li&gt;
-  &lt;li&gt;A heat wave comes through.&lt;/li&gt;
-  &lt;li&gt;A cold snap comes through.&lt;/li&gt;
-  &lt;li&gt;I catch a cold.&lt;/li&gt;
-  &lt;li&gt;The shower that I depend on is closed for maintenance.&lt;/li&gt;
-  &lt;li&gt;There was an unusual amount of street traffic last night and I couldn’t sleep well.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;
-Many of these are relatively minor issues that could be solved or prevented with stronger habits (refusing fancy beer, for instance). But my point is that these are things interrupt my schedule, throw off my rhythm, and on occasion unfortunate combinations lead to some truly desperate situations. I’ve gotten sick twice during a heatwave on the weekend. My usual haunts (cafes, climbing gyms) close early on Sunday. The van is an oven, and I’m feeling ill with nowhere to go. I end up being sick for several more days. Even though this is a relatively rare event, it’s not something I am eager to repeat.&lt;/p&gt;
-
-&lt;h2 id=&quot;3-vanlife-is-antisocial&quot;&gt;3. Vanlife is antisocial&lt;/h2&gt;
-
-&lt;p&gt;This is the reason that was hardest for me to wrap my head around, but it actually became one of the largest driving factors in my decision. Put simply, vanlife just isn’t something that a lot of normal people are doing. Looking at a typical day this didn’t influence my quality of life in any tangible way. But over time, the feeling of being a constant visitor, never really anchored in to a place or community wore on me. Healthy city living requires a sense of place and belonging, which I never truly felt I could acheive living in a van on the street. Last week there was a block party in my current parking neighborhood. I couldn’t go, I didn’t feel like I had enough stake in the community as a functional squatter to benefit from these kinds of communal, neighborhood experiences. I don’t have neighbors (although in SF there is actually a large enough van community that you might actually be able to avoid this somewhat). Rent (or property ownership) is stake in a place, in a community. This has real value. This may seem obvious to some, but wasn’t to me until recently.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van_parking.jpg&quot; alt=&quot;Van Parking&quot; /&gt;
-&lt;em&gt;My occasional home&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;The experience of urban vanlife, understanding what it takes to live comfortably, re-evaluating nearly everything about your daily life and reducing it to the bare essentials, is an incredible learning opportunity. But now I’m looking forward to planting my feet firmly in the Northeast for the next few years at minimum - it’s time to settle down!&lt;/p&gt;</content><category term="vanlife" /><category term="personal" /><summary type="html">October will mark the seventh month of full time living in my custom built 2008 Dodge Sprinter van. It will also mark my return to a proper apartment and rent-paying. I’ve been negligent of documenting the build and living process so far, but I’ll start here with some reflection on the more subtle drawbacks of urban vanlife and why I ended up signing a lease this fall.</summary></entry></feed>
+&lt;/ul&gt;</content><category term="itp" /><category term="code_of_music" /><summary type="html">Groove Pizza</summary></entry></feed>
