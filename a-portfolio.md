@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Portfolio
-permalink: /Porfolio/
+title: Selected Work
+permalink: /Portfolio/
 nav: true
 ---
 

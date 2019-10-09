@@ -88,10 +88,10 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .tag {
-  background-color: darken($background-color, 3%);
+  background-color: darken($background-color, 5%);
   padding: 0.3em;
   &:hover {
-    background-color: desaturate(darken($brand-color, 1%), 50%);
+    background-color: $brand-dark;
   }
 }
 
