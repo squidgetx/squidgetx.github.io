@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Info
+title: About
 nav: true
-permalink: /info/
+permalink: /about/
 ---
 Software/Sound/Web Artist/Engineer/Designer
 

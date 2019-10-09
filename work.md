@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Work
-permalink: /work/
+title: Portfolio
+permalink: /Porfolio/
 nav: true
 ---
 
@@ -16,5 +16,3 @@ nav: true
   </ul>
 
   <p class="rss-subscribe"><a href="{{ "/feed.xml" | relative_url }}">RSS</a></p>
-
-

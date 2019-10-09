@@ -2,7 +2,14 @@
 
   <div class="wrapper">
 
-    <a class="site-title" href="{{ "/" | relative_url}}">{{ site.title | escape }}</a>
+    <a class="site-title" href="{{ "/" | relative_url}}">
+      <img
+        src="/images/logo.svg"
+        alt="Sylvan Zheng"
+        height="80px"
+        class="logo"
+      />
+    </a>
 
     <div class="trigger">
       <ul class='nav'>
@@ -10,11 +17,11 @@
         {% if my_page.title and my_page.nav %}
         {% if page.title != my_page.title %}
         <li>
-        <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+        <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | downcase | escape }}</a>
         </li>
         {% else %}
         <li>
-        <a class="page-link selected" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+        <a class="page-link selected" href="{{ my_page.url | relative_url }}">{{ my_page.title | downcase | escape }}</a>
         </li>
 
         {% endif %}

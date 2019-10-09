@@ -2,7 +2,7 @@
  * Site header
  */
 .site-header {
-  border-top: 5px solid $grey-color-dark;
+  border-top: 5px solid $brand-dark;
   //border-bottom: 1px solid $grey-color-light;
   min-height: 56px;
   display: inline-block;
@@ -27,7 +27,6 @@
 
 .trigger {
   display: block;
-
 }
 
 ul {
@@ -45,7 +44,8 @@ ul.social-media-list {
 ul.nav {
   font-size: 18px;
   color: #222;
-  line-height: .85em;
+  line-height: 0.9;
+  margin-bottom: 1em;
 }
 
 .contact-list,

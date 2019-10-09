@@ -130,12 +130,12 @@ a {
   text-decoration: none;
 
   &:visited {
-    color: darken($brand-color, 15%);
+    color: $brand-dark;
   }
 
   &:hover {
     color: #eee !important;
-    background-color: darken($brand-color, 20%);
+    background-color: $brand-dark;
     text-decoration: none;
     svg {
       path {
@@ -226,9 +226,13 @@ pre {
 
 .selected {
   font-weight: 800;
-  background-color: darken($brand-color, 20%);
-  color: #eee !important;
+  background-color: $brand-dark;
+  color: $background-color !important;
+}
 
+.page-link {
+  margin: 12px;
+  font-size: 1.2em;
 }
 
 img.info {
@@ -249,5 +253,13 @@ img.info {
 
   path {
     fill: $grey-color !important;
+  }
+}
+
+.logo {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  path {
+    fill: red;
   }
 }
