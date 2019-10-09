@@ -13,7 +13,7 @@ dl, dd, ol, ul, figure {
 body {
   font: 200 14px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #111511;
-  background-color: #fdfdfd;
+  background-color: white;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
   -moz-font-feature-settings: "kern" 1;
@@ -64,10 +64,10 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 200; }
 
 .tag {
-  background-color: whitesmoke;
+  background-color: #f2f7ed;
   padding: 0.3em; }
   .tag:hover {
-    background-color: #3a6b3a; }
+    background-color: #031703; }
 
 h5 {
   color: #444; }
@@ -94,13 +94,13 @@ img.cover-right {
  * Links
  */
 a {
-  color: #191;
+  color: #181;
   text-decoration: none; }
   a:visited {
-    color: #095409; }
+    color: #031703; }
   a:hover {
     color: #eee !important;
-    background-color: #073d07;
+    background-color: #031703;
     text-decoration: none; }
     a:hover svg path {
       fill: #eee !important; }
@@ -166,8 +166,12 @@ pre {
 
 .selected {
   font-weight: 800;
-  background-color: #073d07;
-  color: #eee !important; }
+  background-color: #031703;
+  color: white !important; }
+
+.page-link {
+  margin: 12px;
+  font-size: 1.2em; }
 
 img.info {
   width: 800px;
@@ -184,11 +188,17 @@ img.info {
   .icon > svg path {
     fill: #828282 !important; }
 
+.logo {
+  margin-top: 24px;
+  margin-bottom: 24px; }
+  .logo path {
+    fill: red; }
+
 /**
  * Site header
  */
 .site-header {
-  border-top: 5px solid #424242;
+  border-top: 5px solid #031703;
   min-height: 56px;
   display: inline-block;
   position: fixed; }
@@ -217,7 +227,8 @@ ul.social-media-list li {
 ul.nav {
   font-size: 18px;
   color: #222;
-  line-height: .85em; }
+  line-height: 0.9;
+  margin-bottom: 1em; }
 
 .contact-list,
 .social-media-list {
