@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-10-09T22:26:59-04:00</updated><id>//</id><title type="html">Sylvan Zheng</title><subtitle></subtitle><entry><title type="html">Visual Language - Logo</title><link href="/2019/10/09/visual-5.html" rel="alternate" type="text/html" title="Visual Language - Logo" /><published>2019-10-09T00:00:00-04:00</published><updated>2019-10-09T00:00:00-04:00</updated><id>/2019/10/09/visual-5</id><content type="html" xml:base="/2019/10/09/visual-5.html">&lt;p&gt;&lt;img src=&quot;/images/Logo.svg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-10-09T23:12:56-04:00</updated><id>//</id><title type="html">Sylvan Zheng</title><subtitle></subtitle><entry><title type="html">Visual Language - Logo</title><link href="/2019/10/09/visual-5.html" rel="alternate" type="text/html" title="Visual Language - Logo" /><published>2019-10-09T00:00:00-04:00</published><updated>2019-10-09T00:00:00-04:00</updated><id>/2019/10/09/visual-5</id><content type="html" xml:base="/2019/10/09/visual-5.html">&lt;p&gt;&lt;img src=&quot;/images/Logo.svg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;process&quot;&gt;Process&lt;/h1&gt;
 
@@ -41,7 +41,40 @@
 
 &lt;p&gt;This website’s header and favicon are now updated with the new logo! I additionally took a crack and drafting a business card with the same logo and sensibility.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/vl/bc.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><category term="itp" /><category term="visual_language" /><summary type="html"></summary></entry><entry><title type="html">Visual Language - Postcard</title><link href="/2019/10/02/visual-4.html" rel="alternate" type="text/html" title="Visual Language - Postcard" /><published>2019-10-02T00:00:00-04:00</published><updated>2019-10-02T00:00:00-04:00</updated><id>/2019/10/02/visual-4</id><content type="html" xml:base="/2019/10/02/visual-4.html">&lt;p&gt;&lt;img src=&quot;/images/vl/postcard.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/vl/bc.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><category term="itp" /><category term="visual_language" /><summary type="html"></summary></entry><entry><title type="html">Rearranging “Frownland” - Concept</title><link href="/2019/10/09/code-of-music-melody.html" rel="alternate" type="text/html" title="Rearranging &quot;Frownland&quot; - Concept" /><published>2019-10-09T00:00:00-04:00</published><updated>2019-10-09T00:00:00-04:00</updated><id>/2019/10/09/code-of-music-melody</id><content type="html" xml:base="/2019/10/09/code-of-music-melody.html">&lt;h1 id=&quot;analysis&quot;&gt;Analysis&lt;/h1&gt;
+
+&lt;p&gt;“Frownland” has been a particular obsession of mine over the last few weeks. It’s a piece that makes no sense, yet makes perfect sense. In dissecting the melody, I had the good fortune to come across this video by composer Samuel Andreyev breaking down the track. His ear is much better than mine.&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/-FhhB9teHqU?start=1070&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;The crazy thing about the first few seconds of &lt;em&gt;Frownland&lt;/em&gt; is (or is not) that the melodies are particularly strange. The melodies are in fact quite diatonic - the first guitar and bass together play a pattern of&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;A---G-------A-G-A-G-E-E-
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;with accompaniment of C and D underneath. Meanwhile, the second guitar plays its own melodic phrase using largely the same notes (and adding in an F). This collection of pitches (C, D, F, G, A) all comes from C major, and could be interpreted as spelling C6/9, G9/C, or other jazzy variations. The difficulty in listening to this piece comes from the fact that the second guitar is playing in a completely different metric scheme from the first guitar. But one thing the two melodies do have in common is that they both follow the same higher level theme of call and response.&lt;/p&gt;
+
+&lt;h1 id=&quot;designing-an-interface&quot;&gt;Designing an Interface&lt;/h1&gt;
+
+&lt;p&gt;So what kind of interface could be useful to play with what we have discovered here? Ableton Live, my usual tool of choice for sketching musical ideas, is difficult to work with where polymeter is concerned.&lt;/p&gt;
+
+&lt;p&gt;Ideally we would want multiple ways of expressing and contrasting high level melodic ideas against each other to explore the various combinations and how they mesh together (successfully, or not).&lt;/p&gt;
+
+&lt;p&gt;The user should be able to control:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Pitch collection (for traditional Frownland, they might specify C major, or simply (C-D-F-G-A)?)&lt;/li&gt;
+  &lt;li&gt;Melody shape 1&lt;/li&gt;
+  &lt;li&gt;Melody shape 2&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;To develop this idea further we need to pin down what we mean by shape. In the initial analysis I called both melodies “call and response” patterns.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“imagine the piece as a series of disconnected events”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;So perhaps the user can choose different representations of melodic components, and “arrange” them together into a series of calls and responses. It would be nice to work visually, but outside the step sequencer. This gets at an attempt to translate visual shapes or strokes into melody, which has been attempted by many artists in the past (including Google’s creative lab piece &lt;a href=&quot;https://musiclab.chromeexperiments.com/Kandinsky/&quot;&gt;Kandinksy&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;One approach could be to simply overlay the strokes onto a sequencer layout hidden from the user. This is probably the most straightforward way of doing it, although some more interesting computer vision techniques could be usable here to make something more nuanced.&lt;/p&gt;</content><category term="itp" /><category term="code_of_music" /><summary type="html">Analysis</summary></entry><entry><title type="html">Visual Language - Postcard</title><link href="/2019/10/02/visual-4.html" rel="alternate" type="text/html" title="Visual Language - Postcard" /><published>2019-10-02T00:00:00-04:00</published><updated>2019-10-02T00:00:00-04:00</updated><id>/2019/10/02/visual-4</id><content type="html" xml:base="/2019/10/02/visual-4.html">&lt;p&gt;&lt;img src=&quot;/images/vl/postcard.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;I went with a relatively simple concept for the show poster, aiming to give the most visual weight to the manipulated photograph, which is itself an object I felt was representative of the spirit of ITP - the intersection of human arts with technology.&lt;/p&gt;
 
@@ -376,12 +409,4 @@ void loop() {
 &lt;iframe src=&quot;https://player.vimeo.com/video/360892201&quot; width=&quot;640&quot; height=&quot;360&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 &lt;h2 id=&quot;drawbacks-and-next-steps&quot;&gt;Drawbacks and Next Steps&lt;/h2&gt;
 
-&lt;p&gt;Although the candle switch functions more or less as intended, this prototype comes with its fair share of drawbacks. The video shows one of these - that is that after the candle is blown out the bimetallic strip takes a few seconds to cool down enough disconnecting. Additionally, the strips seem to have an extremely limited lifespan. The first flourescent starter developed a blackened exterior after a few test runs with the candle and appears to have lost its conductivity. Finally, the presentation of the prototype leaves something to be desired. Housing the electric light within a lamp apparatus, or otherwise concealing the circuitry could add a lot to the aesthetic and communication of the concept.&lt;/p&gt;</content><category term="itp" /><category term="physical_computing" /><category term="process" /><summary type="html">Overview</summary></entry><entry><title type="html">Visual Language - Redesigning A Plane Ticket</title><link href="/2019/09/15/visual-language-plane-redesign.html" rel="alternate" type="text/html" title="Visual Language - Redesigning A Plane Ticket" /><published>2019-09-15T00:00:00-04:00</published><updated>2019-09-15T00:00:00-04:00</updated><id>/2019/09/15/visual-language-plane-redesign</id><content type="html" xml:base="/2019/09/15/visual-language-plane-redesign.html">&lt;p&gt;&lt;em&gt;The pre-2012 Delta boarding pass&lt;/em&gt;:
-&lt;img src=&quot;https://www.flyertalk.com/the-gate/wp-content/uploads/2012/02/Delta-Boarding-Pass-Old-Design.jpg&quot; alt=&quot;Older boarding pass&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;2012 Delta redesign&lt;/em&gt;:
-&lt;img src=&quot;http://images.nymag.com/news/intelligencer/boardingpass120226_560.jpg&quot; alt=&quot;Old boarding pass&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;
-&lt;em&gt;My attempt at the redesign&lt;/em&gt;:
-&lt;img src=&quot;/images/PlaneTicket_exercise.png&quot; alt=&quot;Plane Ticket&quot; /&gt;&lt;/p&gt;</content><category term="itp" /><category term="visual_language" /><summary type="html">The pre-2012 Delta boarding pass:</summary></entry></feed>
+&lt;p&gt;Although the candle switch functions more or less as intended, this prototype comes with its fair share of drawbacks. The video shows one of these - that is that after the candle is blown out the bimetallic strip takes a few seconds to cool down enough disconnecting. Additionally, the strips seem to have an extremely limited lifespan. The first flourescent starter developed a blackened exterior after a few test runs with the candle and appears to have lost its conductivity. Finally, the presentation of the prototype leaves something to be desired. Housing the electric light within a lamp apparatus, or otherwise concealing the circuitry could add a lot to the aesthetic and communication of the concept.&lt;/p&gt;</content><category term="itp" /><category term="physical_computing" /><category term="process" /><summary type="html">Overview</summary></entry></feed>
