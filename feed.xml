@@ -1,4 +1,47 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-10-09T16:47:32-04:00</updated><id>//</id><title type="html">Sylvan Zheng</title><subtitle></subtitle><entry><title type="html">Visual Language - Postcard</title><link href="/2019/10/02/visual-4.html" rel="alternate" type="text/html" title="Visual Language - Postcard" /><published>2019-10-02T00:00:00-04:00</published><updated>2019-10-02T00:00:00-04:00</updated><id>/2019/10/02/visual-4</id><content type="html" xml:base="/2019/10/02/visual-4.html">&lt;p&gt;&lt;img src=&quot;/images/vl/postcard.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-10-09T22:26:59-04:00</updated><id>//</id><title type="html">Sylvan Zheng</title><subtitle></subtitle><entry><title type="html">Visual Language - Logo</title><link href="/2019/10/09/visual-5.html" rel="alternate" type="text/html" title="Visual Language - Logo" /><published>2019-10-09T00:00:00-04:00</published><updated>2019-10-09T00:00:00-04:00</updated><id>/2019/10/09/visual-5</id><content type="html" xml:base="/2019/10/09/visual-5.html">&lt;p&gt;&lt;img src=&quot;/images/Logo.svg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;process&quot;&gt;Process&lt;/h1&gt;
+
+&lt;p&gt;The most challenging question is deciding what primary context this logo is for. While I juggle multiple skillsets and identities, and even take pride in the multitude of contexts I can operate in, I decided to make some cuts to focus on the creative technical and artistic realm - the context I expect to operate in most at ITP. This area is still quite broad!&lt;/p&gt;
+
+&lt;p&gt;Next, I thought through how I would like to present myself as a creative technologist/technical creative/what-have-you. I generally have trouble with these kinds of questions and found it helpful to ask a mirrored version: how would I like to be &lt;em&gt;known&lt;/em&gt; as a creative technologist/etc. etc?&lt;/p&gt;
+
+&lt;p&gt;I came up with the following attributes:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Elegance through minimalism&lt;/li&gt;
+  &lt;li&gt;Deep technical background, but sense of aesthetic&lt;/li&gt;
+  &lt;li&gt;Unconventional approaches, but grounding in traditional methods&lt;/li&gt;
+  &lt;li&gt;Multifunctional, multiuse&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Looking at this list I decided to start with abstract, minimalist, geometric iconography to convey both a sense of elegance and technicality. Although I didn’t want to squeeze climbing into my brand (at least for now), I did take the time to draw some inspiration from some of my favorite climbing brands, which generally matched the aesthetic sensibility I was looking for.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://www.flathold.com/wp-content/uploads/2015/03/flathold_climbing_holds_logo1.png&quot; alt=&quot;Flathold&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://www.tensionclimbing.com/wp-content/uploads/2018/10/Tension_HeaderLogo.png&quot; alt=&quot;Tension&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;After a few sketches I had three main candidates:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/vl/logo1.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This logo is an abstraction of a square and its shadow, a potential representation of “extending dimensionality.” My girlfriend pointed out to me that it looks like an open laptop, which I hadn’t realized at all. But of course it does, and although that is relevant to the theme of creative technology I didn’t want to associate with laptops specifically quite so strongly.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/vl/logo2.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This logo is an abstraction of my initials, and also happens to form the symbol for a diode in electrical schematics. However, the shape isn’t ultimately that interesting and again I found the connection to schematics a little bit too on-the-nose to feel comfortable.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/vl/logo3.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This logo is just a broken box. I initially drew it as a one-off sketch, but I enjoyed the subtle associations it carries of “breaking boundaries” and “outside the box.”&lt;/p&gt;
+
+&lt;p&gt;I settled on a monochrome theme (primarily used as a dark green to give off a healthy hint of deep forest) to further emphasize the theme of technical minimalism. I eventually chose Futura as the font to give a nod to the long history of creative technical media, but tracked the letters slightly closer together to give it a bit more cohesive feel and personal spin.&lt;/p&gt;
+
+&lt;p&gt;This website’s header and favicon are now updated with the new logo! I additionally took a crack and drafting a business card with the same logo and sensibility.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/vl/bc.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><category term="itp" /><category term="visual_language" /><summary type="html"></summary></entry><entry><title type="html">Visual Language - Postcard</title><link href="/2019/10/02/visual-4.html" rel="alternate" type="text/html" title="Visual Language - Postcard" /><published>2019-10-02T00:00:00-04:00</published><updated>2019-10-02T00:00:00-04:00</updated><id>/2019/10/02/visual-4</id><content type="html" xml:base="/2019/10/02/visual-4.html">&lt;p&gt;&lt;img src=&quot;/images/vl/postcard.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;I went with a relatively simple concept for the show poster, aiming to give the most visual weight to the manipulated photograph, which is itself an object I felt was representative of the spirit of ITP - the intersection of human arts with technology.&lt;/p&gt;
 
@@ -341,28 +384,4 @@ void loop() {
 
 &lt;p&gt;&lt;br /&gt;
 &lt;em&gt;My attempt at the redesign&lt;/em&gt;:
-&lt;img src=&quot;/images/PlaneTicket_exercise.png&quot; alt=&quot;Plane Ticket&quot; /&gt;&lt;/p&gt;</content><category term="itp" /><category term="visual_language" /><summary type="html">The pre-2012 Delta boarding pass:</summary></entry><entry><title type="html">Code of Music - Rhythm Interface Response</title><link href="/2019/09/15/code-of-music-rhythm-interface-response.html" rel="alternate" type="text/html" title="Code of Music - Rhythm Interface Response" /><published>2019-09-15T00:00:00-04:00</published><updated>2019-09-15T00:00:00-04:00</updated><id>/2019/09/15/code-of-music-rhythm-interface-response</id><content type="html" xml:base="/2019/09/15/code-of-music-rhythm-interface-response.html">&lt;h2 id=&quot;groove-pizza&quot;&gt;Groove Pizza&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://apps.musedlab.org/groovepizza/?source=pub&amp;amp;museid=SJnF-G2Lr&amp;amp;show-grid=true&amp;amp;multi-lock=&amp;amp;brainpop=false&amp;amp;midimap=&amp;amp;&quot;&gt;Groove Pizza&lt;/a&gt; uses a circular representation of the measure divided into a particular number of slices as the primary mechanism for representing rhythm. The user controls three voices - a kick, snare, and hi-hat sound and which of the measure subdivisions the voices “hit” on. Multi-measure rhythms are possible as well as control of swing, number of subdivisions (from one to sixteen).&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;em&gt;Role of Sound&lt;/em&gt;: This interface allows primarily for expressive / musical sound&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;Required Expertise&lt;/em&gt;: This interface doesn’t need any expertise necessarily to use it. The interface is intuitive and all features discoverable. Someone with no understanding of rhythm may take a little longer to fully understand all the parameters, but since the rhythms change in near real time it would be quick to learn that “tempo” refers to speed, “swing” refers to the offset-amount of every other beat, and so on.&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;Musical Control&lt;/em&gt;: The user has roughly note-level control.&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;Degrees of Freedom&lt;/em&gt;: The user only has control over the rhythm executed and there are some restrictions within that space. For instance, subdivisions are limited to maximum of 16, there only three voices that must play on the same grid, the rhythm will loop repeatedly without somewhat laborious intervention by the user.&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;Feedback Modalities&lt;/em&gt;: There are two, visual and auditory. In particular I thought the visual effect of the swing parameter (seeing the grid points in the circle move slightly) was an effective way to communicate a relatively subtle musical idea.&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;Inter-cators&lt;/em&gt;: Pretty much this interface is only for a single person to use, although different patterns can be shared between different users over the Internet.&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;Distribution in Space&lt;/em&gt;: Strictly local&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;beat-blender&quot;&gt;Beat-Blender&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://experiments.withgoogle.com/ai/beat-blender/view/&quot;&gt;Beat Blender&lt;/a&gt; represents rhythms using the traditional piano roll/grid notation. The interesting thing about Beat Blender is that it purports to use machine learning to be able to “blend” different rhythms together. The interface allows the user to explore the “space” generated by the machine learning algorithm between four different rhythms.&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;em&gt;Role of Sound&lt;/em&gt;: This interface also allows primarily for expressive / musical sound&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;Required Expertise&lt;/em&gt;: This interface doesn’t need any expertise necessarily to use it. The interface is intuitive and all features discoverable. Someone with a more advanced understanding of rhythm might be able to more quickly create interesting sequences, but like &lt;em&gt;Groove Pizza&lt;/em&gt; the interface responds in real time with multiple modalities so it is relatively easy to learn.&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;Musical Control&lt;/em&gt; / &lt;em&gt;Degrees of Freedom&lt;/em&gt;: The user has roughly note-level control of the four corners, and can then choose where in the rhythm-space to explore afterward. The user has no control over timbral effects or the higher level process of how the rhythms are selected or generated.&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;Feedback Modalities&lt;/em&gt;: There are two, visual and auditory.&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;Inter-cators&lt;/em&gt;: Pretty much this interface is only for a single person to use, although different patterns can be shared between different users over the Internet.&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;Distribution in Space&lt;/em&gt;: Strictly local&lt;/li&gt;
-&lt;/ul&gt;</content><category term="itp" /><category term="code_of_music" /><summary type="html">Groove Pizza</summary></entry></feed>
+&lt;img src=&quot;/images/PlaneTicket_exercise.png&quot; alt=&quot;Plane Ticket&quot; /&gt;&lt;/p&gt;</content><category term="itp" /><category term="visual_language" /><summary type="html">The pre-2012 Delta boarding pass:</summary></entry></feed>
