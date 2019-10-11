@@ -184,8 +184,8 @@ img.info {
 .icon > svg {
   display: inline-block;
   vertical-align: middle;
-  height: 24px;
-  width: 24px; }
+  height: 32px;
+  width: 32px; }
   .icon > svg path {
     fill: #828282 !important; }
 
