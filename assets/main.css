@@ -11,7 +11,7 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-  font: 200 14px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 200 14px/1.5 Futura, "Trebuchet MS", Helvetica, sans-serif;
   color: #111511;
   background-color: white;
   -webkit-text-size-adjust: 100%;
@@ -65,7 +65,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .tag {
   background-color: #f2f7ed;
-  padding: 0.3em; }
+  padding: 0.3em;
+  text-decoration: none; }
   .tag:hover {
     background-color: #031703; }
 
@@ -95,7 +96,7 @@ img.cover-right {
  */
 a {
   color: #181;
-  text-decoration: none; }
+  text-decoration: underline; }
   a:visited {
     color: #031703; }
   a:hover {
@@ -223,6 +224,9 @@ ul {
 
 ul.social-media-list li {
   display: inline-block; }
+
+.page-link {
+  text-decoration: none !important; }
 
 ul.nav {
   font-size: 18px;
