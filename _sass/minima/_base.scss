@@ -93,6 +93,7 @@ h1, h2, h3, h4, h5, h6 {
   &:hover {
     background-color: $brand-dark;
   }
+  text-decoration: none;
 }
 
 h5 {
@@ -127,7 +128,7 @@ img.cover-right {
  */
 a {
   color: $brand-color;
-  text-decoration: none;
+  text-decoration: underline;
 
   &:visited {
     color: $brand-dark;
@@ -248,8 +249,8 @@ img.info {
 .icon > svg {
   display: inline-block;
   vertical-align: middle;
-  height: 24px;
-  width: 24px;
+  height: 32px;
+  width: 32px;
 
   path {
     fill: $grey-color !important;

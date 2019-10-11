@@ -2,8 +2,7 @@
 layout: post
 title: "TICTeC 2018"
 tags:
-- tech
-- politics
+- tech+politics
 ---
 
 [The Impacts of Civic Technology conference](tictec.mysociety.org) aims to bring together researchers and practicioners to qualify and quantify the impacts of modern technology in the civic and political sphere. The conference was hosted by nonprofit group mySociety, and saw a number of high profile presenters including Facebook and Google alongside several smaller organizations, both technical and nontechnical.
@@ -12,7 +11,7 @@ It seems clear in the spring of 2018 that the use and misuse of technical platfo
 
 A (highly abridged) look back might help set this perhaps surprising attitude in context. For a long time both the mainstream media and the (western) Left saw the networked, extra-governmental nature of social media as having massive potential for positive social change. The favorite example is the [Arab Spring](https://www.theatlantic.com/technology/archive/2011/09/so-was-facebook-responsible-for-the-arab-spring-after-all/244314/), in which Facebook and Twitter played a role hailed as an essential vehicle for the sparking of a revolutionary wave across North Africa and the Middle East. Meanwhile in stable democracies projects like Politifact, change.org, and Facebook's voter registration efforts seemed poised to bring a new era to western democracy - the same process that revolutionized the way we interact with our financial institutions would bring the speed and personalization that only the internet could provide to our political institutions as well. Of course, we now see that the civic tech world was a touch too optimistic - and that these platforms bring great potential for negative as well as positive change.
 
-So the question is then for me, and for everyone else at this conference - what now? Silicon Valley created a world in which data leakages, fake accounts, targeted political ads, and fake news swing elections and cause real world harm. While it's ever so tempting to denounce Facebook and Google, throw my smartphone away and spend all my time climbing rocks in the desert, another part of me resonates with Justin Wang's [suggestion that for a tech worker there is another path](https://swimj.github.io/aoc2.html) - to engage constructively with the problems of this industry head on. 
+So the question is then for me, and for everyone else at this conference - what now? Silicon Valley created a world in which data leakages, fake accounts, targeted political ads, and fake news swing elections and cause real world harm. While it's ever so tempting to denounce Facebook and Google, throw my smartphone away and spend all my time climbing rocks in the desert, another part of me resonates with Justin Wang's [suggestion that for a tech worker there is another path](https://swimj.github.io/aoc2.html) - to engage constructively with the problems of this industry head on.
 
 This is the bargain that I suspect many at TICTeC have figured for themselves, and why for me it seems so important to figure out just exactly how much we can actually fix, and how much is fundamentally, structurally compromised.
 
@@ -21,7 +20,7 @@ This is the bargain that I suspect many at TICTeC have figured for themselves, a
 
 ### Some highlights and quick takes
 
-#### Facebook 
+#### Facebook
 
 Facebook gave a presentation exploring how AI models dramatically increased the amount of inflammatory content flagged and removed in the run up to the 2017 Kenyan Election, how it's planning on debuting a political ad archive to make targeted political ads less effective, how different UI features increase women's comfort participating in online civic discourse, and initial steps in measuring political polarization.
 
@@ -38,10 +37,7 @@ Martha Lane Fox, of the UK House of Lords delivered a great talk on the idea of 
 #### No one has come up with a good application for blockchain yet
 
 
-#### DesignFix 
+#### DesignFix
 DesignFix described a product model that delivered a 19% increase in self reported political efficacy in a small pilot in Northern Ireland. The key finding is aggregating citizen's messages into a manageable amount of concerns for a representative to handle, and finding a way to complete the communication loop even if the representative chooses not to directly address the citizen's concerns.
 
 *Many solutions are still country, if not region specific*
-
-
-
