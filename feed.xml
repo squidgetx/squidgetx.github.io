@@ -1,4 +1,36 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-10-10T20:43:35-04:00</updated><id>//</id><title type="html">Sylvan Zheng</title><subtitle></subtitle><entry><title type="html">Visual Language - Logo</title><link href="/2019/10/09/visual-5.html" rel="alternate" type="text/html" title="Visual Language - Logo" /><published>2019-10-09T00:00:00-04:00</published><updated>2019-10-09T00:00:00-04:00</updated><id>/2019/10/09/visual-5</id><content type="html" xml:base="/2019/10/09/visual-5.html">&lt;p&gt;&lt;img src=&quot;/images/Logo.svg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-10-15T23:07:20-04:00</updated><id>//</id><title type="html">Sylvan Zheng</title><subtitle></subtitle><entry><title type="html">Muse</title><link href="/2019/10/14/code-of-music-muse-melody.html" rel="alternate" type="text/html" title="Muse" /><published>2019-10-14T00:00:00-04:00</published><updated>2019-10-14T00:00:00-04:00</updated><id>/2019/10/14/code-of-music-muse-melody</id><content type="html" xml:base="/2019/10/14/code-of-music-muse-melody.html">&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&quot;/webmedia/muse/index.html&quot;&gt;Muse&lt;/a&gt; is a prototype of a text-to-music web application based on Tone.js, RiTa.js, and ML5.js. It attempts to use various features of user-provided input text to generate melodies and a basic harmonic accompaniment. It works best with inputs that resemble short pieces of poetry.&lt;/p&gt;
+
+&lt;p&gt;The full code can be found &lt;a href=&quot;https://github.com/squidgetx/squidgetx.github.io/blob/master/webmedia/muse/script.js&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;iframe src=&quot;https://player.vimeo.com/video/366646170&quot; width=&quot;640&quot; height=&quot;480&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;a href=&quot;https://vimeo.com/366646170&quot;&gt;Muse: Generating Music From Text&lt;/a&gt; from &lt;a href=&quot;https://vimeo.com/user59873575&quot;&gt;Sylvan&lt;/a&gt; on &lt;a href=&quot;https://vimeo.com&quot;&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h1 id=&quot;goals&quot;&gt;Goals&lt;/h1&gt;
+
+&lt;p&gt;I wanted to start incorporating more advanced statistical and machine learning concepts into my sound practice, and I thought that NLP would be a particularly rich domain to start with, as language encodes complexity that probably eclipses that of conventional musical arrangements. Lanuage, and particularly poetry however, has a rich tradition of conversational back and forth, which I noted in &lt;a href=&quot;/2019/10/09/code-of-music-melody.html&quot;&gt;my last entry on Frownland&lt;/a&gt; forms a durable backbone for melody.&lt;/p&gt;
+
+&lt;h1 id=&quot;inputs-and-outputs&quot;&gt;Inputs and Outputs&lt;/h1&gt;
+&lt;h2 id=&quot;pitch-set&quot;&gt;Pitch Set&lt;/h2&gt;
+
+&lt;p&gt;To begin with, each word in the input is given a word2vec vector representation. Next, the centroid is taken by averaging all non-article or symbol vectors. The medioid is found by taking the vector with the closest cosine proximity to the centroid. Cosine proximities with the medioid are assigned to all words. Finally, the resulting set of cosine proximities is converted to a pitch set by defining the pentatonic scale as “close tones”, the remaining major scale notes as “medium tones”, and the remaining 12 tones as “far tones” and then mapping the vector set onto that definition.&lt;/p&gt;
+
+&lt;p&gt;The main objective in using this approach is that I wanted to preserve the ‘consonant’ and ‘dissonant’ properties of text in the resulting melody. Words that don’t “go together” should produce strange sounding melodies, while words that we are used to seeing with each other should produce relatively boring, familiar melodic tropes.&lt;/p&gt;
+
+&lt;h2 id=&quot;assigning-pitches&quot;&gt;Assigning Pitches&lt;/h2&gt;
+
+&lt;p&gt;A pitch skeleton is constructed using all nouns and verbs in the input text. Each word is assigned a pitch again according to its cosine proximity to the medioid. This time the similarity is used to determine the consonance of the pitch within the given pitch set: highly similar tones are assigned pitches closer to the typical major or minor triad, while further out tones might receive the seventh, second, sixth, or fourth scale degrees.&lt;/p&gt;
+
+&lt;h2 id=&quot;assigning-rhythms&quot;&gt;Assigning Rhythms&lt;/h2&gt;
+
+&lt;p&gt;The parts of speech and syllable are used to generate rhythms in a relatively naive way. Conjunctions and articles are given short shrift, punctuation marks pauses, and longer words are given longer durations.&lt;/p&gt;
+
+&lt;h2 id=&quot;assigning-harmonies&quot;&gt;Assigning Harmonies&lt;/h2&gt;
+&lt;p&gt;The harmony engine just tries to find a relevant chord at each noun that matches as many of the pitches until the next noun as possible. The chord space follows a relatively basic T/TS =&amp;gt; PD/D =&amp;gt; D =&amp;gt; T/TS shape, which really helps set some of the stranger melodies in a functional harmonic context.&lt;/p&gt;
+
+&lt;h1 id=&quot;reflections&quot;&gt;Reflections&lt;/h1&gt;
+&lt;p&gt;Thanks to a good amount of time spent tweaking the specific rhythm rules and harmony rules, the output is relatively interesting and preserves some of the meter of common poem and sentence structures quite well. Although it was fun learning how to use word2vec and manipulate tfjs tensors, I am skeptical that this approach is the best in terms of preserving the somewhat subjective properties of text consonance or dissonance. A markov chain or other predictive structure might be the best structure here, as it would be able to preserve the “order” at which surprising pitches arise.&lt;/p&gt;</content><category term="itp" /><category term="code_of_music" /><category term="audio" /><summary type="html">Introduction</summary></entry><entry><title type="html">Visual Language - Logo</title><link href="/2019/10/09/visual-5.html" rel="alternate" type="text/html" title="Visual Language - Logo" /><published>2019-10-09T00:00:00-04:00</published><updated>2019-10-09T00:00:00-04:00</updated><id>/2019/10/09/visual-5</id><content type="html" xml:base="/2019/10/09/visual-5.html">&lt;p&gt;&lt;img src=&quot;/images/Logo.svg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;process&quot;&gt;Process&lt;/h1&gt;
 
@@ -232,13 +264,13 @@ void loop() {
 
 &lt;p&gt;Square &lt;img src=&quot;/images/vl/2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/amusements/sketches/face.html&quot;&gt;Face &lt;img src=&quot;https://media.giphy.com/media/VJNQ2DqBtAgi6lO6gw/giphy.gif&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/webmedia/sketches/face.html&quot;&gt;Face &lt;img src=&quot;https://media.giphy.com/media/VJNQ2DqBtAgi6lO6gw/giphy.gif&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/amusements/sketches/circles.html&quot;&gt;Circles &lt;img src=&quot;https://media.giphy.com/media/j6B9bHHFaHe6WnKMTf/giphy.gif&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/webmedia/sketches/circles.html&quot;&gt;Circles &lt;img src=&quot;https://media.giphy.com/media/j6B9bHHFaHe6WnKMTf/giphy.gif&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;)&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/amusements/sketches/type.html&quot;&gt;Type &lt;img src=&quot;https://media.giphy.com/media/kHBw68KBBvTtMHRYFv/giphy.gif&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/webmedia/sketches/type.html&quot;&gt;Type &lt;img src=&quot;https://media.giphy.com/media/kHBw68KBBvTtMHRYFv/giphy.gif&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/amusements/sketches/shatter.html&quot;&gt;Shatter &lt;img src=&quot;https://media.giphy.com/media/U3sk7GOrENoTgF0qyO/giphy.gif&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;</content><category term="itp" /><category term="visual_language" /><summary type="html">Bars</summary></entry><entry><title type="html">Physical Computing - Push Button Synthesizer</title><link href="/2019/09/24/pcomp-2.html" rel="alternate" type="text/html" title="Physical Computing - Push Button Synthesizer" /><published>2019-09-24T00:00:00-04:00</published><updated>2019-09-24T00:00:00-04:00</updated><id>/2019/09/24/pcomp-2</id><content type="html" xml:base="/2019/09/24/pcomp-2.html">&lt;p&gt;&lt;img src=&quot;/images/pcomp/synth1.jpg&quot; alt=&quot;gif&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/webmedia/sketches/shatter.html&quot;&gt;Shatter &lt;img src=&quot;https://media.giphy.com/media/U3sk7GOrENoTgF0qyO/giphy.gif&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;</content><category term="itp" /><category term="visual_language" /><summary type="html">Bars</summary></entry><entry><title type="html">Physical Computing - Push Button Synthesizer</title><link href="/2019/09/24/pcomp-2.html" rel="alternate" type="text/html" title="Physical Computing - Push Button Synthesizer" /><published>2019-09-24T00:00:00-04:00</published><updated>2019-09-24T00:00:00-04:00</updated><id>/2019/09/24/pcomp-2</id><content type="html" xml:base="/2019/09/24/pcomp-2.html">&lt;p&gt;&lt;img src=&quot;/images/pcomp/synth1.jpg&quot; alt=&quot;gif&quot; /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;basic-io-with-the-arduino-nano-33-iot&quot;&gt;Basic I/O with the Arduino Nano 33 IOT&lt;/h1&gt;
 &lt;p&gt;I started with wiring a push button and LED - the simplest form of Arduino I/O. The LED is connected to the D3 pin and the push button is wired to the D2 pin. I added a small resistor to the LED to ensure the 3.3V from the board doesn’t burn it out, and a larger 10K resistor from the D2 input pin to ground to ensure the pin has a stable connection to ground while still diverting power to the pin (instead of causing it to go straight to ground).&lt;/p&gt;
@@ -388,22 +420,4 @@ void loop() {
 
 &lt;p&gt;&lt;img src=&quot;/images/vl/anarchy.png&quot; alt=&quot;Anarchy&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/vl/nimby.png&quot; alt=&quot;Nimby&quot; /&gt;&lt;/p&gt;</content><category term="itp" /><category term="visual_language" /><summary type="html"></summary></entry><entry><title type="html">Video/Sound - 370 Jay St (Then) (A Soundwalk)</title><link href="/2019/09/18/video-sound-soundwalk.html" rel="alternate" type="text/html" title="Video/Sound - 370 Jay St (Then) (A Soundwalk)" /><published>2019-09-18T00:00:00-04:00</published><updated>2019-09-18T00:00:00-04:00</updated><id>/2019/09/18/video-sound-soundwalk</id><content type="html" xml:base="/2019/09/18/video-sound-soundwalk.html">&lt;h2 id=&quot;overview&quot;&gt;Overview&lt;/h2&gt;
-
-&lt;p&gt;Over the last two weeks Nick Krystal and I developed a soundwalk. Our main constraints were that the soundwalk should be located within our class building (370 Jay St) and be less than five minutes in length.&lt;/p&gt;
-
-&lt;h2 id=&quot;choosing-location&quot;&gt;Choosing Location&lt;/h2&gt;
-
-&lt;p&gt;Initially we wanted to focus on the elevators in the building. I’ve always been interested in spaces of transition (see &lt;a href=&quot;/project/2017/06/09/thoroughfare.html&quot;&gt;Thoroughfare&lt;/a&gt;). Locating a soundwalk within an elevator also had a somewhat deconstructionist feel to it, as one wouldn’t actually do much walking within an elevator. However, we realized that the elevators in this building were simply too fast - it took about twenty seconds to reach the top floor of the building - and too unpredictable, as other people entering and exiting could throw off the timing of the elevator’s position by ten or twenty seconds at a time.&lt;/p&gt;
-
-&lt;p&gt;We discovered the basement of the building through the freight elevator, and pivoted to locating our soundwak on the first basement level of the building. This area had an intensely creepy feeling, the gloss and tile of a much older building left abandoned, holes in floors, construction equipment, and graffiti everywhere. We aimed to focus our soundwalk on the unique property of this space - the fact that it was simultaneously a space belonging to the past and the future of 370 Jay St. The audio of the soundwalk focuses on echoes of the past: train cars, as the building used to be a junction point for the MTA; electrical hums, as the building then and now is being marketed and modeled as the vanguard of Technology in Brooklyn; and ghostly, mechanical ambience.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/370basement/1.jpg&quot; alt=&quot;1&quot; /&gt;
-&lt;img src=&quot;/images/370basement/2.jpg&quot; alt=&quot;1&quot; /&gt;
-&lt;img src=&quot;/images/370basement/3.jpg&quot; alt=&quot;1&quot; /&gt;
-&lt;img src=&quot;/images/370basement/4.jpg&quot; alt=&quot;1&quot; /&gt;
-&lt;img src=&quot;/images/370basement/5.jpg&quot; alt=&quot;1&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;We collected a series of primary sources describing the previous life of the building and assembled it into an accompanying packet of supplemental material. A map and directions for how to embark on the walk is also provided. You can download it &lt;a href=&quot;/docs/370JayWalkV4.pdf&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
-
-&lt;iframe width=&quot;100%&quot; height=&quot;300&quot; scrolling=&quot;no&quot; frameborder=&quot;no&quot; allow=&quot;autoplay&quot; src=&quot;https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/682975049&amp;amp;color=%23ff5500&amp;amp;auto_play=false&amp;amp;hide_related=false&amp;amp;show_comments=true&amp;amp;show_user=true&amp;amp;show_reposts=false&amp;amp;show_teaser=true&amp;amp;visual=true&quot;&gt;&lt;/iframe&gt;</content><category term="itp" /><category term="video_sound" /><category term="process" /><summary type="html">Overview</summary></entry></feed>
+&lt;p&gt;&lt;img src=&quot;/images/vl/nimby.png&quot; alt=&quot;Nimby&quot; /&gt;&lt;/p&gt;</content><category term="itp" /><category term="visual_language" /><summary type="html"></summary></entry></feed>
