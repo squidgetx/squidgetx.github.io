@@ -11,7 +11,7 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-  font: 200 14px/1.5 Futura, "Trebuchet MS", Helvetica, sans-serif;
+  font: 100 14px/1.5 Futura, "Trebuchet MS", Helvetica, sans-serif;
   color: #111511;
   background-color: white;
   -webkit-text-size-adjust: 100%;
@@ -61,7 +61,7 @@ li > ol {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 200; }
+  font-weight: 100; }
 
 .tag {
   background-color: #f2f7ed;
@@ -454,7 +454,7 @@ ul.nav {
     color: #099; }
 
 .post-content {
-  font-size: 16px; }
+  font-size: 14px; }
 
 .caption {
   margin-top: -2px; }
