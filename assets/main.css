@@ -296,6 +296,11 @@ ul.nav {
 .post-content {
   margin: 30px;
   font-size: 18px; }
+  .post-content h1 {
+    font-size: 48px; }
+    @media screen and (max-width: 1000px) {
+      .post-content h1 {
+        font-size: 32px; } }
   .post-content h2 {
     font-size: 32px; }
     @media screen and (max-width: 1000px) {

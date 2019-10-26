@@ -1,4 +1,84 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-10-25T13:06:17-04:00</updated><id>//</id><title type="html">Sylvan Zheng</title><subtitle></subtitle><entry><title type="html">Physical Computing - Missing Persons</title><link href="/2019/10/21/pcomp-midterm.html" rel="alternate" type="text/html" title="Physical Computing - Missing Persons" /><published>2019-10-21T00:00:00-04:00</published><updated>2019-10-21T00:00:00-04:00</updated><id>/2019/10/21/pcomp-midterm</id><content type="html" xml:base="/2019/10/21/pcomp-midterm.html">&lt;p&gt;&lt;img src=&quot;/images/pcomp/mp_overview.jpg&quot; alt=&quot;overview&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-10-26T13:20:35-04:00</updated><id>//</id><title type="html">Sylvan Zheng</title><subtitle></subtitle><entry><title type="html">THE VAN PROJECT - Choosing A Van</title><link href="/2019/10/26/van-build.html" rel="alternate" type="text/html" title="THE VAN PROJECT - Choosing A Van" /><published>2019-10-26T00:00:00-04:00</published><updated>2019-10-26T00:00:00-04:00</updated><id>/2019/10/26/van-build</id><content type="html" xml:base="/2019/10/26/van-build.html">&lt;p&gt;This is the first post in a series that serves as the primary documentation of how I purchased and converted a 2008 Dodge Sprinter Van to a full-time living space.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/van/van-KC.jpg&quot; alt=&quot;Van on I70, Kansas&quot; /&gt;
+&lt;em&gt;I-70, KS&lt;/em&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;high-roof-vs-low-roof&quot;&gt;High Roof vs Low Roof&lt;/h1&gt;
+
+&lt;p&gt;A high roof adds significant cost (around 5K), but reports from my research suggested it adds an immeasurable amount of comfort and livability. A high roof means you can stand up in the van - in these small spaces every additional allowance becomes highly meaningful. I didn’t want to have to crouch to change clothes, cook, or sleep with the roof mere inches from my face. It’s also important to note that my valuation comfort and livability was directly informed by the main uses I anticipated for the van. I planned to live in the van full time for as long as possible in a variety of environments including urban ones and so made the decision to focus on high roof options. However, if you were interested in primarily using the conversion van for extended recreational trips and not for full time living I would probably recommend considering a low roof, as these are 1. a lot less work to convert, and 2. much cheaper and easily available.&lt;/p&gt;
+
+&lt;p&gt;The following table summarizes the main high roof model options that were available in early 2019:&lt;/p&gt;
+
+&lt;table&gt;
+
+&lt;tr&gt;
+&lt;th&gt;Model&lt;/th&gt;
+&lt;th&gt;Year&lt;/th&gt;
+&lt;th&gt;Fuel&lt;/th&gt;
+&lt;th&gt;Used Price&lt;/th&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Sprinter T1N&lt;/td&gt;
+&lt;td&gt;1998-2006&lt;/td&gt;
+&lt;td&gt;Diesel (Non BluTec)&lt;/td&gt;
+&lt;td&gt;$8K&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Sprinter NCV3&lt;/td&gt;
+&lt;td&gt;2007-2008&lt;/td&gt;
+&lt;td&gt;Diesel (Non BluTec)&lt;/td&gt;
+&lt;td&gt;$10K&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Sprinter NCV3&lt;/td&gt;
+&lt;td&gt;2009-2018&lt;/td&gt;
+&lt;td&gt;Diesel (BluTec)&lt;/td&gt;
+&lt;td&gt;$15K&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Sprinter NCV3&lt;/td&gt;
+&lt;td&gt;2019-&lt;/td&gt;
+&lt;td&gt;Diesel (BluTec) and gasoline&lt;/td&gt;
+&lt;td&gt;N/A&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Dodge Ram Promaster&lt;/td&gt;
+&lt;td&gt;2015-&lt;/td&gt;
+&lt;td&gt;Gasoline&lt;/td&gt;
+&lt;td&gt;$15K&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Ford Transit&lt;/td&gt;
+&lt;td&gt;2015-&lt;/td&gt;
+&lt;td&gt;Gasoline&lt;/td&gt;
+&lt;td&gt;$20K&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Converted Chevrolet F-series&lt;/td&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;td&gt;Gasoline&lt;/td&gt;
+&lt;td&gt;$8K&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;/table&gt;
+
+&lt;p&gt;I specifically decided on a 2007 or 2008 Sprinter Van as my first choice model for this project. One reason is that the newer Sprinter models (2009 onward) are notorious for having a very delicate and expensive emissions system. The older Sprinters (pre 2006) are quite reliable - some users on Sprinter Source report odometer readings of over 500K miles with proper maintenance), however they reportedly drive less comfortably. In addition their average market price isn’t as diluted as you might expect. The newer van models (Promaster, Transit) are interesting but it’s not easy to find a good used deal, as they were only introduced to US markets a few years ago.&lt;/p&gt;
+
+&lt;h1 id=&quot;144wb-vs-170wb&quot;&gt;144WB vs 170WB&lt;/h1&gt;
+
+&lt;p&gt;The next major decision point is whether to go with a 144 inch wheelbase or 170 inch wheelbase. While the MSRP values are different, in practice I found that the two models were relatively equally priced on the used market. The main advantage of the 170WB option is obviously space - about two linear feet (12 square feet) of additional living area. The disadvantage is obviously maneuverability.&lt;/p&gt;
+
+&lt;p&gt;Since I was planning for a highly mixed use vanlife that might involve parking in densely populated areas I chose the 144WB option. Certainly the 170WB would be more comfortable - and if I knew I would be living out west roadtripping for a majority of my time I might have chosen the 170WB option. However, the 144WB model fits into a normal parking space - and this was something that I was able to take advantage of on a daily basis while living in and driving the van.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/van/van-AA.jpg&quot; alt=&quot;Van in Ann Arobor&quot; /&gt;
+&lt;em&gt;Parallel Parking in Ann Arbor, MI&lt;/em&gt;&lt;/p&gt;</content><category term="vanlife" /><summary type="html">This is the first post in a series that serves as the primary documentation of how I purchased and converted a 2008 Dodge Sprinter Van to a full-time living space.</summary></entry><entry><title type="html">Physical Computing - Missing Persons</title><link href="/2019/10/21/pcomp-midterm.html" rel="alternate" type="text/html" title="Physical Computing - Missing Persons" /><published>2019-10-21T00:00:00-04:00</published><updated>2019-10-21T00:00:00-04:00</updated><id>/2019/10/21/pcomp-midterm</id><content type="html" xml:base="/2019/10/21/pcomp-midterm.html">&lt;p&gt;&lt;img src=&quot;/images/pcomp/mp_overview.jpg&quot; alt=&quot;overview&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;Missing Persons&lt;/em&gt; is an interactive installation for a haunted house environment. Participants light candles at the base of a tombstone shrine to summon the spirits lurking within.&lt;/p&gt;
 
@@ -356,126 +436,4 @@ void loop() {
 
 &lt;p&gt;&lt;a href=&quot;/webmedia/sketches/type.html&quot;&gt;Type &lt;img src=&quot;https://media.giphy.com/media/kHBw68KBBvTtMHRYFv/giphy.gif&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/webmedia/sketches/shatter.html&quot;&gt;Shatter &lt;img src=&quot;https://media.giphy.com/media/U3sk7GOrENoTgF0qyO/giphy.gif&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;</content><category term="itp" /><category term="visual_language" /><summary type="html">Bars</summary></entry><entry><title type="html">Physical Computing - Push Button Synthesizer</title><link href="/2019/09/24/pcomp-2.html" rel="alternate" type="text/html" title="Physical Computing - Push Button Synthesizer" /><published>2019-09-24T00:00:00-04:00</published><updated>2019-09-24T00:00:00-04:00</updated><id>/2019/09/24/pcomp-2</id><content type="html" xml:base="/2019/09/24/pcomp-2.html">&lt;p&gt;&lt;img src=&quot;/images/pcomp/synth1.jpg&quot; alt=&quot;gif&quot; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;basic-io-with-the-arduino-nano-33-iot&quot;&gt;Basic I/O with the Arduino Nano 33 IOT&lt;/h1&gt;
-&lt;p&gt;I started with wiring a push button and LED - the simplest form of Arduino I/O. The LED is connected to the D3 pin and the push button is wired to the D2 pin. I added a small resistor to the LED to ensure the 3.3V from the board doesn’t burn it out, and a larger 10K resistor from the D2 input pin to ground to ensure the pin has a stable connection to ground while still diverting power to the pin (instead of causing it to go straight to ground).&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;void setup() {
-  pinMode(2, INPUT);
-  pinMode(3, OUTPUT);
-}
-
-void loop() {
-  digitalWrite(3, digitalRead(2));
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/ejJJwA9rjBNiLuGIb1/giphy.gif&quot; alt=&quot;gif&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;This setup doesn’t preserve state (the LED is only lit while the button is held).&lt;/p&gt;
-
-&lt;h1 id=&quot;using-analog-input&quot;&gt;Using analog input&lt;/h1&gt;
-&lt;p&gt;Next, I connected a potentiometer to the A0 input pin to dim the LED as the resistance changes (controlled by the pot).&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;void setup() {
-  pinMode(3, OUTPUT);
-}
-
-void loop() {
-  digitalWrite(3, analogRead(A0) / 4);
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/W5IcnzyBPgxGfZ08EW/giphy.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;pushbutton-synthesizer&quot;&gt;Pushbutton Synthesizer&lt;/h1&gt;
-&lt;p&gt;To challenge myself I set the goal of making a basic synthesizer. For bonus points, I wanted to control the notes by wiring several switches into a single analog input (instead of simply reading from multiple digital inputs). Although ultimately I only use four switches, this technique could potentially be useful in a situation where I want to process a ton of inputs without having to get multiple microprocessors. I came up with a circuit design where each of the four switches opens a path to skip an associated resistor. Each of the four resistors is approximately twice the resistance of the last - this way the sum of any group will be unique. This means that each arrangement of the four switches would translate to a specific resistance and specific analog in value, allowing for fifteen individual pitches.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/pcomp/sch.png&quot; alt=&quot;schematic&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;I had a lot of trouble getting the tone() command to work properly, until I realized that I needed to only call it when the frequency value changed (instead of repeatedly calling it with the same arguments every iteration of loop()). To accommodate this I added a simple state-tracking mechanism to only trigger if the last recorded frequency was different from before. I also added smoothing, averaging over the last 16 inputs in order to calm the signal which was quite noisy at the expense of barely noticeable latency.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;// Store a circular buffer of the last 16 reads
-// which we can then average to smooth the input signal
-const int n = 16;
-int values[n];
-int r_index = 0;
-float lastfreq = 0;
-
-int thresholds[15] = {
-570,
-585,
-600,
-625,
-647,
-669,
-690,
-720,
-745,
-775,
-801,
-850,
-880,
-925,
-960
-};
-
-float notes[15] = {
-  261.63, // D4
-  277.18,
-  293.66,
-  311.13,
-  329.63,
-  349.23,
-  369.99,
-  392.00,
-  415.30,
-  440.00, // A4
-  466.16,
-  493.88,
-  523.25,
-  554.37,
-  587.33
-};
-
-void setup() {
-  for (int i = 0; i &amp;lt; n; i++) {
-    values[i] = 0;
-  }
-}
-
-
-void loop() {
-    int val = analogRead(A0);
-    values[r_index] = val;
-    r_index++;
-    if (r_index &amp;gt;= n) {
-      r_index = 0;
-    }
-    int sum = 0;
-    for(int i = 0; i &amp;lt; n; i++) {
-      sum += values[i];
-    }
-
-    int newval = sum / n;
-    float freq = 0;
-    for(int i = 14; i &amp;gt;= 0; i--) {
-      if (newval &amp;gt; thresholds[i]) {
-        freq = notes[i];
-        break;
-      }
-    }
-    if (freq == 0 &amp;amp;&amp;amp; lastfreq != 0) {
-      noTone(12);
-      lastfreq = freq;
-    } else if (freq != lastfreq) {
-      tone(12, freq);
-      lastfreq = freq;
-    }
-    delay(1);
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;iframe title=&quot;vimeo-player&quot; src=&quot;https://player.vimeo.com/video/362367321&quot; width=&quot;640&quot; height=&quot;360&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><category term="itp" /><category term="physical_computing" /><category term="audio" /><summary type="html"></summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;/webmedia/sketches/shatter.html&quot;&gt;Shatter &lt;img src=&quot;https://media.giphy.com/media/U3sk7GOrENoTgF0qyO/giphy.gif&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;</content><category term="itp" /><category term="visual_language" /><summary type="html">Bars</summary></entry></feed>
