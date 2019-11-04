@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-11-04T12:34:54-05:00</updated><id>//</id><title type="html">Sylvan Zheng</title><subtitle></subtitle><entry><title type="html">Physical Computing - Final Project Ideation</title><link href="/2019/10/29/pcomp-final-ideation.html" rel="alternate" type="text/html" title="Physical Computing - Final Project Ideation" /><published>2019-10-29T00:00:00-04:00</published><updated>2019-10-29T00:00:00-04:00</updated><id>/2019/10/29/pcomp-final-ideation</id><content type="html" xml:base="/2019/10/29/pcomp-final-ideation.html">&lt;h1 id=&quot;themes&quot;&gt;Themes&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-11-04T12:35:24-05:00</updated><id>//</id><title type="html">Sylvan Zheng</title><subtitle></subtitle><entry><title type="html">Physical Computing - Final Project Ideation</title><link href="/2019/10/29/pcomp-final-ideation.html" rel="alternate" type="text/html" title="Physical Computing - Final Project Ideation" /><published>2019-10-29T00:00:00-04:00</published><updated>2019-10-29T00:00:00-04:00</updated><id>/2019/10/29/pcomp-final-ideation</id><content type="html" xml:base="/2019/10/29/pcomp-final-ideation.html">&lt;h1 id=&quot;themes&quot;&gt;Themes&lt;/h1&gt;
 
 &lt;p&gt;Notes on Form:&lt;/p&gt;
 &lt;ul&gt;
@@ -47,7 +47,63 @@
 
 &lt;p&gt;Maybe I could build two, with a male and female voice respectively.&lt;/p&gt;
 
-&lt;p&gt;Bonus points if I can figure out how to build this out of a material that looks like wood or acrylic but is actually soft and skin-like.&lt;/p&gt;</content><category term="itp" /><category term="physical_computing" /><summary type="html">Themes</summary></entry><entry><title type="html">THE VAN PROJECT - Choosing A Van</title><link href="/2019/10/26/van-build.html" rel="alternate" type="text/html" title="THE VAN PROJECT - Choosing A Van" /><published>2019-10-26T00:00:00-04:00</published><updated>2019-10-26T00:00:00-04:00</updated><id>/2019/10/26/van-build</id><content type="html" xml:base="/2019/10/26/van-build.html">&lt;p&gt;This is the first post in a series that serves as the primary documentation of how I purchased and converted a 2008 Dodge Sprinter Van to a full-time living space.&lt;/p&gt;
+&lt;p&gt;Bonus points if I can figure out how to build this out of a material that looks like wood or acrylic but is actually soft and skin-like.&lt;/p&gt;</content><category term="itp" /><category term="physical_computing" /><summary type="html">Themes</summary></entry><entry><title type="html">THE VAN PROJECT - Prep, Insulation &amp;amp; Rust Abatement</title><link href="/2019/10/26/van-build-2.html" rel="alternate" type="text/html" title="THE VAN PROJECT - Prep, Insulation &amp; Rust Abatement" /><published>2019-10-26T00:00:00-04:00</published><updated>2019-10-26T00:00:00-04:00</updated><id>/2019/10/26/van-build-2</id><content type="html" xml:base="/2019/10/26/van-build-2.html">&lt;p&gt;This is the second post in a &lt;a href=&quot;/tag/vanlife&quot;&gt;series&lt;/a&gt; that serves as the primary documentation of how I purchased and converted a 2008 Dodge Sprinter Van to a full-time living space.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/van/van-prep/van-ithaca.jpg&quot; alt=&quot;van in ithaca&quot; /&gt;
+&lt;em&gt;Ithaca, NY&lt;/em&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;insulation-1&quot;&gt;Insulation 1&lt;/h1&gt;
+
+&lt;p&gt;One of the first decisions a prospective van-converter has to make is whether or not, and what kind of insulation to use. Many hold the opinion that body heat alone isn’t enough to meaningfully warm the van since it’s so large, and opt to skip out on insulation. I have not lived in a comparable insulation-free environment, so I can’t comment necessarily on whether this is a wise decision.&lt;/p&gt;
+
+&lt;p&gt;The van I bought came with an open-cell spray foam treatment already done. Spray foam is one of the most intense insulation options - it’s messy, expensive, often requires professional help, but supposedly offers numerous benefits. Closed cell spray foam in particular is quite nice since it is waterproof and bonds seamlessly to the van walls, making it impossible for water to collect behind it and cause rust damage. Open cell spray foam on the other hand, is water permeable, and when I went to investigate I found a moderate amount of rust buildup along the bottom of the van chassis, where water presumably was able to collect in the sponge-like insulation.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/van/van-prep/overview.jpg&quot; alt=&quot;insulation overview&quot; /&gt;
+&lt;em&gt;Removing the wall panels to reveal the spray foam insulation&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Elena and I tore out the spray foam insulation all along the bottom of the van walls. Some of it was damp even though it had been quite dry over the past several days (gross!)&lt;/p&gt;
+
+&lt;h1 id=&quot;rust-abatement&quot;&gt;Rust Abatement&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/van/van-prep/rust-closeup1.jpg&quot; alt=&quot;rust&quot; /&gt;
+&lt;em&gt;Closeup shot of the rust near the floor&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Before I could replace the insulation with something better, I had to deal with the rust buildup that had taken place over the last years of the van’s previous life. I used a steel brush drill attachment, varying grades of sandpaper, and lots of elbow grease to break down all the rust spots I could find. The next phase was to clean and etch the bare steel with POR-15 cleaner and metal prep solution. Finally, I repainted using several coats of Rustoleum primer and gloss white paint. It’s not an exact match, but it’s very close and many of these areas will be covered in the future anyway.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/van/van-prep/rust-closeup2.jpg&quot; alt=&quot;rust&quot; /&gt;
+&lt;em&gt;Grinding down to rust-free steel&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/van/van-prep/insulation1.jpg&quot; alt=&quot;foam&quot; /&gt;
+&lt;em&gt;Lower foam torn out and rust spots primed&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/van/van-prep/insulation2.jpg&quot; alt=&quot;foam&quot; /&gt;
+&lt;em&gt;Good as new!&lt;/em&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;sliding-door-treatment&quot;&gt;Sliding Door Treatment&lt;/h1&gt;
+
+&lt;p&gt;One extreme peculiarity of the Sprinter vans is that the sliding door trim (the black plastic on the outside) is attached to the door with a set of simple plastic clips that do not form any kind of seal between the inside and outside of the van. Water leaks in through these clips and rusts out the door.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/van/van-prep/sliding-door1.jpg&quot; alt=&quot;door&quot; /&gt;
+&lt;em&gt;The door panel with the trim removed, mid-rust-grinding&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Another round of grinding, sanding, cleaning, and painting dealt with the small amount of rust that had begin so far. A butyl-rubber based sealant (silicone degrades steel over time), Tyvek tape, and a set of trim tools sealed up the clips and holes in the sliding door.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/van/van-prep/sliding-door2.jpg&quot; alt=&quot;door&quot; /&gt;
+&lt;em&gt;Priming the rust spots&lt;/em&gt;
+&lt;img src=&quot;/images/van/van-prep/sliding-door3.jpg&quot; alt=&quot;door&quot; /&gt;
+&lt;em&gt;Painted and sealed!&lt;/em&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;insulation-2&quot;&gt;Insulation 2&lt;/h1&gt;
+
+&lt;p&gt;Now that the van body was fully rust-abated and sealed it was time to consider my insulation options. I could either attempt to remove all of the remaining open cell foam and redo the insulation from scratch, or I could settle for removing the open cell foam in the most water-prone areas (the lower parts of the walls, where water is able to collect). I went for the latter option, as the open cell foam did do a decent job of insulating the van already and it would have been an insane amount of work to remove it. The water collection hazard should be mitigated well enough with a proper treatment of the now-uninsulated lower walls.&lt;/p&gt;
+
+&lt;p&gt;Many words have been spilled on other van build sites on the most appropriate insulation material. I wanted something that would not hold water and that had good heat retaining quality. Price was not as large a concern since I only had a small area that needed treatment. I went for 3M Thinsulate, which was (apart from needing a pair of very sharp scissors) quite easy to work with and install in all the remaining exposed areas of the van.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/van/van-prep/insulation3.jpg&quot; alt=&quot;foam&quot; /&gt;
+&lt;em&gt;Thinsulate in the sliding door&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/van/van-prep/insulation4.jpg&quot; alt=&quot;foam&quot; /&gt;
+&lt;em&gt;Thinsulate in the lower wall cavities&lt;/em&gt;&lt;/p&gt;</content><category term="vanlife" /><summary type="html">This is the second post in a series that serves as the primary documentation of how I purchased and converted a 2008 Dodge Sprinter Van to a full-time living space.</summary></entry><entry><title type="html">THE VAN PROJECT - Choosing A Van</title><link href="/2019/10/26/van-build.html" rel="alternate" type="text/html" title="THE VAN PROJECT - Choosing A Van" /><published>2019-10-26T00:00:00-04:00</published><updated>2019-10-26T00:00:00-04:00</updated><id>/2019/10/26/van-build</id><content type="html" xml:base="/2019/10/26/van-build.html">&lt;p&gt;This is the first post in a series that serves as the primary documentation of how I purchased and converted a 2008 Dodge Sprinter Van to a full-time living space.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/van/van-KC.jpg&quot; alt=&quot;Van on I70, Kansas&quot; /&gt;
 &lt;em&gt;I-70, KS&lt;/em&gt;&lt;/p&gt;
@@ -127,63 +183,7 @@
 &lt;p&gt;Since I was planning for a highly mixed use vanlife that might involve parking in densely populated areas I chose the 144WB option. Certainly the 170WB would be more comfortable - and if I knew I would be living out west roadtripping for a majority of my time I might have chosen the 170WB option. However, the 144WB model fits into a normal parking space - and this was something that I was able to take advantage of on a daily basis while living in and driving the van.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/van/van-AA.jpg&quot; alt=&quot;Van in Ann Arobor&quot; /&gt;
-&lt;em&gt;Parallel Parking in Ann Arbor, MI&lt;/em&gt;&lt;/p&gt;</content><category term="vanlife" /><summary type="html">This is the first post in a series that serves as the primary documentation of how I purchased and converted a 2008 Dodge Sprinter Van to a full-time living space.</summary></entry><entry><title type="html">THE VAN PROJECT - Prep, Insulation &amp;amp; Rust Abatement</title><link href="/2019/10/26/van-build-2.html" rel="alternate" type="text/html" title="THE VAN PROJECT - Prep, Insulation &amp; Rust Abatement" /><published>2019-10-26T00:00:00-04:00</published><updated>2019-10-26T00:00:00-04:00</updated><id>/2019/10/26/van-build-2</id><content type="html" xml:base="/2019/10/26/van-build-2.html">&lt;p&gt;This is the second post in a &lt;a href=&quot;/tag/vanlife&quot;&gt;series&lt;/a&gt; that serves as the primary documentation of how I purchased and converted a 2008 Dodge Sprinter Van to a full-time living space.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/van-prep/van-ithaca.jpg&quot; alt=&quot;van in ithaca&quot; /&gt;
-&lt;em&gt;Ithaca, NY&lt;/em&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;insulation-1&quot;&gt;Insulation 1&lt;/h1&gt;
-
-&lt;p&gt;One of the first decisions a prospective van-converter has to make is whether or not, and what kind of insulation to use. Many hold the opinion that body heat alone isn’t enough to meaningfully warm the van since it’s so large, and opt to skip out on insulation. I have not lived in a comparable insulation-free environment, so I can’t comment necessarily on whether this is a wise decision.&lt;/p&gt;
-
-&lt;p&gt;The van I bought came with an open-cell spray foam treatment already done. Spray foam is one of the most intense insulation options - it’s messy, expensive, often requires professional help, but supposedly offers numerous benefits. Closed cell spray foam in particular is quite nice since it is waterproof and bonds seamlessly to the van walls, making it impossible for water to collect behind it and cause rust damage. Open cell spray foam on the other hand, is water permeable, and when I went to investigate I found a moderate amount of rust buildup along the bottom of the van chassis, where water presumably was able to collect in the sponge-like insulation.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/van-prep/overview.jpg&quot; alt=&quot;insulation overview&quot; /&gt;
-&lt;em&gt;Removing the wall panels to reveal the spray foam insulation&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Elena and I tore out the spray foam insulation all along the bottom of the van walls. Some of it was damp even though it had been quite dry over the past several days (gross!)&lt;/p&gt;
-
-&lt;h1 id=&quot;rust-abatement&quot;&gt;Rust Abatement&lt;/h1&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/van-prep/rust-closeup1.jpg&quot; alt=&quot;rust&quot; /&gt;
-&lt;em&gt;Closeup shot of the rust near the floor&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Before I could replace the insulation with something better, I had to deal with the rust buildup that had taken place over the last years of the van’s previous life. I used a steel brush drill attachment, varying grades of sandpaper, and lots of elbow grease to break down all the rust spots I could find. The next phase was to clean and etch the bare steel with POR-15 cleaner and metal prep solution. Finally, I repainted using several coats of Rustoleum primer and gloss white paint. It’s not an exact match, but it’s very close and many of these areas will be covered in the future anyway.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/van-prep/rust-closeup2.jpg&quot; alt=&quot;rust&quot; /&gt;
-&lt;em&gt;Grinding down to rust-free steel&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/van-prep/insulation1.jpg&quot; alt=&quot;foam&quot; /&gt;
-&lt;em&gt;Lower foam torn out and rust spots primed&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/van-prep/insulation2.jpg&quot; alt=&quot;foam&quot; /&gt;
-&lt;em&gt;Good as new!&lt;/em&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;sliding-door-treatment&quot;&gt;Sliding Door Treatment&lt;/h1&gt;
-
-&lt;p&gt;One extreme peculiarity of the Sprinter vans is that the sliding door trim (the black plastic on the outside) is attached to the door with a set of simple plastic clips that do not form any kind of seal between the inside and outside of the van. Water leaks in through these clips and rusts out the door.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/van-prep/sliding-door1.jpg&quot; alt=&quot;door&quot; /&gt;
-&lt;em&gt;The door panel with the trim removed, mid-rust-grinding&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Another round of grinding, sanding, cleaning, and painting dealt with the small amount of rust that had begin so far. A butyl-rubber based sealant (silicone degrades steel over time), Tyvek tape, and a set of trim tools sealed up the clips and holes in the sliding door.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/van-prep/sliding-door2.jpg&quot; alt=&quot;door&quot; /&gt;
-&lt;em&gt;Priming the rust spots&lt;/em&gt;
-&lt;img src=&quot;/images/van/van-prep/sliding-door3.jpg&quot; alt=&quot;door&quot; /&gt;
-&lt;em&gt;Painted and sealed!&lt;/em&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;insulation-2&quot;&gt;Insulation 2&lt;/h1&gt;
-
-&lt;p&gt;Now that the van body was fully rust-abated and sealed it was time to consider my insulation options. I could either attempt to remove all of the remaining open cell foam and redo the insulation from scratch, or I could settle for removing the open cell foam in the most water-prone areas (the lower parts of the walls, where water is able to collect). I went for the latter option, as the open cell foam did do a decent job of insulating the van already and it would have been an insane amount of work to remove it. The water collection hazard should be mitigated well enough with a proper treatment of the now-uninsulated lower walls.&lt;/p&gt;
-
-&lt;p&gt;Many words have been spilled on other van build sites on the most appropriate insulation material. I wanted something that would not hold water and that had good heat retaining quality. Price was not as large a concern since I only had a small area that needed treatment. I went for 3M Thinsulate, which was (apart from needing a pair of very sharp scissors) quite easy to work with and install in all the remaining exposed areas of the van.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/van-prep/insulation3.jpg&quot; alt=&quot;foam&quot; /&gt;
-&lt;em&gt;Thinsulate in the sliding door&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/van-prep/insulation4.jpg&quot; alt=&quot;foam&quot; /&gt;
-&lt;em&gt;Thinsulate in the lower wall cavities&lt;/em&gt;&lt;/p&gt;</content><category term="vanlife" /><summary type="html">This is the second post in a series that serves as the primary documentation of how I purchased and converted a 2008 Dodge Sprinter Van to a full-time living space.</summary></entry><entry><title type="html">Physical Computing - Missing Persons</title><link href="/2019/10/21/pcomp-midterm.html" rel="alternate" type="text/html" title="Physical Computing - Missing Persons" /><published>2019-10-21T00:00:00-04:00</published><updated>2019-10-21T00:00:00-04:00</updated><id>/2019/10/21/pcomp-midterm</id><content type="html" xml:base="/2019/10/21/pcomp-midterm.html">&lt;p&gt;&lt;img src=&quot;/images/pcomp/mp_overview.jpg&quot; alt=&quot;overview&quot; /&gt;&lt;/p&gt;
+&lt;em&gt;Parallel Parking in Ann Arbor, MI&lt;/em&gt;&lt;/p&gt;</content><category term="vanlife" /><summary type="html">This is the first post in a series that serves as the primary documentation of how I purchased and converted a 2008 Dodge Sprinter Van to a full-time living space.</summary></entry><entry><title type="html">Physical Computing - Missing Persons</title><link href="/2019/10/21/pcomp-midterm.html" rel="alternate" type="text/html" title="Physical Computing - Missing Persons" /><published>2019-10-21T00:00:00-04:00</published><updated>2019-10-21T00:00:00-04:00</updated><id>/2019/10/21/pcomp-midterm</id><content type="html" xml:base="/2019/10/21/pcomp-midterm.html">&lt;p&gt;&lt;img src=&quot;/images/pcomp/mp_overview.jpg&quot; alt=&quot;overview&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;Missing Persons&lt;/em&gt; is an interactive installation for a haunted house environment. Participants light candles at the base of a tombstone shrine to summon the spirits lurking within.&lt;/p&gt;
 
