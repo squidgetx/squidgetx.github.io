@@ -1,7 +1,9 @@
 let t  = new Tone.Oscillator({frequency: 100}).start();
 let s = new Tone.Oscillator({frequency: 101}).start();
 
+let wf = new Tone.Waveform();
 function setup() {
+  createCanvas(1024, 100)
 }
 
 function mousePressed() {
@@ -9,6 +11,14 @@ function mousePressed() {
 }
 
 function draw() {
+  background(0);
+  let c = wf.getValue()
+  c.forEach((v, i) => {
+    fill(255)
+    stroke(255)
+    strokeWeight(5)
+    line(i, 50 + v * 40, i+1, 50 + c[i+1] * 40)
+  })
   s.frequency.value = mouseY;
   t.frequency.value = mouseX;
 }
@@ -37,6 +47,7 @@ function f() {
     return val - 0.5;
   })
   wrap.connect(wrap2);
+  wrap2.connect(wf)
   wrap2.toMaster();
 })
 }
