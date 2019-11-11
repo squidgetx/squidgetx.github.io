@@ -1,4 +1,65 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-11-09T18:08:41-05:00</updated><id>//</id><title type="html">Sylvan Zheng</title><subtitle></subtitle><entry><title type="html">THE VAN PROJECT - Storage, Table, Wardrobe</title><link href="/2019/11/09/van-build-6.html" rel="alternate" type="text/html" title="THE VAN PROJECT - Storage, Table, Wardrobe" /><published>2019-11-09T00:00:00-05:00</published><updated>2019-11-09T00:00:00-05:00</updated><id>/2019/11/09/van-build-6</id><content type="html" xml:base="/2019/11/09/van-build-6.html">&lt;p&gt;This is the sixth post in a &lt;a href=&quot;/tag/vanlife&quot;&gt;series&lt;/a&gt; that serves as the primary documentation of how I purchased and converted a 2008 Dodge Sprinter Van to a full-time living space.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-11-10T21:20:15-05:00</updated><id>//</id><title type="html">Sylvan Zheng</title><subtitle></subtitle><entry><title type="html">THE VAN PROJECT - Power</title><link href="/2019/11/09/van-build-7.html" rel="alternate" type="text/html" title="THE VAN PROJECT - Power" /><published>2019-11-09T00:00:00-05:00</published><updated>2019-11-09T00:00:00-05:00</updated><id>/2019/11/09/van-build-7</id><content type="html" xml:base="/2019/11/09/van-build-7.html">&lt;p&gt;This is the seventh post in a &lt;a href=&quot;/tag/vanlife&quot;&gt;series&lt;/a&gt; that serves as the primary documentation of how I purchased and converted a 2008 Dodge Sprinter Van to a full-time living space.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/van/electricity/solar1.jpg&quot; alt=&quot;&quot; /&gt;
+This was one of the most fun, satisfying, and expensive portions of the van build!&lt;/p&gt;
+
+&lt;h1 id=&quot;how-much-electricity&quot;&gt;How Much Electricity?&lt;/h1&gt;
+
+&lt;p&gt;I collected (roughly) the amount of electricity I planned to use in a day:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;4x0.3A lights for a few hours = 4.8Ah&lt;/li&gt;
+  &lt;li&gt;12 hours of 0.8A DC fridge = 10Ah&lt;/li&gt;
+  &lt;li&gt;A few hours of fan usage @ 1.2A = 5A&lt;/li&gt;
+  &lt;li&gt;Charging laptops and phones = 4A or so&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I came out with roughly 25Ah per day of power usage. This meant that with 200W of solar running at 50% efficiency (shade from buildings, cloudy days, etc.) I could expect to get about 200W*(8 hours) * 0.5/12V = 66 per day, which should be more than enough to cover all my electrical needs. For battery, I decided on a 100Ah AGM battery to provide two full days of offgrid power supply in the rare case that there would be no sun at all coming through the solar system.&lt;/p&gt;
+
+&lt;h1 id=&quot;wiring-it-together&quot;&gt;Wiring It Together&lt;/h1&gt;
+
+&lt;p&gt;The van’s electrical system is much easier to manage since it doesn’t need to handle any super-high current loads coming from an alternator or wall charger (I’m powering off of solar only). This means that 8-10AWG wire in short lengths is totally sufficient to handle the max of 20A coming from the solar charge controller.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/van/electricity/battery1.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;From the battery’s positive terminal I place a 20A fuse and battery switch inline before connecting it to the battery input of the solar charge controller. Load goes to the fusebox and PV goes to the solar panels all using 10AWG wire and mounted underneath the bed by the passenger side wheel well. The battery goes into a box made of 3/4” plywood bolted to the van floor L track. All high current wire connections are connected using heatshrink crimp terminals&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/van/electricity/fusebox.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;The van fusebox&lt;/em&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;mounting-the-solar-panels&quot;&gt;Mounting the Solar Panels&lt;/h1&gt;
+
+&lt;p&gt;I had to get creative to mount the solar panels on the roof of the van without paying an obscene amount of money for a custom roof rack solution. The primary challenge is that there needs to be a significant air gap beneath the solar panels, otherwise they can overheat and/or underperform.&lt;/p&gt;
+
+&lt;p&gt;I decided to use a length of L shaped 1/8” thick aluminum rod to mount the panels themselves to, and then mount these rails to a set of spacers I would fashion out of 1” square aluminum tubing using stainless steel quarter inch bolts. This worked beautifully but required a royal pain amount of drilling and hacksawing through aluminum. I overpaid for a set of mounting bolts, which were essentially pieces of steel that slid into the roof rack rails along with a set of flathead stainless carriage bolts.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/van/electricity/spacers.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;The aluminum spacers&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/van/electricity/solar2.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;Panels installed, mounted over the spacers&lt;/em&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;dimmer-lightswitch&quot;&gt;Dimmer Lightswitch&lt;/h1&gt;
+
+&lt;p&gt;It turns out that dimmers for DC light systems are very hard to come by. I went to an electronics and lighting supply store and explain my situation several times to the staff there before they understood what I was looking for. Now that I understand a little bit more about DC electricity it does kind of make sense - the naive implementation of using a variable resistor is really inefficient since the excess power is just getting dissipated as heat. A more sophisticated method uses PWM - something that AC circuits have available to play with. But not DC.&lt;/p&gt;
+
+&lt;p&gt;Once I had my overpriced DC dimmer switch in hand, I punched out an ugly hole in the wall by drillling several small holes (I had no hand jigsaw). Thankfully it would be covered up by the lightswitch wallplate.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/ch2iRuCo3Ifc2peS1j/giphy.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;And voila! The van has electricity!&lt;/p&gt;
+
+&lt;h1 id=&quot;inverter&quot;&gt;Inverter&lt;/h1&gt;
+
+&lt;p&gt;I later added a 600W pure sine wave inverter to the van’s power system. It’s powerful enough to run the corded jigsaw I bought off the van battery, but not so powerful that I’m at risk of damaging the electrical system or overloading the wiring. I wired it to a normal house outlet I bought at Home Depot by simply stripping the ends off an extension cord and attaching those leads to the house outlet leads. The inverter also comes with a remote switch control, which I mounted directly next to the AC outlet in the bedside cabinet.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/van/electricity/battery2.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;The electrical panel, rearranged to fit the inverter&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/van/electricity/inverter.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;Closeup of the AC outlet and inverter control panel, along with some extra electronics&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/van/furniture/seret-howto.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;Inside the cabinet&lt;/em&gt;&lt;/p&gt;</content><category term="vanlife" /><summary type="html">This is the seventh post in a series that serves as the primary documentation of how I purchased and converted a 2008 Dodge Sprinter Van to a full-time living space.</summary></entry><entry><title type="html">THE VAN PROJECT - Storage, Table, Wardrobe</title><link href="/2019/11/09/van-build-6.html" rel="alternate" type="text/html" title="THE VAN PROJECT - Storage, Table, Wardrobe" /><published>2019-11-09T00:00:00-05:00</published><updated>2019-11-09T00:00:00-05:00</updated><id>/2019/11/09/van-build-6</id><content type="html" xml:base="/2019/11/09/van-build-6.html">&lt;p&gt;This is the sixth post in a &lt;a href=&quot;/tag/vanlife&quot;&gt;series&lt;/a&gt; that serves as the primary documentation of how I purchased and converted a 2008 Dodge Sprinter Van to a full-time living space.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;#underbed-storage&quot;&gt;Underbed Storage&lt;/a&gt;&lt;/li&gt;
@@ -514,36 +575,4 @@ Your browser does not support the audio element.
 &lt;p&gt;I also composed the piano accompaniment!&lt;/p&gt;
 
 &lt;iframe src=&quot;https://player.vimeo.com/video/366647929&quot; width=&quot;640&quot; height=&quot;480&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;p&gt;&lt;a href=&quot;https://vimeo.com/366647929&quot;&gt;Machine Learning (Real Commercial)&lt;/a&gt; from &lt;a href=&quot;https://vimeo.com/user59873575&quot;&gt;Sylvan&lt;/a&gt; on &lt;a href=&quot;https://vimeo.com&quot;&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</content><category term="itp" /><category term="video_sound" /><summary type="html">Our group wrote, shot, directed, and edited a commercial for Machine Learning aimed at creative technologists.</summary></entry><entry><title type="html">Muse - Generating Music From Text</title><link href="/2019/10/14/code-of-music-muse-melody.html" rel="alternate" type="text/html" title="Muse - Generating Music From Text" /><published>2019-10-14T00:00:00-04:00</published><updated>2019-10-14T00:00:00-04:00</updated><id>/2019/10/14/code-of-music-muse-melody</id><content type="html" xml:base="/2019/10/14/code-of-music-muse-melody.html">&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&quot;/webmedia/muse/index.html&quot;&gt;Muse&lt;/a&gt; is a prototype of a text-to-music web application based on Tone.js, RiTa.js, and ML5.js. It attempts to use various features of user-provided input text to generate melodies and a basic harmonic accompaniment. It works best with inputs that resemble short pieces of poetry.&lt;/p&gt;
-
-&lt;p&gt;The full code can be found &lt;a href=&quot;https://github.com/squidgetx/squidgetx.github.io/blob/master/webmedia/muse/script.js&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
-
-&lt;iframe src=&quot;https://player.vimeo.com/video/366646170&quot; width=&quot;640&quot; height=&quot;480&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;p&gt;&lt;a href=&quot;https://vimeo.com/366646170&quot;&gt;Muse: Generating Music From Text&lt;/a&gt; from &lt;a href=&quot;https://vimeo.com/user59873575&quot;&gt;Sylvan&lt;/a&gt; on &lt;a href=&quot;https://vimeo.com&quot;&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h1 id=&quot;goals&quot;&gt;Goals&lt;/h1&gt;
-
-&lt;p&gt;I wanted to start incorporating more advanced statistical and machine learning concepts into my sound practice, and I thought that NLP would be a particularly rich domain to start with, as language encodes complexity that probably eclipses that of conventional musical arrangements. Lanuage, and particularly poetry however, has a rich tradition of conversational back and forth, which I noted in &lt;a href=&quot;/2019/10/09/code-of-music-melody.html&quot;&gt;my last entry on Frownland&lt;/a&gt; forms a durable backbone for melody.&lt;/p&gt;
-
-&lt;h1 id=&quot;inputs-and-outputs&quot;&gt;Inputs and Outputs&lt;/h1&gt;
-&lt;h2 id=&quot;pitch-set&quot;&gt;Pitch Set&lt;/h2&gt;
-
-&lt;p&gt;To begin with, each word in the input is given a word2vec vector representation. Next, the centroid is taken by averaging all non-article or symbol vectors. The medioid is found by taking the vector with the closest cosine proximity to the centroid. Cosine proximities with the medioid are assigned to all words. Finally, the resulting set of cosine proximities is converted to a pitch set by defining the pentatonic scale as “close tones”, the remaining major scale notes as “medium tones”, and the remaining 12 tones as “far tones” and then mapping the vector set onto that definition.&lt;/p&gt;
-
-&lt;p&gt;The main objective in using this approach is that I wanted to preserve the ‘consonant’ and ‘dissonant’ properties of text in the resulting melody. Words that don’t “go together” should produce strange sounding melodies, while words that we are used to seeing with each other should produce relatively boring, familiar melodic tropes.&lt;/p&gt;
-
-&lt;h2 id=&quot;assigning-pitches&quot;&gt;Assigning Pitches&lt;/h2&gt;
-
-&lt;p&gt;A pitch skeleton is constructed using all nouns and verbs in the input text. Each word is assigned a pitch again according to its cosine proximity to the medioid. This time the similarity is used to determine the consonance of the pitch within the given pitch set: highly similar tones are assigned pitches closer to the typical major or minor triad, while further out tones might receive the seventh, second, sixth, or fourth scale degrees.&lt;/p&gt;
-
-&lt;h2 id=&quot;assigning-rhythms&quot;&gt;Assigning Rhythms&lt;/h2&gt;
-
-&lt;p&gt;The parts of speech and syllable are used to generate rhythms in a relatively naive way. Conjunctions and articles are given short shrift, punctuation marks pauses, and longer words are given longer durations.&lt;/p&gt;
-
-&lt;h2 id=&quot;assigning-harmonies&quot;&gt;Assigning Harmonies&lt;/h2&gt;
-&lt;p&gt;The harmony engine just tries to find a relevant chord at each noun that matches as many of the pitches until the next noun as possible. The chord space follows a relatively basic T/TS =&amp;gt; PD/D =&amp;gt; D =&amp;gt; T/TS shape, which really helps set some of the stranger melodies in a functional harmonic context.&lt;/p&gt;
-
-&lt;h1 id=&quot;reflections&quot;&gt;Reflections&lt;/h1&gt;
-&lt;p&gt;Thanks to a good amount of time spent tweaking the specific rhythm rules and harmony rules, the output is relatively interesting and preserves some of the meter of common poem and sentence structures quite well. Although it was fun learning how to use word2vec and manipulate tfjs tensors, I am skeptical that this approach is the best in terms of preserving the somewhat subjective properties of text consonance or dissonance. A markov chain or other predictive structure might be the best structure here, as it would be able to preserve the “order” at which surprising pitches arise.&lt;/p&gt;</content><category term="itp" /><category term="code_of_music" /><category term="audio" /><summary type="html">Introduction</summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;https://vimeo.com/366647929&quot;&gt;Machine Learning (Real Commercial)&lt;/a&gt; from &lt;a href=&quot;https://vimeo.com/user59873575&quot;&gt;Sylvan&lt;/a&gt; on &lt;a href=&quot;https://vimeo.com&quot;&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</content><category term="itp" /><category term="video_sound" /><summary type="html">Our group wrote, shot, directed, and edited a commercial for Machine Learning aimed at creative technologists.</summary></entry></feed>
