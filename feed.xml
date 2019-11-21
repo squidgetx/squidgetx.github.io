@@ -1,4 +1,61 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://localhost:4000/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-11-21T10:43:36-05:00</updated><id>http://localhost:4000//</id><title type="html">Sylvan Zheng</title><subtitle></subtitle><entry><title type="html">THE VAN PROJECT - Kitchen (Part 2)</title><link href="http://localhost:4000/2019/11/20/van-build-9.html" rel="alternate" type="text/html" title="THE VAN PROJECT - Kitchen (Part 2)" /><published>2019-11-20T00:00:00-05:00</published><updated>2019-11-20T00:00:00-05:00</updated><id>http://localhost:4000/2019/11/20/van-build-9</id><content type="html" xml:base="http://localhost:4000/2019/11/20/van-build-9.html">&lt;p&gt;This is the ninth post in a &lt;a href=&quot;/tag/vanlife&quot;&gt;series&lt;/a&gt; that serves as the primary documentation of how I purchased and converted a 2008 Dodge Sprinter Van to a full-time living space.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-11-21T11:25:26-05:00</updated><id>//</id><title type="html">Sylvan Zheng</title><subtitle></subtitle><entry><title type="html">Tension - Interaction Analysis</title><link href="/2019/11/21/code-of-music-final-ideation.html" rel="alternate" type="text/html" title="Tension - Interaction Analysis" /><published>2019-11-21T00:00:00-05:00</published><updated>2019-11-21T00:00:00-05:00</updated><id>/2019/11/21/code-of-music-final-ideation</id><content type="html" xml:base="/2019/11/21/code-of-music-final-ideation.html">&lt;p&gt;&lt;em&gt;Tension&lt;/em&gt; is the working name of the interactive composition / performance tool I am building with Youngmin Choi for this semester’s Code of Music and Physical Computing final project. This post attempts to use some of the ideas from Bill Verplank’s &lt;a href=&quot;http://www.billverplank.com/IxDSketchBook.pdf&quot;&gt;interaction design sketchbook&lt;/a&gt; to analyze/refine the concept thus far.&lt;/p&gt;
+
+&lt;h1 id=&quot;idea&quot;&gt;IDEA&lt;/h1&gt;
+&lt;p&gt;The project has two main ideas that could be viewed as separate components. The first perspective is that of an interactive composition - a musical experience facilitated by the audience’s own physical interaction. The second perspective is that the project is a performance tool / instrument, and the composition is merely a demonstration of the tool’s capabilities. Of course, in reality the final product will be a mix of both - we will design the physical interface and its mappings with both use-cases in mind. Ideally it will be a tool suitable for use on stage as well as in an installation or demonstration setting.&lt;/p&gt;
+
+&lt;h1 id=&quot;error&quot;&gt;ERROR&lt;/h1&gt;
+&lt;p&gt;The motivation for the idea comes from perceived shortcomings in both modern musical interfaces and interactive musical experiences. If we go back to the &lt;em&gt;dimensions of musical interaction&lt;/em&gt; metaphor we see there are seven axes that a musical interface might exist on:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Role of Sound:&lt;/li&gt;
+  &lt;li&gt;Required Expertise:&lt;/li&gt;
+  &lt;li&gt;Musical Control:&lt;/li&gt;
+  &lt;li&gt;Degrees of Freedom:&lt;/li&gt;
+  &lt;li&gt;Feedback Modalities:&lt;/li&gt;
+  &lt;li&gt;Inter-cators:&lt;/li&gt;
+  &lt;li&gt;Distribution in Space:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I want to primarily focus on Musical Control, Degrees of Freedom, Feedback Modalities, since we are primarily concerned with &lt;em&gt;expressive sound&lt;/em&gt;, equired expertise is almost always &lt;em&gt;correlated with musical control/degrees of freedom,&lt;/em&gt; and distribution in space is typically stereo or single point origin for typical devices. I also will redefine degrees of freedom &lt;em&gt;as it relates&lt;/em&gt; to each component of musical control available, and redefine musical control to be a fixed set of categories including pitch, articulation, and timbre. Looking at some common realtime interfaces/instruments we can see that the overall space is incredibly poorly explored.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Violin: note/articulation level control, high degree of freedom. High level of haptic feedback.&lt;/li&gt;
+  &lt;li&gt;MIDI keyboard: note/articulation level control, moderate degree of freedom. Moderate level of haptic feedback, varying by specific brand&lt;/li&gt;
+  &lt;li&gt;Google Music Lab Experiments: note level control (no articulation usually). Low degree of freedom. Visual feedback&lt;/li&gt;
+  &lt;li&gt;GroovePizza: note level control (no articulation). Low degree of freedom, Visual Feedback&lt;/li&gt;
+  &lt;li&gt;Tonnetz: note/chord level control (no articulation). Moderate degree of freedom&lt;/li&gt;
+  &lt;li&gt;Music Video: song level control, incredibly low degree of freedom (on/off)&lt;/li&gt;
+  &lt;li&gt;DJ software: song level control, moderate degree of freedom&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The question for me motivating this experiment is whether we can create an interface whose musical control abstraction level in between note level and song level and simultaneously allows for a high level of freedom.&lt;/p&gt;
+
+&lt;h1 id=&quot;metaphor&quot;&gt;METAPHOR&lt;/h1&gt;
+&lt;p&gt;The primary metaphor is tension - the core of a musical story (or any story, for that matter) is tension and release, balance and imbalance, stability and instability. This metaphor will be realized physically with string/ropes that the user can control the tension of with their body.&lt;/p&gt;
+
+&lt;h1 id=&quot;scenario--model&quot;&gt;SCENARIO / MODEL&lt;/h1&gt;
+&lt;p&gt;The main scenario as described in IDEA is either a performance or installation space.&lt;/p&gt;
+
+&lt;p&gt;The model is that two participants/performers will be connected physically - each holding a handle connected by a rope or string. They will be able to physcally manipulate the level and character of the tension between them by pulling against each other, and thus indirectly manipulate the musical tension being articulated thorugh speakers and computer sound system placed in the performance/installation space&lt;/p&gt;
+
+&lt;h1 id=&quot;task&quot;&gt;TASK&lt;/h1&gt;
+&lt;ol&gt;
+  &lt;li&gt;Setup&lt;/li&gt;
+  &lt;li&gt;Explore&lt;/li&gt;
+  &lt;li&gt;Pull!&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;display&quot;&gt;DISPLAY&lt;/h1&gt;
+&lt;p&gt;The display needs some refinement, though we have narrowed the options somewhat. We know that for the installation setting we want to articulate the space in which the experimentation will take place, to encourage the participants to stand at the appropriate distance to create tension.&lt;/p&gt;
+
+&lt;p&gt;Current working models for display are:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Instrument simply positioned on a table in front of the demarcated space&lt;/li&gt;
+  &lt;li&gt;Each handle suspended in the air&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;control&quot;&gt;CONTROL&lt;/h1&gt;
+&lt;p&gt;See Scenario/Model&lt;/p&gt;</content><category term="itp" /><category term="code_of_music" /><category term="physical_computing" /><summary type="html">Tension is the working name of the interactive composition / performance tool I am building with Youngmin Choi for this semester’s Code of Music and Physical Computing final project. This post attempts to use some of the ideas from Bill Verplank’s interaction design sketchbook to analyze/refine the concept thus far.</summary></entry><entry><title type="html">THE VAN PROJECT - Kitchen (Part 2)</title><link href="/2019/11/20/van-build-9.html" rel="alternate" type="text/html" title="THE VAN PROJECT - Kitchen (Part 2)" /><published>2019-11-20T00:00:00-05:00</published><updated>2019-11-20T00:00:00-05:00</updated><id>/2019/11/20/van-build-9</id><content type="html" xml:base="/2019/11/20/van-build-9.html">&lt;p&gt;This is the ninth post in a &lt;a href=&quot;/tag/vanlife&quot;&gt;series&lt;/a&gt; that serves as the primary documentation of how I purchased and converted a 2008 Dodge Sprinter Van to a full-time living space.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/van/kitchen/kitchen1.jpg&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
 
@@ -54,7 +111,7 @@
 &lt;h1 id=&quot;finishing-touches&quot;&gt;Finishing Touches&lt;/h1&gt;
 
 &lt;p&gt;Magnetic spice/knife bars, mini corner mini-shelving, and some cork board add extra utility, storage, and personality to the kitchen area.
-&lt;img src=&quot;/images/van/kitchen/kitchen3.jpg&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;</content><category term="vanlife" /><summary type="html">This is the ninth post in a series that serves as the primary documentation of how I purchased and converted a 2008 Dodge Sprinter Van to a full-time living space.</summary></entry><entry><title type="html">THE VAN PROJECT - Kitchen (Part 1)</title><link href="http://localhost:4000/2019/11/17/van-build-8.html" rel="alternate" type="text/html" title="THE VAN PROJECT - Kitchen (Part 1)" /><published>2019-11-17T00:00:00-05:00</published><updated>2019-11-17T00:00:00-05:00</updated><id>http://localhost:4000/2019/11/17/van-build-8</id><content type="html" xml:base="http://localhost:4000/2019/11/17/van-build-8.html">&lt;p&gt;This is the eighth post in a &lt;a href=&quot;/tag/vanlife&quot;&gt;series&lt;/a&gt; that serves as the primary documentation of how I purchased and converted a 2008 Dodge Sprinter Van to a full-time living space.&lt;/p&gt;
+&lt;img src=&quot;/images/van/kitchen/kitchen3.jpg&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;</content><category term="vanlife" /><summary type="html">This is the ninth post in a series that serves as the primary documentation of how I purchased and converted a 2008 Dodge Sprinter Van to a full-time living space.</summary></entry><entry><title type="html">THE VAN PROJECT - Kitchen (Part 1)</title><link href="/2019/11/17/van-build-8.html" rel="alternate" type="text/html" title="THE VAN PROJECT - Kitchen (Part 1)" /><published>2019-11-17T00:00:00-05:00</published><updated>2019-11-17T00:00:00-05:00</updated><id>/2019/11/17/van-build-8</id><content type="html" xml:base="/2019/11/17/van-build-8.html">&lt;p&gt;This is the eighth post in a &lt;a href=&quot;/tag/vanlife&quot;&gt;series&lt;/a&gt; that serves as the primary documentation of how I purchased and converted a 2008 Dodge Sprinter Van to a full-time living space.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/van/kitchen/kitchen0.jpg&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
 
@@ -188,7 +245,7 @@
 &lt;em&gt;Stove and sink mounted&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/van/kitchen/cabinets2.jpg&quot; alt=&quot;img&quot; /&gt;
-&lt;em&gt;Countertop installed, cabinet fronts partially installed&lt;/em&gt;&lt;/p&gt;</content><category term="vanlife" /><summary type="html">This is the eighth post in a series that serves as the primary documentation of how I purchased and converted a 2008 Dodge Sprinter Van to a full-time living space.</summary></entry><entry><title type="html">THE VAN PROJECT - Power</title><link href="http://localhost:4000/2019/11/09/van-build-7.html" rel="alternate" type="text/html" title="THE VAN PROJECT - Power" /><published>2019-11-09T00:00:00-05:00</published><updated>2019-11-09T00:00:00-05:00</updated><id>http://localhost:4000/2019/11/09/van-build-7</id><content type="html" xml:base="http://localhost:4000/2019/11/09/van-build-7.html">&lt;p&gt;This is the seventh post in a &lt;a href=&quot;/tag/vanlife&quot;&gt;series&lt;/a&gt; that serves as the primary documentation of how I purchased and converted a 2008 Dodge Sprinter Van to a full-time living space.&lt;/p&gt;
+&lt;em&gt;Countertop installed, cabinet fronts partially installed&lt;/em&gt;&lt;/p&gt;</content><category term="vanlife" /><summary type="html">This is the eighth post in a series that serves as the primary documentation of how I purchased and converted a 2008 Dodge Sprinter Van to a full-time living space.</summary></entry><entry><title type="html">THE VAN PROJECT - Power</title><link href="/2019/11/09/van-build-7.html" rel="alternate" type="text/html" title="THE VAN PROJECT - Power" /><published>2019-11-09T00:00:00-05:00</published><updated>2019-11-09T00:00:00-05:00</updated><id>/2019/11/09/van-build-7</id><content type="html" xml:base="/2019/11/09/van-build-7.html">&lt;p&gt;This is the seventh post in a &lt;a href=&quot;/tag/vanlife&quot;&gt;series&lt;/a&gt; that serves as the primary documentation of how I purchased and converted a 2008 Dodge Sprinter Van to a full-time living space.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/van/electricity/solar1.jpg&quot; alt=&quot;&quot; /&gt;
 This was one of the most fun, satisfying, and expensive portions of the van build!&lt;/p&gt;
@@ -249,7 +306,7 @@ This was one of the most fun, satisfying, and expensive portions of the van buil
 &lt;em&gt;Closeup of the AC outlet and inverter control panel, along with some extra electronics&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/van/furniture/seret-howto.jpg&quot; alt=&quot;&quot; /&gt;
-&lt;em&gt;Inside the cabinet&lt;/em&gt;&lt;/p&gt;</content><category term="vanlife" /><summary type="html">This is the seventh post in a series that serves as the primary documentation of how I purchased and converted a 2008 Dodge Sprinter Van to a full-time living space.</summary></entry><entry><title type="html">THE VAN PROJECT - Storage, Table, Wardrobe</title><link href="http://localhost:4000/2019/11/09/van-build-6.html" rel="alternate" type="text/html" title="THE VAN PROJECT - Storage, Table, Wardrobe" /><published>2019-11-09T00:00:00-05:00</published><updated>2019-11-09T00:00:00-05:00</updated><id>http://localhost:4000/2019/11/09/van-build-6</id><content type="html" xml:base="http://localhost:4000/2019/11/09/van-build-6.html">&lt;p&gt;This is the sixth post in a &lt;a href=&quot;/tag/vanlife&quot;&gt;series&lt;/a&gt; that serves as the primary documentation of how I purchased and converted a 2008 Dodge Sprinter Van to a full-time living space.&lt;/p&gt;
+&lt;em&gt;Inside the cabinet&lt;/em&gt;&lt;/p&gt;</content><category term="vanlife" /><summary type="html">This is the seventh post in a series that serves as the primary documentation of how I purchased and converted a 2008 Dodge Sprinter Van to a full-time living space.</summary></entry><entry><title type="html">THE VAN PROJECT - Storage, Table, Wardrobe</title><link href="/2019/11/09/van-build-6.html" rel="alternate" type="text/html" title="THE VAN PROJECT - Storage, Table, Wardrobe" /><published>2019-11-09T00:00:00-05:00</published><updated>2019-11-09T00:00:00-05:00</updated><id>/2019/11/09/van-build-6</id><content type="html" xml:base="/2019/11/09/van-build-6.html">&lt;p&gt;This is the sixth post in a &lt;a href=&quot;/tag/vanlife&quot;&gt;series&lt;/a&gt; that serves as the primary documentation of how I purchased and converted a 2008 Dodge Sprinter Van to a full-time living space.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;#underbed-storage&quot;&gt;Underbed Storage&lt;/a&gt;&lt;/li&gt;
@@ -354,7 +411,7 @@ This was one of the most fun, satisfying, and expensive portions of the van buil
 
 &lt;h2 id=&quot;bookshelfnightstand&quot;&gt;Bookshelf/Nightstand&lt;/h2&gt;
 &lt;p&gt;I made a simple shelf for the remaining 18” of bedside table which is able to hold a few books and other nightstand items.
-&lt;img src=&quot;/images/van/furniture/bookshelf.jpg&quot; alt=&quot;cpt&quot; /&gt;&lt;/p&gt;</content><category term="vanlife" /><summary type="html">This is the sixth post in a series that serves as the primary documentation of how I purchased and converted a 2008 Dodge Sprinter Van to a full-time living space.</summary></entry><entry><title type="html">THE VAN PROJECT - Bed &amp;amp; Layout</title><link href="http://localhost:4000/2019/11/07/van-build-5.html" rel="alternate" type="text/html" title="THE VAN PROJECT - Bed &amp; Layout" /><published>2019-11-07T00:00:00-05:00</published><updated>2019-11-07T00:00:00-05:00</updated><id>http://localhost:4000/2019/11/07/van-build-5</id><content type="html" xml:base="http://localhost:4000/2019/11/07/van-build-5.html">&lt;p&gt;This is the fifth post in a &lt;a href=&quot;/tag/vanlife&quot;&gt;series&lt;/a&gt; that serves as the primary documentation of how I purchased and converted a 2008 Dodge Sprinter Van to a full-time living space.&lt;/p&gt;
+&lt;img src=&quot;/images/van/furniture/bookshelf.jpg&quot; alt=&quot;cpt&quot; /&gt;&lt;/p&gt;</content><category term="vanlife" /><summary type="html">This is the sixth post in a series that serves as the primary documentation of how I purchased and converted a 2008 Dodge Sprinter Van to a full-time living space.</summary></entry><entry><title type="html">THE VAN PROJECT - Bed &amp;amp; Layout</title><link href="/2019/11/07/van-build-5.html" rel="alternate" type="text/html" title="THE VAN PROJECT - Bed &amp; Layout" /><published>2019-11-07T00:00:00-05:00</published><updated>2019-11-07T00:00:00-05:00</updated><id>/2019/11/07/van-build-5</id><content type="html" xml:base="/2019/11/07/van-build-5.html">&lt;p&gt;This is the fifth post in a &lt;a href=&quot;/tag/vanlife&quot;&gt;series&lt;/a&gt; that serves as the primary documentation of how I purchased and converted a 2008 Dodge Sprinter Van to a full-time living space.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/van/van-CA.jpg&quot; alt=&quot;van in cali&quot; /&gt;
 &lt;em&gt;Menlo Park, CA. Spotting a fellow vanlifer in the parking lot at work…&lt;/em&gt;&lt;/p&gt;
@@ -399,7 +456,7 @@ This was one of the most fun, satisfying, and expensive portions of the van buil
 
 &lt;p&gt;I ordered a 6” foam mattress on Amazon and used a bread knife to cut it to the necessary 50” width. I also cut it across into two pieces so that it could fold easily when the bed frame is in closed mode and sewed a custom cover for the extra mattress piece using upholstery fabric&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/van/bed/upholstery.jpg&quot; alt=&quot;frame&quot; /&gt;&lt;/p&gt;</content><category term="vanlife" /><summary type="html">This is the fifth post in a series that serves as the primary documentation of how I purchased and converted a 2008 Dodge Sprinter Van to a full-time living space.</summary></entry><entry><title type="html">THE VAN PROJECT - Floor</title><link href="http://localhost:4000/2019/11/06/van-build-4.html" rel="alternate" type="text/html" title="THE VAN PROJECT - Floor" /><published>2019-11-06T00:00:00-05:00</published><updated>2019-11-06T00:00:00-05:00</updated><id>http://localhost:4000/2019/11/06/van-build-4</id><content type="html" xml:base="http://localhost:4000/2019/11/06/van-build-4.html">&lt;p&gt;This is the fourth post in a &lt;a href=&quot;/tag/vanlife&quot;&gt;series&lt;/a&gt; that serves as the primary documentation of how I purchased and converted a 2008 Dodge Sprinter Van to a full-time living space.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/van/bed/upholstery.jpg&quot; alt=&quot;frame&quot; /&gt;&lt;/p&gt;</content><category term="vanlife" /><summary type="html">This is the fifth post in a series that serves as the primary documentation of how I purchased and converted a 2008 Dodge Sprinter Van to a full-time living space.</summary></entry><entry><title type="html">THE VAN PROJECT - Floor</title><link href="/2019/11/06/van-build-4.html" rel="alternate" type="text/html" title="THE VAN PROJECT - Floor" /><published>2019-11-06T00:00:00-05:00</published><updated>2019-11-06T00:00:00-05:00</updated><id>/2019/11/06/van-build-4</id><content type="html" xml:base="/2019/11/06/van-build-4.html">&lt;p&gt;This is the fourth post in a &lt;a href=&quot;/tag/vanlife&quot;&gt;series&lt;/a&gt; that serves as the primary documentation of how I purchased and converted a 2008 Dodge Sprinter Van to a full-time living space.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/van/van-UT.jpg&quot; alt=&quot;van in ithaca&quot; /&gt;
 &lt;em&gt;Salt Lake City, UT&lt;/em&gt;&lt;/p&gt;
@@ -424,7 +481,7 @@ This was one of the most fun, satisfying, and expensive portions of the van buil
 &lt;p&gt;Cutting the vinyl with a utility knife and laying down was surprisingly easy and took less than a few hours to completely finish. With the walls, floor, and ceiling completed the van really started to feel like a room rather than a vehicle.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/van/floor/floor2.jpg&quot; alt=&quot;retainer&quot; /&gt;
-&lt;img src=&quot;/images/van/floor/floor3.jpg&quot; alt=&quot;retainer&quot; /&gt;&lt;/p&gt;</content><category term="vanlife" /><summary type="html">This is the fourth post in a series that serves as the primary documentation of how I purchased and converted a 2008 Dodge Sprinter Van to a full-time living space.</summary></entry><entry><title type="html">THE VAN PROJECT - Walls and Ceiling</title><link href="http://localhost:4000/2019/11/05/van-build-3.html" rel="alternate" type="text/html" title="THE VAN PROJECT - Walls and Ceiling" /><published>2019-11-05T00:00:00-05:00</published><updated>2019-11-05T00:00:00-05:00</updated><id>http://localhost:4000/2019/11/05/van-build-3</id><content type="html" xml:base="http://localhost:4000/2019/11/05/van-build-3.html">&lt;p&gt;This is the third post in a &lt;a href=&quot;/tag/vanlife&quot;&gt;series&lt;/a&gt; that serves as the primary documentation of how I purchased and converted a 2008 Dodge Sprinter Van to a full-time living space.&lt;/p&gt;
+&lt;img src=&quot;/images/van/floor/floor3.jpg&quot; alt=&quot;retainer&quot; /&gt;&lt;/p&gt;</content><category term="vanlife" /><summary type="html">This is the fourth post in a series that serves as the primary documentation of how I purchased and converted a 2008 Dodge Sprinter Van to a full-time living space.</summary></entry><entry><title type="html">THE VAN PROJECT - Walls and Ceiling</title><link href="/2019/11/05/van-build-3.html" rel="alternate" type="text/html" title="THE VAN PROJECT - Walls and Ceiling" /><published>2019-11-05T00:00:00-05:00</published><updated>2019-11-05T00:00:00-05:00</updated><id>/2019/11/05/van-build-3</id><content type="html" xml:base="/2019/11/05/van-build-3.html">&lt;p&gt;This is the third post in a &lt;a href=&quot;/tag/vanlife&quot;&gt;series&lt;/a&gt; that serves as the primary documentation of how I purchased and converted a 2008 Dodge Sprinter Van to a full-time living space.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/van/van-CO.jpg&quot; alt=&quot;van in ithaca&quot; /&gt;
 &lt;em&gt;Vail, CO&lt;/em&gt;&lt;/p&gt;
@@ -494,7 +551,7 @@ This was one of the most fun, satisfying, and expensive portions of the van buil
 &lt;h2 id=&quot;finished-ceiling&quot;&gt;Finished Ceiling&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&quot;/images/van/ceiling/ceiling-finished.jpg&quot; alt=&quot;walls&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/van/ceiling/ceiling-finished2.jpg&quot; alt=&quot;walls&quot; /&gt;&lt;/p&gt;</content><category term="vanlife" /><summary type="html">This is the third post in a series that serves as the primary documentation of how I purchased and converted a 2008 Dodge Sprinter Van to a full-time living space.</summary></entry><entry><title type="html">THE VAN PROJECT - Prep, Insulation &amp;amp; Rust Abatement</title><link href="http://localhost:4000/2019/11/04/van-build-2.html" rel="alternate" type="text/html" title="THE VAN PROJECT - Prep, Insulation &amp; Rust Abatement" /><published>2019-11-04T00:00:00-05:00</published><updated>2019-11-04T00:00:00-05:00</updated><id>http://localhost:4000/2019/11/04/van-build-2</id><content type="html" xml:base="http://localhost:4000/2019/11/04/van-build-2.html">&lt;p&gt;This is the second post in a &lt;a href=&quot;/tag/vanlife&quot;&gt;series&lt;/a&gt; that serves as the primary documentation of how I purchased and converted a 2008 Dodge Sprinter Van to a full-time living space.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/van/ceiling/ceiling-finished2.jpg&quot; alt=&quot;walls&quot; /&gt;&lt;/p&gt;</content><category term="vanlife" /><summary type="html">This is the third post in a series that serves as the primary documentation of how I purchased and converted a 2008 Dodge Sprinter Van to a full-time living space.</summary></entry><entry><title type="html">THE VAN PROJECT - Prep, Insulation &amp;amp; Rust Abatement</title><link href="/2019/11/04/van-build-2.html" rel="alternate" type="text/html" title="THE VAN PROJECT - Prep, Insulation &amp; Rust Abatement" /><published>2019-11-04T00:00:00-05:00</published><updated>2019-11-04T00:00:00-05:00</updated><id>/2019/11/04/van-build-2</id><content type="html" xml:base="/2019/11/04/van-build-2.html">&lt;p&gt;This is the second post in a &lt;a href=&quot;/tag/vanlife&quot;&gt;series&lt;/a&gt; that serves as the primary documentation of how I purchased and converted a 2008 Dodge Sprinter Van to a full-time living space.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/van/van-prep/van-ithaca.jpg&quot; alt=&quot;van in ithaca&quot; /&gt;
 &lt;em&gt;Ithaca, NY&lt;/em&gt;&lt;/p&gt;
@@ -550,7 +607,7 @@ This was one of the most fun, satisfying, and expensive portions of the van buil
 &lt;em&gt;Thinsulate in the sliding door&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/van/van-prep/insulation4.jpg&quot; alt=&quot;foam&quot; /&gt;
-&lt;em&gt;Thinsulate in the lower wall cavities&lt;/em&gt;&lt;/p&gt;</content><category term="vanlife" /><summary type="html">This is the second post in a series that serves as the primary documentation of how I purchased and converted a 2008 Dodge Sprinter Van to a full-time living space.</summary></entry><entry><title type="html">Physical Computing - Final Project Ideation</title><link href="http://localhost:4000/2019/10/29/pcomp-final-ideation.html" rel="alternate" type="text/html" title="Physical Computing - Final Project Ideation" /><published>2019-10-29T00:00:00-04:00</published><updated>2019-10-29T00:00:00-04:00</updated><id>http://localhost:4000/2019/10/29/pcomp-final-ideation</id><content type="html" xml:base="http://localhost:4000/2019/10/29/pcomp-final-ideation.html">&lt;h1 id=&quot;themes&quot;&gt;Themes&lt;/h1&gt;
+&lt;em&gt;Thinsulate in the lower wall cavities&lt;/em&gt;&lt;/p&gt;</content><category term="vanlife" /><summary type="html">This is the second post in a series that serves as the primary documentation of how I purchased and converted a 2008 Dodge Sprinter Van to a full-time living space.</summary></entry><entry><title type="html">Physical Computing - Final Project Ideation</title><link href="/2019/10/29/pcomp-final-ideation.html" rel="alternate" type="text/html" title="Physical Computing - Final Project Ideation" /><published>2019-10-29T00:00:00-04:00</published><updated>2019-10-29T00:00:00-04:00</updated><id>/2019/10/29/pcomp-final-ideation</id><content type="html" xml:base="/2019/10/29/pcomp-final-ideation.html">&lt;h1 id=&quot;themes&quot;&gt;Themes&lt;/h1&gt;
 
 &lt;p&gt;Notes on Form:&lt;/p&gt;
 &lt;ul&gt;
@@ -599,84 +656,4 @@ This was one of the most fun, satisfying, and expensive portions of the van buil
 
 &lt;p&gt;Maybe I could build two, with a male and female voice respectively.&lt;/p&gt;
 
-&lt;p&gt;Bonus points if I can figure out how to build this out of a material that looks like wood or acrylic but is actually soft and skin-like.&lt;/p&gt;</content><category term="itp" /><category term="physical_computing" /><summary type="html">Themes</summary></entry><entry><title type="html">THE VAN PROJECT - Choosing A Van</title><link href="http://localhost:4000/2019/10/26/van-build.html" rel="alternate" type="text/html" title="THE VAN PROJECT - Choosing A Van" /><published>2019-10-26T00:00:00-04:00</published><updated>2019-10-26T00:00:00-04:00</updated><id>http://localhost:4000/2019/10/26/van-build</id><content type="html" xml:base="http://localhost:4000/2019/10/26/van-build.html">&lt;p&gt;This is the first post in a series that serves as the primary documentation of how I purchased and converted a 2008 Dodge Sprinter Van to a full-time living space.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/van-KC.jpg&quot; alt=&quot;Van on I70, Kansas&quot; /&gt;
-&lt;em&gt;I-70, KS&lt;/em&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;high-roof-vs-low-roof&quot;&gt;High Roof vs Low Roof&lt;/h1&gt;
-
-&lt;p&gt;A high roof adds significant cost (around 5K), but reports from my research suggested it adds an immeasurable amount of comfort and livability. A high roof means you can stand up in the van - in these small spaces every additional allowance becomes highly meaningful. I didn’t want to have to crouch to change clothes, cook, or sleep with the roof mere inches from my face. It’s also important to note that my valuation comfort and livability was directly informed by the main uses I anticipated for the van. I planned to live in the van full time for as long as possible in a variety of environments including urban ones and so made the decision to focus on high roof options. However, if you were interested in primarily using the conversion van for extended recreational trips and not for full time living I would probably recommend considering a low roof, as these are 1. a lot less work to convert, and 2. much cheaper and easily available.&lt;/p&gt;
-
-&lt;p&gt;The following table summarizes the main high roof model options that were available in early 2019:&lt;/p&gt;
-
-&lt;table&gt;
-
-&lt;tr&gt;
-&lt;th&gt;Model&lt;/th&gt;
-&lt;th&gt;Year&lt;/th&gt;
-&lt;th&gt;Fuel&lt;/th&gt;
-&lt;th&gt;Used Price&lt;/th&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;Sprinter T1N&lt;/td&gt;
-&lt;td&gt;1998-2006&lt;/td&gt;
-&lt;td&gt;Diesel (Non BluTec)&lt;/td&gt;
-&lt;td&gt;$8K&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;Sprinter NCV3&lt;/td&gt;
-&lt;td&gt;2007-2008&lt;/td&gt;
-&lt;td&gt;Diesel (Non BluTec)&lt;/td&gt;
-&lt;td&gt;$10K&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;Sprinter NCV3&lt;/td&gt;
-&lt;td&gt;2009-2018&lt;/td&gt;
-&lt;td&gt;Diesel (BluTec)&lt;/td&gt;
-&lt;td&gt;$15K&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;Sprinter NCV3&lt;/td&gt;
-&lt;td&gt;2019-&lt;/td&gt;
-&lt;td&gt;Diesel (BluTec) and gasoline&lt;/td&gt;
-&lt;td&gt;N/A&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;Dodge Ram Promaster&lt;/td&gt;
-&lt;td&gt;2015-&lt;/td&gt;
-&lt;td&gt;Gasoline&lt;/td&gt;
-&lt;td&gt;$15K&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;Ford Transit&lt;/td&gt;
-&lt;td&gt;2015-&lt;/td&gt;
-&lt;td&gt;Gasoline&lt;/td&gt;
-&lt;td&gt;$20K&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;Converted Chevrolet F-series&lt;/td&gt;
-&lt;td&gt;-&lt;/td&gt;
-&lt;td&gt;Gasoline&lt;/td&gt;
-&lt;td&gt;$8K&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;/table&gt;
-
-&lt;p&gt;I specifically decided on a 2007 or 2008 Sprinter Van as my first choice model for this project. One reason is that the newer Sprinter models (2009 onward) are notorious for having a very delicate and expensive emissions system. The older Sprinters (pre 2006) are quite reliable - some users on Sprinter Source report odometer readings of over 500K miles with proper maintenance), however they reportedly drive less comfortably. In addition their average market price isn’t as diluted as you might expect. The newer van models (Promaster, Transit) are interesting but it’s not easy to find a good used deal, as they were only introduced to US markets a few years ago.&lt;/p&gt;
-
-&lt;h1 id=&quot;144wb-vs-170wb&quot;&gt;144WB vs 170WB&lt;/h1&gt;
-
-&lt;p&gt;The next major decision point is whether to go with a 144 inch wheelbase or 170 inch wheelbase. While the MSRP values are different, in practice I found that the two models were relatively equally priced on the used market. The main advantage of the 170WB option is obviously space - about two linear feet (12 square feet) of additional living area. The disadvantage is obviously maneuverability.&lt;/p&gt;
-
-&lt;p&gt;Since I was planning for a highly mixed use vanlife that might involve parking in densely populated areas I chose the 144WB option. Certainly the 170WB would be more comfortable - and if I knew I would be living out west roadtripping for a majority of my time I might have chosen the 170WB option. However, the 144WB model fits into a normal parking space - and this was something that I was able to take advantage of on a daily basis while living in and driving the van.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/van-AA.jpg&quot; alt=&quot;Van in Ann Arobor&quot; /&gt;
-&lt;em&gt;Parallel Parking in Ann Arbor, MI&lt;/em&gt;&lt;/p&gt;</content><category term="vanlife" /><summary type="html">This is the first post in a series that serves as the primary documentation of how I purchased and converted a 2008 Dodge Sprinter Van to a full-time living space.</summary></entry></feed>
+&lt;p&gt;Bonus points if I can figure out how to build this out of a material that looks like wood or acrylic but is actually soft and skin-like.&lt;/p&gt;</content><category term="itp" /><category term="physical_computing" /><summary type="html">Themes</summary></entry></feed>
