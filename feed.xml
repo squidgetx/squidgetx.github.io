@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-11-21T11:25:26-05:00</updated><id>//</id><title type="html">Sylvan Zheng</title><subtitle></subtitle><entry><title type="html">Tension - Interaction Analysis</title><link href="/2019/11/21/code-of-music-final-ideation.html" rel="alternate" type="text/html" title="Tension - Interaction Analysis" /><published>2019-11-21T00:00:00-05:00</published><updated>2019-11-21T00:00:00-05:00</updated><id>/2019/11/21/code-of-music-final-ideation</id><content type="html" xml:base="/2019/11/21/code-of-music-final-ideation.html">&lt;p&gt;&lt;em&gt;Tension&lt;/em&gt; is the working name of the interactive composition / performance tool I am building with Youngmin Choi for this semester’s Code of Music and Physical Computing final project. This post attempts to use some of the ideas from Bill Verplank’s &lt;a href=&quot;http://www.billverplank.com/IxDSketchBook.pdf&quot;&gt;interaction design sketchbook&lt;/a&gt; to analyze/refine the concept thus far.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-12-11T21:32:08-05:00</updated><id>//</id><title type="html">Sylvan Zheng</title><subtitle></subtitle><entry><title type="html">Chordal Distance</title><link href="/2019/11/21/chordal-distance.html" rel="alternate" type="text/html" title="Chordal Distance" /><published>2019-11-21T00:00:00-05:00</published><updated>2019-11-21T00:00:00-05:00</updated><id>/2019/11/21/chordal-distance</id><content type="html" xml:base="/2019/11/21/chordal-distance.html"></content><category term="itp" /><category term="code_of_music" /><category term="physical_computing" /><summary type="html"></summary></entry><entry><title type="html">Tension - Interaction Analysis</title><link href="/2019/11/21/code-of-music-final-ideation.html" rel="alternate" type="text/html" title="Tension - Interaction Analysis" /><published>2019-11-21T00:00:00-05:00</published><updated>2019-11-21T00:00:00-05:00</updated><id>/2019/11/21/code-of-music-final-ideation</id><content type="html" xml:base="/2019/11/21/code-of-music-final-ideation.html">&lt;p&gt;&lt;em&gt;Tension&lt;/em&gt; is the working name of the interactive composition / performance tool I am building with Youngmin Choi for this semester’s Code of Music and Physical Computing final project. This post attempts to use some of the ideas from Bill Verplank’s &lt;a href=&quot;http://www.billverplank.com/IxDSketchBook.pdf&quot;&gt;interaction design sketchbook&lt;/a&gt; to analyze/refine the concept thus far.&lt;/p&gt;
 
 &lt;h1 id=&quot;idea&quot;&gt;IDEA&lt;/h1&gt;
 &lt;p&gt;The project has two main ideas that could be viewed as separate components. The first perspective is that of an interactive composition - a musical experience facilitated by the audience’s own physical interaction. The second perspective is that the project is a performance tool / instrument, and the composition is merely a demonstration of the tool’s capabilities. Of course, in reality the final product will be a mix of both - we will design the physical interface and its mappings with both use-cases in mind. Ideally it will be a tool suitable for use on stage as well as in an installation or demonstration setting.&lt;/p&gt;
@@ -607,53 +607,4 @@ This was one of the most fun, satisfying, and expensive portions of the van buil
 &lt;em&gt;Thinsulate in the sliding door&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/van/van-prep/insulation4.jpg&quot; alt=&quot;foam&quot; /&gt;
-&lt;em&gt;Thinsulate in the lower wall cavities&lt;/em&gt;&lt;/p&gt;</content><category term="vanlife" /><summary type="html">This is the second post in a series that serves as the primary documentation of how I purchased and converted a 2008 Dodge Sprinter Van to a full-time living space.</summary></entry><entry><title type="html">Physical Computing - Final Project Ideation</title><link href="/2019/10/29/pcomp-final-ideation.html" rel="alternate" type="text/html" title="Physical Computing - Final Project Ideation" /><published>2019-10-29T00:00:00-04:00</published><updated>2019-10-29T00:00:00-04:00</updated><id>/2019/10/29/pcomp-final-ideation</id><content type="html" xml:base="/2019/10/29/pcomp-final-ideation.html">&lt;h1 id=&quot;themes&quot;&gt;Themes&lt;/h1&gt;
-
-&lt;p&gt;Notes on Form:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Installation art piece or musical instrument&lt;/li&gt;
-  &lt;li&gt;Interaction should encourage play, exploration, and participants should be rewarded for it.&lt;/li&gt;
-  &lt;li&gt;Can it provoke moments of self reflection?&lt;/li&gt;
-  &lt;li&gt;Let’s use sound&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Notes on Content (potential themes):&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Media Literacy&lt;/li&gt;
-  &lt;li&gt;Misuse of Statistics/Trust in “high modernism”&lt;/li&gt;
-  &lt;li&gt;Tragedy of the Commons/Fostering Collaboration&lt;/li&gt;
-  &lt;li&gt;Social Media But…&lt;/li&gt;
-  &lt;li&gt;Interactive Art Piece But…&lt;/li&gt;
-  &lt;li&gt;Friction as feature&lt;/li&gt;
-  &lt;li&gt;Surrealism&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;1-collaborative-musical-instrument&quot;&gt;1: Collaborative Musical Instrument&lt;/h1&gt;
-
-&lt;p&gt;This idea is born from combining the themes of “Friction as Feature” and “Tragedy of the Commons.” The main method of playing the instrument should be physically difficult, and additionally require cooperation. Or rather, the instrument should be set up to reward larger physical effort as well as cooperation.&lt;/p&gt;
-
-&lt;p&gt;My first thought is that this could be done by smart placement of force sensors across a table top. A table top is a large enough surface for people to stand around, and an array of FSRs should be able to detect different levels of force created from pushing down on the table. This way I would have multiple dimensions of input to play with including rough X/Y positions and amount of force.&lt;/p&gt;
-
-&lt;p&gt;In order to encourage “friction as feature” I could play with different ways to make the instrument extremely slow to start up on first touch. I could even make the primary input “rate of force change” as opposed to raw force value by itself, in order to encourage constant (or varying) addition of pressures. IN order to encourage collaboration I think that some kind of I would want to feed the force data into a computational model that would create more complex output with multiple even size inputs as opposed to input group with higher variance, and then use the results of this model to drive the audio synthesis. In an ideal world there would be visual or other tactile feedback to make it easier for users/performers to understand the effects of varying force/placements on at least this intermediate system as well as the sound output.&lt;/p&gt;
-
-&lt;p&gt;I could probably combine this project with my Code of Music final.&lt;/p&gt;
-
-&lt;h1 id=&quot;2-oracle-of-data&quot;&gt;2: Oracle of Data&lt;/h1&gt;
-
-&lt;p&gt;This idea is a first-pass take at trying to create an art object that highlights the theme of “Misuse of Statistics/Trust in High Modernism.”  The general idea is to try to build an interactive installation that equates belief in statistical methods with sham-religious belief.&lt;/p&gt;
-
-&lt;p&gt;The front of the altar/oracle would be inspired by brutalist architecture (concrete gray corners) maybe with some data or code imagery being projected onto it. Maybe I could create a path leading toward the shrine out of yellow bricks for extra Wizard of Oz reference points. The user would be required to leave an offering and/or pray to the altar. I’m not really sure how I would necessarily communicate the mode of interaction here. Maybe as was suggested for my midterm project first demonstrating its use in a theatrical sense before other participants try it out.&lt;/p&gt;
-
-&lt;p&gt;In order for this project to be successful there needs to be one more layer of levity or subversion - we need the moment where the curtain is exposed, metaphorically. Maybe there’s a mini printer inside? And when you are done praying it prints out a nonsensical fortune for you, just prefixed with “The data says”? “The data says that it is unwise for the offender to be stupid, especially in the absence of memories.”&lt;/p&gt;
-
-&lt;p&gt;This actually would be pretty funny. It’s less interactive, unless I could somehow make the length or other character of the “praying” affect the kind of fortune you receive.&lt;/p&gt;
-
-&lt;p&gt;Another dimension could be allowing the “back” of the oracle be exposed and have some kind of funny symbolic equivalent of the little man behind the curtain in the wizard of Oz. Having it be a real human is an option, although it’s logistically challenging since one aspect of AI I would like to critique is how much of it is underpinned by human labor. Perhaps they need to turn a crank constantly in order to make the installation function, although this is quite similar to past &lt;a href=&quot;https://itp.nyu.edu/shows/spring2019/invisible-labor/&quot;&gt;critical installations that address this theme&lt;/a&gt;. Another option could be placing multiple (or just one) drinking birds, or other simple toys that communicate empty-headedness in some sense&lt;/p&gt;
-
-&lt;h1 id=&quot;3-squishy-boxes&quot;&gt;3: Squishy Boxes&lt;/h1&gt;
-
-&lt;p&gt;This idea tries to play with expectations of what digital device controllers and ITP projects should look like and behave like in a direct sense. The project would be building several boxes out of wood or acrylic with knobs, buttons, and sliders. However, when the box is picked up and buttons are pushed, the box reacts with very squishy, fleshy, erotic human sounds. Maybe it complains (or moans) when you pick it up even? The goal would be to make people both uncomfortable interacting with it, but also curious to see what different types of reactions the box is capable of.&lt;/p&gt;
-
-&lt;p&gt;Maybe I could build two, with a male and female voice respectively.&lt;/p&gt;
-
-&lt;p&gt;Bonus points if I can figure out how to build this out of a material that looks like wood or acrylic but is actually soft and skin-like.&lt;/p&gt;</content><category term="itp" /><category term="physical_computing" /><summary type="html">Themes</summary></entry></feed>
+&lt;em&gt;Thinsulate in the lower wall cavities&lt;/em&gt;&lt;/p&gt;</content><category term="vanlife" /><summary type="html">This is the second post in a series that serves as the primary documentation of how I purchased and converted a 2008 Dodge Sprinter Van to a full-time living space.</summary></entry></feed>
