@@ -139,6 +139,14 @@ ul.nav {
   margin: $spacing-unit;
   font-size: 18px;
 
+  h1 {
+    font-size: 48px;
+
+    @include media-query($on-laptop) {
+      font-size: 32px;
+    }
+  }
+
   h2 {
     font-size: 32px;
 

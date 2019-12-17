@@ -4,6 +4,7 @@ date: 2019-09-11
 tags: itp video_sound
 title: Video/Sound- Soundwalk 9:09 Response
 collaborators:
+- Sam Krystal
 ---
 
 *Soundwalk 9:09* by John Luther Adams is an ambient musical soundwalk that takes place between the 5th Avenue Metropolitan Museum of Art on 5th Avenue in New York City and the Met Breur, a few blocks south and east. You can listen to the audio and read the artist's note [here](https://www.metmuseum.org/events/programs/met-live-arts/soundwalk).
@@ -15,4 +16,4 @@ The piece consists of two "movements", one uptown direction (walking from Met Br
 
 I couldn't help but feel somewhat disappointed by the selection and placement of city sounds by the artist. This kind of musical pastiche dates itself back all the way to the early 20th century with the beginnings of musique concrete. Gershwin's *An American In Paris* was musicalizing city sounds as early as 1928. More recently, Steve Reich's *City Life*, from 1995, also layers typical city noises over ambient drone as a recorded piece of music. What *Soundwalk 9:09* offers over *City Life* is a promise of a site-specific physical experience, but the only section that actually feels tied to the particular geographic location of the walk are the first few seconds of *Downtown*, which feature the water tinkling of the fountains in the Met plaza.
 
-Perhaps if you are a big fan of the Met or have been totally checked out of the 20th century contemporary music and sound art scene *Soundwalk 9:09* is a worthwhile adventure. But on top of the relatively uninspired composition you'll have to look at the Met Breur at the end of it, a brutalist upside-down staircase that looks like it was built in the 80s and not as recently as 2016. 
+Perhaps if you are a big fan of the Met or have been totally checked out of the 20th century contemporary music and sound art scene *Soundwalk 9:09* is a worthwhile adventure. But on top of the relatively uninspired composition you'll have to look at the Met Breur at the end of it, a brutalist upside-down staircase that looks like it was built in the 80s and not as recently as 2016.
