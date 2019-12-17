@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>THE VAN PROJECT - Power</title>
-  <meta name="description" content="This is the seventh post in a series that serves as the primary documentation of how I purchased and converted a 2008 Dodge Sprinter Van to a full-time livin...">
+  <title>Chordal Distance - Process</title>
+  <meta name="description" content="This page serves as the primary process documentation for CHORDAL DISTANCE. See this page for the main project page.">
 
   <link rel="stylesheet" href="/assets/main.css">
-  <link rel="canonical" href="/2019/11/09/van-build-7.html">
+  <link rel="canonical" href="/2019/12/17/chordal-distance-process.html">
   <link rel="alternate" type="application/rss+xml" title="Sylvan Zheng" href="/feed.xml">
   
   
@@ -225,13 +225,27 @@ You may NOT sub-license, resell, rent, redistribute or otherwise transfer the ic
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">THE VAN PROJECT - Power</h1>
-    <p class="post-meta"><time datetime="2019-11-09T00:00:00-05:00" itemprop="datePublished">Nov 9, 2019</time></p>
+    <h1 class="post-title" itemprop="name headline">Chordal Distance - Process</h1>
+    <p class="post-meta"><time datetime="2019-12-17T00:00:00-05:00" itemprop="datePublished">Dec 17, 2019</time></p>
+    
+      <p class="post-meta"><i>In collaboration with Young-Min Choi</i></p>
     
     
       <p class="post-meta">
         
-          <a class='tag' href="/tag/vanlife">vanlife</a>
+          <a class='tag' href="/tag/itp">itp</a>
+
+        
+          <a class='tag' href="/tag/code_of_music">code_of_music</a>
+
+        
+          <a class='tag' href="/tag/physical_computing">physical_computing</a>
+
+        
+          <a class='tag' href="/tag/chordal_distance">chordal_distance</a>
+
+        
+          <a class='tag' href="/tag/audio">audio</a>
 
         
       </p>
@@ -239,68 +253,49 @@ You may NOT sub-license, resell, rent, redistribute or otherwise transfer the ic
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    <p>This is the seventh post in a <a href="/tag/vanlife">series</a> that serves as the primary documentation of how I purchased and converted a 2008 Dodge Sprinter Van to a full-time living space.</p>
+    <p>This page serves as the primary process documentation for <em>CHORDAL DISTANCE</em>. See <a href="/2019/11/21/chordal-distance.html">this page</a> for the main project page.</p>
 
-<p><img src="/images/van/electricity/solar1.jpg" alt="" />
-This was one of the most fun, satisfying, and expensive portions of the van build!</p>
+<p>All code for this project can be found <a href="https://github.com/squidgetx/chordal_distance">here</a></p>
 
-<h1 id="how-much-electricity">How Much Electricity?</h1>
+<h1 id="1-concept--ideation">1. Concept / Ideation</h1>
 
-<p>I collected (roughly) the amount of electricity I planned to use in a day:</p>
-<ul>
-  <li>4x0.3A lights for a few hours = 4.8Ah</li>
-  <li>12 hours of 0.8A DC fridge = 10Ah</li>
-  <li>A few hours of fan usage @ 1.2A = 5A</li>
-  <li>Charging laptops and phones = 4A or so</li>
-</ul>
+<p>We were initially interested in this idea of combining collaborative, metaphorical friction with music initially articulated <a href="/2019/10/29/pcomp-final-ideation.html#1-collaborative-musical-instrument">here</a>. However, we struggled at first to settle on a physical metaphor that captured this idea elegantly.</p>
 
-<p>I came out with roughly 25Ah per day of power usage. This meant that with 200W of solar running at 50% efficiency (shade from buildings, cloudy days, etc.) I could expect to get about 200W*(8 hours) * 0.5/12V = 66 per day, which should be more than enough to cover all my electrical needs. For battery, I decided on a 100Ah AGM battery to provide two full days of offgrid power supply in the rare case that there would be no sun at all coming through the solar system.</p>
+<p>Our initial list of ideas included a table you had to push down on, a set of large boxes that needed to be pushed around a space, a rusty turn-crank music box, and a ceiling-to-floor string installation whose strings would be tugged or pulled on by the participants. However after some initial prototyping we realized that many vertically oriented string installations look very much like a harp; a preexisting strong musical concept that people would inevitably be familiar with, a familiarity which lead to confusion in early testing.</p>
 
-<h1 id="wiring-it-together">Wiring It Together</h1>
+<p>We were particularly interested in the simple two player interaction of tug of war, but couldn’t come up with a elegant physical metaphor that allowed more than two players to participate. We decided after a few days of unsuccessful sketching to keep the project minimal and restrict it to two players.</p>
 
-<p>The van’s electrical system is much easier to manage since it doesn’t need to handle any super-high current loads coming from an alternator or wall charger (I’m powering off of solar only). This means that 8-10AWG wire in short lengths is totally sufficient to handle the max of 20A coming from the solar charge controller.</p>
+<h1 id="2-initial-prototype">2. Initial Prototype</h1>
 
-<p><img src="/images/van/electricity/battery1.jpg" alt="" /></p>
+<p>We decided to start with two handles attached by rope. I quickly built a rough pair of handles which we could use for testing.</p>
 
-<p>From the battery’s positive terminal I place a 20A fuse and battery switch inline before connecting it to the battery input of the solar charge controller. Load goes to the fusebox and PV goes to the solar panels all using 10AWG wire and mounted underneath the bed by the passenger side wheel well. The battery goes into a box made of 3/4” plywood bolted to the van floor L track. All high current wire connections are connected using heatshrink crimp terminals</p>
+<p><img src="/images/picture_of_handle" alt="Image of rough handles" /></p>
 
-<p><img src="/images/van/electricity/fusebox.jpg" alt="" />
-<em>The van fusebox</em></p>
+<p>In our first official playtesting session we confirmed that people really did enjoy the pairwise tension-modulating interaction. We also observed that many people liked to move the handles very quickly in many directions, something that we hadn’t considered. Movement outside of the tension in the connecting band would be something that we logged as something to pay attention to.</p>
 
-<h1 id="mounting-the-solar-panels">Mounting the Solar Panels</h1>
+<p>Our initial test used a 50kg load cell as we wanted to be sure that our piece could sustain the high level of force that we were hoping people would want to place on it. However, after calibrating the load cell and doing a stress test we found that 10-11kg was already near the maximum amount of force that the two of us could exert on each other. We figured that we would be able to use a much more compact 20kg load cell for our final piece.</p>
 
-<p>I had to get creative to mount the solar panels on the roof of the van without paying an obscene amount of money for a custom roof rack solution. The primary challenge is that there needs to be a significant air gap beneath the solar panels, otherwise they can overheat and/or underperform.</p>
+<h1 id="3-enclosure-design">3. Enclosure Design</h1>
 
-<p>I decided to use a length of L shaped 1/8” thick aluminum rod to mount the panels themselves to, and then mount these rails to a set of spacers I would fashion out of 1” square aluminum tubing using stainless steel quarter inch bolts. This worked beautifully but required a royal pain amount of drilling and hacksawing through aluminum. I overpaid for a set of mounting bolts, which were essentially pieces of steel that slid into the roof rack rails along with a set of flathead stainless carriage bolts.</p>
+<p>We wanted an enclosure that served several functions at once - it needed to contain at most a 20kg load cell, an HX711 board, an Arduino Nano microcontroller, a 1200mAh LiPo battery, a battery charging port, and a power switch for the whole system. The enclosure also needed to provide a secure mounting point for the string between the two handles as well as overall be sturdy enough to withstand relatively abusive handling. The enclosure also needed to provide a comfortable gripping point. Finally, we also wanted the enclosure to be aesthetically pleasing!</p>
 
-<p><img src="/images/van/electricity/spacers.jpg" alt="" />
-<em>The aluminum spacers</em></p>
+<p>We struggled to come up with a design for an enclosure with an attached handle that didn’t recall pre-existing-but-irrelevant shapes such as telephones, door handles, bananas, or dog leashes. The crude but confident lines of our prototype felt like a package deal - if we slimmed down or refined the shape of the prototype it would immediately bear a stronger resemblance to <em>some</em> designed product-with-handle. We wanted a shape that was elegant, that was comfortable to use and suggested pulling in its own shape. We began to explore the possibility of merging the handle and enclosure together - what if the handle itself <em>was</em> the enclosure?</p>
 
-<p><img src="/images/van/electricity/solar2.jpg" alt="" />
-<em>Panels installed, mounted over the spacers</em></p>
+<p>After many hours of carefully measuring our electronic components and laying out the possibilities in Rhino we felt confident that we would be able to fit all the components inside of a shell that was still comfortable to hold in hand. Youngmin additionally designed a clever attachment mechanism for the handle - to avoid having to unscrew the enclosure each time we needed to access the insides the lid slides onto the body with a simple friction-fit.</p>
 
-<h1 id="dimmer-lightswitch">Dimmer Lightswitch</h1>
+<p>We bought a cheap piece of 2x3 red softwood stud to start our second prototype. Aidan Lincoln incredibly generously helped us learn how to use the CNC shopbot to carve out our exact design in the wood.</p>
 
-<p>It turns out that dimmers for DC light systems are very hard to come by. I went to an electronics and lighting supply store and explain my situation several times to the staff there before they understood what I was looking for. Now that I understand a little bit more about DC electricity it does kind of make sense - the naive implementation of using a variable resistor is really inefficient since the excess power is just getting dissipated as heat. A more sophisticated method uses PWM - something that AC circuits have available to play with. But not DC.</p>
+<p><img src="" alt="image of cnc'd wood" /></p>
 
-<p>Once I had my overpriced DC dimmer switch in hand, I punched out an ugly hole in the wall by drillling several small holes (I had no hand jigsaw). Thankfully it would be covered up by the lightswitch wallplate.</p>
+<h1 id="4-bluetooth">4. Bluetooth</h1>
 
-<p><img src="https://media.giphy.com/media/ch2iRuCo3Ifc2peS1j/giphy.gif" alt="" /></p>
+<p>I used @abandonware’s fork of Noble <a href="https://www.npmjs.com/package/@abandonware/noble">link</a> to manage the bluetooth connections. One incredibly time consuming bug is that the bluetooth connection drops out intermittently. We eventually managed to mitigate this by removing all delays from the Arduino controller.</p>
 
-<p>And voila! The van has electricity!</p>
+<h1 id="5-sound-design--composition">5. Sound Design / Composition</h1>
 
-<h1 id="inverter">Inverter</h1>
+<p>We used a mix of string samples, analog patches, and physical modelling synthesis patches for this iteration of sound. We chose these sounds primarily to match the wood-and-rubber aesthetic of the sculpture.</p>
 
-<p>I later added a 600W pure sine wave inverter to the van’s power system. It’s powerful enough to run the corded jigsaw I bought off the van battery, but not so powerful that I’m at risk of damaging the electrical system or overloading the wiring. I wired it to a normal house outlet I bought at Home Depot by simply stripping the ends off an extension cord and attaching those leads to the house outlet leads. The inverter also comes with a remote switch control, which I mounted directly next to the AC outlet in the bedside cabinet.</p>
-
-<p><img src="/images/van/electricity/battery2.jpg" alt="" />
-<em>The electrical panel, rearranged to fit the inverter</em></p>
-
-<p><img src="/images/van/electricity/inverter.jpg" alt="" />
-<em>Closeup of the AC outlet and inverter control panel, along with some extra electronics</em></p>
-
-<p><img src="/images/van/furniture/seret-howto.jpg" alt="" />
-<em>Inside the cabinet</em></p>
+<h1 id="6-installation">6. Installation</h1>
 
   </div>
 

@@ -1,4 +1,58 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-12-17T12:12:08-05:00</updated><id>//</id><title type="html">Sylvan Zheng</title><subtitle></subtitle><entry><title type="html">Chordal Distance</title><link href="/2019/11/21/chordal-distance.html" rel="alternate" type="text/html" title="Chordal Distance" /><published>2019-11-21T00:00:00-05:00</published><updated>2019-11-21T00:00:00-05:00</updated><id>/2019/11/21/chordal-distance</id><content type="html" xml:base="/2019/11/21/chordal-distance.html"></content><category term="itp" /><category term="code_of_music" /><category term="physical_computing" /><summary type="html"></summary></entry><entry><title type="html">Tension - Interaction Analysis</title><link href="/2019/11/21/code-of-music-final-ideation.html" rel="alternate" type="text/html" title="Tension - Interaction Analysis" /><published>2019-11-21T00:00:00-05:00</published><updated>2019-11-21T00:00:00-05:00</updated><id>/2019/11/21/code-of-music-final-ideation</id><content type="html" xml:base="/2019/11/21/code-of-music-final-ideation.html">&lt;p&gt;&lt;em&gt;Tension&lt;/em&gt; is the working name of the interactive composition / performance tool I am building with Youngmin Choi for this semester’s Code of Music and Physical Computing final project. This post attempts to use some of the ideas from Bill Verplank’s &lt;a href=&quot;http://www.billverplank.com/IxDSketchBook.pdf&quot;&gt;interaction design sketchbook&lt;/a&gt; to analyze/refine the concept thus far.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-12-17T16:26:07-05:00</updated><id>//</id><title type="html">Sylvan Zheng</title><subtitle></subtitle><entry><title type="html">Chordal Distance - Process</title><link href="/2019/12/17/chordal-distance-process.html" rel="alternate" type="text/html" title="Chordal Distance - Process" /><published>2019-12-17T00:00:00-05:00</published><updated>2019-12-17T00:00:00-05:00</updated><id>/2019/12/17/chordal-distance-process</id><content type="html" xml:base="/2019/12/17/chordal-distance-process.html">&lt;p&gt;This page serves as the primary process documentation for &lt;em&gt;CHORDAL DISTANCE&lt;/em&gt;. See &lt;a href=&quot;/2019/11/21/chordal-distance.html&quot;&gt;this page&lt;/a&gt; for the main project page.&lt;/p&gt;
+
+&lt;p&gt;All code for this project can be found &lt;a href=&quot;https://github.com/squidgetx/chordal_distance&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;1-concept--ideation&quot;&gt;1. Concept / Ideation&lt;/h1&gt;
+
+&lt;p&gt;We were initially interested in this idea of combining collaborative, metaphorical friction with music initially articulated &lt;a href=&quot;/2019/10/29/pcomp-final-ideation.html#1-collaborative-musical-instrument&quot;&gt;here&lt;/a&gt;. However, we struggled at first to settle on a physical metaphor that captured this idea elegantly.&lt;/p&gt;
+
+&lt;p&gt;Our initial list of ideas included a table you had to push down on, a set of large boxes that needed to be pushed around a space, a rusty turn-crank music box, and a ceiling-to-floor string installation whose strings would be tugged or pulled on by the participants. However after some initial prototyping we realized that many vertically oriented string installations look very much like a harp; a preexisting strong musical concept that people would inevitably be familiar with, a familiarity which lead to confusion in early testing.&lt;/p&gt;
+
+&lt;p&gt;We were particularly interested in the simple two player interaction of tug of war, but couldn’t come up with a elegant physical metaphor that allowed more than two players to participate. We decided after a few days of unsuccessful sketching to keep the project minimal and restrict it to two players.&lt;/p&gt;
+
+&lt;h1 id=&quot;2-initial-prototype&quot;&gt;2. Initial Prototype&lt;/h1&gt;
+
+&lt;p&gt;We decided to start with two handles attached by rope. I quickly built a rough pair of handles which we could use for testing.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/picture_of_handle&quot; alt=&quot;Image of rough handles&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In our first official playtesting session we confirmed that people really did enjoy the pairwise tension-modulating interaction. We also observed that many people liked to move the handles very quickly in many directions, something that we hadn’t considered. Movement outside of the tension in the connecting band would be something that we logged as something to pay attention to.&lt;/p&gt;
+
+&lt;p&gt;Our initial test used a 50kg load cell as we wanted to be sure that our piece could sustain the high level of force that we were hoping people would want to place on it. However, after calibrating the load cell and doing a stress test we found that 10-11kg was already near the maximum amount of force that the two of us could exert on each other. We figured that we would be able to use a much more compact 20kg load cell for our final piece.&lt;/p&gt;
+
+&lt;h1 id=&quot;3-enclosure-design&quot;&gt;3. Enclosure Design&lt;/h1&gt;
+
+&lt;p&gt;We wanted an enclosure that served several functions at once - it needed to contain at most a 20kg load cell, an HX711 board, an Arduino Nano microcontroller, a 1200mAh LiPo battery, a battery charging port, and a power switch for the whole system. The enclosure also needed to provide a secure mounting point for the string between the two handles as well as overall be sturdy enough to withstand relatively abusive handling. The enclosure also needed to provide a comfortable gripping point. Finally, we also wanted the enclosure to be aesthetically pleasing!&lt;/p&gt;
+
+&lt;p&gt;We struggled to come up with a design for an enclosure with an attached handle that didn’t recall pre-existing-but-irrelevant shapes such as telephones, door handles, bananas, or dog leashes. The crude but confident lines of our prototype felt like a package deal - if we slimmed down or refined the shape of the prototype it would immediately bear a stronger resemblance to &lt;em&gt;some&lt;/em&gt; designed product-with-handle. We wanted a shape that was elegant, that was comfortable to use and suggested pulling in its own shape. We began to explore the possibility of merging the handle and enclosure together - what if the handle itself &lt;em&gt;was&lt;/em&gt; the enclosure?&lt;/p&gt;
+
+&lt;p&gt;After many hours of carefully measuring our electronic components and laying out the possibilities in Rhino we felt confident that we would be able to fit all the components inside of a shell that was still comfortable to hold in hand. Youngmin additionally designed a clever attachment mechanism for the handle - to avoid having to unscrew the enclosure each time we needed to access the insides the lid slides onto the body with a simple friction-fit.&lt;/p&gt;
+
+&lt;p&gt;We bought a cheap piece of 2x3 red softwood stud to start our second prototype. Aidan Lincoln incredibly generously helped us learn how to use the CNC shopbot to carve out our exact design in the wood.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;&quot; alt=&quot;image of cnc'd wood&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;4-bluetooth&quot;&gt;4. Bluetooth&lt;/h1&gt;
+
+&lt;p&gt;I used @abandonware’s fork of Noble &lt;a href=&quot;https://www.npmjs.com/package/@abandonware/noble&quot;&gt;link&lt;/a&gt; to manage the bluetooth connections. One incredibly time consuming bug is that the bluetooth connection drops out intermittently. We eventually managed to mitigate this by removing all delays from the Arduino controller.&lt;/p&gt;
+
+&lt;h1 id=&quot;5-sound-design--composition&quot;&gt;5. Sound Design / Composition&lt;/h1&gt;
+
+&lt;p&gt;We used a mix of string samples, analog patches, and physical modelling synthesis patches for this iteration of sound. We chose these sounds primarily to match the wood-and-rubber aesthetic of the sculpture.&lt;/p&gt;
+
+&lt;h1 id=&quot;6-installation&quot;&gt;6. Installation&lt;/h1&gt;</content><category term="itp" /><category term="code_of_music" /><category term="physical_computing" /><category term="chordal_distance" /><category term="audio" /><summary type="html">This page serves as the primary process documentation for CHORDAL DISTANCE. See this page for the main project page.</summary></entry><entry><title type="html">Chordal Distance</title><link href="/2019/11/21/chordal-distance.html" rel="alternate" type="text/html" title="Chordal Distance" /><published>2019-11-21T00:00:00-05:00</published><updated>2019-11-21T00:00:00-05:00</updated><id>/2019/11/21/chordal-distance</id><content type="html" xml:base="/2019/11/21/chordal-distance.html">&lt;p&gt;&lt;em&gt;CHORDAL DISTANCE&lt;/em&gt; is an interactive music composition and installation artwork. It explores the relation between two players by connecting the physical act of pulling to music.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/chordal_distance/hanging1.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Two wooden handles hang suspended at chest height, connected to each other with an elastic band. As the two participants pull against each other, they negotiate their mutual physical equilibrium. Music then responds to the surges in tension, releases, and twists highlighting the nature of the participants’ relationship. The installation functions simultaneously as an interactive experience and performance tool.&lt;/p&gt;
+
+&lt;p&gt;We invite participants to explore the subtle musical shifts in tone and harmonic texture throughout the varying positions and tensions afforded by the installation.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Video coming soon!&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/tag/chordal_distance&quot;&gt;Read more: process and technical detail&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Thanks to: Tom Igoe, Luisa Pereira, Aidan Lincoln, @abandonware, and Rob Ryan for their contributions to this project&lt;/p&gt;</content><category term="itp" /><category term="code_of_music" /><category term="physical_computing" /><category term="chordal_distance" /><category term="audio" /><summary type="html">CHORDAL DISTANCE is an interactive music composition and installation artwork. It explores the relation between two players by connecting the physical act of pulling to music.</summary></entry><entry><title type="html">Chordal Distance - Interaction Analysis</title><link href="/2019/11/21/code-of-music-final-ideation.html" rel="alternate" type="text/html" title="Chordal Distance - Interaction Analysis" /><published>2019-11-21T00:00:00-05:00</published><updated>2019-11-21T00:00:00-05:00</updated><id>/2019/11/21/code-of-music-final-ideation</id><content type="html" xml:base="/2019/11/21/code-of-music-final-ideation.html">&lt;p&gt;&lt;em&gt;Chordal Distance&lt;/em&gt; is the working name of the interactive composition / performance tool I am building with Youngmin Choi for this semester’s Code of Music and Physical Computing final project. This post attempts to use some of the ideas from Bill Verplank’s &lt;a href=&quot;http://www.billverplank.com/IxDSketchBook.pdf&quot;&gt;interaction design sketchbook&lt;/a&gt; to analyze/refine the concept thus far.&lt;/p&gt;
 
 &lt;h1 id=&quot;idea&quot;&gt;IDEA&lt;/h1&gt;
 &lt;p&gt;The project has two main ideas that could be viewed as separate components. The first perspective is that of an interactive composition - a musical experience facilitated by the audience’s own physical interaction. The second perspective is that the project is a performance tool / instrument, and the composition is merely a demonstration of the tool’s capabilities. Of course, in reality the final product will be a mix of both - we will design the physical interface and its mappings with both use-cases in mind. Ideally it will be a tool suitable for use on stage as well as in an installation or demonstration setting.&lt;/p&gt;
@@ -55,7 +109,7 @@
 &lt;/ol&gt;
 
 &lt;h1 id=&quot;control&quot;&gt;CONTROL&lt;/h1&gt;
-&lt;p&gt;See Scenario/Model&lt;/p&gt;</content><category term="itp" /><category term="code_of_music" /><category term="physical_computing" /><summary type="html">Tension is the working name of the interactive composition / performance tool I am building with Youngmin Choi for this semester’s Code of Music and Physical Computing final project. This post attempts to use some of the ideas from Bill Verplank’s interaction design sketchbook to analyze/refine the concept thus far.</summary></entry><entry><title type="html">THE VAN PROJECT - Kitchen (Part 2)</title><link href="/2019/11/20/van-build-9.html" rel="alternate" type="text/html" title="THE VAN PROJECT - Kitchen (Part 2)" /><published>2019-11-20T00:00:00-05:00</published><updated>2019-11-20T00:00:00-05:00</updated><id>/2019/11/20/van-build-9</id><content type="html" xml:base="/2019/11/20/van-build-9.html">&lt;p&gt;This is the ninth post in a &lt;a href=&quot;/tag/vanlife&quot;&gt;series&lt;/a&gt; that serves as the primary documentation of how I purchased and converted a 2008 Dodge Sprinter Van to a full-time living space.&lt;/p&gt;
+&lt;p&gt;See Scenario/Model&lt;/p&gt;</content><category term="itp" /><category term="code_of_music" /><category term="physical_computing" /><category term="chordal_distance" /><summary type="html">Chordal Distance is the working name of the interactive composition / performance tool I am building with Youngmin Choi for this semester’s Code of Music and Physical Computing final project. This post attempts to use some of the ideas from Bill Verplank’s interaction design sketchbook to analyze/refine the concept thus far.</summary></entry><entry><title type="html">THE VAN PROJECT - Kitchen (Part 2)</title><link href="/2019/11/20/van-build-9.html" rel="alternate" type="text/html" title="THE VAN PROJECT - Kitchen (Part 2)" /><published>2019-11-20T00:00:00-05:00</published><updated>2019-11-20T00:00:00-05:00</updated><id>/2019/11/20/van-build-9</id><content type="html" xml:base="/2019/11/20/van-build-9.html">&lt;p&gt;This is the ninth post in a &lt;a href=&quot;/tag/vanlife&quot;&gt;series&lt;/a&gt; that serves as the primary documentation of how I purchased and converted a 2008 Dodge Sprinter Van to a full-time living space.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/van/kitchen/kitchen1.jpg&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
 
@@ -551,60 +605,4 @@ This was one of the most fun, satisfying, and expensive portions of the van buil
 &lt;h2 id=&quot;finished-ceiling&quot;&gt;Finished Ceiling&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&quot;/images/van/ceiling/ceiling-finished.jpg&quot; alt=&quot;walls&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/van/ceiling/ceiling-finished2.jpg&quot; alt=&quot;walls&quot; /&gt;&lt;/p&gt;</content><category term="vanlife" /><summary type="html">This is the third post in a series that serves as the primary documentation of how I purchased and converted a 2008 Dodge Sprinter Van to a full-time living space.</summary></entry><entry><title type="html">THE VAN PROJECT - Prep, Insulation &amp;amp; Rust Abatement</title><link href="/2019/11/04/van-build-2.html" rel="alternate" type="text/html" title="THE VAN PROJECT - Prep, Insulation &amp; Rust Abatement" /><published>2019-11-04T00:00:00-05:00</published><updated>2019-11-04T00:00:00-05:00</updated><id>/2019/11/04/van-build-2</id><content type="html" xml:base="/2019/11/04/van-build-2.html">&lt;p&gt;This is the second post in a &lt;a href=&quot;/tag/vanlife&quot;&gt;series&lt;/a&gt; that serves as the primary documentation of how I purchased and converted a 2008 Dodge Sprinter Van to a full-time living space.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/van-prep/van-ithaca.jpg&quot; alt=&quot;van in ithaca&quot; /&gt;
-&lt;em&gt;Ithaca, NY&lt;/em&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;insulation-1&quot;&gt;Insulation 1&lt;/h1&gt;
-
-&lt;p&gt;One of the first decisions a prospective van-converter has to make is whether or not, and what kind of insulation to use. Many hold the opinion that body heat alone isn’t enough to meaningfully warm the van since it’s so large, and opt to skip out on insulation. I have not lived in a comparable insulation-free environment, so I can’t comment necessarily on whether this is a wise decision.&lt;/p&gt;
-
-&lt;p&gt;The van I bought came with an open-cell spray foam treatment already done. Spray foam is one of the most intense insulation options - it’s messy, expensive, often requires professional help, but supposedly offers numerous benefits. Closed cell spray foam in particular is quite nice since it is waterproof and bonds seamlessly to the van walls, making it impossible for water to collect behind it and cause rust damage. Open cell spray foam on the other hand, is water permeable, and when I went to investigate I found a moderate amount of rust buildup along the bottom of the van chassis, where water presumably was able to collect in the sponge-like insulation.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/van-prep/overview.jpg&quot; alt=&quot;insulation overview&quot; /&gt;
-&lt;em&gt;Removing the wall panels to reveal the spray foam insulation&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Elena and I tore out the spray foam insulation all along the bottom of the van walls. Some of it was damp even though it had been quite dry over the past several days (gross!)&lt;/p&gt;
-
-&lt;h1 id=&quot;rust-abatement&quot;&gt;Rust Abatement&lt;/h1&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/van-prep/rust-closeup1.jpg&quot; alt=&quot;rust&quot; /&gt;
-&lt;em&gt;Closeup shot of the rust near the floor&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Before I could replace the insulation with something better, I had to deal with the rust buildup that had taken place over the last years of the van’s previous life. I used a steel brush drill attachment, varying grades of sandpaper, and lots of elbow grease to break down all the rust spots I could find. The next phase was to clean and etch the bare steel with POR-15 cleaner and metal prep solution. Finally, I repainted using several coats of Rustoleum primer and gloss white paint. It’s not an exact match, but it’s very close and many of these areas will be covered in the future anyway.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/van-prep/rust-closeup2.jpg&quot; alt=&quot;rust&quot; /&gt;
-&lt;em&gt;Grinding down to rust-free steel&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/van-prep/insulation1.jpg&quot; alt=&quot;foam&quot; /&gt;
-&lt;em&gt;Lower foam torn out and rust spots primed&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/van-prep/insulation2.jpg&quot; alt=&quot;foam&quot; /&gt;
-&lt;em&gt;Good as new!&lt;/em&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;sliding-door-treatment&quot;&gt;Sliding Door Treatment&lt;/h1&gt;
-
-&lt;p&gt;One extreme peculiarity of the Sprinter vans is that the sliding door trim (the black plastic on the outside) is attached to the door with a set of simple plastic clips that do not form any kind of seal between the inside and outside of the van. Water leaks in through these clips and rusts out the door.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/van-prep/sliding-door1.jpg&quot; alt=&quot;door&quot; /&gt;
-&lt;em&gt;The door panel with the trim removed, mid-rust-grinding&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Another round of grinding, sanding, cleaning, and painting dealt with the small amount of rust that had begin so far. A butyl-rubber based sealant (silicone degrades steel over time), Tyvek tape, and a set of trim tools sealed up the clips and holes in the sliding door.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/van-prep/sliding-door2.jpg&quot; alt=&quot;door&quot; /&gt;
-&lt;em&gt;Priming the rust spots&lt;/em&gt;
-&lt;img src=&quot;/images/van/van-prep/sliding-door3.jpg&quot; alt=&quot;door&quot; /&gt;
-&lt;em&gt;Painted and sealed!&lt;/em&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;insulation-2&quot;&gt;Insulation 2&lt;/h1&gt;
-
-&lt;p&gt;Now that the van body was fully rust-abated and sealed it was time to consider my insulation options. I could either attempt to remove all of the remaining open cell foam and redo the insulation from scratch, or I could settle for removing the open cell foam in the most water-prone areas (the lower parts of the walls, where water is able to collect). I went for the latter option, as the open cell foam did do a decent job of insulating the van already and it would have been an insane amount of work to remove it. The water collection hazard should be mitigated well enough with a proper treatment of the now-uninsulated lower walls.&lt;/p&gt;
-
-&lt;p&gt;Many words have been spilled on other van build sites on the most appropriate insulation material. I wanted something that would not hold water and that had good heat retaining quality. Price was not as large a concern since I only had a small area that needed treatment. I went for 3M Thinsulate, which was (apart from needing a pair of very sharp scissors) quite easy to work with and install in all the remaining exposed areas of the van.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/van-prep/insulation3.jpg&quot; alt=&quot;foam&quot; /&gt;
-&lt;em&gt;Thinsulate in the sliding door&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/van-prep/insulation4.jpg&quot; alt=&quot;foam&quot; /&gt;
-&lt;em&gt;Thinsulate in the lower wall cavities&lt;/em&gt;&lt;/p&gt;</content><category term="vanlife" /><summary type="html">This is the second post in a series that serves as the primary documentation of how I purchased and converted a 2008 Dodge Sprinter Van to a full-time living space.</summary></entry></feed>
+&lt;p&gt;&lt;img src=&quot;/images/van/ceiling/ceiling-finished2.jpg&quot; alt=&quot;walls&quot; /&gt;&lt;/p&gt;</content><category term="vanlife" /><summary type="html">This is the third post in a series that serves as the primary documentation of how I purchased and converted a 2008 Dodge Sprinter Van to a full-time living space.</summary></entry></feed>
