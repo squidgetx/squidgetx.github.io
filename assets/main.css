@@ -73,19 +73,24 @@ h1, h2, h3, h4, h5, h6 {
 h5 {
   color: #444; }
 
+.cover-text {
+  float: left; }
+
 img.cover-left {
-  width: 100%;
+  width: 50%;
   margin-top: 30px;
   float: left; }
 
 img.cover-sm {
   margin-top: 30px;
-  width: 300px; }
+  width: 300px;
+  margin-left: 12px; }
 
 img.cover-right {
   margin-top: 30px;
   width: 300px;
-  float: right; }
+  float: right;
+  margin-left: 12px; }
 
 .excerpt {
   display: block;
@@ -463,3 +468,6 @@ ul.nav {
 
 .caption {
   margin-top: -2px; }
+
+.sm_img {
+  width: 49%; }
