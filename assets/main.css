@@ -490,3 +490,15 @@ ul.nav {
 .project-link {
   height: 200px;
   margin-bottom: 1em; }
+
+.sketch {
+  height: 200px;
+  display: inline-block;
+  padding-left: 1em;
+  padding-bottom: 1em;
+  padding-top: 1em; }
+
+.sketchimg {
+  object-fit: cover;
+  height: 150px;
+  width: 200px; }
