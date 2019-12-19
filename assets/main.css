@@ -76,21 +76,27 @@ h5 {
 .cover-text {
   float: left; }
 
-img.cover-left {
+.cover-left {
   width: 50%;
   margin-top: 30px;
   float: left; }
 
-img.cover-sm {
+.cover-sm {
   margin-top: 30px;
   width: 300px;
   margin-left: 12px; }
 
-img.cover-right {
+.cover-right {
   margin-top: 30px;
   width: 300px;
   float: right;
   margin-left: 12px; }
+
+.cover-right-sm {
+  margin-top: 30px;
+  width: 200px;
+  margin-left: 12px;
+  float: right; }
 
 .excerpt {
   display: block;
