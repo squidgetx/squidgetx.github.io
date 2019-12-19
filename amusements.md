@@ -6,7 +6,7 @@ permalink: /webmedia/
 ---
 
 - Interactive color sketches:
-[Face ](/webmedia/sketches/face.html), [Circles ](/amusements/sketches/circles.html), [Type ](/amusements/sketches/type.html), [Shatter ](/amusements/sketches/shatter.html)
+[Face ](/webmedia/sketches/face.html), [Circles ](/webmedia/sketches/circles.html), [Type ](/webmedia/sketches/type.html), [Shatter ](/webmedia/sketches/shatter.html)
 
 <img class="cover_sm" src="/images/shatter.png" />
 

@@ -100,21 +100,34 @@ h5 {
   color: #444
 }
 
-img.cover-left {
-  width: 100%;
+.cover-text {
+  float: left;
+}
+
+.cover-left {
+  width: 50%;
   margin-top: $spacing-unit;
   float: left;
 }
 
-img.cover-sm {
+.cover-sm {
   margin-top: $spacing-unit;
   width: 300px;
+  margin-left: 12px;
 }
 
-img.cover-right {
+.cover-right {
   margin-top: $spacing-unit;
   width: 300px;
-  float:right;
+  float: right;
+  margin-left: 12px;
+}
+
+.cover-right-sm {
+  margin-top: $spacing-unit;
+  width: 200px;
+  margin-left: 12px;
+  float: right;
 }
 
 
@@ -144,6 +157,11 @@ a {
       }
     }
   }
+}
+
+a.icon {
+  display: inline-block;
+  padding: 2px;
 }
 
 
@@ -249,11 +267,11 @@ img.info {
 .icon > svg {
   display: inline-block;
   vertical-align: middle;
-  height: 32px;
-  width: 32px;
+  height: 30px;
+  width: 30px;
 
   path {
-    fill: $grey-color !important;
+    fill: $text-color !important;
   }
 }
 

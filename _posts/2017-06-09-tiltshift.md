@@ -3,6 +3,7 @@ layout: post
 title: "Tilt Shift"
 date: 2017-06-09 13:40:21 -0500
 categories: project
+img: /images/tiltshift.jpg
 tags:
 - audio
 - Max/MSP
@@ -10,7 +11,7 @@ tags:
 - granular
 ---
 
-Tilt Shift is a piece written for cello and [GrainPlane](https://squidgetx.github.io/project/2016/08/13/grainplane.html). 
+Tilt Shift is a piece written for cello and [GrainPlane](https://squidgetx.github.io/project/2016/08/13/grainplane.html).
 
 <iframe src="https://player.vimeo.com/video/220901432" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 

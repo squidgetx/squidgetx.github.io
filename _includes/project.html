@@ -1,0 +1,19 @@
+
+ <span class="post-meta">{{ include.project.date | date: "%Y %m %d" }}</span>
+<div class='project-link'>
+    <a class="" href="{{ include.project.url | relative_url }}">
+    {{ include.project.title | escape }}
+    {% if include.project.img %}
+    <br />
+    <img class='projectimg' src='{{ include.project.img }}' />
+    {% endif %}
+    </a>
+
+    </div>
+    {% if include.project.tags %}
+      <p class="post-meta">
+        {% for tag in include.project.tags %}
+          {% include tag.html tag=tag %}
+        {% endfor %}
+      </p>
+    {% endif %}

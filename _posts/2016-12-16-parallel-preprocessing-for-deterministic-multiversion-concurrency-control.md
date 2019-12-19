@@ -3,7 +3,8 @@ layout: post
 title: Parallel Preprocessing for Deterministic Multiversion Concurrency Control
 tags: code databases cs research C++
 category: project
-collaborators: 
+img: /images/parallelpreprc.png
+collaborators:
 - Daniel Abadi
 - Jose Faleiro
 ---
@@ -23,5 +24,3 @@ The final implementation uses a linked list of indexes on the transaction and th
 You can read the formal writeup for more technical details [here](/docs/multiversion.pdf), and you can look at the code directly [here](https://github.com/squidgetx/multiversioning).
 
 Many thanks to my senior advisors Prof. Abadi and Jose Faleiro for guiding me through this project!
-
-

@@ -3,6 +3,7 @@ layout: post
 title: "GrainPlane"
 date: 2016-08-12 23:12:42 -0500
 categories: project
+img: /images/grainplane.jpg
 tags:
 - code
 - Max/MSP
@@ -15,7 +16,7 @@ I'm quite happy with how my [granular synthesis engine](/project/2016/01/01/gran
 
   <p><img src='/images/grainplane.jpg'></p>
 
-GrainPlane is my response to this problem: it's a physical interface built specifically for granular synthesis. It's more or less a mechanism for creating a one to one mapping of physical grain action in the real world (rice, beans, sand, etc.) to auditory grains. Dropping a single grain onto the surface of the instrument triggers a single audio grain to play back. Letting a stream flow onto the surface creates a more densely layered texture. I was able to get the latency down to a pretty impressive 5ms or so - it's relatively CPU heavy since all the calculations are being done at audio rate but I think it's worth it. 
+GrainPlane is my response to this problem: it's a physical interface built specifically for granular synthesis. It's more or less a mechanism for creating a one to one mapping of physical grain action in the real world (rice, beans, sand, etc.) to auditory grains. Dropping a single grain onto the surface of the instrument triggers a single audio grain to play back. Letting a stream flow onto the surface creates a more densely layered texture. I was able to get the latency down to a pretty impressive 5ms or so - it's relatively CPU heavy since all the calculations are being done at audio rate but I think it's worth it.
 
 <iframe src="https://player.vimeo.com/video/198137599" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 

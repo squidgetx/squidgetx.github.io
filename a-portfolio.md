@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Selected Work
+title: Work
 permalink: /Portfolio/
 nav: true
 ---
@@ -9,7 +9,7 @@ nav: true
     {% for post in site.posts %}
       {% if post.categories contains 'project' %}
       <li>
-        {% include post.html post=post %}
+        {% include project.html project=post %}
       </li>
       {% endif %}
     {% endfor %}
