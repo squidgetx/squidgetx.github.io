@@ -116,6 +116,8 @@ a {
     text-decoration: none; }
     a:hover svg path {
       fill: #eee !important; }
+    a:hover img {
+      filter: contrast(110%) brightness(130%); }
 
 a.icon {
   display: inline-block;
