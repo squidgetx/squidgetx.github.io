@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Visual Language - Word Art</title>
-  <meta name="description" content="">
+  <title>Auto Pundit</title>
+  <meta name="description" content="Download link from NPR’s website with Transcripts">
 
   <link rel="stylesheet" href="/assets/main.css">
-  <link rel="canonical" href="/2019/09/19/words.html">
+  <link rel="canonical" href="/2020/01/03/autopundit01.html">
   <link rel="alternate" type="application/rss+xml" title="Sylvan Zheng" href="/feed.xml">
   
   
@@ -244,16 +244,13 @@ You may NOT sub-license, resell, rent, redistribute or otherwise transfer the ic
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">Visual Language - Word Art</h1>
-    <p class="post-meta"><time datetime="2019-09-19T00:00:00-04:00" itemprop="datePublished">Sep 19, 2019</time></p>
+    <h1 class="post-title" itemprop="name headline">Auto Pundit</h1>
+    <p class="post-meta"><time datetime="2020-01-03T00:00:00-05:00" itemprop="datePublished">Jan 3, 2020</time></p>
     
     
       <p class="post-meta">
         
-          <a class='tag' href="/tag/itp">itp</a>
-
-        
-          <a class='tag' href="/tag/visual_language">visual_language</a>
+          <a class='tag' href="/tag/tech_politics">tech_politics</a>
 
         
       </p>
@@ -261,11 +258,14 @@ You may NOT sub-license, resell, rent, redistribute or otherwise transfer the ic
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    <p><img src="/images/vl/capitalism.png" alt="Capitalism" /></p>
+    <p>Download link from NPR’s website with Transcripts</p>
 
-<p><img src="/images/vl/anarchy.png" alt="Anarchy" /></p>
+<p>use grep to find transcript links and cut to extract the raw text
+<code class="highlighter-rouge">grep transcripts/ NPR_Politics_Index.htm | cut -d '"' -f 2 &gt; npr_transcripts_links</code></p>
 
-<p><img src="/images/vl/nimby.png" alt="Nimby" /></p>
+<p>Then use python and bS4 to extract the actual transcript data, pretty easy actually</p>
+
+<p>Ok, Slate looks a bit more complicated</p>
 
   </div>
 

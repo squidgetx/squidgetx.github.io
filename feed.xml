@@ -1,4 +1,49 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.6.3">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2020-02-03T16:02:02-05:00</updated><id>//</id><title type="html">Sylvan Zheng</title><subtitle></subtitle><entry><title type="html">Stable Matching</title><link href="/2020/01/03/cp-1.html" rel="alternate" type="text/html" title="Stable Matching" /><published>2020-01-03T00:00:00-05:00</published><updated>2020-01-03T00:00:00-05:00</updated><id>/2020/01/03/cp-1</id><content type="html" xml:base="/2020/01/03/cp-1.html">&lt;p&gt;The &lt;em&gt;aguardiente&lt;/em&gt; sloshed in our glasses, the sickly sweet aroma of the liquor permeating the air around us. I could smell the next day’s headache already, or is it that all I can remember today is yesterday’s?&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.6.3">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2020-02-04T22:09:19-05:00</updated><id>//</id><title type="html">Sylvan Zheng</title><subtitle></subtitle><entry><title type="html">Video Painting</title><link href="/2020/01/04/lipp-1.html" rel="alternate" type="text/html" title="Video Painting" /><published>2020-01-04T00:00:00-05:00</published><updated>2020-01-04T00:00:00-05:00</updated><id>/2020/01/04/lipp-1</id><content type="html" xml:base="/2020/01/04/lipp-1.html">&lt;p&gt;This week, I recorded nine different videos that I could roughly group into two groups - experiments with light, experiments with texture. Of course, what is texture in an image but the nature of the light’s reflection?&lt;/p&gt;
+
+&lt;p&gt;Most of the videos are either from transit sources or from a kitchen setting. I thought it would be interesting to specifically limit myself to everyday scenes, to force new perspectives on common scenes or occurrences. Most of the time it was easy to achieve this just by zooming in a lot, removing the context that would normally familiarize the shot.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;The slide-in-out subway platform at the Union Square 4/5/6 stop. I think the textures here are really interesting, since the horizontal bars and the diagonal tread metal both have a regular pattern that is somewhat harshly juxtaposed. I do wish I was able to frame the shot more carefully.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/NAuuO2fYdo8&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;The reflection of light in a glass cup containing coffee. This one was interesting since the liquid quivered slightly, allowing the reflection to move in a sort of unintuitive way. I think a careful cropping of the frame could also accentuate the shot.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;iframe src=&quot;https://player.vimeo.com/video/389390266&quot; width=&quot;640&quot; height=&quot;360&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;A close up of a LED array advertisement board in the subway. I really enjoyed the effect of seeing each individual LED pixel since normally your brain interprets the pixels from a different distance as a complete image.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/oJqXuNcNseI&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Two shots of an electric water kettle. This one was really interesting because of a small light or lens flare effect that moved somewhat unpredictably&lt;/li&gt;
+&lt;/ol&gt;
+&lt;iframe src=&quot;https://player.vimeo.com/video/389390237&quot; width=&quot;640&quot; height=&quot;360&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/hE2nbt4S5Ow&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;A shot of a stovetop water kettle. The flow of water was really unexpectedly entrancing.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;iframe src=&quot;https://player.vimeo.com/video/389390223&quot; width=&quot;640&quot; height=&quot;360&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Simple shadow movement on a wall. This shot I focused on rotating the phone around an axis instead of lateral motion.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;iframe src=&quot;https://player.vimeo.com/video/389390206&quot; width=&quot;640&quot; height=&quot;360&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Another close up shot of a light matrix. This one featured scrolling text which created a different effect from the dramatic color changes of the subway board.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;iframe src=&quot;https://player.vimeo.com/video/389390183&quot; width=&quot;640&quot; height=&quot;360&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;A shot of the street from my bicycle. In the light the mica in the street is quite reflective, although this didn’t come through very well in the low light conditions of the video.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;iframe src=&quot;https://player.vimeo.com/video/389390160&quot; width=&quot;640&quot; height=&quot;1138&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><category term="live_image" /><category term="itp" /><summary type="html">This week, I recorded nine different videos that I could roughly group into two groups - experiments with light, experiments with texture. Of course, what is texture in an image but the nature of the light’s reflection?</summary></entry><entry><title type="html">Stable Matching</title><link href="/2020/01/03/cp-1.html" rel="alternate" type="text/html" title="Stable Matching" /><published>2020-01-03T00:00:00-05:00</published><updated>2020-01-03T00:00:00-05:00</updated><id>/2020/01/03/cp-1</id><content type="html" xml:base="/2020/01/03/cp-1.html">&lt;p&gt;The &lt;em&gt;aguardiente&lt;/em&gt; sloshed in our glasses, the sickly sweet aroma of the liquor permeating the air around us. I could smell the next day’s headache already, or is it that all I can remember today is yesterday’s?&lt;/p&gt;
 
 &lt;p&gt;The young Ecuadorean man whose name I can’t remember either gave me a soft smile as he poured another glass, setting the empty bottle down with a soft clink. His companion eased back into his chair like he owned the place (he did). I hadn’t noticed him get up. The bottle of &lt;em&gt;aguardiente&lt;/em&gt; was full again.&lt;/p&gt;
 
@@ -8,7 +53,14 @@
 
 &lt;p&gt;Hadn’t there been a third - I think his name was Pina? And where had Helena gone? Heaven knew why these young men had invited us, a clique of visiting eighteen and nineteen year old voluntourists from the US and UK to drink with them in their vacation home on the outskirts of Cuenca. A fourth arrived suddenly, armed with more &lt;em&gt;aguardiente.&lt;/em&gt; He left soon after Emily told him she was gay, but he left the liquor behind.&lt;/p&gt;
 
-&lt;p&gt;Emily, Sam and I sat alone together for what seemed then like days, though I know now it was only a couple of hours. A full bottle of &lt;em&gt;aguardiente&lt;/em&gt; still sat on the table. Was there anything else to do?&lt;/p&gt;</content><category term="collective_play" /><category term="itp" /><category term="writing" /><summary type="html">The aguardiente sloshed in our glasses, the sickly sweet aroma of the liquor permeating the air around us. I could smell the next day’s headache already, or is it that all I can remember today is yesterday’s?</summary></entry><entry><title type="html">THE VAN PROJECT</title><link href="/2019/12/24/van-build.html" rel="alternate" type="text/html" title="THE VAN PROJECT" /><published>2019-12-24T00:00:00-05:00</published><updated>2019-12-24T00:00:00-05:00</updated><id>/2019/12/24/van-build</id><content type="html" xml:base="/2019/12/24/van-build.html">&lt;p&gt;I purchased and converted a 2008 Dodge Sprinter Van to a full-time living space. You can read about the build process &lt;a href=&quot;/tag/vanlife&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Emily, Sam and I sat alone together for what seemed then like days, though I know now it was only a couple of hours. A full bottle of &lt;em&gt;aguardiente&lt;/em&gt; still sat on the table. Was there anything else to do?&lt;/p&gt;</content><category term="collective_play" /><category term="itp" /><category term="writing" /><summary type="html">The aguardiente sloshed in our glasses, the sickly sweet aroma of the liquor permeating the air around us. I could smell the next day’s headache already, or is it that all I can remember today is yesterday’s?</summary></entry><entry><title type="html">Auto Pundit</title><link href="/2020/01/03/autopundit01.html" rel="alternate" type="text/html" title="Auto Pundit" /><published>2020-01-03T00:00:00-05:00</published><updated>2020-01-03T00:00:00-05:00</updated><id>/2020/01/03/autopundit01</id><content type="html" xml:base="/2020/01/03/autopundit01.html">&lt;p&gt;Download link from NPR’s website with Transcripts&lt;/p&gt;
+
+&lt;p&gt;use grep to find transcript links and cut to extract the raw text
+&lt;code class=&quot;highlighter-rouge&quot;&gt;grep transcripts/ NPR_Politics_Index.htm | cut -d '&quot;' -f 2 &amp;gt; npr_transcripts_links&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Then use python and bS4 to extract the actual transcript data, pretty easy actually&lt;/p&gt;
+
+&lt;p&gt;Ok, Slate looks a bit more complicated&lt;/p&gt;</content><category term="tech_politics" /><summary type="html">Download link from NPR’s website with Transcripts</summary></entry><entry><title type="html">THE VAN PROJECT</title><link href="/2019/12/24/van-build.html" rel="alternate" type="text/html" title="THE VAN PROJECT" /><published>2019-12-24T00:00:00-05:00</published><updated>2019-12-24T00:00:00-05:00</updated><id>/2019/12/24/van-build</id><content type="html" xml:base="/2019/12/24/van-build.html">&lt;p&gt;I purchased and converted a 2008 Dodge Sprinter Van to a full-time living space. You can read about the build process &lt;a href=&quot;/tag/vanlife&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/van_fins.jpg&quot; alt=&quot;img&quot; /&gt;
 &lt;em&gt;2008 Dodge Sprinter 2500 144WB, parked at the Fins, ID&lt;/em&gt;&lt;/p&gt;
@@ -509,154 +561,4 @@ This was one of the most fun, satisfying, and expensive portions of the van buil
 &lt;em&gt;Closeup of the AC outlet and inverter control panel, along with some extra electronics&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/van/furniture/seret-howto.jpg&quot; alt=&quot;&quot; /&gt;
-&lt;em&gt;Inside the cabinet&lt;/em&gt;&lt;/p&gt;</content><category term="vanlife" /><summary type="html">This is the seventh post in a series that serves as the primary documentation of how I purchased and converted a 2008 Dodge Sprinter Van to a full-time living space.</summary></entry><entry><title type="html">THE VAN PROJECT - Storage, Table, Wardrobe</title><link href="/2019/11/09/van-build-6.html" rel="alternate" type="text/html" title="THE VAN PROJECT - Storage, Table, Wardrobe" /><published>2019-11-09T00:00:00-05:00</published><updated>2019-11-09T00:00:00-05:00</updated><id>/2019/11/09/van-build-6</id><content type="html" xml:base="/2019/11/09/van-build-6.html">&lt;p&gt;This is the sixth post in a &lt;a href=&quot;/tag/vanlife&quot;&gt;series&lt;/a&gt; that serves as the primary documentation of how I purchased and converted a 2008 Dodge Sprinter Van to a full-time living space.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;#underbed-storage&quot;&gt;Underbed Storage&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#pull-out-table&quot;&gt;Pull Out Table&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#bedside-wardrobe&quot;&gt;Bedside Wardrobe&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#secret-compartment&quot;&gt;Secret Compartment&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#bookshelf-nightstand&quot;&gt;Bookshelf/Nightstand&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;underbed-storage&quot;&gt;Underbed Storage&lt;/h1&gt;
-
-&lt;p&gt;I chose to fit four drawers in the space underneath the bed, leaving space on the passenger side for the fridge box and the rear wheel well. Two drawers would be small (roughly 6” high and 12” wide) and two would be large (about 10” high and 27” wide). I used Blum 21” soft close undermount drawer slides for all of the drawers in the van.&lt;/p&gt;
-
-&lt;p&gt;I used 1/2” birch plywood for the drawer sides and front attachments, using a table saw to cut dado grooves in the sides to support the bottom and pocket holes to connect the rest of the pieces. I sanded the drawers using up through 220 grit sandpaper and then coated them in 3 coats of water based polyurethane. I then used a jigsaw to cut out handles for the front pieces, which I then painted with the same primer and paint used for the walls and attached to the drawer front with wood glue.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/furniture/structure.jpg&quot; alt=&quot;struture&quot; /&gt;
-&lt;em&gt;The supporting structure to support the drawer slides&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Once the drawer boxes were constructed it was incredibly frustrating to actually install them in the van. This was largely because I had installed the cabinet frame before installing the slides themselves. Measuring and ensuring the two slides for each drawer were level, evenly aligned in all dimensions without being able to manipulate the cabinet sides turned out to be very finicky. I had to redo it several times before the drawers slid smoothly and appeared to be visually aligned.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/furniture/drawers.jpg&quot; alt=&quot;drawers&quot; /&gt;
-&lt;em&gt;The drawer boxes installed&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/furniture/fronts.jpg&quot; alt=&quot;drawers&quot; /&gt;
-&lt;em&gt;The drawer fronts partially installed&lt;/em&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;pull-out-table&quot;&gt;Pull Out Table&lt;/h1&gt;
-
-&lt;p&gt;One of my favorite features of the underbed cabinet is the pull-out butcher block table. This table sits at about 27” and itself measures about 27” square, making it a perfect surface to eat or work on when paired with the bench or trash ottoman (to be documented in the future!)&lt;/p&gt;
-
-&lt;p&gt;The table is essentially a drawer whose body is a side-grain maple butcher block. I ripped the strips on a table saw and used Titebond III to glue the strips together before sanding it down, using through 320 grit sandpaper. The surface is finished with mineral oil and butcher block conditioner making it fully food safe.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/furniture/table.jpg&quot; alt=&quot;frame&quot; /&gt;
-&lt;em&gt;The glued and sanded table body&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/furniture/table-treated.jpg&quot; alt=&quot;frame&quot; /&gt;
-&lt;em&gt;After a few coats of mineral oil&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/furniture/table-installed.jpg&quot; alt=&quot;installed&quot; /&gt;
-&lt;em&gt;The table installed above the large drawers&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;The table also features foldable tapered maple legs that allow it to be completely stable when extended. The table and drawers are kept secure while the van is driving with brass sash locks and a sliding deadbolt.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/furniture/table-legs-under.jpg&quot; alt=&quot;installed&quot; /&gt;
-&lt;em&gt;View of the folded table legs&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/furniture/table-leg-clse.jpg&quot; alt=&quot;installed&quot; /&gt;
-&lt;em&gt;Close up of the extended table legs&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/furniture/table-extended.jpg&quot; alt=&quot;installed&quot; /&gt;
-&lt;em&gt;Table in extended mode&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/furniture/bed-final.jpg&quot; alt=&quot;installed&quot; /&gt;
-&lt;em&gt;Final underbed cabinet!&lt;/em&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;bedside-wardrobe&quot;&gt;Bedside Wardrobe&lt;/h1&gt;
-
-&lt;p&gt;I built two wardrobe columns on the side of the bed to provide even more additional storage space to put my clothes and other items. This was significantly easier than the drawer construction, mostly because cabinets don’t require nearly as much work as drawer boxes.&lt;/p&gt;
-
-&lt;p&gt;The first step was to build a frame on top of which the bedside cabinets could sit. This frame was built to be high enough so that I could fit my bicycle underneath the cabinet without too much trouble.&lt;/p&gt;
-
-&lt;p&gt;I used a series of 3/4” studs bolted to the L track and connected to the bed frame with pocket screws to form the base of the cabinet frame, which itself is 1/2” birch plywood.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/furniture/bedside-attach.jpg&quot; alt=&quot;installed&quot; /&gt;
-&lt;em&gt;View of frame skeleton bolted to L track, with bicycle for scale&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;The frame is split into two sections - one about 36” wide and the other about 18” wide. The 18” section sits lower than the 36” section by about three inches. This space I planned to use for a “hidden” compartment in the bottom of the cabinet.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/furniture/bedside0.jpg&quot; alt=&quot;installed&quot; /&gt;
-&lt;em&gt;Installing the bottom of the cabinet. Note the offset&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/furniture/bedside1.jpg&quot; alt=&quot;installed&quot; /&gt;
-&lt;em&gt;Cabinet bottoms finished!&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;The primary challenge was carving the side panels of the wardrobe to match the curved sides of the van. I first cut a piece of cardboard to roughly match the curvature of the van. Then, while holding it perpendicular to and as close to the wall as possible I held a sharpie taped to a wood block in the other hand. By pressing the wood block against the van wall and having the other end (with the sharpie attached) I could traced a line exactly four inches (the size of the wood block) away from the side of the van onto the cardboard piece. This line would follow the curve of the van wall exactly.&lt;/p&gt;
-
-&lt;p&gt;Thankfully, I didn’t actually need to be that precise since nothing terrible would happen if these cabinet sides did not perfectly match.&lt;/p&gt;
-
-&lt;p&gt;The cabinet body (like almost all the other furniture in the van) is triple coated with water baed polyurethane or primed and painted in glossy white.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/furniture/bedside-frame.jpg&quot; alt=&quot;installed&quot; /&gt;
-&lt;em&gt;Cabinet partially finished/installed&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;I divided the 36” space into two 18” columns with a variety of shelf heights, from 11” to 7”. This works well enough to hold my clothes, although I think a more efficient layout could use either three 12” columns or two columns of 12” and 24”, and have more shelves in the 7-8” range than the 10-11” range. It seems that most clothes take up about 12” of space when folded, and I also rarely stack clothes higher than 7-8”.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/furniture/bedside-fronts.jpg&quot; alt=&quot;installed&quot; /&gt;
-&lt;em&gt;All shelves finished, cabinet doors partially installed&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;I used 1/2” overlay cabinet hinges for the cabinet doors with roller catches to keep them from swinging open when driving. It was actually very frustrating to install these cabinet doors since most cabinet hinges are made to be embedded in thicker (5/8”) cabinet doors. I couldn’t believe how much this 1/8” difference made. I had to take the doors back to the shop many times to repaint and fill the spots where the hinge body broke through the other side of the door.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/furniture/bedside-fronts-finished.jpg&quot; alt=&quot;installed&quot; /&gt;
-&lt;em&gt;Cabinet doors installed!&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/furniture/cabinet-open.jpg&quot; alt=&quot;installed&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;secret-compartment&quot;&gt;Secret Compartment&lt;/h2&gt;
-&lt;p&gt;I made a false bottom for the right hand wardrobe which can be opened with a fish spatula or other similar flexible-but-rigid material. The underlying space is the perfect size for laptops, passports, and other small valuables.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/furniture/seret-howto.jpg&quot; alt=&quot;cpt&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/furniture/secret-open.jpg&quot; alt=&quot;cpt&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;bookshelfnightstand&quot;&gt;Bookshelf/Nightstand&lt;/h2&gt;
-&lt;p&gt;I made a simple shelf for the remaining 18” of bedside table which is able to hold a few books and other nightstand items.
-&lt;img src=&quot;/images/van/furniture/bookshelf.jpg&quot; alt=&quot;cpt&quot; /&gt;&lt;/p&gt;</content><category term="vanlife" /><summary type="html">This is the sixth post in a series that serves as the primary documentation of how I purchased and converted a 2008 Dodge Sprinter Van to a full-time living space.</summary></entry><entry><title type="html">THE VAN PROJECT - Bed &amp;amp; Layout</title><link href="/2019/11/07/van-build-5.html" rel="alternate" type="text/html" title="THE VAN PROJECT - Bed &amp; Layout" /><published>2019-11-07T00:00:00-05:00</published><updated>2019-11-07T00:00:00-05:00</updated><id>/2019/11/07/van-build-5</id><content type="html" xml:base="/2019/11/07/van-build-5.html">&lt;p&gt;This is the fifth post in a &lt;a href=&quot;/tag/vanlife&quot;&gt;series&lt;/a&gt; that serves as the primary documentation of how I purchased and converted a 2008 Dodge Sprinter Van to a full-time living space.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/van-CA.jpg&quot; alt=&quot;van in cali&quot; /&gt;
-&lt;em&gt;Menlo Park, CA. Spotting a fellow vanlifer in the parking lot at work…&lt;/em&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;bed--layout&quot;&gt;Bed &amp;amp; Layout&lt;/h1&gt;
-
-&lt;p&gt;The style of bed chosen has a big impact on the final layout of the van - and the bed style is informed by many factors. Some are physical - do you plan to sleep two? Are you under 5’10”? Do you want bike storage in your van?&lt;/p&gt;
-
-&lt;p&gt;I opted for a 50” wide bed oriented lengthwise in the van. The 50” width meant that there would be 18” of room on the driver’s side where I would be able to store my bike and clothing in a bedside cabinet. 50” is only four inches narrower than a full size bed, so I figured that it should be plenty comfortable with one and tolerable with two.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/bed/frame1.jpg&quot; alt=&quot;frame&quot; /&gt;
-&lt;em&gt;The skeleton frame of the bed&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;The frame skeleton is constructed with 2x3 lumber and supported on the driver’s side with basic legs. The frame is bolted into the L track on the passenger’s side. The frame pieces are joined primarily with pocket holes and glue.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/bed/frame2.jpg&quot; alt=&quot;frame&quot; /&gt;
-&lt;em&gt;Fixing the slats - 3/4” birch ply&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;You might notice that the foot of the bed seems to be reserved for a different construction strategy. I planned for a collapsible foot of the bed using vertically oriented slats that could be pulled in and out. Ideally this would allow approximately 14” of extra floor space in the living area while only adding a minimal amount of effort for pulling out the bed each day.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/bed/frame4.jpg&quot; alt=&quot;frame&quot; /&gt;
-&lt;em&gt;Fixing the vertical slats&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Building the extension portion was tricky. I decided to screw the movable slats to a piece of 3/4” plywood that lay sandwiched underneath the fixed vertical slats and above a pair of beams that was attached to the frame. You can make out this piece of plywood (with some nylon tape to reduce friction) and the support beams in the following pictures:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/bed/slide1.jpg&quot; alt=&quot;frame&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/bed/slide2.jpg&quot; alt=&quot;frame&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Here are some photos of the bed throughout various stages of the construction process - some of the future furniture pieces are revealed in these photos, but I actually couldn’t find any finished-product pictures from the original construction period.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/bed/finished2.jpg&quot; alt=&quot;frame&quot; /&gt;
-&lt;em&gt;Starting to feel homey!&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/bed/finished-closed.jpg&quot; alt=&quot;frame&quot; /&gt;
-&lt;em&gt;Mattress lifted up showing extension in closed position. Note the block of wood bolted near the sliding door used to support weight on the extension when it’s pulled out.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/bed/finished-open.jpg&quot; alt=&quot;frame&quot; /&gt;
-&lt;em&gt;Mattress lifted up with extension in open position&lt;/em&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;preparing-the-mattress&quot;&gt;Preparing the Mattress&lt;/h1&gt;
-
-&lt;p&gt;I ordered a 6” foam mattress on Amazon and used a bread knife to cut it to the necessary 50” width. I also cut it across into two pieces so that it could fold easily when the bed frame is in closed mode and sewed a custom cover for the extra mattress piece using upholstery fabric&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/bed/upholstery.jpg&quot; alt=&quot;frame&quot; /&gt;&lt;/p&gt;</content><category term="vanlife" /><summary type="html">This is the fifth post in a series that serves as the primary documentation of how I purchased and converted a 2008 Dodge Sprinter Van to a full-time living space.</summary></entry></feed>
+&lt;em&gt;Inside the cabinet&lt;/em&gt;&lt;/p&gt;</content><category term="vanlife" /><summary type="html">This is the seventh post in a series that serves as the primary documentation of how I purchased and converted a 2008 Dodge Sprinter Van to a full-time living space.</summary></entry></feed>
