@@ -1,4 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.6.3">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2020-02-04T22:19:17-05:00</updated><id>//</id><title type="html">Sylvan Zheng</title><subtitle></subtitle><entry><title type="html">Video Painting</title><link href="/2020/01/04/lipp-1.html" rel="alternate" type="text/html" title="Video Painting" /><published>2020-01-04T00:00:00-05:00</published><updated>2020-01-04T00:00:00-05:00</updated><id>/2020/01/04/lipp-1</id><content type="html" xml:base="/2020/01/04/lipp-1.html">&lt;p&gt;This week, I recorded nine different videos that I could roughly group into two groups - experiments with light, experiments with texture. Of course, what is texture in an image but the nature of the light’s reflection?&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.6.3">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2020-02-11T19:36:48-05:00</updated><id>//</id><title type="html">Sylvan Zheng</title><subtitle></subtitle><entry><title type="html">Video System (1/x)</title><link href="/2020/02/10/lipp-2.html" rel="alternate" type="text/html" title="Video System (1/x)" /><published>2020-02-10T00:00:00-05:00</published><updated>2020-02-10T00:00:00-05:00</updated><id>/2020/02/10/lipp-2</id><content type="html" xml:base="/2020/02/10/lipp-2.html">&lt;p&gt;This is the first post in a weekly series documenting my attempt at creating a performance system for an audiovisual piece that focuses on a few themes: digital alienation, sum of small parts, and audio-controlled visuals.&lt;/p&gt;
+
+&lt;p&gt;Essentially my plan is to write a piece of music for the guitar, use Max/MSP to analyze the timbre and prominent frequencies in real time and use this information to both transform audio processing effects and control visuals onscreen.&lt;/p&gt;
+
+&lt;p&gt;Here is a draft of some of the musical components I’m thinking about. It opens with a tremolo between dominant 7th intervals, a tense and anxious sound. The main chord progression struggles to find balance, cycling constantly between fifths never quite resolving. This harmonic aimlessness (I hope) aims to mirror the kind of internal imbalance brought on by the modern urban existence.&lt;/p&gt;
+&lt;audio controls=&quot;&quot;&gt;
+  &lt;source src=&quot;/docs/guitars.mp3&quot; type=&quot;audio/mp3&quot; /&gt;
+  Your browser does not support the audio tag.
+&lt;/audio&gt;
+&lt;p&gt;I’m excited for the visual component of this project to underscore some of the themes in the music. Many times the inspration for the musical writing is abstract and hidden from the audience, but this will be an opportunity to allow for more specific mood-setting.&lt;/p&gt;
+
+&lt;iframe src=&quot;https://player.vimeo.com/video/390869413&quot; width=&quot;640&quot; height=&quot;480&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;a href=&quot;https://vimeo.com/390869413&quot;&gt;testoutput1&lt;/a&gt; from &lt;a href=&quot;https://vimeo.com/user59873575&quot;&gt;Sylvan&lt;/a&gt; on &lt;a href=&quot;https://vimeo.com&quot;&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The current visual setup uses a random seek of a close up electronic screen texture luma-keyed to a high contrast clip of a fast moving crowd (pulled from &lt;em&gt;Koyaanaqatsi&lt;/em&gt;). I’m hoping to add the ability to layer in at least one more video and then start working on the audio signal processing =&amp;gt; image processing pipeline.&lt;/p&gt;</content><category term="live_image" /><category term="itp" /><summary type="html">This is the first post in a weekly series documenting my attempt at creating a performance system for an audiovisual piece that focuses on a few themes: digital alienation, sum of small parts, and audio-controlled visuals.</summary></entry><entry><title type="html">Video Painting</title><link href="/2020/01/04/lipp-1.html" rel="alternate" type="text/html" title="Video Painting" /><published>2020-01-04T00:00:00-05:00</published><updated>2020-01-04T00:00:00-05:00</updated><id>/2020/01/04/lipp-1</id><content type="html" xml:base="/2020/01/04/lipp-1.html">&lt;p&gt;This week, I recorded nine different videos that I could roughly group into two groups - experiments with light, experiments with texture. Of course, what is texture in an image but the nature of the light’s reflection?&lt;/p&gt;
 
 &lt;p&gt;Most of the videos are either from transit sources or from a kitchen setting. I thought it would be interesting to specifically limit myself to everyday scenes, to force new perspectives on common scenes or occurrences. Most of the time it was easy to achieve this just by zooming in a lot, removing the context that would normally familiarize the shot.&lt;/p&gt;
 
@@ -493,65 +507,4 @@
 &lt;em&gt;Stove and sink mounted&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/van/kitchen/cabinets2.jpg&quot; alt=&quot;img&quot; /&gt;
-&lt;em&gt;Countertop installed, cabinet fronts partially installed&lt;/em&gt;&lt;/p&gt;</content><category term="vanlife" /><summary type="html">This is the eighth post in a series that serves as the primary documentation of how I purchased and converted a 2008 Dodge Sprinter Van to a full-time living space.</summary></entry><entry><title type="html">THE VAN PROJECT - Power</title><link href="/2019/11/09/van-build-7.html" rel="alternate" type="text/html" title="THE VAN PROJECT - Power" /><published>2019-11-09T00:00:00-05:00</published><updated>2019-11-09T00:00:00-05:00</updated><id>/2019/11/09/van-build-7</id><content type="html" xml:base="/2019/11/09/van-build-7.html">&lt;p&gt;This is the seventh post in a &lt;a href=&quot;/tag/vanlife&quot;&gt;series&lt;/a&gt; that serves as the primary documentation of how I purchased and converted a 2008 Dodge Sprinter Van to a full-time living space.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/electricity/solar1.jpg&quot; alt=&quot;&quot; /&gt;
-This was one of the most fun, satisfying, and expensive portions of the van build!&lt;/p&gt;
-
-&lt;h1 id=&quot;how-much-electricity&quot;&gt;How Much Electricity?&lt;/h1&gt;
-
-&lt;p&gt;I collected (roughly) the amount of electricity I planned to use in a day:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;4x0.3A lights for a few hours = 4.8Ah&lt;/li&gt;
-  &lt;li&gt;12 hours of 0.8A DC fridge = 10Ah&lt;/li&gt;
-  &lt;li&gt;A few hours of fan usage @ 1.2A = 5A&lt;/li&gt;
-  &lt;li&gt;Charging laptops and phones = 4A or so&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;I came out with roughly 25Ah per day of power usage. This meant that with 200W of solar running at 50% efficiency (shade from buildings, cloudy days, etc.) I could expect to get about 200W*(8 hours) * 0.5/12V = 66 per day, which should be more than enough to cover all my electrical needs. For battery, I decided on a 100Ah AGM battery to provide two full days of offgrid power supply in the rare case that there would be no sun at all coming through the solar system.&lt;/p&gt;
-
-&lt;h1 id=&quot;wiring-it-together&quot;&gt;Wiring It Together&lt;/h1&gt;
-
-&lt;p&gt;The van’s electrical system is much easier to manage since it doesn’t need to handle any super-high current loads coming from an alternator or wall charger (I’m powering off of solar only). This means that 8-10AWG wire in short lengths is totally sufficient to handle the max of 20A coming from the solar charge controller.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/electricity/battery1.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;From the battery’s positive terminal I place a 20A fuse and battery switch inline before connecting it to the battery input of the solar charge controller. Load goes to the fusebox and PV goes to the solar panels all using 10AWG wire and mounted underneath the bed by the passenger side wheel well. The battery goes into a box made of 3/4” plywood bolted to the van floor L track. All high current wire connections are connected using heatshrink crimp terminals&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/electricity/fusebox.jpg&quot; alt=&quot;&quot; /&gt;
-&lt;em&gt;The van fusebox&lt;/em&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;mounting-the-solar-panels&quot;&gt;Mounting the Solar Panels&lt;/h1&gt;
-
-&lt;p&gt;I had to get creative to mount the solar panels on the roof of the van without paying an obscene amount of money for a custom roof rack solution. The primary challenge is that there needs to be a significant air gap beneath the solar panels, otherwise they can overheat and/or underperform.&lt;/p&gt;
-
-&lt;p&gt;I decided to use a length of L shaped 1/8” thick aluminum rod to mount the panels themselves to, and then mount these rails to a set of spacers I would fashion out of 1” square aluminum tubing using stainless steel quarter inch bolts. This worked beautifully but required a royal pain amount of drilling and hacksawing through aluminum. I overpaid for a set of mounting bolts, which were essentially pieces of steel that slid into the roof rack rails along with a set of flathead stainless carriage bolts.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/electricity/spacers.jpg&quot; alt=&quot;&quot; /&gt;
-&lt;em&gt;The aluminum spacers&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/electricity/solar2.jpg&quot; alt=&quot;&quot; /&gt;
-&lt;em&gt;Panels installed, mounted over the spacers&lt;/em&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;dimmer-lightswitch&quot;&gt;Dimmer Lightswitch&lt;/h1&gt;
-
-&lt;p&gt;It turns out that dimmers for DC light systems are very hard to come by. I went to an electronics and lighting supply store and explain my situation several times to the staff there before they understood what I was looking for. Now that I understand a little bit more about DC electricity it does kind of make sense - the naive implementation of using a variable resistor is really inefficient since the excess power is just getting dissipated as heat. A more sophisticated method uses PWM - something that AC circuits have available to play with. But not DC.&lt;/p&gt;
-
-&lt;p&gt;Once I had my overpriced DC dimmer switch in hand, I punched out an ugly hole in the wall by drillling several small holes (I had no hand jigsaw). Thankfully it would be covered up by the lightswitch wallplate.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/ch2iRuCo3Ifc2peS1j/giphy.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;And voila! The van has electricity!&lt;/p&gt;
-
-&lt;h1 id=&quot;inverter&quot;&gt;Inverter&lt;/h1&gt;
-
-&lt;p&gt;I later added a 600W pure sine wave inverter to the van’s power system. It’s powerful enough to run the corded jigsaw I bought off the van battery, but not so powerful that I’m at risk of damaging the electrical system or overloading the wiring. I wired it to a normal house outlet I bought at Home Depot by simply stripping the ends off an extension cord and attaching those leads to the house outlet leads. The inverter also comes with a remote switch control, which I mounted directly next to the AC outlet in the bedside cabinet.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/electricity/battery2.jpg&quot; alt=&quot;&quot; /&gt;
-&lt;em&gt;The electrical panel, rearranged to fit the inverter&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/electricity/inverter.jpg&quot; alt=&quot;&quot; /&gt;
-&lt;em&gt;Closeup of the AC outlet and inverter control panel, along with some extra electronics&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/furniture/seret-howto.jpg&quot; alt=&quot;&quot; /&gt;
-&lt;em&gt;Inside the cabinet&lt;/em&gt;&lt;/p&gt;</content><category term="vanlife" /><summary type="html">This is the seventh post in a series that serves as the primary documentation of how I purchased and converted a 2008 Dodge Sprinter Van to a full-time living space.</summary></entry></feed>
+&lt;em&gt;Countertop installed, cabinet fronts partially installed&lt;/em&gt;&lt;/p&gt;</content><category term="vanlife" /><summary type="html">This is the eighth post in a series that serves as the primary documentation of how I purchased and converted a 2008 Dodge Sprinter Van to a full-time living space.</summary></entry></feed>
