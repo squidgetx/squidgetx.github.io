@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.6.3">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2020-02-23T10:29:43-05:00</updated><id>//</id><title type="html">Sylvan Zheng</title><subtitle></subtitle><entry><title type="html">Video System (2/x)</title><link href="/2020/02/18/lipp-3.html" rel="alternate" type="text/html" title="Video System (2/x)" /><published>2020-02-18T00:00:00-05:00</published><updated>2020-02-18T00:00:00-05:00</updated><id>/2020/02/18/lipp-3</id><content type="html" xml:base="/2020/02/18/lipp-3.html">&lt;p&gt;This is the second post in a weekly series documenting my attempt at creating a performance system for an audiovisual piece that focuses on a few themes: digital alienation, sum of small parts, and audio-controlled visuals.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.6.3">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2020-02-26T22:32:24-05:00</updated><id>//</id><title type="html">Sylvan Zheng</title><subtitle></subtitle><entry><title type="html">KQI</title><link href="/project/2020/02/26/lipp-4.html" rel="alternate" type="text/html" title="KQI" /><published>2020-02-26T00:00:00-05:00</published><updated>2020-02-26T00:00:00-05:00</updated><id>/project/2020/02/26/lipp-4</id><content type="html" xml:base="/project/2020/02/26/lipp-4.html">&lt;iframe src=&quot;https://player.vimeo.com/video/394091710&quot; width=&quot;640&quot; height=&quot;480&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;KQI is a reinterpretation of the 1982 film &lt;em&gt;Koyaanisqatsi&lt;/em&gt; directed by Godfrey Reggio and scored by Philip Glass. It is a live video and audio performance - both the visuals and the music is being played and processed live. The audio from the guitar is analyzed to control the varying parameters of the video processing effects using Max/MSP.&lt;/p&gt;</content><category term="live_image" /><category term="itp" /><summary type="html"></summary></entry><entry><title type="html">Video System (2/x)</title><link href="/2020/02/18/lipp-3.html" rel="alternate" type="text/html" title="Video System (2/x)" /><published>2020-02-18T00:00:00-05:00</published><updated>2020-02-18T00:00:00-05:00</updated><id>/2020/02/18/lipp-3</id><content type="html" xml:base="/2020/02/18/lipp-3.html">&lt;p&gt;This is the second post in a weekly series documenting my attempt at creating a performance system for an audiovisual piece that focuses on a few themes: digital alienation, sum of small parts, and audio-controlled visuals.&lt;/p&gt;
 
 &lt;p&gt;This week I spent a lot of time experimenting with the different jitter objects we went over in class last week, focusing mainly on recursive chromakeying and jit.op. I also realized that jit.matrix DOES NOT actually downsample you even if you specify dimensions.. you still need to specify adapt=0 (or just downsample the original audio file). My FPS jumped up once I did this.&lt;/p&gt;
 
@@ -298,61 +300,4 @@
 
 &lt;p&gt;Thanks to: Tom Igoe, Luisa Pereira, Aidan Lincoln, @abandonware, and Rob Ryan for their contributions to this project and of course to Young-min Choi, the primary collaborator for this project.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/chordal_distance/hanging1.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><category term="itp" /><category term="code_of_music" /><category term="physical_computing" /><category term="chordal_distance" /><category term="audio" /><summary type="html">CHORDAL DISTANCE is an interactive music composition and installation artwork. It explores the relation between two players by connecting the physical act of pulling to music.</summary></entry><entry><title type="html">Chordal Distance - Interaction Analysis</title><link href="/2019/11/21/code-of-music-final-ideation.html" rel="alternate" type="text/html" title="Chordal Distance - Interaction Analysis" /><published>2019-11-21T00:00:00-05:00</published><updated>2019-11-21T00:00:00-05:00</updated><id>/2019/11/21/code-of-music-final-ideation</id><content type="html" xml:base="/2019/11/21/code-of-music-final-ideation.html">&lt;p&gt;&lt;em&gt;Chordal Distance&lt;/em&gt; is the working name of the interactive composition / performance tool I am building with Youngmin Choi for this semester’s Code of Music and Physical Computing final project. This post attempts to use some of the ideas from Bill Verplank’s &lt;a href=&quot;http://www.billverplank.com/IxDSketchBook.pdf&quot;&gt;interaction design sketchbook&lt;/a&gt; to analyze/refine the concept thus far.&lt;/p&gt;
-
-&lt;h1 id=&quot;idea&quot;&gt;IDEA&lt;/h1&gt;
-&lt;p&gt;The project has two main ideas that could be viewed as separate components. The first perspective is that of an interactive composition - a musical experience facilitated by the audience’s own physical interaction. The second perspective is that the project is a performance tool / instrument, and the composition is merely a demonstration of the tool’s capabilities. Of course, in reality the final product will be a mix of both - we will design the physical interface and its mappings with both use-cases in mind. Ideally it will be a tool suitable for use on stage as well as in an installation or demonstration setting.&lt;/p&gt;
-
-&lt;h1 id=&quot;error&quot;&gt;ERROR&lt;/h1&gt;
-&lt;p&gt;The motivation for the idea comes from perceived shortcomings in both modern musical interfaces and interactive musical experiences. If we go back to the &lt;em&gt;dimensions of musical interaction&lt;/em&gt; metaphor we see there are seven axes that a musical interface might exist on:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Role of Sound:&lt;/li&gt;
-  &lt;li&gt;Required Expertise:&lt;/li&gt;
-  &lt;li&gt;Musical Control:&lt;/li&gt;
-  &lt;li&gt;Degrees of Freedom:&lt;/li&gt;
-  &lt;li&gt;Feedback Modalities:&lt;/li&gt;
-  &lt;li&gt;Inter-cators:&lt;/li&gt;
-  &lt;li&gt;Distribution in Space:&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;I want to primarily focus on Musical Control, Degrees of Freedom, Feedback Modalities, since we are primarily concerned with &lt;em&gt;expressive sound&lt;/em&gt;, equired expertise is almost always &lt;em&gt;correlated with musical control/degrees of freedom,&lt;/em&gt; and distribution in space is typically stereo or single point origin for typical devices. I also will redefine degrees of freedom &lt;em&gt;as it relates&lt;/em&gt; to each component of musical control available, and redefine musical control to be a fixed set of categories including pitch, articulation, and timbre. Looking at some common realtime interfaces/instruments we can see that the overall space is incredibly poorly explored.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Violin: note/articulation level control, high degree of freedom. High level of haptic feedback.&lt;/li&gt;
-  &lt;li&gt;MIDI keyboard: note/articulation level control, moderate degree of freedom. Moderate level of haptic feedback, varying by specific brand&lt;/li&gt;
-  &lt;li&gt;Google Music Lab Experiments: note level control (no articulation usually). Low degree of freedom. Visual feedback&lt;/li&gt;
-  &lt;li&gt;GroovePizza: note level control (no articulation). Low degree of freedom, Visual Feedback&lt;/li&gt;
-  &lt;li&gt;Tonnetz: note/chord level control (no articulation). Moderate degree of freedom&lt;/li&gt;
-  &lt;li&gt;Music Video: song level control, incredibly low degree of freedom (on/off)&lt;/li&gt;
-  &lt;li&gt;DJ software: song level control, moderate degree of freedom&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The question for me motivating this experiment is whether we can create an interface whose musical control abstraction level in between note level and song level and simultaneously allows for a high level of freedom.&lt;/p&gt;
-
-&lt;h1 id=&quot;metaphor&quot;&gt;METAPHOR&lt;/h1&gt;
-&lt;p&gt;The primary metaphor is tension - the core of a musical story (or any story, for that matter) is tension and release, balance and imbalance, stability and instability. This metaphor will be realized physically with string/ropes that the user can control the tension of with their body.&lt;/p&gt;
-
-&lt;h1 id=&quot;scenario--model&quot;&gt;SCENARIO / MODEL&lt;/h1&gt;
-&lt;p&gt;The main scenario as described in IDEA is either a performance or installation space.&lt;/p&gt;
-
-&lt;p&gt;The model is that two participants/performers will be connected physically - each holding a handle connected by a rope or string. They will be able to physcally manipulate the level and character of the tension between them by pulling against each other, and thus indirectly manipulate the musical tension being articulated thorugh speakers and computer sound system placed in the performance/installation space&lt;/p&gt;
-
-&lt;h1 id=&quot;task&quot;&gt;TASK&lt;/h1&gt;
-&lt;ol&gt;
-  &lt;li&gt;Setup&lt;/li&gt;
-  &lt;li&gt;Explore&lt;/li&gt;
-  &lt;li&gt;Pull!&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h1 id=&quot;display&quot;&gt;DISPLAY&lt;/h1&gt;
-&lt;p&gt;The display needs some refinement, though we have narrowed the options somewhat. We know that for the installation setting we want to articulate the space in which the experimentation will take place, to encourage the participants to stand at the appropriate distance to create tension.&lt;/p&gt;
-
-&lt;p&gt;Current working models for display are:&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;Instrument simply positioned on a table in front of the demarcated space&lt;/li&gt;
-  &lt;li&gt;Each handle suspended in the air&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h1 id=&quot;control&quot;&gt;CONTROL&lt;/h1&gt;
-&lt;p&gt;See Scenario/Model&lt;/p&gt;</content><category term="itp" /><category term="code_of_music" /><category term="physical_computing" /><category term="chordal_distance" /><summary type="html">Chordal Distance is the working name of the interactive composition / performance tool I am building with Youngmin Choi for this semester’s Code of Music and Physical Computing final project. This post attempts to use some of the ideas from Bill Verplank’s interaction design sketchbook to analyze/refine the concept thus far.</summary></entry></feed>
+&lt;p&gt;&lt;img src=&quot;/images/chordal_distance/hanging1.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><category term="itp" /><category term="code_of_music" /><category term="physical_computing" /><category term="chordal_distance" /><category term="audio" /><summary type="html">CHORDAL DISTANCE is an interactive music composition and installation artwork. It explores the relation between two players by connecting the physical act of pulling to music.</summary></entry></feed>
