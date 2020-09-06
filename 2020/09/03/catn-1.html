@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Thoroughfare</title>
-  <meta name="description" content="Thoroughfare is a participatory sound installation designed to explore our relationship to roads, hallways, thruways, and other spaces of transit. The instal...">
+  <title>Defining Narrative // The Myth of ‘Universal’ Narrative Models // Her Story</title>
+  <meta name="description" content="Defining Narrative Abbott, H. Porter. “Defining Narrative.” The Cambridge Introduction to Narrative, 2nd edition, Cambridge University Press, 2008, pp. 13–27.">
 
   <link rel="stylesheet" href="/assets/main.css">
-  <link rel="canonical" href="/project/2017/06/09/thoroughfare.html">
+  <link rel="canonical" href="/2020/09/03/catn-1.html">
   <link rel="alternate" type="application/rss+xml" title="Sylvan Zheng" href="/feed.xml">
   
   
@@ -254,25 +254,16 @@ You may NOT sub-license, resell, rent, redistribute or otherwise transfer the ic
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">Thoroughfare</h1>
-    <p class="post-meta"><time datetime="2017-06-09T14:40:21-04:00" itemprop="datePublished">Jun 9, 2017</time></p>
+    <h1 class="post-title" itemprop="name headline">Defining Narrative // The Myth of ‘Universal’ Narrative Models // Her Story</h1>
+    <p class="post-meta"><time datetime="2020-09-03T00:00:00-04:00" itemprop="datePublished">Sep 3, 2020</time></p>
     
     
       <p class="post-meta">
         
-          <a class='tag' href="/tag/audio">audio</a>
+          <a class='tag' href="/tag/narrative">narrative</a>
 
         
-          <a class='tag' href="/tag/Max/MSP">Max/MSP</a>
-
-        
-          <a class='tag' href="/tag/instrument">instrument</a>
-
-        
-          <a class='tag' href="/tag/kinect">kinect</a>
-
-        
-          <a class='tag' href="/tag/granular">granular</a>
+          <a class='tag' href="/tag/itp">itp</a>
 
         
       </p>
@@ -280,17 +271,62 @@ You may NOT sub-license, resell, rent, redistribute or otherwise transfer the ic
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    <p>Thoroughfare is a participatory sound installation designed to explore our relationship to roads, hallways, thruways, and other spaces of transit. The installation, set in a sparse, indoor hallway, features sounds of the street, of New Haven cars, buses, bikers, and walkers. These sounds are triggered and manipulated by the movement of audience members through the installation space.</p>
+    <h1 id="defining-narrative">Defining Narrative</h1>
+<blockquote>
+  <p>Abbott, H. Porter. “Defining Narrative.” The Cambridge Introduction to Narrative, 2nd edition, Cambridge University Press, 2008, pp. 13–27.</p>
+</blockquote>
 
-<iframe src="https://player.vimeo.com/video/226073417" width="640" height="480" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
-<p><a href="https://vimeo.com/226073417">Thoroughfare (demo 1)</a> from <a href="https://vimeo.com/user59873575">Sylvan</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+<p>Abbot introduces the idea of narrative as a collection of events, undertaken by entities (or characters), told or presented in a particular way (narrative discourse). The definition is fairly straightforward, and I especially appreciated that while Abbot acknowledges alternative, more precise categorizations he also dismisses them as not being necessarily useful. All models are wrong but some are useful, as they say.</p>
 
-<iframe src="https://player.vimeo.com/video/226073462" width="640" height="480" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
-<p><a href="https://vimeo.com/226073462">Thoroughfare (demo 2)</a> from <a href="https://vimeo.com/user59873575">Sylvan</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+<h2 id="the-story-is-constructed">The story is constructed</h2>
+<p>The actual story is signified by the media, but exists outside of it. This can lead to an interesting question: how can we say for sure that story is a particular story and not some other? The construction of the story is an active process by the audience.</p>
 
-<p>The position of the participant in the space is closely linked to the position of the recorded sound which is heard. At a normal walking pace, the rev of engines and squealing of brakes proceeds at a relatively normal speed. Several participants going at a brisk walk might trigger a cascade of rapid fire sounds. Perhaps the most engaging mode of interaction involves slowing considerably, even stopping, as the sound of the car radio or bike spokes stretch out into novel, unrecognizable textures.</p>
+<p>If the construction is an active process, what are the real differences between an interactive narrative and a traditional one? Or alternatively, I wonder if a successful interactive narrative aligns the audience’s narrative construction process with the interaction experience. Traditional video games for example, while interactive, don’t always focus on interactive story elements - in most cases there is a fairly linear story with a nearly separate interactive game experience attached to it.</p>
 
-<p>Images from the camera are filtered and fed into Jitter’s OpenCV library to detect blobs. Blob tracking is then implemented using custom Max Java objects, which output each blob’s depth position to a custom granular synthesizer which uses the value as a position origin to sample audio from a set of seven pre-recorded samples.</p>
+<h2 id="constituentsupplementary-events">Constituent/Supplementary events</h2>
+<p>Abbot distinguishes between constituent, or key events and supplementary ones. Key events are hard to change, but supplementary events form part of the narrative discourse of a story and can easily influence themes and impact overall. The example Abbot gives is Frankenstein - the 1930 film adaptation adds many supplementary events concerning the technology that enables Frankenstein to create his monster, and thus impart a theme of technologically fueled anxiety, which is completely missing from the original 1818 novel.</p>
+
+<p>This means that any computational approach can’t be too naive about leaving in and out varying elements - but also that there is a lot of potential for carefully crafted narrative systems that allow for a spectrum of different supplementary events and themes for the audience.</p>
+
+<h1 id="the-myth-of-universal-narrative-models">The Myth of Universal Narrative Models</h1>
+<blockquote>
+  <p>Koenitz, Hartmut, et al. “The Myth of ‘Universal’ Narrative Models.” International Conference on Interactive Digital Storytelling, Springer, 2018, pp. 107–120.</p>
+</blockquote>
+
+<p>In this paper the authors give some background as to why traditional (read: Aristotelian intro/rising action/climax/denoument/conclusion + Hero’s Journey) narrative structures are not adequate for interactive storytelling media (primarily, that the rising action takes way too long) and attempt to give some alternative story structures from outside the Western canon to give interactive storytellers more structural tools.</p>
+
+<p>I don’t object to the overall objective of this paper, but I felt that some of the examples fell a bit short in terms of how useful they might be for interactive storytelling design. However, others were useful and I could immediately think of some examples or see ways in which it could be useful for reframing ways of storytelling in an interactive context.</p>
+
+<h2 id="etiological-oral-narratives">Etiological Oral Narratives</h2>
+
+<p>In short, fable-like or moral-at-the-end of the story style narrative. Without careful design, I can’t see how this doesn’t suffer from the same problem as the traditional narrative structure does in terms of pacing. In general from a structural point of view I don’t really think this is that different from the Aristotelian model at all, even though the moralizing element is certainly distinct thematically from the Hero’s Journey archetype.</p>
+
+<h2 id="bengali-widows-narratives">Bengali Widow’s Narratives</h2>
+
+<p>I thought that this structure was a fairly compelling example of how a multi-outcome story structure could be connected to a narrative theme - in this example, the Bengali widow either becomes the antagonist to her son’s wife (creating an endless cycle), or simply ends in tragedy (the widow ends up alone and penniless). However, ultimately neither outcome changes the fundamental tone of the story.</p>
+
+<h2 id="ganga-comics">Ganga Comics</h2>
+
+<p>“The solution to one conflict immediately causes the next conflict to arise”</p>
+
+<p>This reminds me generally of Japanese manga and anime narrative structures, where there is a seemingly endless ebb and flow and rising tension throughout the narrative. Ultimately, a more traditional meta-climax is needed for narrative satisfaction though - many popular manga series fall prey to the “Dragon Ball effect”, where the stakes continue to rise and new challenges must be presented over and over again, rapidly becoming stale. The most successful manga/anime
+(in my opinion, anyway) manage to wrap up the individual conflict components into a coherent arc over the multiplicty of smaller story-arcs. In this way, the
+narrative structure, on a zoomed out level, begins to mirror the Aristotelian narrative arc.</p>
+
+<h2 id="sīra-narratives">Sīra Narratives</h2>
+
+<p>This seems structurally identical to ganga comics</p>
+
+<h2 id="epiphanic-structure">Epiphanic Structure</h2>
+<blockquote>
+  <p>This original structure features a cycle of conflict designed to create a moment of
+epiphany, which causes the player/interactor to suddenly understand the events of the
+narrative in a different light, and subsequently explores the narative again from the
+beginning to discover the consequences of this revelation</p>
+</blockquote>
+
+<p>This structure seems really interesting, although I’m not sure it makes sense to call it a separate structure more than a device that can be used
+in traditional and interactive narrative alike.</p>
 
   </div>
 
