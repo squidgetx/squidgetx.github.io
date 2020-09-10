@@ -1,4 +1,135 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.6.3">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2020-09-06T17:18:37-04:00</updated><id>//</id><title type="html">Sylvan Zheng</title><subtitle></subtitle><entry><title type="html">Defining Narrative // The Myth of ‘Universal’ Narrative Models // Her Story</title><link href="/2020/09/03/catn-1.html" rel="alternate" type="text/html" title="Defining Narrative // The Myth of ‘Universal’ Narrative Models // Her Story" /><published>2020-09-03T00:00:00-04:00</published><updated>2020-09-03T00:00:00-04:00</updated><id>/2020/09/03/catn-1</id><content type="html" xml:base="/2020/09/03/catn-1.html">&lt;h1 id=&quot;defining-narrative&quot;&gt;Defining Narrative&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.6.3">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2020-09-10T02:04:02-04:00</updated><id>//</id><title type="html">Sylvan Zheng</title><subtitle></subtitle><entry><title type="html">Sketch 1 - Map Driven Narrative</title><link href="/2020/09/05/catn-1a.html" rel="alternate" type="text/html" title="Sketch 1 - Map Driven Narrative" /><published>2020-09-05T00:00:00-04:00</published><updated>2020-09-05T00:00:00-04:00</updated><id>/2020/09/05/catn-1a</id><content type="html" xml:base="/2020/09/05/catn-1a.html">&lt;h1 id=&quot;1&quot;&gt;1&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.charlesapple.com/uploads/2012/12/121209HobbitMap.jpg&quot; alt=&quot;Middle Earth map&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;One of my favorite parts of fantasy fiction novels is the maps on the inside cover.
+The maps lend the storyworld an undeniable realism and character, but they also shape the events, or plots of the novel itself. Frodo starts off living in the Shire, attempts to cross the Misty Mountains, pass through
+the Mines of Moria, spend some time in Lothlórien before setting off for Mordor. Some books, like
+Norton Juster’s &lt;em&gt;The Phantom Toolbooth&lt;/em&gt; add a layer of awareness on top of this, imbuing the fantasy
+locations with character becoming of their physical nature in more ways than one - the Doldrums, a set of sleepy
+foothills is where Milo, the protagonist, spends time distracted in a daze before getting on with his mission.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://static.wixstatic.com/media/9129a8_4bd25cb9774b40ce917c1d2b8773ae46~mv2.jpg/v1/fill/w_600,h_800,al_c,q_90/9129a8_4bd25cb9774b40ce917c1d2b8773ae46~mv2.webp&quot; alt=&quot;the doldrums&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;So if maps can reflect the events, or plot of a narrative as well as color its storyworld, perhaps it
+would be a useful creative device to use a map to perform the reverse process - to generate a plot procedurally.&lt;/p&gt;
+
+&lt;h1 id=&quot;2&quot;&gt;2&lt;/h1&gt;
+
+&lt;p&gt;In this sketch I define a basic set of rules for creating maps and then procedurally generating plot skeletons
+from it, using the primary formalism of “plot == set of chronological events.” The map metaphor additionally allows for some embellishment and the addition of supplementary events through its two dimensional spatial properties. In addition, although the most intuitive way to use the tool is to create linear maps and plots, there is no reason why the maps must be linear and could in fact serve as a useful templating tool for an interactive or multithreaded story structure.&lt;/p&gt;
+
+&lt;p&gt;Here is the basic outline: events are represented by locations on a map, like a town, city, mountain range, etc. Roads connect these locations, and the character of these roads serve as additional detailing or context
+for these events. Additionally, one location should be marked as START, which separately maps to an initial setting or character motivation.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Map Element&lt;/th&gt;
+      &lt;th&gt;Story Event&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Road&lt;/td&gt;
+      &lt;td&gt;Transition to Next Event&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Location&lt;/td&gt;
+      &lt;td&gt;Story Event, or Starting Motivation&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Road Changes to Horizontal&lt;/td&gt;
+      &lt;td&gt;character seeks out &amp;lt;next event&amp;gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&amp;lt;Event&amp;gt; is Approached From Horizontal&lt;/td&gt;
+      &lt;td&gt;character achieves &amp;lt;event&amp;gt; through effort&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Length of Road&lt;/td&gt;
+      &lt;td&gt;Proportional to the Intensity of &amp;lt;next event&amp;gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;You can view the spreadsheet containing the full ruleset &lt;a href=&quot;https://docs.google.com/spreadsheets/d/11kW9Os4TRw9FvzPzd6i8pAiTjUj8cmV5yqKKpmcadgo&quot;&gt;here&lt;/a&gt;. The specific implementation of what each location represents, or what intensity should map to is inspired primarily by my own aesthetic sense of what different classic fantasy map elements might represent in a story set in contemporary life. After all, who doesn’t want to relate mundane life struggles through an imaginary quest set in a fantastic land?&lt;/p&gt;
+
+&lt;p&gt;Here’s an example map and output. The ruleset that I made can be modeled with digital tiles (eg, in a spreadsheet) but one benefit of using representation of physical space is that I can represent it with physical objects which is a bit more satisfying to look at!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/catncatan.jpg&quot; alt=&quot;picture&quot; /&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Map Element&lt;/th&gt;
+      &lt;th&gt;Category&lt;/th&gt;
+      &lt;th&gt;Story Event&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Pasture&lt;/td&gt;
+      &lt;td&gt;START&lt;/td&gt;
+      &lt;td&gt;character seeking escape&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Town&lt;/td&gt;
+      &lt;td&gt;EVENT&lt;/td&gt;
+      &lt;td&gt;meets a new friend&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Horizontal Road&lt;/td&gt;
+      &lt;td&gt;TRANSITION&lt;/td&gt;
+      &lt;td&gt;(character was seeking social experience)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Road Length (3)&lt;/td&gt;
+      &lt;td&gt;INTENSITY&lt;/td&gt;
+      &lt;td&gt;(the new friend is from a strange place , but the same age&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Swamp&lt;/td&gt;
+      &lt;td&gt;EVENT&lt;/td&gt;
+      &lt;td&gt;the person betrays them&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Vertical Road&lt;/td&gt;
+      &lt;td&gt;TRANSITION&lt;/td&gt;
+      &lt;td&gt;unexpectedly&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Road Length (1)&lt;/td&gt;
+      &lt;td&gt;INTENSITY&lt;/td&gt;
+      &lt;td&gt;(they steal some material goods)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;River&lt;/td&gt;
+      &lt;td&gt;EVENT&lt;/td&gt;
+      &lt;td&gt;our character then achieves self understanding&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Vertical Road&lt;/td&gt;
+      &lt;td&gt;TRANSITION&lt;/td&gt;
+      &lt;td&gt;(transition is undefined for River)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Road Length (2)&lt;/td&gt;
+      &lt;td&gt;INTENSITY&lt;/td&gt;
+      &lt;td&gt;(they realize the consequence of their escape-seeking)&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h1 id=&quot;3&quot;&gt;3&lt;/h1&gt;
+
+&lt;p&gt;I’m generally happy with this story-generation system. While putting examples together it was easy to focus purely on the map-building task, and somewhat exciting to see what the system might produce. I could imagine streamlining it to make it automated/interactive relatively easily. I also like how the events are generally vague enough that additional detail could be fleshed out by anyone using the system - I definitely imagine the system being used as a plot-generation inspiration tool for people looking for story ideas.&lt;/p&gt;
+
+&lt;p&gt;I wish that there was some way to approach this system, or similar systems, without simply requiring a large pool of predefined story components. One idea I considered was mining public data, such as Reddit or NYT for story components, which definitely could have been an interesting direction to go in, although in the end I decided it might be worth pursuing as a future iteration or variation on the project.&lt;/p&gt;</content><category term="narrative" /><category term="itp" /><summary type="html">1</summary></entry><entry><title type="html">Digital Synethsesia</title><link href="/2020/09/03/lm-1.html" rel="alternate" type="text/html" title="Digital Synethsesia" /><published>2020-09-03T00:00:00-04:00</published><updated>2020-09-03T00:00:00-04:00</updated><id>/2020/09/03/lm-1</id><content type="html" xml:base="/2020/09/03/lm-1.html">&lt;p&gt;I was most struck by the &lt;a href=&quot;https://www.youtube.com/watch?v=B3ygQCHn5Ps&amp;amp;ab_channel=AdultBabyRecords&quot;&gt;KAZU&lt;/a&gt; and &lt;a href=&quot;https://www.youtube.com/watch?v=B-cvTad-lXw&amp;amp;ab_channel=sitesync&quot;&gt;SCHNITT&lt;/a&gt; videos. While very different, I felt that both succeeded in tying the auditory and visual experience together in an impressively seamless way.&lt;/p&gt;
+
+&lt;p&gt;The SCHNITT piece I think succeeds for its thematic minimalism across both audio and sound. First is its relative simplicity and thematic coherence: the glass, laser green light, and dry electronic tones match each other to evoke a cold, futuristic sound/visual landscape. The motion is also correspondingly simple - as the audio only contains a few different voices and motifs (bass and drums), so the visuals only react in a correspondingly similar way (sustained texture during bass hits, and bright fast motions for the drum hits). In contrast, McLaren’s “Synchromy” and the Sakamoto/Manabe “Sensing Streams,” while both quite minimal, I feel fail to meet quite the same level of unification between auditory and visual experience. McLaren’s “Synchromy” colors and geometric shapes don’t relate to the melodic tones of the music, and perhaps most importantly the variations in musical language (intervals, chords, etc.) are lost in the direct translation of the tones to their waveforms. “Sensing Streams” similarly chooses to visualize elements that don’t always correspond well to the subjective listening experience - frequency spectra for instance.&lt;/p&gt;
+
+&lt;p&gt;KAZU’s piece succeds for completely different reasons. In contrast to SCHNITT’s work, the KAZU video is more maximalist, choosing to use photorealistic renderings of landscapes, human figures, and switching occasionally between varying rendering methods, often timed with hits in the indie-pop flavored music track. However, I think this maximalist approach works well given the musical subject. The vocal performance in the KAZU track plays a frontal role, so the synchronized appearances and disappearances of the human figure along with the vocal beats lends character and personality to the already playful musical track. As the song progresses along its musical structure, the changes in rendering strategy and camera angle movement serve to complement the growth in musical tension and ambition, allowing the visual components to synesthesize the larger structure of the musical experience, not just the microfeatures of the audio character (contrast to the Woolston Piano Form piece, which is very compelling in the moment but whose visualization lacks any awareness of the larger musical arc) .&lt;/p&gt;</content><category term="audio" /><category term="itp" /><category term="listening_machines" /><summary type="html">I was most struck by the KAZU and SCHNITT videos. While very different, I felt that both succeeded in tying the auditory and visual experience together in an impressively seamless way.</summary></entry><entry><title type="html">Defining Narrative // The Myth of ‘Universal’ Narrative Models</title><link href="/2020/09/03/catn-1.html" rel="alternate" type="text/html" title="Defining Narrative // The Myth of ‘Universal’ Narrative Models" /><published>2020-09-03T00:00:00-04:00</published><updated>2020-09-03T00:00:00-04:00</updated><id>/2020/09/03/catn-1</id><content type="html" xml:base="/2020/09/03/catn-1.html">&lt;h1 id=&quot;defining-narrative&quot;&gt;Defining Narrative&lt;/h1&gt;
 &lt;blockquote&gt;
   &lt;p&gt;Abbott, H. Porter. “Defining Narrative.” The Cambridge Introduction to Narrative, 2nd edition, Cambridge University Press, 2008, pp. 13–27.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -175,104 +306,4 @@ in traditional and interactive narrative alike.&lt;/p&gt;</content><category ter
 &lt;ol&gt;
   &lt;li&gt;A shot of the street from my bicycle. In the light the mica in the street is quite reflective, although this didn’t come through very well in the low light conditions of the video.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;iframe src=&quot;https://player.vimeo.com/video/389390160&quot; width=&quot;640&quot; height=&quot;1138&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><category term="live_image" /><category term="itp" /><summary type="html">This week, I recorded nine different videos that I could roughly group into two groups - experiments with light, experiments with texture. Of course, what is texture in an image but the nature of the light’s reflection?</summary></entry><entry><title type="html">Inherent Tradeoffs</title><link href="/2020/01/04/inherent_tradeoffs.html" rel="alternate" type="text/html" title="Inherent Tradeoffs" /><published>2020-01-04T00:00:00-05:00</published><updated>2020-01-04T00:00:00-05:00</updated><id>/2020/01/04/inherent_tradeoffs</id><content type="html" xml:base="/2020/01/04/inherent_tradeoffs.html">&lt;p&gt;This week I wrapped up a talk at ITP Tech for Social Good Day as well as an interactive essay exploring the inherent tradeoffs in definitions of machine learning fairness. Check it out &lt;a href=&quot;https://squidgetx.github.io/inherent_tradeoffs&quot;&gt;here&lt;/a&gt;&lt;/p&gt;</content><category term="tech_politics" /><summary type="html">This week I wrapped up a talk at ITP Tech for Social Good Day as well as an interactive essay exploring the inherent tradeoffs in definitions of machine learning fairness. Check it out here</summary></entry><entry><title type="html">Stable Matching</title><link href="/2020/01/03/cp-1.html" rel="alternate" type="text/html" title="Stable Matching" /><published>2020-01-03T00:00:00-05:00</published><updated>2020-01-03T00:00:00-05:00</updated><id>/2020/01/03/cp-1</id><content type="html" xml:base="/2020/01/03/cp-1.html">&lt;p&gt;The &lt;em&gt;aguardiente&lt;/em&gt; sloshed in our glasses, the sickly sweet aroma of the liquor permeating the air around us. I could smell the next day’s headache already, or is it that all I can remember today is yesterday’s?&lt;/p&gt;
-
-&lt;p&gt;The young Ecuadorean man whose name I can’t remember either gave me a soft smile as he poured another glass, setting the empty bottle down with a soft clink. His companion eased back into his chair like he owned the place (he did). I hadn’t noticed him get up. The bottle of &lt;em&gt;aguardiente&lt;/em&gt; was full again.&lt;/p&gt;
-
-&lt;p&gt;Issy and Jas exchanged knowing glances and giggled. Emily rolled her eyes. Sam raised his glass to his lips and sighed, his normally energetic movement tempered by spirits. He had turned unusually quiet. I wondered if we were going to play a round of Contract Whist, which is usually what we did when the five of us drank together, but I wasn’t sure if I could explain all the rules to our two hosts. They didn’t seem particularly interested in talking to me, or Sam for that matter anyway. I don’t think I had said a word in hours.&lt;/p&gt;
-
-&lt;p&gt;Jas was laughing at one of their jokes, but I can’t say I remember hearing what it was.&lt;/p&gt;
-
-&lt;p&gt;Hadn’t there been a third - I think his name was Pina? And where had Helena gone? Heaven knew why these young men had invited us, a clique of visiting eighteen and nineteen year old voluntourists from the US and UK to drink with them in their vacation home on the outskirts of Cuenca. A fourth arrived suddenly, armed with more &lt;em&gt;aguardiente.&lt;/em&gt; He left soon after Emily told him she was gay, but he left the liquor behind.&lt;/p&gt;
-
-&lt;p&gt;Emily, Sam and I sat alone together for what seemed then like days, though I know now it was only a couple of hours. A full bottle of &lt;em&gt;aguardiente&lt;/em&gt; still sat on the table. Was there anything else to do?&lt;/p&gt;</content><category term="collective_play" /><category term="itp" /><category term="writing" /><summary type="html">The aguardiente sloshed in our glasses, the sickly sweet aroma of the liquor permeating the air around us. I could smell the next day’s headache already, or is it that all I can remember today is yesterday’s?</summary></entry><entry><title type="html">THE VAN PROJECT</title><link href="/2019/12/24/van-build.html" rel="alternate" type="text/html" title="THE VAN PROJECT" /><published>2019-12-24T00:00:00-05:00</published><updated>2019-12-24T00:00:00-05:00</updated><id>/2019/12/24/van-build</id><content type="html" xml:base="/2019/12/24/van-build.html">&lt;p&gt;I purchased and converted a 2008 Dodge Sprinter Van to a full-time living space. You can read about the build process &lt;a href=&quot;/tag/vanlife&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van_fins.jpg&quot; alt=&quot;img&quot; /&gt;
-&lt;em&gt;2008 Dodge Sprinter 2500 144WB, parked at the Fins, ID&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/kitchen/kitchen1.jpg&quot; alt=&quot;img&quot; /&gt;
-&lt;em&gt;Entering the kitchen/living area&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/xtra/kitchen-open.jpg&quot; alt=&quot;img&quot; /&gt;
-&lt;em&gt;Lots of storage&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/kitchen/kitchen0.jpg&quot; alt=&quot;img&quot; /&gt;
-&lt;em&gt;Propane stove, magnetic knife holder, and 16” stainless steel sink&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/kitchen/kitchen3.jpg&quot; alt=&quot;img&quot; /&gt;
-&lt;em&gt;Corner shelves + additional knife bar&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/kitchen/sink3.jpg&quot; alt=&quot;img&quot; /&gt;
-&lt;em&gt;Sink&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/xtra/overhead-closed.jpg&quot; alt=&quot;img&quot; /&gt;
-&lt;em&gt;Overhead cabinetry&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/xtra/overhead-open.jpg&quot; alt=&quot;img&quot; /&gt;
-&lt;em&gt;Overhead cabinetry is held open with gas struts&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/kitchen/mirror3.jpg&quot; alt=&quot;img&quot; /&gt;
-&lt;em&gt;Fold-up mirror over the sink&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/kitchen/mirror2.jpg&quot; alt=&quot;img&quot; /&gt;
-&lt;em&gt;Fold-up mirror over the sink&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/kitchen/fridge1.jpg&quot; alt=&quot;img&quot; /&gt;
-&lt;em&gt;Bench for seating…&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/kitchen/ottoman4.jpg&quot; alt=&quot;img&quot; /&gt;
-&lt;em&gt;Pull-out ottoman&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/kitchen/ottoman.jpg&quot; alt=&quot;img&quot; /&gt;
-&lt;em&gt;More storage inside&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/kitchen/fridge3.jpg&quot; alt=&quot;img&quot; /&gt;
-&lt;em&gt;Bench for seating also contains the 35QT compressor fridge&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/kitchen/fridge2.jpg&quot; alt=&quot;img&quot; /&gt;
-&lt;em&gt;Patagonia&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/kitchen/fridge4.jpg&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/xtra/bed-closed.jpg&quot; alt=&quot;img&quot; /&gt;
-&lt;em&gt;The bed area also contains additional storage&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/furniture/bed-final.jpg&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/kitchen/fridge5.jpg&quot; alt=&quot;img&quot; /&gt;
-&lt;em&gt;This includes a pull-out butcher block table which can be used in conjunction with the fridge bench&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/furniture/table-legs-under.jpg&quot; alt=&quot;img&quot; /&gt;
-&lt;em&gt;The legs fold up and latch underneath the table when it needs to be stowed&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/bed/finished-open.jpg&quot; alt=&quot;img&quot; /&gt;
-&lt;em&gt;The foot of the bed also slides out to a full 75” length&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/bed/finished.jpg&quot; alt=&quot;img&quot; /&gt;
-&lt;em&gt;The divided mattress folds down easily to complete bed setup. The bed slideout is supported by the fridge bench and a maple bed-leg&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/xtra/bedside-closed.jpg&quot; alt=&quot;img&quot; /&gt;
-&lt;em&gt;The bedside area features a set of cabinets for clothes storage&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/furniture/cabinet-open.jpg&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/furniture/bookshelf.jpg&quot; alt=&quot;img&quot; /&gt;
-&lt;em&gt;A small nightstand area holds books and other knicknacks&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/xtra/rear.jpg&quot; alt=&quot;img&quot; /&gt;
-&lt;em&gt;Underneath the bed is the “garage”, with room for plenty of gear. A bicycle can fit on the far left side&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/electricity/battery2.jpg&quot; alt=&quot;img&quot; /&gt;
-&lt;em&gt;The garage also features the power system, including 100Ah 12V DC battery, 600W inverter, fusebox, and 100V/30A solar charge converter&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/electricity/solar2.jpg&quot; alt=&quot;img&quot; /&gt;
-&lt;em&gt;The roof is equipped with 200W of solar power&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/electricity/inverter.jpg&quot; alt=&quot;img&quot; /&gt;
-&lt;em&gt;The inverter allows for regular AC appliance use in the kitchen area&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/xtra/front.jpg&quot; alt=&quot;img&quot; /&gt;
-&lt;em&gt;A blackout curtain, shoe footstool, and coat rack round out the living area behind the cab&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/van/ceiling/ceiling-finished2.jpg&quot; alt=&quot;img&quot; /&gt;
-&lt;em&gt;The ceiling is made with cedar paneling and lit with 4 LED marine lights. A MaxxFan allows for air circulation when inside the van&lt;/em&gt;&lt;/p&gt;</content><category term="vanlife" /><summary type="html">I purchased and converted a 2008 Dodge Sprinter Van to a full-time living space. You can read about the build process here.</summary></entry></feed>
+&lt;iframe src=&quot;https://player.vimeo.com/video/389390160&quot; width=&quot;640&quot; height=&quot;1138&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><category term="live_image" /><category term="itp" /><summary type="html">This week, I recorded nine different videos that I could roughly group into two groups - experiments with light, experiments with texture. Of course, what is texture in an image but the nature of the light’s reflection?</summary></entry><entry><title type="html">Inherent Tradeoffs</title><link href="/2020/01/04/inherent_tradeoffs.html" rel="alternate" type="text/html" title="Inherent Tradeoffs" /><published>2020-01-04T00:00:00-05:00</published><updated>2020-01-04T00:00:00-05:00</updated><id>/2020/01/04/inherent_tradeoffs</id><content type="html" xml:base="/2020/01/04/inherent_tradeoffs.html">&lt;p&gt;This week I wrapped up a talk at ITP Tech for Social Good Day as well as an interactive essay exploring the inherent tradeoffs in definitions of machine learning fairness. Check it out &lt;a href=&quot;https://squidgetx.github.io/inherent_tradeoffs&quot;&gt;here&lt;/a&gt;&lt;/p&gt;</content><category term="tech_politics" /><summary type="html">This week I wrapped up a talk at ITP Tech for Social Good Day as well as an interactive essay exploring the inherent tradeoffs in definitions of machine learning fairness. Check it out here</summary></entry></feed>
