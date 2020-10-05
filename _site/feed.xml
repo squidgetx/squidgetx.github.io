@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.6.3">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2020-09-30T21:01:40-04:00</updated><id>//</id><title type="html">Sylvan Zheng</title><subtitle></subtitle><entry><title type="html">Sketch 1 - Map Driven Narrative</title><link href="/2020/09/05/catn-1a.html" rel="alternate" type="text/html" title="Sketch 1 - Map Driven Narrative" /><published>2020-09-05T00:00:00-04:00</published><updated>2020-09-05T00:00:00-04:00</updated><id>/2020/09/05/catn-1a</id><content type="html" xml:base="/2020/09/05/catn-1a.html">&lt;h1 id=&quot;1&quot;&gt;1&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.charlesapple.com/uploads/2012/12/121209HobbitMap.jpg&quot; alt=&quot;Middle Earth map&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;One of my favorite parts of fantasy fiction novels is the maps on the inside cover.
+The maps lend the storyworld an undeniable realism and character, but they also shape the events, or plots of the novel itself. Frodo starts off living in the Shire, attempts to cross the Misty Mountains, pass through
+the Mines of Moria, spend some time in Lothlórien before setting off for Mordor. Some books, like
+Norton Juster’s &lt;em&gt;The Phantom Toolbooth&lt;/em&gt; add a layer of awareness on top of this, imbuing the fantasy
+locations with character becoming of their physical nature in more ways than one - the Doldrums, a set of sleepy
+foothills is where Milo, the protagonist, spends time distracted in a daze before getting on with his mission.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://static.wixstatic.com/media/9129a8_4bd25cb9774b40ce917c1d2b8773ae46~mv2.jpg/v1/fill/w_600,h_800,al_c,q_90/9129a8_4bd25cb9774b40ce917c1d2b8773ae46~mv2.webp&quot; alt=&quot;the doldrums&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;So if maps can reflect the events, or plot of a narrative as well as color its storyworld, perhaps it
+would be a useful creative device to use a map to perform the reverse process - to generate a plot procedurally.&lt;/p&gt;
+
+&lt;h1 id=&quot;2&quot;&gt;2&lt;/h1&gt;
+
+&lt;p&gt;In this sketch I define a basic set of rules for creating maps and then procedurally generating plot skeletons
+from it, using the primary formalism of “plot == set of chronological events.” The map metaphor additionally allows for some embellishment and the addition of supplementary events through its two dimensional spatial properties. In addition, although the most intuitive way to use the tool is to create linear maps and plots, there is no reason why the maps must be linear and could in fact serve as a useful templating tool for an interactive or multithreaded story structure.&lt;/p&gt;
+
+&lt;p&gt;Here is the basic outline: events are represented by locations on a map, like a town, city, mountain range, etc. Roads connect these locations, and the character of these roads serve as additional detailing or context
+for these events. Additionally, one location should be marked as START, which separately maps to an initial setting or character motivation.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Map Element&lt;/th&gt;
+      &lt;th&gt;Story Event&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Road&lt;/td&gt;
+      &lt;td&gt;Transition to Next Event&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Location&lt;/td&gt;
+      &lt;td&gt;Story Event, or Starting Motivation&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Road Changes to Horizontal&lt;/td&gt;
+      &lt;td&gt;character seeks out &amp;lt;next event&amp;gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&amp;lt;Event&amp;gt; is Approached From Horizontal&lt;/td&gt;
+      &lt;td&gt;character achieves &amp;lt;event&amp;gt; through effort&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Length of Road&lt;/td&gt;
+      &lt;td&gt;Proportional to the Intensity of &amp;lt;next event&amp;gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;You can view the spreadsheet containing the full ruleset &lt;a href=&quot;https://docs.google.com/spreadsheets/d/11kW9Os4TRw9FvzPzd6i8pAiTjUj8cmV5yqKKpmcadgo&quot;&gt;here&lt;/a&gt;. The specific implementation of what each location represents, or what intensity should map to is inspired primarily by my own aesthetic sense of what different classic fantasy map elements might represent in a story set in contemporary life. After all, who doesn’t want to relate mundane life struggles through an imaginary quest set in a fantastic land?&lt;/p&gt;
+
+&lt;p&gt;Here’s an example map and output. The ruleset that I made can be modeled with digital tiles (eg, in a spreadsheet) but one benefit of using representation of physical space is that I can represent it with physical objects which is a bit more satisfying to look at!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/catncatan.jpg&quot; alt=&quot;picture&quot; /&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Map Element&lt;/th&gt;
+      &lt;th&gt;Category&lt;/th&gt;
+      &lt;th&gt;Story Event&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Pasture&lt;/td&gt;
+      &lt;td&gt;START&lt;/td&gt;
+      &lt;td&gt;character seeking escape&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Town&lt;/td&gt;
+      &lt;td&gt;EVENT&lt;/td&gt;
+      &lt;td&gt;meets a new friend&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Horizontal Road&lt;/td&gt;
+      &lt;td&gt;TRANSITION&lt;/td&gt;
+      &lt;td&gt;(character was seeking social experience)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Road Length (3)&lt;/td&gt;
+      &lt;td&gt;INTENSITY&lt;/td&gt;
+      &lt;td&gt;(the new friend is from a strange place , but the same age&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Swamp&lt;/td&gt;
+      &lt;td&gt;EVENT&lt;/td&gt;
+      &lt;td&gt;the person betrays them&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Vertical Road&lt;/td&gt;
+      &lt;td&gt;TRANSITION&lt;/td&gt;
+      &lt;td&gt;unexpectedly&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Road Length (1)&lt;/td&gt;
+      &lt;td&gt;INTENSITY&lt;/td&gt;
+      &lt;td&gt;(they steal some material goods)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;River&lt;/td&gt;
+      &lt;td&gt;EVENT&lt;/td&gt;
+      &lt;td&gt;our character then achieves self understanding&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Vertical Road&lt;/td&gt;
+      &lt;td&gt;TRANSITION&lt;/td&gt;
+      &lt;td&gt;(transition is undefined for River)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Road Length (2)&lt;/td&gt;
+      &lt;td&gt;INTENSITY&lt;/td&gt;
+      &lt;td&gt;(they realize the consequence of their escape-seeking)&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h1 id=&quot;3&quot;&gt;3&lt;/h1&gt;
+
+&lt;p&gt;I’m generally happy with this story-generation system. While putting examples together it was easy to focus purely on the map-building task, and somewhat exciting to see what the system might produce. I could imagine streamlining it to make it automated/interactive relatively easily. I also like how the events are generally vague enough that additional detail could be fleshed out by anyone using the system - I definitely imagine the system being used as a plot-generation inspiration tool for people looking for story ideas.&lt;/p&gt;
+
+&lt;p&gt;I wish that there was some way to approach this system, or similar systems, without simply requiring a large pool of predefined story components. One idea I considered was mining public data, such as Reddit or NYT for story components, which definitely could have been an interesting direction to go in, although in the end I decided it might be worth pursuing as a future iteration or variation on the project.&lt;/p&gt;</content><category term="narrative" /><category term="itp" /><summary type="html">1</summary></entry><entry><title type="html">Digital Synethsesia</title><link href="/2020/09/03/lm-1.html" rel="alternate" type="text/html" title="Digital Synethsesia" /><published>2020-09-03T00:00:00-04:00</published><updated>2020-09-03T00:00:00-04:00</updated><id>/2020/09/03/lm-1</id><content type="html" xml:base="/2020/09/03/lm-1.html">&lt;p&gt;I was most struck by the &lt;a href=&quot;https://www.youtube.com/watch?v=B3ygQCHn5Ps&amp;amp;ab_channel=AdultBabyRecords&quot;&gt;KAZU&lt;/a&gt; and &lt;a href=&quot;https://www.youtube.com/watch?v=B-cvTad-lXw&amp;amp;ab_channel=sitesync&quot;&gt;SCHNITT&lt;/a&gt; videos. While very different, I felt that both succeeded in tying the auditory and visual experience together in an impressively seamless way.&lt;/p&gt;
+
+&lt;p&gt;The SCHNITT piece I think succeeds for its thematic minimalism across both audio and sound. First is its relative simplicity and thematic coherence: the glass, laser green light, and dry electronic tones match each other to evoke a cold, futuristic sound/visual landscape. The motion is also correspondingly simple - as the audio only contains a few different voices and motifs (bass and drums), so the visuals only react in a correspondingly similar way (sustained texture during bass hits, and bright fast motions for the drum hits). In contrast, McLaren’s “Synchromy” and the Sakamoto/Manabe “Sensing Streams,” while both quite minimal, I feel fail to meet quite the same level of unification between auditory and visual experience. McLaren’s “Synchromy” colors and geometric shapes don’t relate to the melodic tones of the music, and perhaps most importantly the variations in musical language (intervals, chords, etc.) are lost in the direct translation of the tones to their waveforms. “Sensing Streams” similarly chooses to visualize elements that don’t always correspond well to the subjective listening experience - frequency spectra for instance.&lt;/p&gt;
+
+&lt;p&gt;KAZU’s piece succeds for completely different reasons. In contrast to SCHNITT’s work, the KAZU video is more maximalist, choosing to use photorealistic renderings of landscapes, human figures, and switching occasionally between varying rendering methods, often timed with hits in the indie-pop flavored music track. However, I think this maximalist approach works well given the musical subject. The vocal performance in the KAZU track plays a frontal role, so the synchronized appearances and disappearances of the human figure along with the vocal beats lends character and personality to the already playful musical track. As the song progresses along its musical structure, the changes in rendering strategy and camera angle movement serve to complement the growth in musical tension and ambition, allowing the visual components to synesthesize the larger structure of the musical experience, not just the microfeatures of the audio character (contrast to the Woolston Piano Form piece, which is very compelling in the moment but whose visualization lacks any awareness of the larger musical arc) .&lt;/p&gt;</content><category term="audio" /><category term="itp" /><category term="listening_machines" /><summary type="html">I was most struck by the KAZU and SCHNITT videos. While very different, I felt that both succeeded in tying the auditory and visual experience together in an impressively seamless way.</summary></entry><entry><title type="html">Defining Narrative // The Myth of ‘Universal’ Narrative Models</title><link href="/2020/09/03/catn-1.html" rel="alternate" type="text/html" title="Defining Narrative // The Myth of ‘Universal’ Narrative Models" /><published>2020-09-03T00:00:00-04:00</published><updated>2020-09-03T00:00:00-04:00</updated><id>/2020/09/03/catn-1</id><content type="html" xml:base="/2020/09/03/catn-1.html">&lt;h1 id=&quot;defining-narrative&quot;&gt;Defining Narrative&lt;/h1&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Abbott, H. Porter. “Defining Narrative.” The Cambridge Introduction to Narrative, 2nd edition, Cambridge University Press, 2008, pp. 13–27.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Abbot introduces the idea of narrative as a collection of events, undertaken by entities (or characters), told or presented in a particular way (narrative discourse). The definition is fairly straightforward, and I especially appreciated that while Abbot acknowledges alternative, more precise categorizations he also dismisses them as not being necessarily useful. All models are wrong but some are useful, as they say.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-story-is-constructed&quot;&gt;The story is constructed&lt;/h2&gt;
+&lt;p&gt;The actual story is signified by the media, but exists outside of it. This can lead to an interesting question: how can we say for sure that story is a particular story and not some other? The construction of the story is an active process by the audience.&lt;/p&gt;
+
+&lt;p&gt;If the construction is an active process, what are the real differences between an interactive narrative and a traditional one? Or alternatively, I wonder if a successful interactive narrative aligns the audience’s narrative construction process with the interaction experience. Traditional video games for example, while interactive, don’t always focus on interactive story elements - in most cases there is a fairly linear story with a nearly separate interactive game experience attached to it.&lt;/p&gt;
+
+&lt;h2 id=&quot;constituentsupplementary-events&quot;&gt;Constituent/Supplementary events&lt;/h2&gt;
+&lt;p&gt;Abbot distinguishes between constituent, or key events and supplementary ones. Key events are hard to change, but supplementary events form part of the narrative discourse of a story and can easily influence themes and impact overall. The example Abbot gives is Frankenstein - the 1930 film adaptation adds many supplementary events concerning the technology that enables Frankenstein to create his monster, and thus impart a theme of technologically fueled anxiety, which is completely missing from the original 1818 novel.&lt;/p&gt;
+
+&lt;p&gt;This means that any computational approach can’t be too naive about leaving in and out varying elements - but also that there is a lot of potential for carefully crafted narrative systems that allow for a spectrum of different supplementary events and themes for the audience.&lt;/p&gt;
+
+&lt;h1 id=&quot;the-myth-of-universal-narrative-models&quot;&gt;The Myth of Universal Narrative Models&lt;/h1&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Koenitz, Hartmut, et al. “The Myth of ‘Universal’ Narrative Models.” International Conference on Interactive Digital Storytelling, Springer, 2018, pp. 107–120.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In this paper the authors give some background as to why traditional (read: Aristotelian intro/rising action/climax/denoument/conclusion + Hero’s Journey) narrative structures are not adequate for interactive storytelling media (primarily, that the rising action takes way too long) and attempt to give some alternative story structures from outside the Western canon to give interactive storytellers more structural tools.&lt;/p&gt;
+
+&lt;p&gt;I don’t object to the overall objective of this paper, but I felt that some of the examples fell a bit short in terms of how useful they might be for interactive storytelling design. However, others were useful and I could immediately think of some examples or see ways in which it could be useful for reframing ways of storytelling in an interactive context.&lt;/p&gt;
+
+&lt;h2 id=&quot;etiological-oral-narratives&quot;&gt;Etiological Oral Narratives&lt;/h2&gt;
+
+&lt;p&gt;In short, fable-like or moral-at-the-end of the story style narrative. Without careful design, I can’t see how this doesn’t suffer from the same problem as the traditional narrative structure does in terms of pacing. In general from a structural point of view I don’t really think this is that different from the Aristotelian model at all, even though the moralizing element is certainly distinct thematically from the Hero’s Journey archetype.&lt;/p&gt;
+
+&lt;h2 id=&quot;bengali-widows-narratives&quot;&gt;Bengali Widow’s Narratives&lt;/h2&gt;
+
+&lt;p&gt;I thought that this structure was a fairly compelling example of how a multi-outcome story structure could be connected to a narrative theme - in this example, the Bengali widow either becomes the antagonist to her son’s wife (creating an endless cycle), or simply ends in tragedy (the widow ends up alone and penniless). However, ultimately neither outcome changes the fundamental tone of the story.&lt;/p&gt;
+
+&lt;h2 id=&quot;ganga-comics&quot;&gt;Ganga Comics&lt;/h2&gt;
+
+&lt;p&gt;“The solution to one conflict immediately causes the next conflict to arise”&lt;/p&gt;
+
+&lt;p&gt;This reminds me generally of Japanese manga and anime narrative structures, where there is a seemingly endless ebb and flow and rising tension throughout the narrative. Ultimately, a more traditional meta-climax is needed for narrative satisfaction though - many popular manga series fall prey to the “Dragon Ball effect”, where the stakes continue to rise and new challenges must be presented over and over again, rapidly becoming stale. The most successful manga/anime
+(in my opinion, anyway) manage to wrap up the individual conflict components into a coherent arc over the multiplicty of smaller story-arcs. In this way, the
+narrative structure, on a zoomed out level, begins to mirror the Aristotelian narrative arc.&lt;/p&gt;
+
+&lt;h2 id=&quot;sīra-narratives&quot;&gt;Sīra Narratives&lt;/h2&gt;
+
+&lt;p&gt;This seems structurally identical to ganga comics&lt;/p&gt;
+
+&lt;h2 id=&quot;epiphanic-structure&quot;&gt;Epiphanic Structure&lt;/h2&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;This original structure features a cycle of conflict designed to create a moment of
+epiphany, which causes the player/interactor to suddenly understand the events of the
+narrative in a different light, and subsequently explores the narative again from the
+beginning to discover the consequences of this revelation&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This structure seems really interesting, although I’m not sure it makes sense to call it a separate structure more than a device that can be used
+in traditional and interactive narrative alike.&lt;/p&gt;</content><category term="narrative" /><category term="itp" /><summary type="html">Defining Narrative
+
+  Abbott, H. Porter. “Defining Narrative.” The Cambridge Introduction to Narrative, 2nd edition, Cambridge University Press, 2008, pp. 13–27.</summary></entry><entry><title type="html">Listening to Chance</title><link href="/2020/03/03/dp-1.html" rel="alternate" type="text/html" title="Listening to Chance" /><published>2020-03-03T00:00:00-05:00</published><updated>2020-03-03T00:00:00-05:00</updated><id>/2020/03/03/dp-1</id><content type="html" xml:base="/2020/03/03/dp-1.html">&lt;p&gt;&lt;img src=&quot;/images/dp/ableton.png&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I recently came across a paper &lt;a href=&quot;https://www.journals.uchicago.edu/doi/abs/10.1086/708682?mobileUi=0&quot;&gt;Projecting confidence: How the probabilistic horse race confuses and demobilizes the public&lt;/a&gt; written by some of my relatively distant ex-colleagues at Facebook analyzing the potential impact of probabilistic election predictions (Nate Silver style) on public voter turnout. They hypothesized that the concept of probability in election outcomes is inherently hard to understand and can thus lead people to underestimate the closeness of the race. The authors were able to confirm many of their findings experimentally. More discussion of the article can be found in this excellent &lt;a href=&quot;https://statmodeling.stat.columbia.edu/2020/03/02/so-what-about-that-claim-that-probabilistic-election-forecasts-depress-voter-turnout/&quot;&gt;post&lt;/a&gt; from Columbia stat modeling goes further in depth for those interested.&lt;/p&gt;
+
+&lt;p&gt;I think the concept of chance is pretty interesting. A 50% chance of winning an election means that if we were to re-run the election 1,000 times in a lab, that we would expect roughly 500 victories for candidate A and 500 victories for candidate B. But in real life, we only get to see one outcome. Clinton was given an 85% chance of winning in 2016 - the fact that she lost doesn’t necessarily make the predictions incorrect. The concept is, as the researchers point out, really quite unintuitive.&lt;/p&gt;
+
+&lt;p&gt;At the same time, despite the unintuitive (and possibly deleterious nature!) of probability forecasts on civic outcomes, we see and hear predictions of outcomes constantly in the media. As a mini project this week I decided to take a look first at how often the concept is used, and second at interesting ways to perceive that information.&lt;/p&gt;
+
+&lt;p&gt;The first step was to download all of the transcripts of CNN shows aired in 2016 from the TV News Internet Archive. I limited the dataset to the year 2016 (for obvious reasons) and the network to CNN just to focus on a manageable amount of material aimed primarily at left-leaning audiences (the paper observes that this kind of coverage is more prominent in left leaning news sources). Afterward I used grep to pull out all the lines containing the word “chance” and then wrote a short python script to count the occurrences and group them by date. I threw the data into a spreadsheet for a quick graph (haven’t got around to setting up Jupyter locally just yet).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/dp/graph_chance_daily.png&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/dp/graph_chance_monthly.png&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Once I had a rough dataset (with peaks around the primary and elections, somewhat surprisingly given that this is &lt;em&gt;all coverage&lt;/em&gt; mentioning chance in any context whatsoever) I went on to craft a simple data sonification using the sound of a coin spinning on a table. The number of mentions in each month correspond directly to the number of spinning coins that the listener can hear.&lt;/p&gt;
+
+&lt;audio controls=&quot;&quot;&gt;
+  &lt;source src=&quot;/docs/chances.mp3&quot; type=&quot;audio/mp3&quot; /&gt;
+  Your browser does not support the audio tag.
+&lt;/audio&gt;
+
+&lt;p&gt;Enjoy!&lt;/p&gt;</content><category term="data" /><category term="itp" /><category term="tech_politics" /><category term="audio" /><summary type="html"></summary></entry><entry><title type="html">KQI</title><link href="/project/2020/02/26/lipp-4.html" rel="alternate" type="text/html" title="KQI" /><published>2020-02-26T00:00:00-05:00</published><updated>2020-02-26T00:00:00-05:00</updated><id>/project/2020/02/26/lipp-4</id><content type="html" xml:base="/project/2020/02/26/lipp-4.html">&lt;iframe src=&quot;https://player.vimeo.com/video/394091710&quot; width=&quot;640&quot; height=&quot;480&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;KQI is a reinterpretation of the 1982 film &lt;em&gt;Koyaanisqatsi&lt;/em&gt; directed by Godfrey Reggio and scored by Philip Glass. It is a live video and audio performance - both the visuals and the music is being played and processed live. The audio from the guitar is analyzed to control the varying parameters of the video processing effects using Max/MSP.&lt;/p&gt;</content><category term="live_image" /><category term="itp" /><category term="audio" /><category term="visual" /><summary type="html"></summary></entry><entry><title type="html">Video System (2/x)</title><link href="/2020/02/18/lipp-3.html" rel="alternate" type="text/html" title="Video System (2/x)" /><published>2020-02-18T00:00:00-05:00</published><updated>2020-02-18T00:00:00-05:00</updated><id>/2020/02/18/lipp-3</id><content type="html" xml:base="/2020/02/18/lipp-3.html">&lt;p&gt;This is the second post in a weekly series documenting my attempt at creating a performance system for an audiovisual piece that focuses on a few themes: digital alienation, sum of small parts, and audio-controlled visuals.&lt;/p&gt;
+
+&lt;p&gt;This week I spent a lot of time experimenting with the different jitter objects we went over in class last week, focusing mainly on recursive chromakeying and jit.op. I also realized that jit.matrix DOES NOT actually downsample you even if you specify dimensions.. you still need to specify adapt=0 (or just downsample the original audio file). My FPS jumped up once I did this.&lt;/p&gt;
+
+&lt;p&gt;My main goal was to settle on some material I feel comfortable using in next week’s short performance that fits well with the audio and conceptual framework I have in mind (described &lt;a href=&quot;/2020/02/10/lipp-2.html&quot;&gt;here&lt;/a&gt;)&lt;/p&gt;
+
+&lt;iframe src=&quot;https://player.vimeo.com/video/392374015&quot; width=&quot;640&quot; height=&quot;480&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;a href=&quot;https://vimeo.com/392374015&quot;&gt;p1&lt;/a&gt; from &lt;a href=&quot;https://vimeo.com/user59873575&quot;&gt;Sylvan&lt;/a&gt; on &lt;a href=&quot;https://vimeo.com&quot;&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;iframe src=&quot;https://player.vimeo.com/video/392373964&quot; width=&quot;640&quot; height=&quot;538&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;a href=&quot;https://vimeo.com/392373964&quot;&gt;con2bright-25tol01lum0sldown25&lt;/a&gt; from &lt;a href=&quot;https://vimeo.com/user59873575&quot;&gt;Sylvan&lt;/a&gt; on &lt;a href=&quot;https://vimeo.com&quot;&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/lipp/hw2.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;There’s gonna be a lot of work to do for next week. I still need to build the audio controller system as well as decide on footage and effect manipulation for the second half of the piece!&lt;/p&gt;</content><category term="live_image" /><category term="itp" /><summary type="html">This is the second post in a weekly series documenting my attempt at creating a performance system for an audiovisual piece that focuses on a few themes: digital alienation, sum of small parts, and audio-controlled visuals.</summary></entry><entry><title type="html">Great Political Thinking 2020</title><link href="/greatpoliticalthinking2020" rel="alternate" type="text/html" title="Great Political Thinking 2020" /><published>2020-02-18T00:00:00-05:00</published><updated>2020-02-18T00:00:00-05:00</updated><id>/gpt2020</id><content type="html" xml:base="/greatpoliticalthinking2020">&lt;p&gt;&lt;img src=&quot;http://www.greatpoliticalthinking2020.com/images/logo.jpg&quot; style=&quot;width: 300px&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.greatpoliticalthinking2020.com&quot;&gt;Great Political Thinking 2020&lt;/a&gt; is a project I conceived of a few weeks ago when reading &lt;a href=&quot;https://www.smbc-comics.com/comic/podcast&quot;&gt;this Saturday Morning Breakfast Cereal comic&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Put simply, it’s a podcast whose script is generated by a computer, but is performed and produced by humans as if it is material for a regular political podcast. The result is a podcast that sounds unmistakably like a typical political podcast, with hosts and guests discussing candidates’ performance, bringing in archived recordings of their speechers, and arguing about polling methodology. At the same time, however, something doesn’t sound quite right - sentences double back on themselves unexpectedly, the antecedent of a pronoun becomes hopelessly lost, and suddenly one’s place is lost completely, adrift in a sea of “nonsensical gibberish, occasionally broken up by the names of candidates, polling data, or the word ‘narrative’.”&lt;/p&gt;
+
+&lt;p&gt;Unfortunately, producing episodes is very much bottle-necked by the human production factor (unfortunately, you won’t be able to replace your entire media diet with this material). But I think that the human performance and production aspect pushes the listening experience right into the uncanny valley. I hope you enjoy listening to it as much as I enjoyed making it.&lt;/p&gt;
+
+&lt;p&gt;You can listen to it &lt;a href=&quot;http://www.greatpoliticalthinking2020.com&quot;&gt;here&lt;/a&gt;, as well as on Spotify, iTunes, Google Play, etc.&lt;/p&gt;
+
+&lt;h2 id=&quot;technical-detail&quot;&gt;Technical Detail&lt;/h2&gt;
+
+&lt;p&gt;The source material for the machine learning system is a batch of podcast transcripts that I scraped from NPR Politics, FiveThirtyEight, Slate Political Gabfest, and the Daily from the New York Times. This was heavily facilitated by the use of the Beautiful Soup Python library which made it much, much easier to navigate web pages programatically. A handful of python and shell scripts were all that was needed to amass a decently sized (14Mb) corpus of political podcasts, each marked with special start and end tokens to ease the processing in the next step.&lt;/p&gt;
+
+&lt;p&gt;You can find the code for the scraping &lt;a href=&quot;https://github.com/squidgetx/gpt2020&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The heaviest lifter in this process is of course the language model that generates the scripts. I trained a released version of OpenAI’s 355M-parameter GPT-2 text model using &lt;a href=&quot;https://colab.research.google.com/drive/1RbhJm58bVFfBxMEwLrte1fhZ4V0PLL8d&quot;&gt;Google co-lab&lt;/a&gt; and the &lt;a href=&quot;https://github.com/minimaxir/gpt-2-simple&quot;&gt;gpt-2-simple&lt;/a&gt; package. The first iteration of scripts was generated using 10,000 fine-tune training steps on the 14MB of extant podcasts.&lt;/p&gt;
+
+&lt;p&gt;Once the scripts were created, I took some editorial liberties by assigning actors to lines and cutting out some words or sections. For the most part, the generated scripts are fairly close to the ultimate product. The original transcripts are linked for each episode on the &lt;a href=&quot;http://greatpoliticalthinking2020.com&quot;&gt;podcast website&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;acknowledgements&quot;&gt;Acknowledgements&lt;/h2&gt;
+
+&lt;p&gt;Thank you to Emily Zhao, who provided excellent directing feedback, Christina Dacanay for her voice and logo design contribution, and my many classmates who volunteered their time to read scripts that didn’t make any sense - Patrick Warren, Sam Krystal, Daniel Fries, Julian Mathews, Nikhil Kumar, and Schuyler DeVos; and NYU ITP for their recording equipment and space.&lt;/p&gt;</content><category term="audio" /><category term="tech_politics" /><category term="data" /><summary type="html"></summary></entry><entry><title type="html">Video System (1/x)</title><link href="/2020/02/10/lipp-2.html" rel="alternate" type="text/html" title="Video System (1/x)" /><published>2020-02-10T00:00:00-05:00</published><updated>2020-02-10T00:00:00-05:00</updated><id>/2020/02/10/lipp-2</id><content type="html" xml:base="/2020/02/10/lipp-2.html">&lt;p&gt;This is the first post in a weekly series documenting my attempt at creating a performance system for an audiovisual piece that focuses on a few themes: digital alienation, sum of small parts, and audio-controlled visuals.&lt;/p&gt;
+
+&lt;p&gt;Essentially my plan is to write a piece of music for the guitar, use Max/MSP to analyze the timbre and prominent frequencies in real time and use this information to both transform audio processing effects and control visuals onscreen.&lt;/p&gt;
+
+&lt;p&gt;Here is a draft of some of the musical components I’m thinking about. It opens with a tremolo between dominant 7th intervals, a tense and anxious sound. The main chord progression struggles to find balance, cycling constantly between fifths never quite resolving. This harmonic aimlessness (I hope) aims to mirror the kind of internal imbalance brought on by the modern urban existence.&lt;/p&gt;
+&lt;audio controls=&quot;&quot;&gt;
+  &lt;source src=&quot;/docs/guitars.mp3&quot; type=&quot;audio/mp3&quot; /&gt;
+  Your browser does not support the audio tag.
+&lt;/audio&gt;
+&lt;p&gt;I’m excited for the visual component of this project to underscore some of the themes in the music. Many times the inspration for the musical writing is abstract and hidden from the audience, but this will be an opportunity to allow for more specific mood-setting.&lt;/p&gt;
+
+&lt;iframe src=&quot;https://player.vimeo.com/video/390869413&quot; width=&quot;640&quot; height=&quot;480&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;a href=&quot;https://vimeo.com/390869413&quot;&gt;testoutput1&lt;/a&gt; from &lt;a href=&quot;https://vimeo.com/user59873575&quot;&gt;Sylvan&lt;/a&gt; on &lt;a href=&quot;https://vimeo.com&quot;&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The current visual setup uses a random seek of a close up electronic screen texture luma-keyed to a high contrast clip of a fast moving crowd (pulled from &lt;em&gt;Koyaanaqatsi&lt;/em&gt;). I’m hoping to add the ability to layer in at least one more video and then start working on the audio signal processing =&amp;gt; image processing pipeline.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/lipp/hw1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><category term="live_image" /><category term="itp" /><summary type="html">This is the first post in a weekly series documenting my attempt at creating a performance system for an audiovisual piece that focuses on a few themes: digital alienation, sum of small parts, and audio-controlled visuals.</summary></entry><entry><title type="html">Video Painting</title><link href="/2020/01/04/lipp-1.html" rel="alternate" type="text/html" title="Video Painting" /><published>2020-01-04T00:00:00-05:00</published><updated>2020-01-04T00:00:00-05:00</updated><id>/2020/01/04/lipp-1</id><content type="html" xml:base="/2020/01/04/lipp-1.html">&lt;p&gt;This week, I recorded nine different videos that I could roughly group into two groups - experiments with light, experiments with texture. Of course, what is texture in an image but the nature of the light’s reflection?&lt;/p&gt;
+
+&lt;p&gt;Most of the videos are either from transit sources or from a kitchen setting. I thought it would be interesting to specifically limit myself to everyday scenes, to force new perspectives on common scenes or occurrences. Most of the time it was easy to achieve this just by zooming in a lot, removing the context that would normally familiarize the shot.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;The slide-in-out subway platform at the Union Square 4/5/6 stop. I think the textures here are really interesting, since the horizontal bars and the diagonal tread metal both have a regular pattern that is somewhat harshly juxtaposed. I do wish I was able to frame the shot more carefully.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/NAuuO2fYdo8&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;The reflection of light in a glass cup containing coffee. This one was interesting since the liquid quivered slightly, allowing the reflection to move in a sort of unintuitive way. I think a careful cropping of the frame could also accentuate the shot.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;iframe src=&quot;https://player.vimeo.com/video/389390266&quot; width=&quot;640&quot; height=&quot;360&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;A close up of a LED array advertisement board in the subway. I really enjoyed the effect of seeing each individual LED pixel since normally your brain interprets the pixels from a different distance as a complete image.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/oJqXuNcNseI&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Two shots of an electric water kettle. This one was really interesting because of a small light or lens flare effect that moved somewhat unpredictably&lt;/li&gt;
+&lt;/ol&gt;
+&lt;iframe src=&quot;https://player.vimeo.com/video/389390237&quot; width=&quot;640&quot; height=&quot;360&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/hE2nbt4S5Ow&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;A shot of a stovetop water kettle. The flow of water was really unexpectedly entrancing.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;iframe src=&quot;https://player.vimeo.com/video/389390223&quot; width=&quot;640&quot; height=&quot;360&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Simple shadow movement on a wall. This shot I focused on rotating the phone around an axis instead of lateral motion.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;iframe src=&quot;https://player.vimeo.com/video/389390206&quot; width=&quot;640&quot; height=&quot;360&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Another close up shot of a light matrix. This one featured scrolling text which created a different effect from the dramatic color changes of the subway board.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;iframe src=&quot;https://player.vimeo.com/video/389390183&quot; width=&quot;640&quot; height=&quot;360&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;A shot of the street from my bicycle. In the light the mica in the street is quite reflective, although this didn’t come through very well in the low light conditions of the video.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;iframe src=&quot;https://player.vimeo.com/video/389390160&quot; width=&quot;640&quot; height=&quot;1138&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><category term="live_image" /><category term="itp" /><summary type="html">This week, I recorded nine different videos that I could roughly group into two groups - experiments with light, experiments with texture. Of course, what is texture in an image but the nature of the light’s reflection?</summary></entry><entry><title type="html">Inherent Tradeoffs</title><link href="/2020/01/04/inherent_tradeoffs.html" rel="alternate" type="text/html" title="Inherent Tradeoffs" /><published>2020-01-04T00:00:00-05:00</published><updated>2020-01-04T00:00:00-05:00</updated><id>/2020/01/04/inherent_tradeoffs</id><content type="html" xml:base="/2020/01/04/inherent_tradeoffs.html">&lt;p&gt;This week I wrapped up a talk at ITP Tech for Social Good Day as well as an interactive essay exploring the inherent tradeoffs in definitions of machine learning fairness. Check it out &lt;a href=&quot;https://squidgetx.github.io/inherent_tradeoffs&quot;&gt;here&lt;/a&gt;&lt;/p&gt;</content><category term="tech_politics" /><summary type="html">This week I wrapped up a talk at ITP Tech for Social Good Day as well as an interactive essay exploring the inherent tradeoffs in definitions of machine learning fairness. Check it out here</summary></entry></feed>
