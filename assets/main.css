@@ -486,11 +486,11 @@ ul.nav {
 
 .projectimg {
   object-fit: cover;
-  height: 200px;
+  height: 180px;
   width: 100%; }
 
 .project-link {
-  height: 200px;
+  font-size: 1.2em;
   margin-bottom: 1em; }
 
 .sketch {
