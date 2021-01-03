@@ -1,0 +1,28 @@
+// Styling for homepage elements
+
+.cover-left {
+  width: 50%;
+  margin-top: $spacing-unit;
+  float: left;
+}
+
+.cover-sm {
+  margin-top: $spacing-unit;
+  width: 300px;
+  margin-left: 12px;
+}
+
+.cover-right {
+  margin-top: $spacing-unit;
+  margin-bottom: $spacing-unit;
+  width: 300px;
+  float: right;
+  margin-left: 12px;
+}
+
+.cover-right-sm {
+  margin-top: $spacing-unit;
+  width: 200px;
+  margin-left: 12px;
+  float: right;
+}

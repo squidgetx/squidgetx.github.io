@@ -1,0 +1,39 @@
+// Import partials.
+.projectimg {
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+}
+
+.project-link {
+  height: 200px;
+  margin-bottom: 1em;
+}
+
+.sketchimg {
+  object-fit: cover;
+  height: 150px;
+  width: 200px;
+}
+
+.sketch {
+  height: 200px;
+  display: inline-block;
+  padding-left: 1em;
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+
+.tag {
+  background-color: darken($background-color, 5%);
+  padding: 0.3em;
+  &:hover {
+    background-color: $brand-dark;
+  }
+  text-decoration: none;
+}
+
+.excerpt {
+  display: block;
+  line-height: 1.2em;
+}
