@@ -1,43 +1,61 @@
 /**
  * Reset some basic elements
  */
-body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+hr,
+dl,
+dd,
+ol,
+ul,
+figure {
   margin: 0;
   padding: 0;
 }
-
-
 
 /**
  * Basic styling
  */
 body {
-  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+  font: $base-font-weight #{$base-font-size}/#{$base-line-height}
+    $base-font-family;
   color: $text-color;
   background-color: $background-color;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
-     -moz-font-feature-settings: "kern" 1;
-       -o-font-feature-settings: "kern" 1;
-          font-feature-settings: "kern" 1;
+  -moz-font-feature-settings: "kern" 1;
+  -o-font-feature-settings: "kern" 1;
+  font-feature-settings: "kern" 1;
   font-kerning: normal;
 }
-
-
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+ul,
+ol,
+dl,
+figure,
 %vertical-rhythm {
   margin-bottom: $spacing-unit / 2;
 }
-
-
 
 /**
  * Images
@@ -48,7 +66,6 @@ img {
 }
 
 /** Some custom stuff here **/
-
 
 /**
  * Figures
@@ -61,12 +78,11 @@ figcaption {
   font-size: $small-font-size;
 }
 
-
-
 /**
  * Lists
  */
-ul, ol {
+ul,
+ol {
   margin-left: $spacing-unit;
 }
 
@@ -77,63 +93,16 @@ li {
   }
 }
 
-
-
 /**
  * Headings
  */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: $base-font-weight;
-}
-
-
-.tag {
-  background-color: darken($background-color, 5%);
-  padding: 0.3em;
-  &:hover {
-    background-color: $brand-dark;
-  }
-  text-decoration: none;
-}
-
-h5 {
-  color: #444
-}
-
-.cover-text {
-  float: left;
-}
-
-.cover-left {
-  width: 50%;
-  margin-top: $spacing-unit;
-  float: left;
-}
-
-.cover-sm {
-  margin-top: $spacing-unit;
-  width: 300px;
-  margin-left: 12px;
-}
-
-.cover-right {
-  margin-top: $spacing-unit;
-  width: 300px;
-  float: right;
-  margin-left: 12px;
-}
-
-.cover-right-sm {
-  margin-top: $spacing-unit;
-  width: 200px;
-  margin-left: 12px;
-  float: right;
-}
-
-
-.excerpt {
-  display: block;
-  line-height: 1.2em;
 }
 
 /**
@@ -164,8 +133,6 @@ a.icon {
   padding: 2px;
 }
 
-
-
 /**
  * Blockquotes
  */
@@ -181,8 +148,6 @@ blockquote {
     margin-bottom: 0;
   }
 }
-
-
 
 /**
  * Code formatting
@@ -210,14 +175,12 @@ pre {
   }
 }
 
-
-
 /**
  * Wrapper
  */
 .wrapper {
   max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-  max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+  max-width: calc(#{$content-width} - (#{$spacing-unit} * 2));
   margin-right: auto;
   margin-left: auto;
   padding-right: $spacing-unit;
@@ -226,13 +189,11 @@ pre {
 
   @include media-query($on-laptop) {
     max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit}));
+    max-width: calc(#{$content-width} - (#{$spacing-unit}));
     padding-right: $spacing-unit / 2;
     padding-left: $spacing-unit / 2;
   }
 }
-
-
 
 /**
  * Clearfix
@@ -258,8 +219,6 @@ img.info {
   width: $content-width;
   padding: $spacing-unit/2;
 }
-
-
 
 /**
  * Icons
