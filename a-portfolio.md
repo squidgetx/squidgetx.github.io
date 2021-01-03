@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Work
-permalink: /Portfolio/
+title: projects
+permalink: /projects/
 nav: true
 ---
 

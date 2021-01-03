@@ -1,15 +1,18 @@
 ---
 layout: page
-title: Archive
+title: Writing
 nav: true
-permalink: /Archive/
+permalink: /writing/
 ---
 
 <ul>
   {% for post in site.posts %}
      <li>
-        {% include post.html post=post %}
+         {% if post.categories contains 'writing' %}
+            {% include post.html post=post %}
+         {% endif %}
      </li>
 
-  {% endfor %}
+{% endfor %}
+
 </ul>
