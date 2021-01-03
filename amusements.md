@@ -1,25 +1,62 @@
 ---
 layout: page
-title: Web Media
+title: sketches
 nav: true
-permalink: /webmedia/
+permalink: /sketches/
 ---
 
-- Interactive color sketches:
-[Face ](/webmedia/sketches/face.html), [Circles ](/webmedia/sketches/circles.html), [Type ](/webmedia/sketches/type.html), [Shatter ](/webmedia/sketches/shatter.html)
+<div class="sketch">
+<a href="/sketches/sketches/shatter.html">
+<p>Shatter</p>
+<img class="sketchimg" src="/images/shatter.png" />
+</a>
+</div>
 
-<img class="cover_sm" src="/images/shatter.png" />
+<div class="sketch">
+<a href="/sketches/sketches/circles.html">
+<p>Circles</p>
+<img class="sketchimg" src="/images/circles.png" />
+</a>
+</div>
 
-- [Rhythm Platform](/webmedia/bounce2/index.html): A new platform for exploring musical rhythm.
+<div class="sketch">
+<a href="/sketches/sketches/type.html">
+<p>Type</p>
+<img class="sketchimg" src="/images/type.png" />
+</a>
+</div>
 
-<a href="/webmedia/bounce2/index.html"><img class="cover-sm" src="/images/platform.png" /></a>
+<div class="sketch">
+<a href="/sketches/dsp/hardsync.html">
+<p>HardSync</p>
+<img class="sketchimg" src="/images/sync.png" />
+</a>
+</div>
 
-- [Too Big To Fail](/webmedia/tbtf/tbtf.html): Musical survival game
+<div class="sketch">
+<p>Muse</p>
+<a href="/sketches/muse">
+<img class="sketchimg" src="/images/muse.png" />
+</a>
+</div>
 
-<a href="/webmedia/tbtf/tbtf.html"><img class="cover-sm" src="/images/tbtg.png" /></a>
+<div class="sketch">
+<p>Rhythm Platform</p>
+<a href="/sketches/rhythm_platform">
+<img class="sketchimg" src="/images/platform.png" />
+</a>
+</div>
 
-- [Bounce](/webmedia/bounce/bounce.html): Musical bouncing balls
+<div class="sketch">
+<a href="/sketches/tbtf/tbtf.html">
+<img class="sketchimg" src="/images/tbtg.png" />
+<p>Too Big To Fail</p>
+</a>
+</div>
 
-  <a href="/webmedia/bounce/bounce.html"><img class="cover-sm" src="/images/bounce.png" /></a>
-- [Parallax Lakeside](/yo-tools/acceptance-f2015/index.html): Yale Outdoors Fall 2015 leader acceptance letter
-- [Parallax Sunrise](/yo-tools/acceptance): Yale Outdoors Spring 2015 leader acceptance letter
+<div class="sketch">
+<a href="/sketches/bounce/bounce.html">
+<p>Bounce</p>
+<img class="sketchimg" src="/images/bounce.png" />
+</a>
+</div>
