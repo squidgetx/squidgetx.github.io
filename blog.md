@@ -1,8 +1,9 @@
 ---
 layout: page
-title: Writing
+title: Writings
 nav: true
-permalink: /writing/
+permalink: /writings/
+description: "research, essays, and creative writing"
 ---
 
 <ul>

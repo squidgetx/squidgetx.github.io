@@ -2,13 +2,20 @@
  * Site header
  */
 .site-header {
-  border-top: 5px solid $brand-dark;
+  border-right: 3.75px dashed $brand-dark;
   //border-bottom: 1px solid $grey-color-light;
   min-height: 56px;
+  height: 100%;
   display: inline-block;
-
+  width: $nav-width;
   // Positioning context for the mobile navigation icon
   position: fixed;
+}
+
+.page-content {
+  position: absolute;
+  top: 0;
+  left: $nav-width;
 }
 
 .site-title {
@@ -38,6 +45,7 @@ ul.social-media-list {
   li {
     display: inline-block;
   }
+  width: $nav-width - $spacing-unit * 2;
 }
 
 .page-link {
@@ -47,7 +55,7 @@ ul.social-media-list {
 ul.nav {
   font-size: 1.2em;
   color: #222;
-  line-height: 0.9;
+  line-height: 1.25em;
   margin-bottom: 1em;
 }
 
@@ -80,17 +88,33 @@ ul.nav {
       display: inline-block;
     }
   }
+  .page-content {
+    position: relative;
+    width: 100%;
+    left: 0;
+  }
 }
 
 /**
  * Page content
  */
 .page-content {
-  padding: $spacing-unit 0;
+  padding: $spacing-unit $spacing-unit;
 }
 
 .page-heading {
   font-size: 20px;
+}
+
+.page_title {
+  display: inline;
+}
+
+.page_description {
+  display: inline;
+  margin-left: 1em;
+  color: $grey-color;
+  font-size: 0.9em;
 }
 
 .post-list {
@@ -122,16 +146,22 @@ ul.nav {
 
 .post-title {
   font-size: 2em;
-  letter-spacing: -1px;
-  line-height: 1;
 
   @include media-query($on-laptop) {
     font-size: 2em;
   }
+  //margin-bottom: 0px;
+}
+
+.collab {
+  margin-top: -12px;
+  font-style: italic;
 }
 
 .post-content {
-  margin: $spacing-unit;
+  p {
+    font-size: 0.9em;
+  }
 
   h1 {
     font-size: 1.5em;
