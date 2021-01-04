@@ -57,6 +57,14 @@ ul.nav {
   color: #222;
   line-height: 1.25em;
   margin-bottom: 1em;
+
+  a:visited {
+    color: $brand-dark;
+  }
+
+  a:hover {
+    font-weight: 600;
+  }
 }
 
 .contact-list,

@@ -113,13 +113,10 @@ a {
   text-decoration: underline;
 
   &:visited {
-    color: $brand-dark;
+    color: darken($brand-color, 10%);
   }
 
   &:hover {
-    color: #eee !important;
-    background-color: $brand-dark;
-    text-decoration: none;
     svg {
       path {
         fill: #eee !important;

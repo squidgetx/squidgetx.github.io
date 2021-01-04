@@ -1,6 +1,10 @@
 <span class="post-meta">{{ include.post.date | date: "%Y %m %d" }}</span>
 
-<a class="post-link" href="{{ post.url | relative_url }}">{{ include.post.title | escape }}</a>
+<div class='project-link'>
+  <a href="{{ post.url | relative_url }}">
+    {{ include.post.title | escape }}
+  </a>
+</div>
 
 {% if include.post.tags %}
   <p class="post-meta">

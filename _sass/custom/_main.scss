@@ -1,19 +1,26 @@
 // Import partials.
 .projectimg {
+  display: block;
   object-fit: cover;
-  height: 200px;
-  width: 100%;
-}
-
-.project-link {
-  height: 200px;
-  margin-bottom: 1em;
-}
-
-.sketchimg {
-  object-fit: cover;
-  height: 150px;
+  height: 180px;
   width: 200px;
+  padding-bottom: 8px;
+  border-bottom: 3px solid $background-color;
+}
+
+.projectimg:hover {
+  border-bottom: 3px solid $brand-dark;
+}
+
+.project-link a {
+  //margin-bottom: 1em;
+  color: $brand-dark;
+  margin-bottom: 8px;
+  font-family: $heading-font-family;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .sketch {
@@ -22,6 +29,11 @@
   padding-right: 1em;
   padding-bottom: 1em;
   padding-top: 1em;
+  margin-bottom: 1em;
+
+  p {
+    margin-bottom: 8px;
+  }
 }
 
 .tag {
@@ -29,6 +41,7 @@
   padding: 0.3em;
   &:hover {
     background-color: $brand-dark;
+    color: #eee;
   }
   text-decoration: none;
 }
@@ -47,4 +60,19 @@ h6,
 .nav,
 .heading {
   font-family: $heading-font-family;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  padding-right: 1em;
+  max-width: 400px;
 }

@@ -1,15 +1,19 @@
+<div class='row'>
 
- <span class="post-meta">{{ include.project.date | date: "%Y %m %d" }}</span>
-<div class='project-link'>
+  <div class='column'>
     <a class="" href="{{ include.project.url | relative_url }}">
-    {{ include.project.title | escape }}
-    {% if include.project.img %}
-    <br />
-    <img class='projectimg' src='{{ include.project.img }}' />
-    {% endif %}
+      <img class='projectimg' src='{{ include.project.img }}' />
     </a>
+  </div>
 
+  <div class='column'>
+    <span class="post-meta">{{ include.project.date | date: "%Y %m %d" }}</span>
+    <div class='project-link'>
+        <a class="" href="{{ include.project.url | relative_url }}">
+          {{ include.project.title | escape }}
+        </a>
     </div>
+
     {% if include.project.tags %}
       <p class="post-meta">
         {% for tag in include.project.tags %}
@@ -17,3 +21,8 @@
         {% endfor %}
       </p>
     {% endif %}
+
+  </div>
+
+
+</div>

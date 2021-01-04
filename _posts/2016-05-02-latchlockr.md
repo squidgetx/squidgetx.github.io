@@ -5,17 +5,17 @@ date: 2016-05-02 15:34:12 -0500
 img: /images/latchlockr.png
 categories: project
 tags:
-- code
-- cs
-- research
-- databases
-- C++
+  - code
+  - cs
+  - research
+  - databases
+  - C++
 collaborators:
--  David Hatch
--  Minh Tri Pham
--  Sachith Gullapalli
--  Daniel Abadi
--  Jose Faleiro
+  - David Hatch
+  - Minh Tri Pham
+  - Sachith Gullapalli
+  - Daniel Abadi
+  - Jose Faleiro
 ---
 
 As multi-core systems become increasingly more common and affordable, the focus within the database management system community on scalable, highly concurrent systems is growing rapidly. Many popular database systems exhibit a throughput collapse as load and concurrency increase, even with low amounts of logical contention. Many attribute this performance hit to latch contention within the lock manager, and champion the use and implementation of a latch-free lock manager in place of the traditionally latched architecture.
