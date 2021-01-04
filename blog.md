@@ -6,13 +6,13 @@ permalink: /writings/
 description: "research, essays, and creative writing"
 ---
 
-<ul>
+<ul style='margin-top: -4px'>
   {% for post in site.posts %}
-     <li>
-         {% if post.categories contains 'writing' %}
-            {% include post.html post=post %}
-         {% endif %}
-     </li>
+     {% if post.categories contains 'writing' %}
+      <li>
+         {% include post.html post=post %}
+      </li>
+     {% endif %}
 
 {% endfor %}
 

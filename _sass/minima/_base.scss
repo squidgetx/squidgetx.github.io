@@ -110,18 +110,14 @@ h6 {
  */
 a {
   color: $brand-color;
-  text-decoration: underline;
+  text-decoration: none;
 
   &:visited {
     color: darken($brand-color, 10%);
   }
 
   &:hover {
-    svg {
-      path {
-        fill: #eee !important;
-      }
-    }
+    text-decoration: underline;
   }
 }
 
@@ -201,27 +197,7 @@ pre {
   clear: both;
 }
 
-.selected {
-  font-weight: 800;
-  //background-color: $brand-dark;
-  //color: $background-color !important;
-}
-
 img.info {
   width: $content-width;
   padding: $spacing-unit/2;
-}
-
-/**
- * Icons
- */
-.icon > svg {
-  display: inline-block;
-  vertical-align: middle;
-  height: 24px;
-  width: 24px;
-
-  path {
-    fill: $text-color !important;
-  }
 }

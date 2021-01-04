@@ -15,12 +15,15 @@
 .project-link a {
   //margin-bottom: 1em;
   color: $brand-dark;
-  margin-bottom: 8px;
   font-family: $heading-font-family;
   text-decoration: none;
   &:hover {
     text-decoration: underline;
   }
+}
+
+.project-link {
+  margin-bottom: 8px;
 }
 
 .sketch {
@@ -40,8 +43,8 @@
   background-color: $green1;
   padding: 0.3em;
   &:hover {
-    background-color: $brand-dark;
-    color: #eee;
+    //background-color: $brand-dark;
+    //color: #eee;
   }
   text-decoration: none;
 }
@@ -80,10 +83,46 @@ h6,
 
 .logo {
   margin-top: $spacing-unit;
-  margin-bottom: $spacing-unit;
+  margin-bottom: $spacing-unit - 16px;
+  padding-bottom: 8px;
   height: $logo-height;
+  border-bottom: 3.75px solid $background-color;
+
+  &:hover {
+    border-bottom: 3.75px solid $brand-dark;
+  }
 }
 
+/**
+ * Icons
+ */
+.icon > svg {
+  display: inline-block;
+  vertical-align: middle;
+  height: 30px;
+  width: 30px;
+
+  path {
+    fill: $text-color !important;
+  }
+}
+
+.icon--instagram > svg {
+  height: 28px;
+  width: 28px;
+}
+
+.icon {
+  height: 30px;
+  width: 30px;
+  padding-bottom: 2.5px;
+  border-bottom: 2.5px solid $background-color;
+}
+
+.icon:hover {
+  text-decoration: none;
+  border-bottom: 2.5px solid $brand-dark;
+}
 .post-content ul,
 ol {
   font-size: 0.9em;

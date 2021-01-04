@@ -48,10 +48,6 @@ ul.social-media-list {
   width: $nav-width - $spacing-unit * 2;
 }
 
-.page-link {
-  text-decoration: none !important;
-}
-
 ul.nav {
   font-size: 1.2em;
   color: #222;
@@ -63,7 +59,11 @@ ul.nav {
   }
 
   a:hover {
-    font-weight: 600;
+    text-decoration: underline;
+  }
+
+  a.selected {
+    text-decoration: underline;
   }
 }
 
