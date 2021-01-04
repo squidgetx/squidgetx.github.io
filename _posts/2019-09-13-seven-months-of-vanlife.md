@@ -3,7 +3,6 @@ layout: post
 title: "Seven Months of Van life"
 tags:
   - vanlife
-  - personal
 categories:
   - writing
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2020-01-04
-tags: tech_politics
+tags: tech+politics
 title: Inherent Tradeoffs
 categories:
   - writing

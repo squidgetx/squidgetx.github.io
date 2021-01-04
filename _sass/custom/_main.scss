@@ -76,3 +76,9 @@ h6,
   padding-right: 1em;
   max-width: 400px;
 }
+
+.logo {
+  margin-top: $spacing-unit;
+  margin-bottom: $spacing-unit;
+  height: $logo-height;
+}
