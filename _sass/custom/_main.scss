@@ -82,3 +82,10 @@ h6,
   margin-bottom: $spacing-unit;
   height: $logo-height;
 }
+
+.post-content ul,
+ol {
+  font-size: 0.9em;
+  margin-bottom: 0.9em;
+  list-style-type: lower-alpha;
+}
