@@ -2,11 +2,14 @@
 layout: post
 title: Parallel Preprocessing for Deterministic Multiversion Concurrency Control
 tags: code databases cs research C++
-category: project
+categories:
+  - writing
+category:
+  - project
 img: /images/parallelpreprc.png
 collaborators:
-- Daniel Abadi
-- Jose Faleiro
+  - Daniel Abadi
+  - Jose Faleiro
 ---
 
 In database world, multiversion concurrency control simply means that the database keeps track of multiple copies (or versions) of a database record. The main advantage here is that in theory, both a reader and a writer can access the same record at the same time, given the system does the proper bookkeeping in order to make sure they each see the right version. This is supposed to lead to improved performance under high concurrency conditions.
