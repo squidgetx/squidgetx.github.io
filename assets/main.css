@@ -99,7 +99,7 @@ a {
   color: #171;
   text-decoration: none; }
   a:visited {
-    color: #0b4a0b; }
+    color: #0e610e; }
   a:hover {
     text-decoration: underline; }
 
@@ -174,7 +174,7 @@ img.info {
  * Site header
  */
 .site-header {
-  border-right: 3.75px dashed #010701;
+  border-right: 3.75px dashed black;
   min-height: 56px;
   height: 100%;
   display: inline-block;
@@ -215,7 +215,7 @@ ul.nav {
   line-height: 1.25em;
   margin-bottom: 1em; }
   ul.nav a:visited {
-    color: #010701; }
+    color: black; }
   ul.nav a:hover {
     text-decoration: underline; }
   ul.nav a.selected {
@@ -468,10 +468,10 @@ ul.nav {
   border-bottom: 3px solid #fffeff; }
 
 .projectimg:hover {
-  border-bottom: 3px solid #010701; }
+  border-bottom: 3px solid black; }
 
 .project-link a {
-  color: #010701;
+  color: black;
   font-family: "Futura", Helvetica, sans-serif;
   text-decoration: none; }
   .project-link a:hover {
@@ -530,7 +530,7 @@ h6,
   height: 56px;
   border-bottom: 3.75px solid #fffeff; }
   .logo:hover {
-    border-bottom: 3.75px solid #010701; }
+    border-bottom: 3.75px solid black; }
 
 /**
  * Icons
@@ -555,7 +555,7 @@ h6,
 
 .icon:hover {
   text-decoration: none;
-  border-bottom: 2.5px solid #010701; }
+  border-bottom: 2.5px solid black; }
 
 .post-content ul,
 ol {
@@ -573,7 +573,7 @@ ol {
   padding-bottom: 8px;
   border-bottom: 3px solid #fffeff; }
   .cover:hover {
-    border-bottom: 3px solid #010701; }
+    border-bottom: 3px solid black; }
 
 .left {
   width: 50%;
