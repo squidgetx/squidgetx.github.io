@@ -12,6 +12,11 @@
   border-bottom: 3px solid $brand-dark;
 }
 
+.projectimg-sm {
+  height: 130px;
+  width: 150px;
+}
+
 .project-link a {
   //margin-bottom: 1em;
   color: $brand-dark;
@@ -78,7 +83,7 @@ h6,
   display: flex;
   flex-direction: column;
   padding-right: 1em;
-  max-width: 400px;
+  max-width: 450px;
 }
 
 .logo {

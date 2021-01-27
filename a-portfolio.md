@@ -1,9 +1,9 @@
 ---
 layout: page
 title: portfolio
-permalink: /portfolio/
+permalink: /portfolio
 nav: true
-description: "selected creative and engineering projects"
+description: "creative and engineering projects"
 ---
 
 <ul class="post-list">
