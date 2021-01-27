@@ -3,13 +3,15 @@ layout: post
 title: "Thoroughfare"
 date: 2017-06-09 13:40:21 -0500
 img: /images/thoroughfare.png
-categories: project
+categories:
+  - project
+  - feature
 tags:
-- audio
-- Max/MSP
-- instrument
-- kinect
-- granular
+  - audio
+  - Max/MSP
+  - instrument
+  - kinect
+  - granular
 ---
 
 Thoroughfare is a participatory sound installation designed to explore our relationship to roads, hallways, thruways, and other spaces of transit. The installation, set in a sparse, indoor hallway, features sounds of the street, of New Haven cars, buses, bikers, and walkers. These sounds are triggered and manipulated by the movement of audience members through the installation space.

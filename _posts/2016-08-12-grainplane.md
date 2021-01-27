@@ -2,14 +2,15 @@
 layout: post
 title: "GrainPlane"
 date: 2016-08-12 23:12:42 -0500
-categories: project
+categories:
+  - project
 img: /images/grainplane.jpg
 tags:
-- code
-- Max/MSP
-- audio
-- instrument
-- granular
+  - code
+  - Max/MSP
+  - audio
+  - instrument
+  - granular
 ---
 
 I'm quite happy with how my [granular synthesis engine](/project/2016/01/01/granular4.html) turned out, but something was bothering me: it just wasn't very good for any kind of live performance. There are so many parameters - which is great for a studio context but I can't imagine trying to improvise or perform live with it. Even with a MIDI controller of some kind I would still only be able to reasonably change two parameters at a time.
@@ -31,6 +32,7 @@ I got the opportunity to present this instrument at the [Audio Mostly](http://au
 <p><img src='/images/audiomostly.jpg'></p>
 
 Download paper from ACM:
+
 <div class="acmdlitem" id="item2986419"><img src="http://dl.acm.org/images/oa.gif" width="25" height="25" border="0" alt="ACM DL Author-ize service" style="vertical-align:middle"/><a href="http://dl.acm.org/authorize?N27128" title="GrainPlane: Intuitive Tactile Interface for Granular Synthesis">GrainPlane: Intuitive Tactile Interface for Granular Synthesis</a><div style="margin-left:25px"><a href="http://dl.acm.org/author_page.cfm?id=99659085726" >Sylvan Zheng</a><br />AM '16 Proceedings of the Audio Mostly 2016, 2016</div></div>
 <div class="acmdlstat" id ="stats2986419"><iframe src="http://dl.acm.org/authorizestats?N27128" width="100%" height="30" scrolling="no" frameborder="0">frames are not supported</iframe></div>
 

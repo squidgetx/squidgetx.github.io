@@ -13,6 +13,8 @@
   &:hover {
     border-bottom: 3px solid $brand-dark;
   }
+  margin-right: $spacing-unit/2;
+  margin-left: $spacing-unit/2;
 }
 
 .left {
@@ -26,13 +28,11 @@
 }
 
 .right {
-  margin-right: $spacing-unit;
   width: 300px;
   float: right;
 }
 
 .right-sm {
-  margin-right: $spacing-unit;
-  width: 200px;
+  height: 300px;
   float: right;
 }

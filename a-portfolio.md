@@ -3,15 +3,15 @@ layout: page
 title: portfolio
 permalink: /portfolio
 nav: true
-description: "creative and engineering projects"
+description: "all creative and engineering projects"
 ---
 
 <ul class="post-list">
   {% for post in site.posts %}
     {% if post.categories contains 'project' %}
-    <li>
-      {% include project.html project=post %}
-    </li>
+        <li>
+          {% include project.html project=post %}
+        </li>
     {% endif %}
   {% endfor %}
 </ul>

@@ -7,13 +7,14 @@ permalink: /about/
 
 <div class='post-content'>
 
-<p>Hi! I'm an artist, software engineer, and data scientist based in Brooklyn, NY.</p>
+<p>Hi! I'm an artist, software engineer, and data scientist based in Brooklyn, NY. Currently I'm studying as a graduate student at <a href="/itp-blog">NYU Tisch’s Interactive Telecommunications Program.</a></p>
 
-<p>My interests include <a href="/tag/tech+politics">impacts of technology on political communication</a>, <a href='https://soundcloud.com/mediumeight'>experimental music</a>, <a href="/tag/audio">creative audio</a>, <a href='/tag/audiovis'>audio visualization</a>, and general mischief. This website is both a <a href='/portfolio'>collection of projects</a> as well as a <a href='/writings'>blog for my research and (sometimes interactive) essays</a>.</p>
+<p>My main interests include <a href="/tag/tech+politics">impacts of technology on political communication</a>, <a href='https://soundcloud.com/mediumeight'>experimental music</a>, <a href="/tag/audio">creative audio</a>, and <a href='/tag/audiovis'>audio visualization</a>.</p>
 
-<p>I am currently a graduate student at <a href="/itp-blog">NYU Tisch’s Interactive Telecommunications Program.</a></p>
+<p>
+This website holds my <a href='/portfolio'>portfolio of creative work</a> as well as a <a href='/writings'>blog for research, small engineering projects, and (sometimes interactive) essays</a>.</p>
 
-<p><a href="/tag/climbing">I also enjoy rock climbing</a> and recently <a href="/tag/vanlife">lived full time in a DIY van for about a year</a>.</p>
+<p>I also write about <a href="/tag/climbing">rock climbing</a> and recently <a href="/tag/vanlife">lived full time in a DIY van for about a year</a>.</p>
 
 <p>My graphing calculator clone of Cuberunner has tens of thousands of downloads and is still ranked in the top 10 of all time on ticalc.org. You can see my calculator author profile <a href="http://www.ticalc.org/archives/files/authors/104/10456.html">here</a>.</p>
 
