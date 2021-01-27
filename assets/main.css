@@ -470,6 +470,10 @@ ul.nav {
 .projectimg:hover {
   border-bottom: 3px solid black; }
 
+.projectimg-sm {
+  height: 130px;
+  width: 150px; }
+
 .project-link a {
   color: black;
   font-family: "Futura", Helvetica, sans-serif;
@@ -521,7 +525,7 @@ h6,
   display: flex;
   flex-direction: column;
   padding-right: 1em;
-  max-width: 400px; }
+  max-width: 450px; }
 
 .logo {
   margin-top: 38px;
@@ -571,7 +575,9 @@ ol {
 .cover {
   margin-bottom: 30px;
   padding-bottom: 8px;
-  border-bottom: 3px solid #fffeff; }
+  border-bottom: 3px solid #fffeff;
+  margin-right: 19px;
+  margin-left: 19px; }
   .cover:hover {
     border-bottom: 3px solid black; }
 
@@ -584,12 +590,10 @@ ol {
   float: left; }
 
 .right {
-  margin-right: 38px;
   width: 300px;
   float: right; }
 
 .right-sm {
-  margin-right: 38px;
   width: 200px;
   float: right; }
 
