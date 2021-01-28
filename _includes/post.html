@@ -1,29 +1,44 @@
-<span class="post-meta">{{ include.post.date | date: "%Y %m %d" }}</span>
+<div class='row-left'>
 
-<div class='project-link'>
-  {% if include.post.dlink %}
-    <a href="{{ post.dlink }}">
-  {% else %}
-    <a href="{{ post.url | relative_url }}">
-  {% endif %}
-      {{ include.post.title | escape }}
+  <div class='column'>
+    {% if post.img %}
+    <a class="" href="{{ include.post.url | relative_url }}">
+      <img class='projectimg projectimg-sm' src='{{ include.post.img }}' />
     </a>
+    {% else %}
+    <a class="" href="{{ include.post.url | relative_url }}">
+      <img class='projectimg projectimg-sm' />
+    </a>
+    {% endif %}
+  </div>
+
+  <div class='column'>
+    <span class="post-meta">{{ include.post.date | date: "%Y %m %d" }}</span>
+
+    <div class='project-link'>
+      {% if post.dlink %}
+        <a href="{{ post.dlink }}">
+      {% else %}
+        <a href="{{ post.url | relative_url }}">
+      {% endif %}
+          {{ include.post.title | escape }}
+        </a>
+    </div>
+
+    {% if false %}
+      <p class="post-meta">
+        {% for tag in include.post.tags %}
+          {% include tag.html tag=tag %}
+        {% endfor %}
+      </p>
+    {% endif %}
+
+    <p class="post-meta excerpt">
+    {% unless post.description %}
+      {{ post.content | strip_html | truncatewords: 10 }}
+    {% else %}
+      {{ post.description }}
+    {% endunless %}
+    </p>
+    </div>
 </div>
-
-{% if include.post.tags %}
-  <p class="post-meta">
-    {% for tag in include.post.tags %}
-      {% include tag.html tag=tag %}
-    {% endfor %}
-  </p>
-{% endif %}
-
-<p class="post-meta excerpt">
-{% unless include.nopreview %}
-  {{ post.content | strip_html | truncatewords: 50 }}
-{% else %}
-  {{ post.description }}
-{% endunless %}
-</p>
-
-

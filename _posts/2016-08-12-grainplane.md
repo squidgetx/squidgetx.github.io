@@ -5,6 +5,7 @@ date: 2016-08-12 23:12:42 -0500
 categories:
   - project
 img: /images/grainplane.jpg
+permalink: /grainplane
 tags:
   - code
   - Max/MSP

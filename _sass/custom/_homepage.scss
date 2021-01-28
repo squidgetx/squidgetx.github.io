@@ -8,13 +8,20 @@
 
 .cover {
   margin-bottom: $spacing-unit - 8px;
-  padding-bottom: 8px;
+  //padding-bottom: 8px;
   border-bottom: 3px solid $background-color;
   &:hover {
     border-bottom: 3px solid $brand-dark;
   }
   margin-right: $spacing-unit/2;
   margin-left: $spacing-unit/2;
+}
+
+.caption {
+  font-size: 0.9em;
+  padding-top: 0.5em;
+  color: $brand-color;
+  font-family: $heading-font-family;
 }
 
 .left {

@@ -4,6 +4,7 @@ date: 2020-01-04
 tags:
   - tech+politics
   - interactive
+img: /images/inherent.png
 title: Inherent Tradeoffs
 permalink: /inherent_tradeoffs/
 categories:

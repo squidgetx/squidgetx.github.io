@@ -12,12 +12,6 @@
   position: fixed;
 }
 
-.page-content {
-  position: absolute;
-  top: 0;
-  left: $nav-width;
-}
-
 .site-title {
   font-size: 26px;
   font-weight: 300;
@@ -96,7 +90,8 @@ ul.nav {
       display: inline-block;
     }
   }
-  .page-content {
+  .page-content,
+  .project-content {
     position: relative;
     width: 100%;
     left: 0;
@@ -106,8 +101,17 @@ ul.nav {
 /**
  * Page content
  */
-.page-content {
+.page-content,
+.project-content {
   padding: $spacing-unit $spacing-unit;
+}
+
+.content-width {
+  max-width: $content-width-sm;
+}
+
+.project-content {
+  margin-left: $nav-width;
 }
 
 .page-heading {
@@ -130,7 +134,7 @@ ul.nav {
   list-style: none;
 
   > li {
-    margin-bottom: $spacing-unit;
+    margin-bottom: $spacing-unit/2;
   }
 }
 

@@ -1,8 +1,8 @@
 ---
 layout: page
-title: blog
-nav: true
-permalink: /blog/
+title: writing
+nav: false
+permalink: /writing
 description: "research, essays, and explorations"
 ---
 

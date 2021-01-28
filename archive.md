@@ -1,16 +1,16 @@
 ---
 layout: page
-title: archive
+title: blog
 nav: true
-permalink: /archive/
-description: "all projects"
+permalink: /blog
+description: "creative engineering projects, thoughts, and explorations"
 ---
 
-<ul style='margin-top: -4px'>
+<ul style='margin-top: -4px' class='post-list'>
   {% for post in site.posts %}
      {% if post.categories contains 'project' %}
       <li>
-         {% include post.html post=post nopreview=true %}
+         {% include post.html post=post %}
       </li>
      {% endif %}
 

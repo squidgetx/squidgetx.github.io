@@ -6,6 +6,7 @@ categories:
   - project
   - feature
 img: /images/tiltshift.jpg
+permalink: tiltshift
 tags:
   - audio
   - Max/MSP

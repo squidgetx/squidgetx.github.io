@@ -3,6 +3,7 @@ layout: post
 date: 2020-11-01
 tags: itp audiovis audio
 title: MetaAudio System 1
+img: /images/metaaudio.png
 categories:
   - project
 description: "a musical composition that generates itself"

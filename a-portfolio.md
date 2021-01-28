@@ -2,7 +2,7 @@
 layout: page
 title: portfolio
 permalink: /portfolio
-nav: true
+nav: false
 description: "selected creative and engineering projects"
 ---
 
