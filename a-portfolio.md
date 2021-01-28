@@ -15,5 +15,3 @@ description: "selected creative and engineering projects"
     {% endif %}
   {% endfor %}
 </ul>
-
-<p class="rss-subscribe"><a href="{{ "/feed.xml" | relative_url }}">RSS</a></p>
