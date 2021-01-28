@@ -25,7 +25,7 @@ figure {
  */
 body {
   font: 400 14pt/1.5 Helvetica, sans-serif;
-  color: #0f120f;
+  color: #0a100a;
   background-color: #fffeff;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
@@ -96,10 +96,8 @@ h6 {
  * Links
  */
 a {
-  color: #171;
+  color: #282;
   text-decoration: none; }
-  a:visited {
-    color: #0e610e; }
   a:hover {
     text-decoration: underline; }
 
@@ -545,7 +543,7 @@ h6,
   height: 30px;
   width: 30px; }
   .icon > svg path {
-    fill: #0f120f !important; }
+    fill: #0a100a !important; }
 
 .icon--instagram > svg {
   height: 28px;
