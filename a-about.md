@@ -7,12 +7,12 @@ permalink: /about/
 
 <div class='post-content'>
 
-<p>Hi! I'm an artist, software engineer, and data scientist based in Brooklyn, NY. Currently I'm studying as a graduate student at <a href="/itp-blog">NYU Tisch’s Interactive Telecommunications Program.</a></p>
+<p>Hi! I'm an artist, researcher, and software engineer based in Brooklyn, NY. Currently I'm studying as a graduate student at <a href="/itp-blog">NYU Tisch’s Interactive Telecommunications Program.</a></p>
 
 <p>My main interests include <a href="/tag/tech+politics">impacts of technology on political communication</a>, <a href='https://soundcloud.com/mediumeight'>experimental music</a>, <a href="/tag/audio">creative audio</a>, and <a href='/tag/audiovis'>audio visualization</a>.</p>
 
 <p>
-This website holds my <a href='/portfolio'>portfolio of creative work</a> as well as a <a href='/writings'>blog for research, small engineering projects, and (sometimes interactive) essays</a>.</p>
+This website holds my <a href='/portfolio'>portfolio of creative work</a> as well as a <a href='/blog'>blog for research and essays</a>.</p>
 
 <p>I also write about <a href="/tag/climbing">rock climbing</a> and recently <a href="/tag/vanlife">lived full time in a DIY van for about a year</a>.</p>
 

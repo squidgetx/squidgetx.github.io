@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Writings
+title: blog
 nav: true
-permalink: /writings/
-description: "research, essays, and creative writing"
+permalink: /blog/
+description: "research, essays, and explorations"
 ---
 
 <ul style='margin-top: -4px'>

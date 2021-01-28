@@ -6,7 +6,6 @@ tags:
   - trad
   - trip report
 categories:
-  - writing
 ---
 
 Or alternatively, <i>there's good at climbing, and there's good at climbing</i>.

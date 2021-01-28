@@ -7,6 +7,7 @@ categories:
   - project
   - feature
 img: /images/chordal_distance/banner.jpg
+description: "an interactive musical sculpture"
 collaborators:
   - Young-Min Choi
 ---

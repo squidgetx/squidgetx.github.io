@@ -4,7 +4,8 @@ date: 2019-10-14
 tags: itp code_of_music audio
 category: project
 img: /images/muse.png
-title: Muse - Generating Music From Text
+title: Muse
+description: "generating music From text"
 ---
 
 # Introduction

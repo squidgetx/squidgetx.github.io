@@ -7,7 +7,8 @@ tags:
 title: Inherent Tradeoffs
 permalink: /inherent_tradeoffs/
 categories:
-  - writing
+  - project
+description: "an interactive essay on the tradeoffs between differing definitions of algorithmic fairness"
 ---
 
 <h1>

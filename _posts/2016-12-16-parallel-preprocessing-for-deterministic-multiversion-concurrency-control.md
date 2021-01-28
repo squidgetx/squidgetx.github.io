@@ -2,10 +2,7 @@
 layout: post
 title: Parallel Preprocessing for Deterministic Multiversion Concurrency Control
 tags: code databases cs research C++
-categories:
-  - writing
 category:
-  - project
 img: /images/parallelpreprc.png
 collaborators:
   - Daniel Abadi

@@ -16,6 +16,7 @@ collaborators:
   - Sachith Gullapalli
   - Daniel Abadi
   - Jose Faleiro
+description: "are latch free concurrency systems actually better than traditional latched systems?"
 ---
 
 As multi-core systems become increasingly more common and affordable, the focus within the database management system community on scalable, highly concurrent systems is growing rapidly. Many popular database systems exhibit a throughput collapse as load and concurrency increase, even with low amounts of logical contention. Many attribute this performance hit to latch contention within the lock manager, and champion the use and implementation of a latch-free lock manager in place of the traditionally latched architecture.

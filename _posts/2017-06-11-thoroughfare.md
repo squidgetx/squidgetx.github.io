@@ -12,6 +12,7 @@ tags:
   - instrument
   - kinect
   - granular
+description: "an interactive sound sculpture about transit and motion"
 ---
 
 Thoroughfare is a participatory sound installation designed to explore our relationship to roads, hallways, thruways, and other spaces of transit. The installation, set in a sparse, indoor hallway, features sounds of the street, of New Haven cars, buses, bikers, and walkers. These sounds are triggered and manipulated by the movement of audience members through the installation space.

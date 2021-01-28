@@ -4,7 +4,6 @@ title: "Seven Months of Van life"
 tags:
   - vanlife
 categories:
-  - writing
 ---
 
 October will mark the seventh month of full time living in my custom built 2008 Dodge Sprinter van. It will also mark my return to a proper apartment and rent-paying. I've been negligent of documenting the build and living process so far, but I'll start here with some reflection on the more subtle drawbacks of urban vanlife and why I ended up signing a lease this fall.
