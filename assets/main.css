@@ -192,6 +192,12 @@ img.info {
   display: inline-block;
   width: 204px;
   position: fixed; }
+  @media screen and (max-width: 1000px) {
+    .site-header {
+      border-right: none;
+      padding-bottom: 1em;
+      border-bottom: 3.75px dashed black;
+      margin-bottom: 1em; } }
 
 .site-title {
   font-size: 26px;
@@ -261,7 +267,7 @@ ul.nav {
     position: absolute;
     width: 100%;
     left: 0;
-    margin: 0 !important;
+    margin-left: 0 !important;
     padding: 0 !important; } }
 /**
  * Page content
@@ -571,17 +577,9 @@ h6,
   border-bottom: 3.75px solid #fffeff; }
   .logo:hover {
     border-bottom: 3.75px solid black; }
-  @media screen and (max-width: 1000px) {
-    .logo {
-      margin-top: 0; } }
 
 .trigger {
   display: block; }
-  @media screen and (max-width: 1000px) {
-    .trigger {
-      display: inline-block;
-      margin-left: 38px;
-      margin-top: 38px; } }
 
 /**
  * Icons
@@ -634,6 +632,9 @@ ol {
   margin-bottom: 38px;
   height: 56px;
   line-height: 56px; }
+  @media screen and (max-width: 1000px) {
+    .cover-text {
+      height: auto; } }
 
 .cover {
   margin-bottom: 30px;
@@ -642,6 +643,9 @@ ol {
   margin-left: 19px; }
   .cover:hover {
     border-bottom: 3px solid black; }
+  @media screen and (max-width: 1000px) {
+    .cover {
+      float: none !important; } }
 
 .caption {
   font-size: 0.9em;
