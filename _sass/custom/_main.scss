@@ -81,6 +81,9 @@ h6,
   align-items: flex-start;
   justify-content: space-between;
   width: 100%;
+  @include media-query($on-laptop) {
+    flex-direction: column;
+  }
 }
 
 .row-left {
@@ -95,6 +98,9 @@ h6,
   display: flex;
   flex-direction: column;
   padding-right: 1em;
+  @include media-query($on-laptop) {
+    margin-bottom: 1em;
+  }
 }
 
 .logo {
@@ -107,6 +113,12 @@ h6,
   &:hover {
     border-bottom: 3.75px solid $brand-dark;
   }
+  @include media-query($on-laptop) {
+  }
+}
+
+.trigger {
+  display: block;
 }
 
 /**

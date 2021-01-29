@@ -10,6 +10,12 @@
   width: $nav-width;
   // Positioning context for the mobile navigation icon
   position: fixed;
+  @include media-query($on-laptop) {
+    border-right: none;
+    padding-bottom: 1em;
+    border-bottom: 3.75px dashed $brand-dark;
+    margin-bottom: 1em;
+  }
 }
 
 .site-title {
@@ -23,10 +29,9 @@
   &:visited {
     color: $grey-color-dark;
   }
-}
-
-.trigger {
-  display: block;
+  @include media-query($on-laptop) {
+    display: inline-block;
+  }
 }
 
 ul {
@@ -40,6 +45,9 @@ ul.social-media-list {
     display: inline-block;
   }
   width: $nav-width - $spacing-unit * 2;
+  @include media-query($on-laptop) {
+    width: 100%;
+  }
 }
 
 ul.nav {
@@ -85,6 +93,9 @@ ul.nav {
     position: relative;
     float: none;
   }
+  ul {
+    display: inline-block;
+  }
   ul.nav {
     li {
       display: inline-block;
@@ -92,9 +103,11 @@ ul.nav {
   }
   .page-content,
   .project-content {
-    position: relative;
+    position: absolute;
     width: 100%;
     left: 0;
+    margin-left: 0 !important;
+    padding: 0 !important;
   }
 }
 

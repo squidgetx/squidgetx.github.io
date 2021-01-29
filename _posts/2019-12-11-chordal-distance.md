@@ -16,14 +16,7 @@ collaborators:
 <img src='images/chordal_distance/partners.jpg' />
 <br />
 <br />
-
-<div class='row'>
-<div class='column'>
-</div>
-<div class='column'>
 <p class='lg'><i>CHORDAL DISTANCE</i> is an interactive music composition and installation artwork. It explores the relation between two players by connecting the physical act of pulling to music.</p>
-</div>
-</div>
 <br />
 
 <div class='row'>

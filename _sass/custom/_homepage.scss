@@ -4,6 +4,9 @@
   margin-bottom: $spacing-unit;
   height: $logo-height;
   line-height: $logo-height;
+  @include media-query($on-laptop) {
+    height: auto;
+  }
 }
 
 .cover {
@@ -15,6 +18,10 @@
   }
   margin-right: $spacing-unit/2;
   margin-left: $spacing-unit/2;
+
+  @include media-query($on-laptop) {
+    float: none !important;
+  }
 }
 
 .caption {
