@@ -4,7 +4,7 @@ title: "GrainPlane"
 date: 2016-08-12 23:12:42 -0500
 categories:
   - project
-img: /images/grainplane.jpg
+img: /images/grainplane-sm.jpg
 permalink: /grainplane
 tags:
   - code
@@ -15,7 +15,7 @@ tags:
 description: "a new musical interface for granular synthesis"
 ---
 
-<p><img src='/images/audiomostly.jpg'></p>
+<p><img src='/images/grainplane/audiomostly.jpg'></p>
 <br />
 <div class='row'>
 <div class='column'>
@@ -53,7 +53,7 @@ This instrument was presented at the <a href='http://audiomostly.com/'>Audio Mos
 
 <div class='row'>
 <div class='column'>
-<img src='/images/grainplane.jpg'>
+<img src='/images/grainplane/grainplane.jpg'>
 </div>
 <div class='column'>
 </div>

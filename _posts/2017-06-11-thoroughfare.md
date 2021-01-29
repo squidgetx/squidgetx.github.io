@@ -2,7 +2,7 @@
 layout: project
 title: "Thoroughfare"
 date: 2017-06-09 13:40:21 -0500
-img: /images/thoroughfare.png
+img: /images/thoroughfare.jpg
 categories:
   - project
   - feature
