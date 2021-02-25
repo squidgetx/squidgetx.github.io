@@ -35,7 +35,7 @@ Tone.Transport.scheduleRepeat(animate, 1 / FRAMERATE);
 /* Tone.js timing setup */
 
 function setup() {
-  createCanvas(displayWidth, windowHeight);
+  createCanvas(windowWidth, windowHeight);
 
   spinners.push({
     x: 1200,
@@ -46,9 +46,9 @@ function setup() {
     active: 0,
     rotation: 0,
   });
-  SIDEBAR_X = displayWidth - 128 - 16;
+  SIDEBAR_X = windowWidth - 128 - 16;
   play_button = {
-    x: displayWidth - 128 - 16,
+    x: windowWidth - 128 - 16,
     y: 16,
     text: 'play',
     w: 128,
@@ -57,7 +57,7 @@ function setup() {
   };
 
   clear_button = {
-    x: displayWidth - 128 - 16,
+    x: windowWidth - 128 - 16,
     y: windowHeight - 64 - 16,
     text: 'clear',
     w: 128,
@@ -65,7 +65,7 @@ function setup() {
     selected: false,
   };
   plus_button = {
-      x: displayWidth - 64 + 16,
+      x: windowWidth - 64 + 16,
       y: 64 + 32,
       text: '+',
       w: 32,
@@ -74,7 +74,7 @@ function setup() {
       circle: true,
     };
   minus_button = {
-      x: displayWidth -128-16,
+      x: windowWidth -128-16,
       y: 64 + 32,
       text: '-',
       w: 32,
@@ -84,7 +84,7 @@ function setup() {
     };
   buttons = [
     {
-      x: displayWidth - 128 + 16,
+      x: windowWidth - 128 + 16,
       y: 64 + 32,
       text: newBGN,
       w: 64,
@@ -93,7 +93,7 @@ function setup() {
       circle: true,
     },
     {
-      x: displayWidth - 128 - 16 ,
+      x: windowWidth - 128 - 16 ,
       y: 128 + 16 * 3,
       text: 'kick',
       audio: kick,
@@ -102,7 +102,7 @@ function setup() {
       selected: false,
     },
     {
-      x: displayWidth - 128 - 16 ,
+      x: windowWidth - 128 - 16 ,
       y: 16 * 4 + 64 * 3,
       text: 'snare',
       audio: snare,
@@ -111,7 +111,7 @@ function setup() {
       selected: false,
     },
     {
-      x: displayWidth - 128 - 16 ,
+      x: windowWidth - 128 - 16 ,
       y: 16 * 5 + 64 * 4,
       text: 'hihat',
       audio: hh,
@@ -120,7 +120,7 @@ function setup() {
       selected: false,
     },
     {
-      x: displayWidth - 128 - 16 ,
+      x: windowWidth - 128 - 16 ,
       y: 16 * 6 + 64 * 5,
       text: 'openhat',
       audio: oh,
@@ -338,7 +338,7 @@ function animate(time) {
   balls.forEach(function(ball, index) {
     let newx = ball.x + ball.vx;
     let newy = ball.y + ball.vy;
-    if (newy > displayWidth) {
+    if (newy > windowWidth) {
       balls.slice(index, 1);
     }
     // check collisions

@@ -1,14 +1,15 @@
 ---
 layout: post
-date: 2020-01-04
+date: 2020-04-04
 tags:
   - tech+politics
   - interactive
 img: /images/inherent.png
 title: Inherent Tradeoffs
-permalink: /inherent_tradeoffs/
+permalink: /inherent-tradeoffs/
 categories:
   - project
+  - digital
 description: "an interactive essay on the tradeoffs between differing definitions of algorithmic fairness"
 ---
 

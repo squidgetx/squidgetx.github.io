@@ -9,7 +9,7 @@ description: "interactive browser sketches and amusements"
 <div class="sketch">
     <a href="/listening_machines/week2/">
     <p class='heading'>Rings <a href='https://vimeo.com/463689027'>(video)</a></p>
-    <img class="projectimg" src="/images/lm-2.png" />
+    <img class="projectimg" src="/images/lm-2.jpg" />
     </a>
 </div>
 

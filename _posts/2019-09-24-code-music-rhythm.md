@@ -2,7 +2,11 @@
 layout: post
 date: 2019-09-24
 tags: itp code_of_music audio
-title: Code of Music - Rhythm Platform
+title: Rhythm Platform
+img: /images/platform.png
+dlink: /sketches/rhythm_platform
+category: digital
+description: use platform physics to make drum sounds 
 ---
 
 <a href="/amusements/bounce2/index.html"><img class="cover-sm" src="/images/platform.png" /></a>
