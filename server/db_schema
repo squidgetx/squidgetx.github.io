@@ -1,0 +1,8 @@
+create table blog_comments (
+  id serial primary key,
+  username varchar(63),
+  thread varchar(127),
+  comment text,
+  createdat timestamp default current_timestamp
+);
+

@@ -1,0 +1,36 @@
+<div id='comments_wrapper'>
+    <h1>Comments</h1>
+
+    <div id='comments' thread="{{ page.url }}">
+    </div>
+</div>
+<div class='post-content'>
+
+    <h2>Add a Comment</h2>
+<form class='comment' method='post' action="/comments/comment" id='comment_form'> 
+    <input type="text" name="username" id="comment_username" placeholder="your name (optional)"/>
+
+<div id='comment_secret'>
+
+</div>
+    <textarea name="comment" id="comment_text" placeholder='your comment' form='comment_form'></textarea>
+    <input type="text" name="thread" id="comment_thread" hidden value="{{ page.url }}"/>
+    <input type="submit" id='comment_submit'>
+</form>
+</div>
+
+<!---
+Login:
+<form class='login' method='post' action="http://localhost:8000/users/login" id='login_form'>
+    <input type="text" name='username' id='username' />
+    <input type="text" name='password' id='password' />
+    <input type="submit">
+</form>
+Create account:
+<form class='login' method='post' action="http://localhost:8000/users/create">
+    <input type="text" name='username'>
+    <input type="text" name='password'>
+    <input type="submit">
+</form>
+
+-->
