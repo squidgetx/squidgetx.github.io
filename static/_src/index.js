@@ -42,19 +42,27 @@ let render_comments = (thread, comment_div, admin = false) => {
 
 window.onload = () => {
   let comment_div = document.getElementById("comments");
+  let name = localStorage.getItem("username");
+  document.getElementById("comment_username").value = name;
   let thread = comment_div.getAttribute("thread");
   render_comments(thread, comment_div);
   let form = document.getElementById("comment_form"),
-    actionPath = "",
-    formData = null;
+    comment_text = document.getElementById("comment_text");
+
+  comment_text.addEventListener("input", () => {
+    document.getElementById("comment_submit").disabled = !(
+      comment_text.value.length > 0
+    );
+  });
 
   form.addEventListener(
     "submit",
     (e) => {
       e.preventDefault();
-      formData = new FormData(form);
+      let formData = new FormData(form);
       console.log([...formData.entries()]);
-      actionPath = SERVER_URL + form.getAttribute("action");
+      let username = formData.get("username");
+      let actionPath = SERVER_URL + form.getAttribute("action");
       axios
         .post(actionPath, formData, {
           headers: {
@@ -64,11 +72,9 @@ window.onload = () => {
         .then((res) => {
           console.log(res);
           render_comments(thread, comment_div);
-          /*
-          localStorage.setItem("username", res.data.username);
-          localStorage.setItem("accessToken", res.data.accessToken);
-          localStorage.setItem("refreshToken", res.data.refreshToken);
-          */
+          // Clear the comments box
+          localStorage.setItem("username", username);
+          document.getElementById("comment_text").value = "";
         })
         .catch((err) => console.log(err.response.data.error));
     },

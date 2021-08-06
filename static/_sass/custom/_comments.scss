@@ -51,6 +51,12 @@
   border-style: solid;
 }
 
+#comment_text:focus,
+#comment_username:focus {
+  outline: 1px $brand-dark solid;
+  box-shadow: none;
+}
+
 #comment_submit {
   padding: 0.5em;
   background-color: $background-color;
@@ -66,6 +72,19 @@
   color: $background-color;
   background-color: $brand-dark;
   cursor: pointer;
+}
+
+#comment_submit:disabled {
+  color: $grey-color;
+  border-color: $grey-color;
+  background-color: $background-color;
+}
+
+#comment_submit:disabled:hover {
+  color: $grey-color;
+  border-color: $grey-color;
+  background-color: $background-color;
+  cursor: default;
 }
 
 #comment_secret {
