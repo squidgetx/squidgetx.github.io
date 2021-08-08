@@ -7,16 +7,21 @@
 
 .comment {
   margin-bottom: 1em;
+  border-left: 3px $grey-color-light solid;
+  padding-left: 1em;
 }
 
 .comment_text {
   font-size: $small-font-size;
-  margin-top: 0.5em;
+  p {
+    margin: 0;
+  }
 }
 
 .comment_username {
-  font-style: italic;
+  font-weight: bold;
   color: $brand-dark;
+  font-size: $base-font-size * 0.9;
 }
 
 .comment_date {
@@ -24,9 +29,11 @@
 }
 
 .comment-meta {
-  border-bottom: 1.5px solid;
   color: $grey-color-dark;
   padding-bottom: 0.25em;
+  p {
+    margin: 0;
+  }
 }
 
 #comment_text {

@@ -9,12 +9,10 @@ let render_comment = (comment) => {
   }
   return `<div class='comment'>
             <div class='post-meta comment-meta'>
-                <span class='comment_username'>${username}</span>,
-                on
-                <span class='comment_date'>${comment.createdat.slice(
-                  0,
-                  10
-                )}</span>:
+                <p class='comment_date'>${comment.createdat
+                  .slice(0, 10)
+                  .replaceAll("-", " ")}</p>
+                <p class='comment_username'>${username}</p>
                 <span class='comment_delete' hidden comment_id=${
                   comment.id
                 }>(delete)</span>
