@@ -3,9 +3,6 @@
   @include media-query($on-laptop) {
     width: 100%;
   }
-  border-top: 3px $grey-color-light solid;
-  padding-top: $spacing-unit;
-  margin-top: $spacing-unit;
 }
 
 .comment {

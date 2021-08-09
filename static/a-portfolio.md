@@ -10,7 +10,7 @@ description: "selected creative and engineering projects"
   {% for post in site.posts %}
     {% if post.categories contains 'feature' %}
         <li>
-          {% include project.html project=post %}
+          {% include post-item.html post=post %}
         </li>
     {% endif %}
   {% endfor %}

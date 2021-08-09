@@ -6,6 +6,7 @@ title: MetaAudio System 1
 img: /images/metaaudio.jpg
 categories:
   - project
+blog: true
 description: "a musical composition that generates itself"
 ---
 

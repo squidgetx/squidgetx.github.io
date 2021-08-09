@@ -166,15 +166,8 @@ ul.nav {
  */
 .post-header {
   margin-bottom: $spacing-unit;
-}
-
-.post-title {
-  font-size: 2em;
-
-  @include media-query($on-laptop) {
-    font-size: 2em;
-  }
-  //margin-bottom: 0px;
+  padding-bottom: 1em;
+  border-bottom: 3px $grey-color-light solid;
 }
 
 .collab {
@@ -218,4 +211,18 @@ ul.nav {
       font-size: 1em;
     }
   }
+}
+
+.post-title {
+  margin: 0;
+  a {
+    color: $brand-dark;
+    text-decoration-color: $brand-dark;
+  }
+}
+
+article.post {
+  border-bottom: 3px $grey-color-light solid;
+  margin-bottom: $spacing-unit/2;
+  padding-bottom: $spacing-unit/2;
 }

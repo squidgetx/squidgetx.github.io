@@ -2,9 +2,7 @@
 layout: post
 date: 2019-10-14
 tags: itp code_of_music audio
-categories: 
-    - project
-    - digital
+blog: true
 img: /images/muse.png
 title: Muse
 description: "generating music from text"

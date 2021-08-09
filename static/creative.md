@@ -1,13 +1,14 @@
 ---
 layout: page
-title: Not No Archive
-permalink: /archive
-description: "all posts"
+nav: true
+title: creative
+permalink: /creative
+description: "engineering projects in varying states of polish"
 ---
 
 <ul style='margin-top: -4px' class='post-list'>
   {% for post in site.posts %}
-     {% if post.blog %}
+     {% if post.categories contains 'project' %}
       <li>
          {% include post-item.html post=post %}
       </li>

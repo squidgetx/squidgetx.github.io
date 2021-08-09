@@ -10,6 +10,7 @@ permalink: /inherent-tradeoffs/
 categories:
   - project
   - digital
+blog: true
 description: "an interactive essay on the tradeoffs between differing definitions of algorithmic fairness"
 ---
 

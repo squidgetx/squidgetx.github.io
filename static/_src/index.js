@@ -24,7 +24,7 @@ let render_comment = (comment) => {
     `;
 };
 
-let render_comments = (thread, comment_div, admin = false) => {
+let render_comments = (thread, comment_div) => {
   axios
     .get(SERVER_URL + "/comments/thread?thread=" + thread)
     .then((res) => {
