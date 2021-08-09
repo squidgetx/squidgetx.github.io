@@ -1,5 +1,28 @@
-To update the blog:
+Personal website/blog powered by Jekyll, Webpack, and Express
 
-jekyll build;
-cp -r _site/ squidgetx.github.io
+All client code in the `static` directory, server code (for comments, etc.) in the `server` directory
+
+# Dev commands
+
+## Node server:
+`node server.js`
+
+(Must set env.passphrase)
+
+
+## Start webpack
+`npx webpack --watch`
+
+## Start jekyll
+```
+cd static
+bundle exec jekyll s
+```
+
+## Ship a new build of the client
+```
+make deploy
+```
+
+
 
