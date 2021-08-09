@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Chordal Distance - Process</title>
+  <meta name="description" content="This page serves as the primary process documentation for CHORDAL DISTANCE. See this page for the main project page.">
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="/2019/12/17/chordal-distance-process.html">
+  <link rel="alternate" type="application/rss+xml" title="Sylvan Zheng" href="/feed.xml">
+  
+  
+
+  <script src="/assets/main.js" ></script>
+</head>
+
+
+  <body>
+
+    <header class="site-header" role="banner">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">
+      <img
+        src="/images/Logo.svg"
+        alt="Sylvan Zheng"
+        class="logo"
+      />
+    </a>
+
+    <div class="trigger">
+      <ul class='nav'>
+      
+        
+        
+        <li>
+        <a class="page-link" href="/about/">about</a>
+        </li>
+        
+        
+      
+        
+      
+        
+      
+        
+        
+        <li>
+        <a class="page-link" href="/blog">blog</a>
+        </li>
+        
+        
+      
+        
+      
+        
+        
+        <li>
+        <a class="page-link" href="/creative">creative</a>
+        </li>
+        
+        
+      
+        
+        
+        <li>
+        <a class="page-link" href="/fun/">fun</a>
+        </li>
+        
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+      </ul>
+      <ul class="social-media-list">
+        
+        <li>
+          <a href="mailto:sylvan.a.zheng -- at -- gmail.com"><div class="icon icon--email"><?xml version="1.0" encoding="UTF-8"?>
+<!-- The icon can be used freely in both personal and commercial projects with no attribution required, but always appreciated.
+You may NOT sub-license, resell, rent, redistribute or otherwise transfer the icon without express written permission from iconmonstr.com -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve" fill="#3c3c3c">
+
+<path id="email-3-icon" d="M256.017,273.436L50.847,103.407h410.904L256.017,273.436z M255.983,328.898L50,158.244v250.349h412   V158.653L255.983,328.898z"/>
+
+</svg></div></a>
+
+        </li>
+        
+
+        
+        <li>
+          <a href="https://instagram.com/dj_selva"><div class="icon icon--instagram"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+</div></a>
+
+        </li>
+        
+        
+        
+        <li>
+          <a href="https://github.com/squidgetx"><div class="icon icon--github"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+</div></a>
+
+        </li>
+        
+
+        
+        <li>
+          <a href="https://soundcloud.com/mediumeight"><div class="icon icon--soundcloud"><?xml version="1.0" encoding="windows-1252"?>
+<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+<g>
+	<path style="fill:#030104;" d="M3.361,67.281L5,60.279l-1.639-7.238c-0.045-0.215-0.457-0.379-0.959-0.379   c-0.508,0-0.92,0.164-0.959,0.381L0,60.279l1.443,7.002c0.039,0.217,0.451,0.381,0.959,0.381   C2.904,67.662,3.316,67.498,3.361,67.281z M13.611,71.168L15,60.348l-1.389-16.74c-0.041-0.426-0.561-0.76-1.191-0.76   c-0.635,0-1.156,0.334-1.188,0.76L10,60.348l1.232,10.82c0.031,0.422,0.553,0.756,1.188,0.756   C13.051,71.924,13.57,71.594,13.611,71.168z M23.84,70.99L25,60.354l-1.16-22.287c-0.031-0.523-0.648-0.934-1.404-0.934   c-0.762,0-1.379,0.41-1.406,0.934L20,60.354l1.029,10.642c0.027,0.519,0.645,0.928,1.406,0.928   C23.191,71.922,23.809,71.514,23.84,70.99z M34.049,70.832L35,60.355l-0.951-22.449c-0.023-0.621-0.727-1.107-1.6-1.107   c-0.879,0-1.582,0.486-1.604,1.107L30,60.355l0.85,10.475c0.018,0.615,0.721,1.102,1.6,1.102   C33.322,71.932,34.025,71.453,34.049,70.832z M44.248,70.699L45,60.359l-0.752-25.74c-0.016-0.707-0.818-1.281-1.787-1.281   c-0.971,0-1.771,0.576-1.787,1.281L40,60.352c0,0.017,0.674,10.349,0.674,10.349c0.016,0.698,0.816,1.272,1.787,1.272   C43.43,71.973,44.232,71.406,44.248,70.699z M51.391,71.98C51.424,71.982,86.883,72,87.114,72C94.232,72,100,66.42,100,59.537   c0-6.885-5.768-12.465-12.887-12.465c-1.766,0-3.449,0.348-4.984,0.969C81.104,36.811,71.363,28,59.484,28   c-2.906,0-5.742,0.553-8.244,1.488c-0.972,0.366-1.232,0.739-1.24,1.467v39.553C50.01,71.27,50.621,71.906,51.391,71.98z"/>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg></div></a>
+
+        </li>
+        
+
+        
+        <li>
+          <a href="https://twitter.com/ZSylvan"><div class="icon icon--twitter"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+</div><span class="username"></span></a>
+
+        </li>
+        
+
+      </ul>
+
+
+    </div>
+
+  </div>
+
+</header>
+
+        <main class="page-content" aria-label="Content">
+      <div class='wrapper-sm'>
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header>
+    <h1 class="post-title" itemprop="name headline">Chordal Distance - Process</h1>
+    
+     <p class='post-meta collab'>in collaboration with Young-Min Choi</p>
+    
+
+    
+    <p class='post-meta'>
+      <time>
+        Dec 17, 2019
+      </time>
+    </p>
+    <p class='post-meta'>
+      
+      <a class='tag' href="/tag/itp">itp</a>
+
+      
+      <a class='tag' href="/tag/code_of_music">code_of_music</a>
+
+      
+      <a class='tag' href="/tag/physical_computing">physical_computing</a>
+
+      
+      <a class='tag' href="/tag/chordal_distance">chordal_distance</a>
+
+      
+      <a class='tag' href="/tag/audio">audio</a>
+
+      
+    </p>
+
+  
+   
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p>This page serves as the primary process documentation for <em>CHORDAL DISTANCE</em>. See <a href="/2019/11/21/chordal-distance.html">this page</a> for the main project page.</p>
+
+<p>All code for this project can be found <a href="https://github.com/squidgetx/chordal_distance">here</a></p>
+
+<h1 id="1-concept--ideation">1. Concept / Ideation</h1>
+
+<p>We were initially interested in this idea of combining collaborative, metaphorical friction with music initially articulated <a href="/2019/10/29/pcomp-final-ideation.html#1-collaborative-musical-instrument">here</a>. However, we struggled at first to settle on a physical metaphor that captured this idea elegantly.</p>
+
+<p>Our initial list of ideas included a table you had to push down on, a set of large boxes that needed to be pushed around a space, a rusty turn-crank music box, and a ceiling-to-floor string installation whose strings would be tugged or pulled on by the participants. However after some initial prototyping we realized that many vertically oriented string installations look very much like a harp; a preexisting strong musical concept that people would inevitably be familiar with, a familiarity which lead to confusion in early testing.</p>
+
+<p>We were particularly interested in the simple two player interaction of tug of war, but couldn’t come up with a elegant physical metaphor that allowed more than two players to participate. We decided after a few days of unsuccessful sketching to keep the project minimal and restrict it to two players.</p>
+
+<h1 id="2-initial-prototype">2. Initial Prototype</h1>
+
+<p>We decided to start with two handles attached by rope. I quickly built a rough pair of handles which we could use for testing.</p>
+
+<p><img src="/images/chordal_distance/prototype.jpg" alt="Image of rough handles" /></p>
+
+<p>In our first official playtesting session we confirmed that people really did enjoy the pairwise tension-modulating interaction. We also observed that many people liked to move the handles very quickly in many directions, something that we hadn’t considered. Movement outside of the tension in the connecting band would be something that we logged as something to pay attention to.</p>
+
+<p>Our initial test used a 50kg load cell as we wanted to be sure that our piece could sustain the high level of force that we were hoping people would want to place on it. However, after calibrating the load cell and doing a stress test we found that 10-11kg was already near the maximum amount of force that the two of us could exert on each other. We figured that we would be able to use a much more compact 20kg load cell for our final piece.</p>
+
+<h1 id="3-enclosure-design">3. Enclosure Design</h1>
+
+<p>We wanted an enclosure that served several functions at once - it needed to contain at most a 20kg load cell, an HX711 board, an Arduino Nano microcontroller, a 1200mAh LiPo battery, a battery charging port, and a power switch for the whole system. The enclosure also needed to provide a secure mounting point for the string between the two handles as well as overall be sturdy enough to withstand relatively abusive handling. The enclosure also needed to provide a comfortable gripping point. Finally, we also wanted the enclosure to be aesthetically pleasing!</p>
+
+<p><img src="/images/chordal_distance/electronics.jpg" alt="image of cnc'd wood" /></p>
+
+<p>We struggled to come up with a design for an enclosure with an attached handle that didn’t recall pre-existing-but-irrelevant shapes such as telephones, door handles, bananas, or dog leashes. The crude but confident lines of our prototype felt like a package deal - if we slimmed down or refined the shape of the prototype it would immediately bear a stronger resemblance to <em>some</em> designed product-with-handle. We wanted a shape that was elegant, that was comfortable to use and suggested pulling in its own shape. We began to explore the possibility of merging the handle and enclosure together - what if the handle itself <em>was</em> the enclosure?</p>
+
+<p>After many hours of carefully measuring our electronic components and laying out the possibilities in Rhino we felt confident that we would be able to fit all the components inside of a shell that was still comfortable to hold in hand. Youngmin additionally designed a clever attachment mechanism for the handle - to avoid having to unscrew the enclosure each time we needed to access the insides the lid slides onto the body with a simple friction-fit.</p>
+
+<p>We bought a cheap piece of 2x3 red softwood stud to start our second prototype. Aidan Lincoln incredibly generously helped us learn how to use the CNC shopbot to carve out our exact design in the wood.</p>
+
+<p><img src="/images/chordal_distance/handle-cnc.jpg" alt="image of cnc'd wood" /></p>
+
+<p>In order to mount the load cell we needed a way for machine screws to secure the load cell to the wood. We used a single brass machine screw insert which is reinforced with epoxy. This method worked well enough, but it was exceedingly tricky to make sure the machine screw hole in the load cell was perfectly aligned with the insert. To avoid this issue for the the second load cell attachment point we secured the second point with a simple #6 wood screw.</p>
+
+<p><img src="/images/chordal_distance/handle-insert.jpg" alt="image of cnc'd wood" /></p>
+
+<p>We used a dremel tool to carve out basic notches for the charging chip and rocker power switch.</p>
+
+<p><img src="/images/chordal_distance/handle-switch1.jpg" alt="image of cnc'd wood" /></p>
+
+<p><img src="/images/chordal_distance/handle-switch2.jpg" alt="image of cnc'd wood" /></p>
+
+<p><img src="/images/chordal_distance/handle-inside.jpg" alt="image of cnc'd wood" /></p>
+
+<p><img src="/images/chordal_distance/handle-finished.jpg" alt="image of cnc'd wood" /></p>
+
+<p>The charge port and power switch are invaluable features - although they don’t play a large role when we show the project, they eased the development process tremendously. The battery can be charged with any USB-C cable and the Arduino can be reset with a flick of a button!</p>
+
+<h1 id="4-bluetooth--software-architecture">4. Bluetooth / Software Architecture</h1>
+
+<p>The Node.JS server receives bluetooth messages before forwarding them through an OSC socket to Max/MSP. Max then performs the relevant processing of the raw sensor data and passes MIDI messages to Ableton Live, which ultimately synthesizes the sounds.</p>
+
+<p>I used @abandonware’s fork of Noble (<a href="https://www.npmjs.com/package/@abandonware/noble">link</a>) to manage the bluetooth connections. One incredibly time consuming bug is that the bluetooth connection drops out intermittently. We eventually managed to mitigate this by removing all delays from the Arduino controller code, although I’m still not completely sure why this helps.</p>
+
+<p>One feature I am proud of is the automatic reconnection algorithm in the Node server - if it loses connection with one of the bluetooth peripherals (likely because we have reset the power), it automatically attempts to reconnect. A handful of times throughout our playtesting and even during the Winter Show we needed to reset the handles because of a dropped Bluetooth connection. This process was as easy as toggling the power switch on the enclosure and a few seconds later the connection would be automatically restored.</p>
+
+<h1 id="5-sound-design--composition">5. Sound Design / Composition</h1>
+
+<p>We used a mix of string samples, analog patches, and physical modelling synthesis patches for this iteration of sound. We chose these sounds primarily to match the wood-and-rubber aesthetic of the sculpture.</p>
+
+<p>As the tension increases, many different things happen. The volumes and filters on most of the voices in the Live set are increased and opened at different rates - there are four string voices and four mallets each of which change volume and timbre at different rates. In addition, the speed and detune of mallet hits changes along with the tension, leading to a strong sense of harmonic tension even as the base chord remains stable.</p>
+
+<p>The interplay between mallet speeds and growing tension through volume, timbre, and microharmony serve as the basis for the musical arc of the piece. To enrich this basic pattern we implemented several additional mappings using the accelerometer data from each handle.</p>
+
+<p>The first is rotation - as each player rotates their handle the basic inversion (in a musical sense) of half the voices change - as the primary handle rotates, two string voices and two mallets trade notes and as the secondary handle rotates, the other half of the voices trade their notes. This allows for textural movement within the base chord which is already complex (the base chord is essentially A minor 13, or A minor over G major).</p>
+
+<p>The second is acceleration magnitude - sharp movements of the handle are detected and temporarily increase the speed and pitch of the mallet instruments.</p>
+
+<p>The third is rate of tension increase - rapid increases in tension temporarily lead to more powerful mallet hits.</p>
+
+<p>In general the overall musical experience is very tightly crafted, as opposed to the kind of musical expression that a more traditional instrument might allow. While there is an immense amount of variation or complexity possible within the piece, most interactions produce generally similar musics. The work is more about interacting with a composition than it is a purely expressive instrument.</p>
+
+<h1 id="6-installation">6. Installation</h1>
+
+<p>We wanted our installation to reinforce the sonic, visual, and interaction aesthetics of the piece. The interaction (feeling ebbs and flows in tension), along with the sound (dense layers of organic sounds) is subtle and detailed. While we considered simply presenting the pair of handles on a table, creating a suspended installation helped to frame the piece as a more delicate, intentional artwork as opposed to a purely expressive instrument.</p>
+
+<p><img src="/images/chordal_distance/hanging1.jpg" alt="image of cnc'd wood" /></p>
+
+<p>We built simple wooden boxes which each contain a pair of retractable dog leashes. The lower box contains a brick for weight and rubber feet for additional friction.</p>
+
+  </div>
+
+  
+
+</article>
+<div id='comments_wrapper'>
+    <h1>Comments</h1>
+
+    <div id='comments' thread="/2019/12/17/chordal-distance-process.html">
+    </div>
+<div class='post-content' >
+
+<form method='post' action="/comments/comment" id='comment_form'> 
+    <input type="text" name="username" id="comment_username" placeholder="your name (optional)"/>
+
+<div id='comment_secret'>
+
+</div>
+    <textarea name="comment" id="comment_text" placeholder='your comment' form='comment_form'></textarea>
+    <input type="text" name="thread" id="comment_thread" hidden value="/2019/12/17/chordal-distance-process.html"/>
+    <input type="submit" id='comment_submit' disabled>
+</form>
+</div>
+</div>
+
+
+        </div>
+    </main>
+
+  </body>
+
+</html>

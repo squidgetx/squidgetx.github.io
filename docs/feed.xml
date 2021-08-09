@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.6.3">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-08-09T14:55:08-04:00</updated><id>//</id><title type="html">Sylvan Zheng</title><subtitle></subtitle><entry><title type="html">Should you go to ITP?</title><link href="/2021/06/11/itp.html" rel="alternate" type="text/html" title="Should you go to ITP?" /><published>2021-06-11T00:00:00-04:00</published><updated>2021-06-11T00:00:00-04:00</updated><id>/2021/06/11/itp</id><content type="html" xml:base="/2021/06/11/itp.html">&lt;p&gt;A prospective ITP student recently reached out to me to ask about the program, providing a good opportunity to collect my thoughts about the last two years. Was it worth it? Is it a “good” program?&lt;/p&gt;
+
+&lt;p&gt;Of course, the answer is mostly, “it depends.”&lt;/p&gt;
+
+&lt;h1 id=&quot;1&quot;&gt;1&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://itp.nyu.edu/&quot;&gt;ITP’s website&lt;/a&gt; says that&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“ITP is a two-year graduate program located in the Tisch School of the Arts whose mission is to explore the imaginative use of communications technologies — how they might augment, improve, and bring delight and art into people’s lives. Perhaps the best way to describe us is as a Center for the Recently Possible.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Informally, ITP also describes itself as “engineering school for artists, and art school for engineers.” A brief look at the &lt;a href=&quot;https://tisch.nyu.edu/itp/courses/itp-courses&quot;&gt;course list&lt;/a&gt; reveals titles like “New Interfaces for Musical Expression,” “Live Image Processing &amp;amp; Performance,” and “Tangible Interaction and Device Design.”&lt;/p&gt;
+
+&lt;p&gt;This description is a good introduction but belies one of ITP’s most unique and defining characteristics: its aggressive opposition to structure. For better or worse this philosophy impacts every aspect of the program and student experience.&lt;/p&gt;
+
+&lt;h1 id=&quot;2&quot;&gt;2&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/itp_still.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Photo still taken from ITP promotional material.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+At ITP students experiment with form and content in a whirlwind tour of possibility. Sneakers play music when you dance in them, &lt;a href=&quot;https://www.youtube.com/watch?v=Wb6eFGbwPeA&quot;&gt;wooden sculptures contort to mirror your image&lt;/a&gt;, and &lt;a href=&quot;http://peiqi.su/art/portfolio-penis-wall.html&quot;&gt;walls of 3D printed dicks rise and fall to track the stock market&lt;/a&gt;. At its best ITP is a chaotic, interdisciplinary melting pot where makers of all backgrounds inspire each other to develop creative, imaginative work.&lt;/p&gt;
+
+&lt;p&gt;It’s easy to see how imposing structure on the chaos could stifle the creativity and exploration that ITP prides itself on, and so the program curriculum notably lacks any hint of specialization or formalization. ITP scoffs at the idea of pre-requisites, subfield tracks, and consistent class offerings. Technology changes fast; if ITP is going to be the Center for the Recently Possible it needs nimbleness and flexibility, not deep investments into specific technologies or subprograms.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://miro.medium.com/max/2400/1*6hH-PVNXsKfDYYLZGDiRNg.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;As much as they would hate to admit it, ITP has a lot in common with a certain kind of Silicon Valley hacker ethos.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Although this educational philosophy seems innovative or forward-thinking at first glance it actually has deep roots in ITP’s historical origins. But interactive and creative technology is incredibly different today than when ITP was founded in 1979. While it’s true one can find contemporary &lt;em&gt;content&lt;/em&gt; like blockchain and XR among the course offerings, the “Center for the recently possible” has yet to adjust in &lt;em&gt;form&lt;/em&gt; to the radically different technological landscape. In holding tight to its anti-structuralist ethos, ITP can’t fully acknowledge these shifts in technology nor in ITP’s position relative to the wider ecosystem of creative tech.&lt;/p&gt;
+
+&lt;h1 id=&quot;3&quot;&gt;3&lt;/h1&gt;
+
+&lt;p&gt;In 1979, the information age had not yet arrived. The first widely commercial personal computers were still a few years away and the Internet was still a US military research project.
+At the time ITP was an experimental film program, where “technology” referred more to the Sony Portapek (the first portable video camera) than to Arduino microcontrollers or machine learning algorithms.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/8/84/C64c_system.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;The Commodore 64C, released in 1986&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;But in 2021, fully utilizing technology encompasses more than just the ability to operate technical equipment. The ability to control and direct technical equipment - in a word, programming - has become an essential part of a technical creator’s toolkit&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. The ability to move from what &lt;a href=&quot;https://www.ribbonfarm.com/2017/08/17/the-premium-mediocre-life-of-maya-millennial/&quot;&gt;Ribbonfarm&lt;/a&gt; calls “below the API” to “above the API” in the context of artistic/creative practice is one of the most valuable things that ITP graduates leave with right now, both in an economic sense&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; and a creative one.&lt;/p&gt;
+
+&lt;p&gt;However, ITP doesn’t seem to fully recognize this in its program structure, only providing one sort-of-required-but-not-really introductory coding class. This class is taught differently by each instructor and is graded pass/fail. As a result, students enter their second semester with only the barest minimum guarantee of coding ability. Moreover, the second semester (and beyond) is a true wild west, with no kinds of “staple” coding elective classes reliably offered in any given semester.&lt;sup id=&quot;fnref:3&quot;&gt;&lt;a href=&quot;#fn:3&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;p&gt;Red Burns, the godmother of ITP and the original proponent for the anti-structure educational philosophy of the program is famous for saying “the computer is just a tool.” She believed strongly in the strength of creativity over technical aptitude. She goes on, “It’s like a pen. You have to have a pen, and to know penmanship, but neither will write the book for you.”&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;img src=&quot;https://uh8yh30l48rpize52xh0q1o6i-wpengine.netdna-ssl.com/wp-content/uploads/2013/08/RedBurns1971A.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;Red Burns, 1971. Image credit Cooper Hewitt Museum&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;While I wholeheartedly agree with the general idea that creativity is as important (or even more important) than technical aptitude (If you don’t believe this you should just get a computer science degree!), ITPs specific attitude when it comes to computers is as outdated as Red’s pen metaphor.&lt;/p&gt;
+
+&lt;p&gt;You can learn how to use an audio recorder or film camera in a week. It takes &lt;em&gt;years&lt;/em&gt; to become a competent programmer. The complexity of a computer encompasses a &lt;a href=&quot;https://en.wikipedia.org/wiki/Turing_completeness&quot;&gt;literal universe&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;ITP doesn’t need to adopt an entire computer science curriculum. But its ignorance (or naivete) of the categorical difference between computers and other tools leads to noticeable degradations in the student experience.&lt;/p&gt;
+
+&lt;p&gt;One semester isn’t enough to cover everything you need to become an effective computer user. Every elective class that touches on software sets aside a significant portion of time to basic technical content &lt;em&gt;that gets repeated across every class&lt;/em&gt;. Classes on topics as diverse as programmatic video manipulation, live sound synthesis, networked social interactions, generative poetry, embedded device machine learning duplicate literal hours of command line tutorials, Max/MSP introductions, and so forth. Do you want to take this class that uses X technology? Great, ITP will teach it to you! Did you like it, and want to go further? You’ll waste half the next semester learning the basics again, if a class on a similar topic is even offered.&lt;/p&gt;
+
+&lt;p&gt;In addition to the opportunity cost of wasted time experienced by probably half of the students during any given class, the wide variation in technical ability also degrades the creative aspects of the ITP experience. Conceptual critique and discussion suffers when half the projects for any given assignment are incomplete or artificially restricted in scope because of technical ability. Good penmanship is not sufficient, &lt;em&gt;but it is necessary&lt;/em&gt; to write a book. How can students push the frontier of eg. data visualization forward when they don’t have a solid grasp on how to manipulate data programmatically?&lt;/p&gt;
+
+&lt;h1 id=&quot;4&quot;&gt;4&lt;/h1&gt;
+
+&lt;p&gt;This institutionally cavalier attitude isn’t exclusive to programming at ITP. It carries over to other fields as well. Since the 80s computer scientists, musicians, artists, writers, journalists, and so forth have gone and pioneered subfields like computer music, generative visual art, media studies, game design, data visualization, interactive fiction, etc. These fields have significantly matured as more and more people have gained access to computational tools, but you wouldn’t know it at ITP.&lt;/p&gt;
+
+&lt;p&gt;ITP basically completely ignores the existence and history of these subfields&lt;sup id=&quot;fnref:4&quot;&gt;&lt;a href=&quot;#fn:4&quot; class=&quot;footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt;, giving them only one semester’s worth at best and treating them as virgin territory still to be explored at worst. It doesn’t matter that music composition and performance has a thousands-of-years history - ITP students learn how to revolutionize music technology with a handful of lectures on the nature of pitch and rhythm. It doesn’t matter that computer music is over fifty years old with a rich set of compositional techniques built on each other over time - ITP can teach Markov chains (utilized in music in &lt;a href=&quot;https://www.jstor.org/stable/1575226&quot;&gt;1986&lt;/a&gt;, if not earlier) and call it a day.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://images.squarespace-cdn.com/content/v1/55254393e4b0fb9afcd2374e/1517475724910-PCHT9S7SJV4YRJRPKYAJ/ke17ZwdGBToddI8pDm48kIYVcw2xALxYL-MMjB8EEN4UqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcoxKHYl9DXn98ncPxaA3FXXFHcF3JYvVfeDBNJTyW7PQb1YcHbM9zJ7GbhRZXN1KT/LaurieS.jpg?format=2500w&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;Laurie Spiegel, creating computer music at Bell Labs in the 70s with probably the same or more interesting techniques than what’s taught at ITP&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;ITP has no sequences of any kind. ITP doesn’t even reliably have a class touching on any given subfield during any given semester.&lt;sup id=&quot;fnref:5&quot;&gt;&lt;a href=&quot;#fn:5&quot; class=&quot;footnote&quot;&gt;5&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p&gt;This leads to a depressingly large portion of class and even thesis projects which simply retread the same ground over and over again. Students and faculty particularly interested in these subareas move on (reasonably so) to more specialized pastures&lt;sup id=&quot;fnref:6&quot;&gt;&lt;a href=&quot;#fn:6&quot; class=&quot;footnote&quot;&gt;6&lt;/a&gt;&lt;/sup&gt;, leaving ITP feeling oddly behind the times. So much for “center for the recently possible.”&lt;/p&gt;
+
+&lt;p&gt;In my opinion the strongest subdepartment (if you could even call it that) at ITP is Physical Computing; is it a coincidence that Tom Igoe, a co-inventor of the Arduino microcontroller, and someone who is intimately familiar with the history of microcontrollers in creative contexts is involved?&lt;/p&gt;
+
+&lt;h1 id=&quot;5&quot;&gt;5&lt;/h1&gt;
+
+&lt;p&gt;ITP is a great place to be &lt;em&gt;introduced to creating with technology&lt;/em&gt;. I think ITP is best for those with a somewhat lopsided experience between creating, and tech: traditional artists who have only dabbled in more advanced technology, or techies who have only dabbled in creative work.&lt;/p&gt;
+
+&lt;p&gt;I had lots of experience with technology coming in, and a moderate amount of experience with independent creating. I was often frustrated in looking to develop computer music and creative data practices at ITP. Instead, my favorite classes were all ones that involved simply making as many things as possible with support and critique provided by my classmates and with little to no institutional or academic content/support. I loved devoting a couple years of full time toward refining my own personal creative process and practice. I left ITP feeling fully empowered to pursue creative projects both professionally and personally, something that I certainly didn’t have before enrolling&lt;sup id=&quot;fnref:7&quot;&gt;&lt;a href=&quot;#fn:7&quot; class=&quot;footnote&quot;&gt;7&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;h1 id=&quot;6&quot;&gt;6&lt;/h1&gt;
+
+&lt;p&gt;ITP doesn’t need to completely pivot to teaching the state-of-the-art in computer science, music, data science, etc. with rigid prerequisites and classes all at once. The creative spirit at ITP &lt;em&gt;is&lt;/em&gt; valuable, but I don’t think adding a little more structure would definitively kill it. There’s a lot of room for ITP to explore where exactly on the spectrum of structure it can sit.&lt;/p&gt;
+
+&lt;p&gt;Here are some of my ideas:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Commit to a handful “staple” courses that students can reliably expect to be taught year over year. ITP already does this with Introduction to Fabrication, which is a class usually offered every semester. Everyone loves it, and I believe its existence explains the overall high quality of sculpture and installation projects at ITP. This should be extended to other areas as well, like computer science, web development, music, generative graphics, game design, and so forth.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Offer skills based single credit or 2-credit courses during January or summer term to get rid of the horrendous duplication among electives. This could handle introductions to software/coding areas like Max/MSP, command line, Touchdesigner, Unity, Python, etc.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Allow faculty to suggest pre-requisites, or to devise their own one to two course sequences. How much more amazing would the New Instruments class be if it was suggested that students take Code of Music beforehand?&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;notes&quot;&gt;Notes&lt;/h1&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;One could argue that programming is not strictly needed to “create with technology”; tools like the Adobe creative suite, CAD programs, Ableton Live and so forth certainly enable a great deal of creative possibility for their users. But I don’t think this argument can be taken seriously in good faith. Programming (or at least programmatic thinking) is a critical skill for any creative technology program in 2021. ITP students should be making Ableton in addition to using it. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot;&gt;
+      &lt;p&gt;This matters, when the price tag of your so-called innovative, unconventional master’s program is of a typically regressive magnitude - try $100k on for size. &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:3&quot;&gt;
+      &lt;p&gt;When I attended (from 2019-2021) a web development class only ran one single time, and it wasn’t even a full 4 credit course. &lt;a href=&quot;#fnref:3&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:4&quot;&gt;
+      &lt;p&gt;I want to emphasize that my complaints operate on the structural/institutional level. ITP has some fantastic faculty members engaging with their relevant academic/creative subfields. &lt;a href=&quot;#fnref:4&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:5&quot;&gt;
+      &lt;p&gt;There’s something to be said for preferring to &lt;a href=&quot;https://noahpinion.substack.com/p/why-do-people-feel-like-their-academic&quot;&gt;develop new fields rather than develop within them&lt;/a&gt;, but I still feel like you need to acknowledge the existence of the current state of the art before you can create something new. Otherwise you’re just going to make something someone already made at Bell labs in the 70s. &lt;a href=&quot;#fnref:5&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:6&quot;&gt;
+      &lt;p&gt;Frank Lantz, the creator of the famous &lt;a href=&quot;https://www.decisionproblem.com/paperclips/index2.html&quot;&gt;Universal Paperclips&lt;/a&gt; game was originally an ITP faculty member. He wanted to introduce a game design sequence to the curriculum and got stonewalled out, leading to the creation of the NYU Game Center. &lt;a href=&quot;#fnref:6&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:7&quot;&gt;
+      &lt;p&gt;It seems scary, but I often wonder what it would have been like to quit my job and simply give myself permission to spend time creating, while seeking out community in other ways. &lt;a href=&quot;#fnref:7&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><category term="itp" /><category term="writing" /><summary type="html">A prospective ITP student recently reached out to me to ask about the program, providing a good opportunity to collect my thoughts about the last two years. Was it worth it? Is it a “good” program?</summary></entry><entry><title type="html">A Loving Exploration v1.0</title><link href="/project/digital/2021/01/25/alex-1.html" rel="alternate" type="text/html" title="A Loving Exploration v1.0" /><published>2021-01-25T00:00:00-05:00</published><updated>2021-01-25T00:00:00-05:00</updated><id>/project/digital/2021/01/25/alex-1</id><content type="html" xml:base="/project/digital/2021/01/25/alex-1.html"></content><category term="itp" /><category term="narrative" /><summary type="html"></summary></entry><entry><title type="html">100 Days of Audiovisual Composition</title><link href="/2021/01/05/100-days.html" rel="alternate" type="text/html" title="100 Days of Audiovisual Composition" /><published>2021-01-05T00:00:00-05:00</published><updated>2021-01-05T00:00:00-05:00</updated><id>/2021/01/05/100-days</id><content type="html" xml:base="/2021/01/05/100-days.html">&lt;p&gt;After exploring some basic audio visualization systems in 2020 (&lt;a href=&quot;/fun&quot;&gt;Rings and Saber&lt;/a&gt;), I dived into a daily audiovisual composition challenge starting in 2021.&lt;/p&gt;
+
+&lt;p&gt;Click &lt;a href=&quot;https://www.instagram.com/de.funktor&quot;&gt;here&lt;/a&gt; to view all on Instagram.&lt;/p&gt;
+
+&lt;h1 id=&quot;rules&quot;&gt;Rules&lt;/h1&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;On A Day, compose an original audio composition of no more than 30 seconds, using only one instrument or synth patch. No presets!&lt;/li&gt;
+  &lt;li&gt;On B Day, create a video composition accompaniment.&lt;/li&gt;
+  &lt;li&gt;Repeat 50 times, beginning on January 1st.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;selected-compositions&quot;&gt;Selected Compositions&lt;/h1&gt;
+
+&lt;blockquote class=&quot;instagram-media&quot; data-instgrm-permalink=&quot;https://www.instagram.com/p/CLqYct3FJP_/?utm_source=ig_embed&amp;amp;utm_campaign=loading&quot; data-instgrm-version=&quot;13&quot; style=&quot; background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);&quot;&gt;&lt;div style=&quot;padding:16px;&quot;&gt; &lt;a href=&quot;https://www.instagram.com/p/CLqYct3FJP_/?utm_source=ig_embed&amp;amp;utm_campaign=loading&quot; style=&quot; background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;&quot; target=&quot;_blank&quot;&gt; &lt;div style=&quot; display: flex; flex-direction: row; align-items: center;&quot;&gt; &lt;div style=&quot;background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;&quot;&gt;&lt;/div&gt; &lt;div style=&quot;display: flex; flex-direction: column; flex-grow: 1; justify-content: center;&quot;&gt; &lt;div style=&quot; background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;&quot;&gt;&lt;/div&gt; &lt;div style=&quot; background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;padding: 19% 0;&quot;&gt;&lt;/div&gt; &lt;div style=&quot;display:block; height:50px; margin:0 auto 12px; width:50px;&quot;&gt;&lt;svg width=&quot;50px&quot; height=&quot;50px&quot; viewBox=&quot;0 0 60 60&quot; version=&quot;1.1&quot; xmlns=&quot;https://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;https://www.w3.org/1999/xlink&quot;&gt;&lt;g stroke=&quot;none&quot; stroke-width=&quot;1&quot; fill=&quot;none&quot; fill-rule=&quot;evenodd&quot;&gt;&lt;g transform=&quot;translate(-511.000000, -20.000000)&quot; fill=&quot;#000000&quot;&gt;&lt;g&gt;&lt;path d=&quot;M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/svg&gt;&lt;/div&gt;&lt;div style=&quot;padding-top: 8px;&quot;&gt; &lt;div style=&quot; color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;&quot;&gt; View this post on Instagram&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;padding: 12.5% 0;&quot;&gt;&lt;/div&gt; &lt;div style=&quot;display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;&quot;&gt;&lt;div&gt; &lt;div style=&quot;background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);&quot;&gt;&lt;/div&gt; &lt;div style=&quot;background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;&quot;&gt;&lt;/div&gt; &lt;div style=&quot;background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;margin-left: 8px;&quot;&gt; &lt;div style=&quot; background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;&quot;&gt;&lt;/div&gt; &lt;div style=&quot; width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;margin-left: auto;&quot;&gt; &lt;div style=&quot; width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);&quot;&gt;&lt;/div&gt; &lt;div style=&quot; background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);&quot;&gt;&lt;/div&gt; &lt;div style=&quot; width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt; &lt;div style=&quot;display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;&quot;&gt; &lt;div style=&quot; background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;&quot;&gt;&lt;/div&gt; &lt;div style=&quot; background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/a&gt;&lt;p style=&quot; color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;&quot;&gt;&lt;a href=&quot;https://www.instagram.com/p/CLqYct3FJP_/?utm_source=ig_embed&amp;amp;utm_campaign=loading&quot; style=&quot; color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;&quot; target=&quot;_blank&quot;&gt;A post shared by Sylvan Zheng (@de.funktor)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;/blockquote&gt;
+&lt;script async=&quot;&quot; src=&quot;//www.instagram.com/embed.js&quot;&gt;&lt;/script&gt;
+
+&lt;blockquote class=&quot;instagram-media&quot; data-instgrm-permalink=&quot;https://www.instagram.com/p/CKnSSm3pApv/?utm_source=ig_embed&amp;amp;utm_campaign=loading&quot; data-instgrm-version=&quot;13&quot; style=&quot; background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);&quot;&gt;&lt;div style=&quot;padding:16px;&quot;&gt; &lt;a href=&quot;https://www.instagram.com/p/CKnSSm3pApv/?utm_source=ig_embed&amp;amp;utm_campaign=loading&quot; style=&quot; background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;&quot; target=&quot;_blank&quot;&gt; &lt;div style=&quot; display: flex; flex-direction: row; align-items: center;&quot;&gt; &lt;div style=&quot;background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;&quot;&gt;&lt;/div&gt; &lt;div style=&quot;display: flex; flex-direction: column; flex-grow: 1; justify-content: center;&quot;&gt; &lt;div style=&quot; background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;&quot;&gt;&lt;/div&gt; &lt;div style=&quot; background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;padding: 19% 0;&quot;&gt;&lt;/div&gt; &lt;div style=&quot;display:block; height:50px; margin:0 auto 12px; width:50px;&quot;&gt;&lt;svg width=&quot;50px&quot; height=&quot;50px&quot; viewBox=&quot;0 0 60 60&quot; version=&quot;1.1&quot; xmlns=&quot;https://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;https://www.w3.org/1999/xlink&quot;&gt;&lt;g stroke=&quot;none&quot; stroke-width=&quot;1&quot; fill=&quot;none&quot; fill-rule=&quot;evenodd&quot;&gt;&lt;g transform=&quot;translate(-511.000000, -20.000000)&quot; fill=&quot;#000000&quot;&gt;&lt;g&gt;&lt;path d=&quot;M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/svg&gt;&lt;/div&gt;&lt;div style=&quot;padding-top: 8px;&quot;&gt; &lt;div style=&quot; color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;&quot;&gt; View this post on Instagram&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;padding: 12.5% 0;&quot;&gt;&lt;/div&gt; &lt;div style=&quot;display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;&quot;&gt;&lt;div&gt; &lt;div style=&quot;background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);&quot;&gt;&lt;/div&gt; &lt;div style=&quot;background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;&quot;&gt;&lt;/div&gt; &lt;div style=&quot;background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;margin-left: 8px;&quot;&gt; &lt;div style=&quot; background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;&quot;&gt;&lt;/div&gt; &lt;div style=&quot; width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;margin-left: auto;&quot;&gt; &lt;div style=&quot; width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);&quot;&gt;&lt;/div&gt; &lt;div style=&quot; background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);&quot;&gt;&lt;/div&gt; &lt;div style=&quot; width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt; &lt;div style=&quot;display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;&quot;&gt; &lt;div style=&quot; background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;&quot;&gt;&lt;/div&gt; &lt;div style=&quot; background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/a&gt;&lt;p style=&quot; color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;&quot;&gt;&lt;a href=&quot;https://www.instagram.com/p/CKnSSm3pApv/?utm_source=ig_embed&amp;amp;utm_campaign=loading&quot; style=&quot; color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;&quot; target=&quot;_blank&quot;&gt;A post shared by Sylvan Zheng (@de.funktor)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;/blockquote&gt;
+&lt;script async=&quot;&quot; src=&quot;//www.instagram.com/embed.js&quot;&gt;&lt;/script&gt;
+
+&lt;blockquote class=&quot;instagram-media&quot; data-instgrm-permalink=&quot;https://www.instagram.com/p/CKIkt6dHbGI/?utm_source=ig_embed&amp;amp;utm_campaign=loading&quot; data-instgrm-version=&quot;13&quot; style=&quot; background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);&quot;&gt;&lt;div style=&quot;padding:16px;&quot;&gt; &lt;a href=&quot;https://www.instagram.com/p/CKIkt6dHbGI/?utm_source=ig_embed&amp;amp;utm_campaign=loading&quot; style=&quot; background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;&quot; target=&quot;_blank&quot;&gt; &lt;div style=&quot; display: flex; flex-direction: row; align-items: center;&quot;&gt; &lt;div style=&quot;background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;&quot;&gt;&lt;/div&gt; &lt;div style=&quot;display: flex; flex-direction: column; flex-grow: 1; justify-content: center;&quot;&gt; &lt;div style=&quot; background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;&quot;&gt;&lt;/div&gt; &lt;div style=&quot; background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;padding: 19% 0;&quot;&gt;&lt;/div&gt; &lt;div style=&quot;display:block; height:50px; margin:0 auto 12px; width:50px;&quot;&gt;&lt;svg width=&quot;50px&quot; height=&quot;50px&quot; viewBox=&quot;0 0 60 60&quot; version=&quot;1.1&quot; xmlns=&quot;https://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;https://www.w3.org/1999/xlink&quot;&gt;&lt;g stroke=&quot;none&quot; stroke-width=&quot;1&quot; fill=&quot;none&quot; fill-rule=&quot;evenodd&quot;&gt;&lt;g transform=&quot;translate(-511.000000, -20.000000)&quot; fill=&quot;#000000&quot;&gt;&lt;g&gt;&lt;path d=&quot;M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/svg&gt;&lt;/div&gt;&lt;div style=&quot;padding-top: 8px;&quot;&gt; &lt;div style=&quot; color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;&quot;&gt; View this post on Instagram&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;padding: 12.5% 0;&quot;&gt;&lt;/div&gt; &lt;div style=&quot;display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;&quot;&gt;&lt;div&gt; &lt;div style=&quot;background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);&quot;&gt;&lt;/div&gt; &lt;div style=&quot;background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;&quot;&gt;&lt;/div&gt; &lt;div style=&quot;background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;margin-left: 8px;&quot;&gt; &lt;div style=&quot; background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;&quot;&gt;&lt;/div&gt; &lt;div style=&quot; width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;margin-left: auto;&quot;&gt; &lt;div style=&quot; width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);&quot;&gt;&lt;/div&gt; &lt;div style=&quot; background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);&quot;&gt;&lt;/div&gt; &lt;div style=&quot; width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt; &lt;div style=&quot;display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;&quot;&gt; &lt;div style=&quot; background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;&quot;&gt;&lt;/div&gt; &lt;div style=&quot; background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/a&gt;&lt;p style=&quot; color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;&quot;&gt;&lt;a href=&quot;https://www.instagram.com/p/CKIkt6dHbGI/?utm_source=ig_embed&amp;amp;utm_campaign=loading&quot; style=&quot; color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;&quot; target=&quot;_blank&quot;&gt;A post shared by Sylvan Zheng (@de.funktor)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;/blockquote&gt;
+&lt;script async=&quot;&quot; src=&quot;//www.instagram.com/embed.js&quot;&gt;&lt;/script&gt;</content><category term="itp" /><category term="audiovis" /><category term="100_days" /><summary type="html">After exploring some basic audio visualization systems in 2020 (Rings and Saber), I dived into a daily audiovisual composition challenge starting in 2021.</summary></entry><entry><title type="html">MetaAudio System 1</title><link href="/project/2020/11/01/metaaudio.html" rel="alternate" type="text/html" title="MetaAudio System 1" /><published>2020-11-01T00:00:00-04:00</published><updated>2020-11-01T00:00:00-04:00</updated><id>/project/2020/11/01/metaaudio</id><content type="html" xml:base="/project/2020/11/01/metaaudio.html">&lt;iframe src=&quot;https://player.vimeo.com/video/505501240&quot; width=&quot;640&quot; height=&quot;405&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Audio-powered computational systems listen to sound, and change parameters in real time according to input audio. &lt;a href=&quot;/tag/audiovis&quot;&gt;Audio visualizations&lt;/a&gt; are great examples: in this &lt;a href=&quot;https://vimeo.com/461617887&quot;&gt;&lt;em&gt;Saber&lt;/em&gt;&lt;/a&gt; visualization, the audio volume influences how large each colored bar appears, as well as how much it rotates once it does appear.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/metaaudio/soundin.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It’s also possible to create computational systems that generate audio. In &lt;a href=&quot;/project/2016/12/20/universe.html&quot;&gt;&lt;em&gt;As Space Expanded, the Universe Cooled&lt;/em&gt;&lt;/a&gt; the motion of planets according to Newton’s gravitational laws are translated to pitches and reverb effects. In &lt;a href=&quot;/sketches/bounce/bounce.html&quot;&gt;&lt;em&gt;Bounce&lt;/em&gt;&lt;/a&gt;, the collision of balls with the ground trigger different notes. Most game sound effects could be thought of as simple audio-generating systems.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/metaaudio/soundout.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;MetaAudio System 1&lt;/em&gt; combines these two types of systems to create something that listens to itself to generate sound. It is a composition that generates itself, a computational system that is affected by audio input but generates audio output, creating a real-time musical dialogue.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/metaaudio/metasystem.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;A point mass, represented by a black sphere, travels through space. The speed and angle of its travel dictate the pitch and various audio filter effects of a software instrument. The output audio of this software instrument is monitored, and its real-time frequency spectrum deforms the gravitational field of space. For instance, as lower frequencies take hold, the gravitational density of the upper-left region of space increases. The point mass is drawn toward that gravitational density; as it changes direction and accelerates, the note being played changes too. As the notes change the gravitational fields also change, again changing the direction and acceleration of the point mass, and so on and on in an endless celestial dance.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/metaaudio/software.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This project was created with Ableton Live, Max/MSP, node.js, meyda.js, Loopback Audio, and p5.js. View the code on github &lt;a href=&quot;https://github.com/squidgetx/MetaAudio-System-1&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;</content><category term="itp" /><category term="audiovis" /><category term="audio" /><summary type="html"></summary></entry><entry><title type="html">Sketch 1 - Map Driven Narrative</title><link href="/2020/09/05/catn-1a.html" rel="alternate" type="text/html" title="Sketch 1 - Map Driven Narrative" /><published>2020-09-05T00:00:00-04:00</published><updated>2020-09-05T00:00:00-04:00</updated><id>/2020/09/05/catn-1a</id><content type="html" xml:base="/2020/09/05/catn-1a.html">&lt;h1 id=&quot;1&quot;&gt;1&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.charlesapple.com/uploads/2012/12/121209HobbitMap.jpg&quot; alt=&quot;Middle Earth map&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;One of my favorite parts of fantasy fiction novels is the maps on the inside cover.
+The maps lend the storyworld an undeniable realism and character, but they also shape the events, or plots of the novel itself. Frodo starts off living in the Shire, attempts to cross the Misty Mountains, pass through
+the Mines of Moria, spend some time in Lothlórien before setting off for Mordor. Some books, like
+Norton Juster’s &lt;em&gt;The Phantom Toolbooth&lt;/em&gt; add a layer of awareness on top of this, imbuing the fantasy
+locations with character becoming of their physical nature in more ways than one - the Doldrums, a set of sleepy
+foothills is where Milo, the protagonist, spends time distracted in a daze before getting on with his mission.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://static.wixstatic.com/media/9129a8_4bd25cb9774b40ce917c1d2b8773ae46~mv2.jpg/v1/fill/w_600,h_800,al_c,q_90/9129a8_4bd25cb9774b40ce917c1d2b8773ae46~mv2.webp&quot; alt=&quot;the doldrums&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;So if maps can reflect the events, or plot of a narrative as well as color its storyworld, perhaps it
+would be a useful creative device to use a map to perform the reverse process - to generate a plot procedurally.&lt;/p&gt;
+
+&lt;h1 id=&quot;2&quot;&gt;2&lt;/h1&gt;
+
+&lt;p&gt;In this sketch I define a basic set of rules for creating maps and then procedurally generating plot skeletons
+from it, using the primary formalism of “plot == set of chronological events.” The map metaphor additionally allows for some embellishment and the addition of supplementary events through its two dimensional spatial properties. In addition, although the most intuitive way to use the tool is to create linear maps and plots, there is no reason why the maps must be linear and could in fact serve as a useful templating tool for an interactive or multithreaded story structure.&lt;/p&gt;
+
+&lt;p&gt;Here is the basic outline: events are represented by locations on a map, like a town, city, mountain range, etc. Roads connect these locations, and the character of these roads serve as additional detailing or context
+for these events. Additionally, one location should be marked as START, which separately maps to an initial setting or character motivation.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Map Element&lt;/th&gt;
+      &lt;th&gt;Story Event&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Road&lt;/td&gt;
+      &lt;td&gt;Transition to Next Event&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Location&lt;/td&gt;
+      &lt;td&gt;Story Event, or Starting Motivation&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Road Changes to Horizontal&lt;/td&gt;
+      &lt;td&gt;character seeks out &amp;lt;next event&amp;gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&amp;lt;Event&amp;gt; is Approached From Horizontal&lt;/td&gt;
+      &lt;td&gt;character achieves &amp;lt;event&amp;gt; through effort&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Length of Road&lt;/td&gt;
+      &lt;td&gt;Proportional to the Intensity of &amp;lt;next event&amp;gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;You can view the spreadsheet containing the full ruleset &lt;a href=&quot;https://docs.google.com/spreadsheets/d/11kW9Os4TRw9FvzPzd6i8pAiTjUj8cmV5yqKKpmcadgo&quot;&gt;here&lt;/a&gt;. The specific implementation of what each location represents, or what intensity should map to is inspired primarily by my own aesthetic sense of what different classic fantasy map elements might represent in a story set in contemporary life. After all, who doesn’t want to relate mundane life struggles through an imaginary quest set in a fantastic land?&lt;/p&gt;
+
+&lt;p&gt;Here’s an example map and output. The ruleset that I made can be modeled with digital tiles (eg, in a spreadsheet) but one benefit of using representation of physical space is that I can represent it with physical objects which is a bit more satisfying to look at!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/catncatan.jpg&quot; alt=&quot;picture&quot; /&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Map Element&lt;/th&gt;
+      &lt;th&gt;Category&lt;/th&gt;
+      &lt;th&gt;Story Event&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Pasture&lt;/td&gt;
+      &lt;td&gt;START&lt;/td&gt;
+      &lt;td&gt;character seeking escape&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Town&lt;/td&gt;
+      &lt;td&gt;EVENT&lt;/td&gt;
+      &lt;td&gt;meets a new friend&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Horizontal Road&lt;/td&gt;
+      &lt;td&gt;TRANSITION&lt;/td&gt;
+      &lt;td&gt;(character was seeking social experience)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Road Length (3)&lt;/td&gt;
+      &lt;td&gt;INTENSITY&lt;/td&gt;
+      &lt;td&gt;(the new friend is from a strange place , but the same age&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Swamp&lt;/td&gt;
+      &lt;td&gt;EVENT&lt;/td&gt;
+      &lt;td&gt;the person betrays them&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Vertical Road&lt;/td&gt;
+      &lt;td&gt;TRANSITION&lt;/td&gt;
+      &lt;td&gt;unexpectedly&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Road Length (1)&lt;/td&gt;
+      &lt;td&gt;INTENSITY&lt;/td&gt;
+      &lt;td&gt;(they steal some material goods)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;River&lt;/td&gt;
+      &lt;td&gt;EVENT&lt;/td&gt;
+      &lt;td&gt;our character then achieves self understanding&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Vertical Road&lt;/td&gt;
+      &lt;td&gt;TRANSITION&lt;/td&gt;
+      &lt;td&gt;(transition is undefined for River)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Road Length (2)&lt;/td&gt;
+      &lt;td&gt;INTENSITY&lt;/td&gt;
+      &lt;td&gt;(they realize the consequence of their escape-seeking)&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h1 id=&quot;3&quot;&gt;3&lt;/h1&gt;
+
+&lt;p&gt;I’m generally happy with this story-generation system. While putting examples together it was easy to focus purely on the map-building task, and somewhat exciting to see what the system might produce. I could imagine streamlining it to make it automated/interactive relatively easily. I also like how the events are generally vague enough that additional detail could be fleshed out by anyone using the system - I definitely imagine the system being used as a plot-generation inspiration tool for people looking for story ideas.&lt;/p&gt;
+
+&lt;p&gt;I wish that there was some way to approach this system, or similar systems, without simply requiring a large pool of predefined story components. One idea I considered was mining public data, such as Reddit or NYT for story components, which definitely could have been an interesting direction to go in, although in the end I decided it might be worth pursuing as a future iteration or variation on the project.&lt;/p&gt;</content><category term="narrative" /><category term="itp" /><summary type="html">1</summary></entry><entry><title type="html">Digital Synethsesia</title><link href="/2020/09/03/lm-1.html" rel="alternate" type="text/html" title="Digital Synethsesia" /><published>2020-09-03T00:00:00-04:00</published><updated>2020-09-03T00:00:00-04:00</updated><id>/2020/09/03/lm-1</id><content type="html" xml:base="/2020/09/03/lm-1.html">&lt;p&gt;I was most struck by the &lt;a href=&quot;https://www.youtube.com/watch?v=B3ygQCHn5Ps&amp;amp;ab_channel=AdultBabyRecords&quot;&gt;KAZU&lt;/a&gt; and &lt;a href=&quot;https://www.youtube.com/watch?v=B-cvTad-lXw&amp;amp;ab_channel=sitesync&quot;&gt;SCHNITT&lt;/a&gt; videos. While very different, I felt that both succeeded in tying the auditory and visual experience together in an impressively seamless way.&lt;/p&gt;
+
+&lt;p&gt;The SCHNITT piece I think succeeds for its thematic minimalism across both audio and sound. First is its relative simplicity and thematic coherence: the glass, laser green light, and dry electronic tones match each other to evoke a cold, futuristic sound/visual landscape. The motion is also correspondingly simple - as the audio only contains a few different voices and motifs (bass and drums), so the visuals only react in a correspondingly similar way (sustained texture during bass hits, and bright fast motions for the drum hits). In contrast, McLaren’s “Synchromy” and the Sakamoto/Manabe “Sensing Streams,” while both quite minimal, I feel fail to meet quite the same level of unification between auditory and visual experience. McLaren’s “Synchromy” colors and geometric shapes don’t relate to the melodic tones of the music, and perhaps most importantly the variations in musical language (intervals, chords, etc.) are lost in the direct translation of the tones to their waveforms. “Sensing Streams” similarly chooses to visualize elements that don’t always correspond well to the subjective listening experience - frequency spectra for instance.&lt;/p&gt;
+
+&lt;p&gt;KAZU’s piece succeds for completely different reasons. In contrast to SCHNITT’s work, the KAZU video is more maximalist, choosing to use photorealistic renderings of landscapes, human figures, and switching occasionally between varying rendering methods, often timed with hits in the indie-pop flavored music track. However, I think this maximalist approach works well given the musical subject. The vocal performance in the KAZU track plays a frontal role, so the synchronized appearances and disappearances of the human figure along with the vocal beats lends character and personality to the already playful musical track. As the song progresses along its musical structure, the changes in rendering strategy and camera angle movement serve to complement the growth in musical tension and ambition, allowing the visual components to synesthesize the larger structure of the musical experience, not just the microfeatures of the audio character (contrast to the Woolston Piano Form piece, which is very compelling in the moment but whose visualization lacks any awareness of the larger musical arc) .&lt;/p&gt;</content><category term="audio" /><category term="itp" /><category term="listening_machines" /><summary type="html">I was most struck by the KAZU and SCHNITT videos. While very different, I felt that both succeeded in tying the auditory and visual experience together in an impressively seamless way.</summary></entry><entry><title type="html">Defining Narrative // The Myth of ‘Universal’ Narrative Models</title><link href="/2020/09/03/catn-1.html" rel="alternate" type="text/html" title="Defining Narrative // The Myth of ‘Universal’ Narrative Models" /><published>2020-09-03T00:00:00-04:00</published><updated>2020-09-03T00:00:00-04:00</updated><id>/2020/09/03/catn-1</id><content type="html" xml:base="/2020/09/03/catn-1.html">&lt;h1 id=&quot;defining-narrative&quot;&gt;Defining Narrative&lt;/h1&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Abbott, H. Porter. “Defining Narrative.” The Cambridge Introduction to Narrative, 2nd edition, Cambridge University Press, 2008, pp. 13–27.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Abbot introduces the idea of narrative as a collection of events, undertaken by entities (or characters), told or presented in a particular way (narrative discourse). The definition is fairly straightforward, and I especially appreciated that while Abbot acknowledges alternative, more precise categorizations he also dismisses them as not being necessarily useful. All models are wrong but some are useful, as they say.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-story-is-constructed&quot;&gt;The story is constructed&lt;/h2&gt;
+&lt;p&gt;The actual story is signified by the media, but exists outside of it. This can lead to an interesting question: how can we say for sure that story is a particular story and not some other? The construction of the story is an active process by the audience.&lt;/p&gt;
+
+&lt;p&gt;If the construction is an active process, what are the real differences between an interactive narrative and a traditional one? Or alternatively, I wonder if a successful interactive narrative aligns the audience’s narrative construction process with the interaction experience. Traditional video games for example, while interactive, don’t always focus on interactive story elements - in most cases there is a fairly linear story with a nearly separate interactive game experience attached to it.&lt;/p&gt;
+
+&lt;h2 id=&quot;constituentsupplementary-events&quot;&gt;Constituent/Supplementary events&lt;/h2&gt;
+&lt;p&gt;Abbot distinguishes between constituent, or key events and supplementary ones. Key events are hard to change, but supplementary events form part of the narrative discourse of a story and can easily influence themes and impact overall. The example Abbot gives is Frankenstein - the 1930 film adaptation adds many supplementary events concerning the technology that enables Frankenstein to create his monster, and thus impart a theme of technologically fueled anxiety, which is completely missing from the original 1818 novel.&lt;/p&gt;
+
+&lt;p&gt;This means that any computational approach can’t be too naive about leaving in and out varying elements - but also that there is a lot of potential for carefully crafted narrative systems that allow for a spectrum of different supplementary events and themes for the audience.&lt;/p&gt;
+
+&lt;h1 id=&quot;the-myth-of-universal-narrative-models&quot;&gt;The Myth of Universal Narrative Models&lt;/h1&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Koenitz, Hartmut, et al. “The Myth of ‘Universal’ Narrative Models.” International Conference on Interactive Digital Storytelling, Springer, 2018, pp. 107–120.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In this paper the authors give some background as to why traditional (read: Aristotelian intro/rising action/climax/denoument/conclusion + Hero’s Journey) narrative structures are not adequate for interactive storytelling media (primarily, that the rising action takes way too long) and attempt to give some alternative story structures from outside the Western canon to give interactive storytellers more structural tools.&lt;/p&gt;
+
+&lt;p&gt;I don’t object to the overall objective of this paper, but I felt that some of the examples fell a bit short in terms of how useful they might be for interactive storytelling design. However, others were useful and I could immediately think of some examples or see ways in which it could be useful for reframing ways of storytelling in an interactive context.&lt;/p&gt;
+
+&lt;h2 id=&quot;etiological-oral-narratives&quot;&gt;Etiological Oral Narratives&lt;/h2&gt;
+
+&lt;p&gt;In short, fable-like or moral-at-the-end of the story style narrative. Without careful design, I can’t see how this doesn’t suffer from the same problem as the traditional narrative structure does in terms of pacing. In general from a structural point of view I don’t really think this is that different from the Aristotelian model at all, even though the moralizing element is certainly distinct thematically from the Hero’s Journey archetype.&lt;/p&gt;
+
+&lt;h2 id=&quot;bengali-widows-narratives&quot;&gt;Bengali Widow’s Narratives&lt;/h2&gt;
+
+&lt;p&gt;I thought that this structure was a fairly compelling example of how a multi-outcome story structure could be connected to a narrative theme - in this example, the Bengali widow either becomes the antagonist to her son’s wife (creating an endless cycle), or simply ends in tragedy (the widow ends up alone and penniless). However, ultimately neither outcome changes the fundamental tone of the story.&lt;/p&gt;
+
+&lt;h2 id=&quot;ganga-comics&quot;&gt;Ganga Comics&lt;/h2&gt;
+
+&lt;p&gt;“The solution to one conflict immediately causes the next conflict to arise”&lt;/p&gt;
+
+&lt;p&gt;This reminds me generally of Japanese manga and anime narrative structures, where there is a seemingly endless ebb and flow and rising tension throughout the narrative. Ultimately, a more traditional meta-climax is needed for narrative satisfaction though - many popular manga series fall prey to the “Dragon Ball effect”, where the stakes continue to rise and new challenges must be presented over and over again, rapidly becoming stale. The most successful manga/anime
+(in my opinion, anyway) manage to wrap up the individual conflict components into a coherent arc over the multiplicty of smaller story-arcs. In this way, the
+narrative structure, on a zoomed out level, begins to mirror the Aristotelian narrative arc.&lt;/p&gt;
+
+&lt;h2 id=&quot;sīra-narratives&quot;&gt;Sīra Narratives&lt;/h2&gt;
+
+&lt;p&gt;This seems structurally identical to ganga comics&lt;/p&gt;
+
+&lt;h2 id=&quot;epiphanic-structure&quot;&gt;Epiphanic Structure&lt;/h2&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;This original structure features a cycle of conflict designed to create a moment of
+epiphany, which causes the player/interactor to suddenly understand the events of the
+narrative in a different light, and subsequently explores the narative again from the
+beginning to discover the consequences of this revelation&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This structure seems really interesting, although I’m not sure it makes sense to call it a separate structure more than a device that can be used
+in traditional and interactive narrative alike.&lt;/p&gt;</content><category term="narrative" /><category term="itp" /><summary type="html">Defining Narrative
+
+  Abbott, H. Porter. “Defining Narrative.” The Cambridge Introduction to Narrative, 2nd edition, Cambridge University Press, 2008, pp. 13–27.</summary></entry><entry><title type="html">Mondofacts</title><link href="/project/2020/05/01/lipp-5.html" rel="alternate" type="text/html" title="Mondofacts" /><published>2020-05-01T00:00:00-04:00</published><updated>2020-05-01T00:00:00-04:00</updated><id>/project/2020/05/01/lipp-5</id><content type="html" xml:base="/project/2020/05/01/lipp-5.html">&lt;iframe src=&quot;https://player.vimeo.com/video/494307416&quot; width=&quot;640&quot; height=&quot;480&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;em&gt;MONDOFACTS (Episode 1: Mouth Holes)&lt;/em&gt; is a short film which premiered online as part of the &lt;a href=&quot;https://lipp.tv/&quot;&gt;LIPP.TV&lt;/a&gt; live stream video art and performance festival.&lt;/p&gt;
+
+&lt;p&gt;As the amount of Youtube content aimed at children grows, a disturbing &lt;a href=&quot;https://www.theverge.com/2017/12/8/16751206/elsagate-youtube-kids-creepy-conspiracy-theory&quot;&gt;phenomenon&lt;/a&gt; emerges. Educational, kid-friendly videos published by anonymous channels gain thousands of views but feature violence, sexually explicit material, or otherwise disturbing content. The motivations of these channels are unclear. The simplest explanation is that what adults find disturbing, children find engaging, incentivizing these channels economically to produce continually more disturbing content. I certainly hope that something so benign as perverted economic incentive is the case. &lt;em&gt;MONDOFACTS&lt;/em&gt; speculates what the same juxtaposition of suggestivity, violence, and educational premise looks like with a more totalitarian set of motivations.&lt;/p&gt;
+
+&lt;p&gt;Voice/Mouth: Emily Zhao&lt;/p&gt;
+
+&lt;p&gt;Created by Sylvan Zheng&lt;/p&gt;
+
+&lt;p&gt;Special Thanks to Matt Romein&lt;/p&gt;</content><category term="live_image" /><category term="itp" /><category term="visual" /><summary type="html"></summary></entry><entry><title type="html">Inherent Tradeoffs</title><link href="/inherent-tradeoffs/" rel="alternate" type="text/html" title="Inherent Tradeoffs" /><published>2020-04-04T00:00:00-04:00</published><updated>2020-04-04T00:00:00-04:00</updated><id>/inherent_tradeoffs</id><content type="html" xml:base="/inherent-tradeoffs/">&lt;h1&gt;
+      1. Classification
+&lt;/h1&gt;
+&lt;p&gt;
+  When a recruiter considers a stack of resumes, s/he sorts each application into two piles - perhaps labeled &quot;interview&quot; and &quot;reject&quot;.
+  When a bank manager considers a series of loan applications, s/he labels each application &quot;approve&quot; or &quot;reject&quot;.
+  Classification, the general process of sorting cases into piles, forms the backbone of social, financial, and medical systems that
+  have massive impact on people's lives.
+&lt;/p&gt;
+
+&lt;div id=&quot;sketch0&quot; class=&quot;int&quot;&gt;&lt;/div&gt;
+
+&lt;p&gt;
+  As we enter an age where data is frequently compared to powerhouse commodities like oil or gold,
+  many common classification tasks are being performed by complex computer systems instead of individuals.
+  Some examples include:
+&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;a href=&quot;https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing&quot;&gt;
+      Criminal sentencing systems are being used to label defendants as likely or unlikely to commit future crimes
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href=&quot;https://news.cornell.edu/stories/2019/11/are-hiring-algorithms-fair-theyre-too-opaque-tell-study-finds&quot;&gt;
+      Hiring systems are screening job applications
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href=&quot;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4348437/&quot;&gt;
+      Medical systems give cancer prognoses
+    &lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;
+  As these systems grow larger and more influential,
+  it has become a special point of interest to ensure not only a high level of overall performance but also fairness along gender, race, and other protected class lines.
+&lt;/p&gt;
+&lt;h1&gt;
+  2. What is Fair Classification?
+&lt;/h1&gt;
+
+&lt;p&gt;
+  How can we tell if a classification algorithm is unfair?
+&lt;/p&gt;
+&lt;h3&gt;
+  2.1. Balanced Accuracy (Positive Prediction Rate)
+&lt;/h3&gt;
+&lt;p&gt;
+  Perhaps even a highly accurate cancer-prognosis system is mistakenly giving more aggressive prognoses to elderly patients than to young ones,
+  or a hiring system is offering more interviews to unqualified men than to women.
+  In these cases the system's accuracy is significantly different for one group than another, and a hiring manager or doctor using one of these systems
+  might subsequently begin interpreting its recommendations differently depending on the group membership of the person under consideration.
+
+&lt;/p&gt;
+&lt;div id=&quot;sketch1&quot; class=&quot;int&quot;&gt;&lt;/div&gt;
+&lt;p class=&quot;subtitle&quot;&gt;
+  Note: One trivial way of balancing accuracy is to exactly interview all the qualified candidates and none of the unqualified ones (or vice versa).
+  Since these algorithms will never be so perfect, most discussions of fairness ignore these &quot;degenerate&quot; cases.
+&lt;/p&gt;
+&lt;h3&gt;
+  2.2. Balanced Negative And Positive Prediction Rates
+&lt;/h3&gt;
+
+&lt;p&gt;
+  You may have noticed that our measure of accuracy captures how often the algorithm decides to interview a qualified candidate,
+  but ignores the times when someone who deserves an interview is rejected.
+
+If qualified men and women are interviewed at the same rate but many qualified women are rejected (more than the number of rejected, qualified men)
+then that system would still be unfair. After all, if you were a qualified woman it means you would then have a lower chance than an equally qualified man
+of getting an interview!
+
+&lt;/p&gt;
+&lt;p&gt;
+  In order for an algorithm to be fair it must balance both the mistakes it makes in its positive labels (interviews) as well as its negative labels (rejections).
+  You may find it difficult to perfectly balance both in these small-scale examples, but see how close you can get.
+&lt;/p&gt;
+&lt;div id=&quot;sketch2&quot; class=&quot;int&quot;&gt;&lt;/div&gt;
+&lt;p class=&quot;subtitle&quot;&gt;
+    Note how difficult it can be to construct a good test condition for these labels. What does it mean for a candidate to be qualified, and how do you measure it?
+    If you reject someone's loan application, how do you evaluate whether or not they would have been able to pay it back?
+&lt;/p&gt;
+&lt;h3&gt;
+  2.3. Balanced Error Rates
+&lt;/h3&gt;
+&lt;p&gt;
+  So, as long as classification systems make labeling mistakes for the different groups at roughly the same rate,
+  there is nothing to worry about, right?
+
+But another notion of fairness starts to emerge if we consider labeling mistakes within classes instead of class mistakes within labels.
+
+&lt;/p&gt;
+&lt;p&gt;
+  The terminology quickly becomes confusing, so let us return to a concrete example.
+  Suppose a criminal recidivism system mistakenly labels blacks as high-risk more often than whites;
+  say 10% of blacks who never go on to commit another crime are labeled as high risk whereas only 5% of whites who never commit another crime receive that same high risk label.
+  This system is unfair in a distinctly different way; it punishes more blacks with an undeserved high-risk rating which could lead to harsher sentencing among other potential consequences.
+&lt;/p&gt;
+&lt;p class=&quot;subtitle&quot;&gt;
+  Our earlier definition of fairness was concerned with ensuring the predictive power of the system was balanced in the two groups.
+  In the criminal recidivism example, this means making sure that the &quot;high risk&quot; label is as accurate for whites as it is for blacks (and correspondingly, that the &quot;low risk&quot; label is accurate for both groups as well).
+&lt;/p&gt;
+&lt;div id=&quot;sketch3&quot; class=&quot;int&quot;&gt;&lt;/div&gt;
+&lt;h1&gt;Inherent Tradeoffs&lt;/h1&gt;
+&lt;p&gt;
+    Unfortunately, it is actually impossible to satisfy both of the main definitions of fairness we have considered so far without a perfect algorithm (or identical groups)-
+    it is possible to balance the label mistakes within classes, the class mistakes within labels, but not both at once.
+  &lt;/p&gt;
+&lt;p&gt;
+    See for yourself below:
+  &lt;/p&gt;
+&lt;div id=&quot;sketch4&quot; class=&quot;int&quot;&gt;&lt;/div&gt;
+&lt;p&gt;
+&lt;/p&gt;
+
+&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js&quot;&gt;&lt;/script&gt;
+
+&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;script src=&quot;/lib/inherent_tradeoffs.js&quot;&gt;&lt;/script&gt;</content><category term="tech+politics" /><category term="interactive" /><summary type="html">1. Classification
+
+
+  When a recruiter considers a stack of resumes, s/he sorts each application into two piles - perhaps labeled &quot;interview&quot; and &quot;reject&quot;.
+  When a bank manager considers a series of loan applications, s/he labels each application &quot;approve&quot; or &quot;reject&quot;.
+  Classification, the general process of sorting cases into piles, forms the backbone of social, financial, and medical systems that
+  have massive impact on people's lives.</summary></entry><entry><title type="html">Listening to Chance</title><link href="/2020/03/03/dp-1.html" rel="alternate" type="text/html" title="Listening to Chance" /><published>2020-03-03T00:00:00-05:00</published><updated>2020-03-03T00:00:00-05:00</updated><id>/2020/03/03/dp-1</id><content type="html" xml:base="/2020/03/03/dp-1.html">&lt;p&gt;&lt;img src=&quot;/images/dp/ableton.png&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I recently came across a paper &lt;a href=&quot;https://www.journals.uchicago.edu/doi/abs/10.1086/708682?mobileUi=0&quot;&gt;Projecting confidence: How the probabilistic horse race confuses and demobilizes the public&lt;/a&gt; written by some of my relatively distant ex-colleagues at Facebook analyzing the potential impact of probabilistic election predictions (Nate Silver style) on public voter turnout. They hypothesized that the concept of probability in election outcomes is inherently hard to understand and can thus lead people to underestimate the closeness of the race. The authors were able to confirm many of their findings experimentally. More discussion of the article can be found in this excellent &lt;a href=&quot;https://statmodeling.stat.columbia.edu/2020/03/02/so-what-about-that-claim-that-probabilistic-election-forecasts-depress-voter-turnout/&quot;&gt;post&lt;/a&gt; from Columbia stat modeling goes further in depth for those interested.&lt;/p&gt;
+
+&lt;p&gt;I think the concept of chance is pretty interesting. A 50% chance of winning an election means that if we were to re-run the election 1,000 times in a lab, that we would expect roughly 500 victories for candidate A and 500 victories for candidate B. But in real life, we only get to see one outcome. Clinton was given an 85% chance of winning in 2016 - the fact that she lost doesn’t necessarily make the predictions incorrect. The concept is, as the researchers point out, really quite unintuitive.&lt;/p&gt;
+
+&lt;p&gt;At the same time, despite the unintuitive (and possibly deleterious nature!) of probability forecasts on civic outcomes, we see and hear predictions of outcomes constantly in the media. As a mini project this week I decided to take a look first at how often the concept is used, and second at interesting ways to perceive that information.&lt;/p&gt;
+
+&lt;p&gt;The first step was to download all of the transcripts of CNN shows aired in 2016 from the TV News Internet Archive. I limited the dataset to the year 2016 (for obvious reasons) and the network to CNN just to focus on a manageable amount of material aimed primarily at left-leaning audiences (the paper observes that this kind of coverage is more prominent in left leaning news sources). Afterward I used grep to pull out all the lines containing the word “chance” and then wrote a short python script to count the occurrences and group them by date. I threw the data into a spreadsheet for a quick graph (haven’t got around to setting up Jupyter locally just yet).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/dp/graph_chance_daily.png&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/dp/graph_chance_monthly.png&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Once I had a rough dataset (with peaks around the primary and elections, somewhat surprisingly given that this is &lt;em&gt;all coverage&lt;/em&gt; mentioning chance in any context whatsoever) I went on to craft a simple data sonification using the sound of a coin spinning on a table. The number of mentions in each month correspond directly to the number of spinning coins that the listener can hear.&lt;/p&gt;
+
+&lt;audio controls=&quot;&quot;&gt;
+  &lt;source src=&quot;/docs/chances.mp3&quot; type=&quot;audio/mp3&quot; /&gt;
+  Your browser does not support the audio tag.
+&lt;/audio&gt;
+
+&lt;p&gt;Enjoy!&lt;/p&gt;</content><category term="data" /><category term="itp" /><category term="tech_politics" /><category term="audio" /><summary type="html"></summary></entry></feed>
