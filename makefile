@@ -8,3 +8,7 @@ deploy : build
 	git commit -m 'update' && \
 	git push && \
 	git checkout master
+
+install :
+	npm install &
+	bundle install
