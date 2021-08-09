@@ -155,6 +155,10 @@ ul.nav {
   font-size: $small-font-size !important;
   color: $grey-color;
 }
+.meta {
+  font-size: $base-font-size * 0.9;
+  color: $grey-color;
+}
 
 .post-link {
   display: block;

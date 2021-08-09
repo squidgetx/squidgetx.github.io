@@ -6,7 +6,7 @@ layout: page
     {% for tag in post.tags %}
       {% if tag == page.tag %}
         <li>
-          {% include post.html post=post %}
+          {% include post-item.html post=post %}
         </li>
        {% endif %}
     {% endfor %} 

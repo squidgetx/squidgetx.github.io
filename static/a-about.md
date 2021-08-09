@@ -7,7 +7,7 @@ permalink: /about/
 
 <div class='post-content'>
 
-<p>Hi! I'm an artist, composer, researcher, and software engineer based in Brooklyn, NY. Currently I'm studying as a graduate student at <a href="/itp-blog">NYU Tisch’s Interactive Telecommunications Program.</a></p>
+<p>Hi! I'm an artist, composer, researcher, and software engineer based in Brooklyn, NY. Currently I'm studying as a graduate student at NYU Politcs. Previously I studied at <a href="/itp-blog">NYU Tisch’s Interactive Telecommunications Program.</a></p>
 
 <p>My main interests include <a href="/tag/tech+politics">impacts of technology on political communication</a>, <a href='https://soundcloud.com/mediumeight'>music production/composition</a>, <a href="/tag/audio">generative/interactive audio</a>, and <a href='/tag/audiovis'>sound visualization</a>.</p>
 
