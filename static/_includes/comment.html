@@ -3,10 +3,8 @@
 
     <div id='comments' thread="{{ page.url }}">
     </div>
-</div>
-<div class='post-content'>
+<div class='post-content' >
 
-    <h2>Add a Comment</h2>
 <form method='post' action="/comments/comment" id='comment_form'> 
     <input type="text" name="username" id="comment_username" placeholder="your name (optional)"/>
 
@@ -17,6 +15,7 @@
     <input type="text" name="thread" id="comment_thread" hidden value="{{ page.url }}"/>
     <input type="submit" id='comment_submit' disabled>
 </form>
+</div>
 </div>
 
 <!---

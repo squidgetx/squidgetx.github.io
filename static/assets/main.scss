@@ -39,7 +39,7 @@ $grey-color-dark: darken($grey-color, 25%);
 $content-width: 1400px;
 $content-width-sm: 800px;
 
-$nav-width: 128 + $spacing-unit + $spacing-unit;
+$nav-width: 128 + $spacing-unit * 3;
 
 $on-palm: 600px;
 $on-laptop: 1000px;

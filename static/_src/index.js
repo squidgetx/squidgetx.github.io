@@ -34,6 +34,10 @@ let render_comments = (thread, comment_div, admin = false) => {
         innerHTML += render_comment(comment);
       }
       comment_div.innerHTML = innerHTML;
+      if (res.data.length == 0) {
+        comment_div.innerHTML =
+          "<p class='nocomments'>No comments yet for this post.</p>";
+      }
     })
     .catch((err) => console.log(err.response.data.error));
 };

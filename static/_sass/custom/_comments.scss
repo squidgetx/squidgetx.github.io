@@ -3,12 +3,13 @@
   @include media-query($on-laptop) {
     width: 100%;
   }
+  border-top: 3px $grey-color-light solid;
+  padding-top: $spacing-unit;
+  margin-top: $spacing-unit;
 }
 
 .comment {
   margin-bottom: 1em;
-  border-left: 3px $grey-color-light solid;
-  padding-left: 1em;
 }
 
 .comment_text {
@@ -48,13 +49,17 @@
   width: 30%;
 }
 
+#comment_form {
+  padding-top: 1em;
+}
+
 #comment_text,
 #comment_username {
   font-family: $base-font-family;
   padding: 0.5em;
-  border-radius: 0;
-  border-color: $grey-color-dark;
-  border-width: 1.5px;
+  border-radius: 2px;
+  border-color: $grey-color;
+  border-width: 1px;
   border-style: solid;
 }
 
@@ -69,7 +74,6 @@
   background-color: $background-color;
   color: $brand-dark;
   font-weight: bold;
-  font-family: $heading-font-family;
   border-color: $grey-color-dark;
   border-style: solid;
   border-width: 1.5px;
@@ -109,4 +113,11 @@
 .comment_delete {
   cursor: pointer;
   font-style: underline;
+}
+
+.nocomments {
+  font-style: italic;
+  color: $grey-color;
+  font-size: $small-font-size;
+  margin-bottom: 0;
 }

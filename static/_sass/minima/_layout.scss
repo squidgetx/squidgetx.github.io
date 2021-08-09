@@ -44,7 +44,7 @@ ul.social-media-list {
   li {
     display: inline-block;
   }
-  width: $nav-width - $spacing-unit * 2;
+  width: $nav-width - $spacing-unit * 3;
   @include media-query($on-laptop) {
     width: 100%;
   }
