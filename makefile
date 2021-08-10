@@ -9,6 +9,9 @@ deploy : build
 	git push && \
 	git checkout master
 
+deploy-server :
+	git push heroku master
+
 install :
 	npm install &
 	bundle install

@@ -3,3 +3,4 @@ _site
 .jekyll-metadata
 node_modules
 static/assets/main.js
+static/.jekyll-cache/

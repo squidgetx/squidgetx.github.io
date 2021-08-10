@@ -1,6 +1,6 @@
 const axios = require("axios");
 
-const SERVER_URL = "http://localhost:8000";
+const SERVER_URL = "https://sylvan-fish.herokuapp.com";
 
 let render_comment = (comment) => {
   let username = comment.username;
@@ -45,7 +45,9 @@ let render_comments = (thread, comment_div) => {
 window.onload = () => {
   let comment_div = document.getElementById("comments");
   let name = localStorage.getItem("username");
-  document.getElementById("comment_username").value = name;
+  if (name) {
+    document.getElementById("comment_username").value = name;
+  }
   let thread = comment_div.getAttribute("thread");
   render_comments(thread, comment_div);
   let form = document.getElementById("comment_form"),
