@@ -1,9 +1,9 @@
 build :
-	git checkout master && npx webpack && cd static && bundle exec jekyll build && cd ..
+	git checkout master && npx webpack && cd static && bundle exec jekyll build -d ../_site && cd ..
 
 deploy : build
 	git checkout site && \
-	rsync static/_site docs && \
+	rsync _site docs && \
 	git add docs && \
 	git commit -m 'update' && \
 	git push && \
