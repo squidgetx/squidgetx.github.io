@@ -3,7 +3,7 @@ build :
 
 deploy : build
 	git checkout site && \
-	rsync _site docs && \
+	rsync -a _site/ docs/ && \
 	git add docs && \
 	git commit -m 'update' && \
 	git push && \
