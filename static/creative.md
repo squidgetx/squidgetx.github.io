@@ -1,8 +1,8 @@
 ---
 layout: page
 nav: true
-title: creative
-permalink: /creative
+title: projects
+permalink: /projects
 description: "engineering projects in varying states of polish"
 ---
 
