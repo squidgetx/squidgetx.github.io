@@ -61,7 +61,7 @@
         
         
         <li>
-        <a class="page-link" href="/creative">creative</a>
+        <a class="page-link" href="/projects">projects</a>
         </li>
         
         
@@ -72,8 +72,6 @@
         <a class="page-link" href="/fun/">fun</a>
         </li>
         
-        
-      
         
       
         
@@ -290,7 +288,7 @@ You may NOT sub-license, resell, rent, redistribute or otherwise transfer the ic
 <h1 id="basic-io-with-the-arduino-nano-33-iot">Basic I/O with the Arduino Nano 33 IOT</h1>
 <p>I started with wiring a push button and LED - the simplest form of Arduino I/O. The LED is connected to the D3 pin and the push button is wired to the D2 pin. I added a small resistor to the LED to ensure the 3.3V from the board doesn’t burn it out, and a larger 10K resistor from the D2 input pin to ground to ensure the pin has a stable connection to ground while still diverting power to the pin (instead of causing it to go straight to ground).</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>void setup() {
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>void setup() {
   pinMode(2, INPUT);
   pinMode(3, OUTPUT);
 }
@@ -306,7 +304,7 @@ void loop() {
 
 <h1 id="using-analog-input">Using analog input</h1>
 <p>Next, I connected a potentiometer to the A0 input pin to dim the LED as the resistance changes (controlled by the pot).</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>void setup() {
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>void setup() {
   pinMode(3, OUTPUT);
 }
 
@@ -324,7 +322,7 @@ void loop() {
 
 <p>I had a lot of trouble getting the tone() command to work properly, until I realized that I needed to only call it when the frequency value changed (instead of repeatedly calling it with the same arguments every iteration of loop()). To accommodate this I added a simple state-tracking mechanism to only trigger if the last recorded frequency was different from before. I also added smoothing, averaging over the last 16 inputs in order to calm the signal which was quite noisy at the expense of barely noticeable latency.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// Store a circular buffer of the last 16 reads
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// Store a circular buffer of the last 16 reads
 // which we can then average to smooth the input signal
 const int n = 16;
 int values[n];
