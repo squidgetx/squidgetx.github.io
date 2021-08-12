@@ -13,8 +13,10 @@ description: "a blog about information science, culture, and new media"
 </p>
 </header>
 
-{% assign posts = site.posts | where: "blog", true | slice: 0,3 %}
-{% assign others = site.posts | where: "blog", true | slice: 3 %}
+{% assign all_posts = site.posts | where: "blog", true %}
+{% assign posts = all_posts | slice: 0,3 %}
+{% assign len = all_posts.size - 3 %}
+{% assign others = all_posts | slice: 3, len %}
 
 <div class='content'>
 
@@ -35,3 +37,7 @@ description: "a blog about information science, culture, and new media"
 
 </ul>
 </div>
+
+<p class="rss-subscribe"><a href="{{ "/feed.xml" | relative_url }}">RSS</a></p>
+
+{% include signup.html %}

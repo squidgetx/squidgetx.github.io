@@ -59,6 +59,20 @@ const deleteComment = (req, res) => {
     });
 };
 
+const postEmail = (req, res) => {
+  const { email } = req.body;
+  writeQuery("emails", { email })
+    .then((req) => res.status(201).send({}))
+    .catch((err) => {
+      if (err.detail.includes("already exists")) {
+        // Email already exists
+        res.status(200).send({});
+        return;
+      }
+      res.status(500).send({ error: "couldn't post email" });
+    });
+};
+
 comments.get("/thread", [getCommentThread]);
 comments.post("/comment", [postComment]);
 comments.post("/delete", [authorization, deleteComment]);
@@ -74,5 +88,6 @@ blog.use(multer.none());
 blog.use(cors());
 blog.use(recordVisit());
 blog.use("/comments", comments);
+blog.post("/email", [postEmail]);
 console.log("server listening on port", port);
 blog.listen(port);

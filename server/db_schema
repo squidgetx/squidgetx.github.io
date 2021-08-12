@@ -6,3 +6,13 @@ create table blog_comments (
   createdat timestamp default current_timestamp
 );
 
+create table emails (
+  email varchar(80) UNIQUE,
+  createdat timestamp default current_timestamp
+);
+
+create table visits (
+  num_visits integer,
+  site varchar(127),
+  last_visited timestamp default current_timestamp
+);

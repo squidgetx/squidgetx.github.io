@@ -1,6 +1,7 @@
 const axios = require("axios");
 
-const SERVER_URL = "https://sylvan-fish.herokuapp.com";
+//const SERVER_URL = "https://sylvan-fish.herokuapp.com";
+const SERVER_URL = "http://localhost:8000";
 
 let render_comment = (comment) => {
   let username = comment.username;
@@ -42,7 +43,38 @@ let render_comments = (thread, comment_div) => {
     .catch((err) => console.log(err.response.data.error));
 };
 
+let setup_signup = () => {
+  let form = document.getElementById("email_signup");
+  if (!form) {
+    return;
+  }
+  form.addEventListener(
+    "submit",
+    (e) => {
+      e.preventDefault();
+      let formData = new FormData(form);
+      console.log([...formData.entries()]);
+      let actionPath = SERVER_URL + form.getAttribute("action");
+      axios
+        .post(actionPath, formData, {
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded",
+          },
+        })
+        .then((res) => {
+          console.log(res);
+          // Clear the comments box
+          document.getElementById("email_input").value = "";
+        })
+        .catch((err) => console.log(err.response.data.error));
+    },
+    false
+  );
+};
+
 window.onload = () => {
+  setup_signup();
+
   let comment_div = document.getElementById("comments");
   let name = localStorage.getItem("username");
   if (name) {

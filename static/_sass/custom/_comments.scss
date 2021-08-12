@@ -42,7 +42,7 @@
   height: 5em;
 }
 
-#comment_username {
+input[type="text"] {
   width: 30%;
 }
 
@@ -51,7 +51,7 @@
 }
 
 #comment_text,
-#comment_username {
+input[type="text"] {
   font-family: $base-font-family;
   padding: 0.5em;
   border-radius: 2px;
@@ -60,13 +60,13 @@
   border-style: solid;
 }
 
-#comment_text:focus,
+input[type="text"]:focus,
 #comment_username:focus {
   outline: 1px $brand-dark solid;
   box-shadow: none;
 }
 
-#comment_submit {
+.submit {
   padding: 0.5em;
   background-color: $background-color;
   color: $brand-dark;
@@ -76,19 +76,19 @@
   border-width: 1.5px;
 }
 
-#comment_submit:hover {
+.submit:hover {
   color: $background-color;
   background-color: $brand-dark;
   cursor: pointer;
 }
 
-#comment_submit:disabled {
+.submit:disabled {
   color: $grey-color;
   border-color: $grey-color;
   background-color: $background-color;
 }
 
-#comment_submit:disabled:hover {
+.submit:disabled:hover {
   color: $grey-color;
   border-color: $grey-color;
   background-color: $background-color;
@@ -117,4 +117,14 @@
   color: $grey-color;
   font-size: $small-font-size;
   margin-bottom: 0;
+}
+
+#signup_wrapper {
+  width: 70%;
+  border-top: 3px $grey-color-light solid;
+  margin-top: $spacing-unit;
+  padding-top: $spacing-unit/2;
+  @include media-query($on-laptop) {
+    width: 100%;
+  }
 }
