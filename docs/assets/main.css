@@ -364,21 +364,21 @@ h1, h2, h3, h4, h5, h6, .nav, .heading { font-family: "Futura", Helvetica, sans-
 
 #comment_text { display: block; margin-top: 1em; margin-bottom: 1em; width: 70%; height: 5em; }
 
-#comment_username { width: 30%; }
+input[type="text"] { width: 30%; }
 
 #comment_form { padding-top: 1em; }
 
-#comment_text, #comment_username { font-family: Helvetica, sans-serif; padding: 0.5em; border-radius: 2px; border-color: #828282; border-width: 1px; border-style: solid; }
+#comment_text, input[type="text"] { font-family: Helvetica, sans-serif; padding: 0.5em; border-radius: 2px; border-color: #828282; border-width: 1px; border-style: solid; }
 
-#comment_text:focus, #comment_username:focus { outline: 1px black solid; box-shadow: none; }
+input[type="text"]:focus, #comment_username:focus { outline: 1px black solid; box-shadow: none; }
 
-#comment_submit { padding: 0.5em; background-color: #fffeff; color: black; font-weight: bold; border-color: #424242; border-style: solid; border-width: 1.5px; }
+.submit { padding: 0.5em; background-color: #fffeff; color: black; font-weight: bold; border-color: #424242; border-style: solid; border-width: 1.5px; }
 
-#comment_submit:hover { color: #fffeff; background-color: black; cursor: pointer; }
+.submit:hover { color: #fffeff; background-color: black; cursor: pointer; }
 
-#comment_submit:disabled { color: #828282; border-color: #828282; background-color: #fffeff; }
+.submit:disabled { color: #828282; border-color: #828282; background-color: #fffeff; }
 
-#comment_submit:disabled:hover { color: #828282; border-color: #828282; background-color: #fffeff; cursor: default; }
+.submit:disabled:hover { color: #828282; border-color: #828282; background-color: #fffeff; cursor: default; }
 
 #comment_secret { width: 20px; height: 20px; background-color: #fffeff; display: inline-block; }
 
@@ -387,6 +387,10 @@ h1, h2, h3, h4, h5, h6, .nav, .heading { font-family: "Futura", Helvetica, sans-
 .comment_delete { cursor: pointer; font-style: underline; }
 
 .nocomments { font-style: italic; color: #828282; font-size: 11.2pt; margin-bottom: 0; }
+
+#signup_wrapper { width: 70%; border-top: 3px #e8e8e8 solid; margin-top: 38px; padding-top: 19px; }
+
+@media screen and (max-width: 1000px) { #signup_wrapper { width: 100%; } }
 
 .caption { margin-top: -2px; }
 
