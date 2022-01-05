@@ -15,7 +15,7 @@ description: "a blog about information science, culture, and new media"
 
 {% assign all_posts = site.posts | where: "blog", true %}
 {% assign posts = all_posts | slice: 0,3 %}
-{% assign len = all_posts.size - 3 %}
+{% assign len = all_posts | size | minus: 3 %}
 {% assign others = all_posts | slice: 3, len %}
 
 <div class='content'>
