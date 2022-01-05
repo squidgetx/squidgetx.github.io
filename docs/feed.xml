@@ -1,4 +1,48 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-08-12T10:02:22-04:00</updated><id>/feed.xml</id><title type="html">Sylvan Zheng</title><subtitle></subtitle><entry><title type="html">A war over pistachio ice cream</title><link href="/2021/08/11/ice-cream.html" rel="alternate" type="text/html" title="A war over pistachio ice cream" /><published>2021-08-11T00:00:00-04:00</published><updated>2021-08-11T00:00:00-04:00</updated><id>/2021/08/11/ice-cream</id><content type="html" xml:base="/2021/08/11/ice-cream.html">&lt;p&gt;I recently stepped into a new ice cream shop down the street. Upon scanning the chalkboard menu my eyes were immediately drawn to the red hearts accompanying speculoos cookies and cream, vanilla sweet cream, and fresh strawberry. These are the staff favorites, according to the cheery employee behind the counter.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2022-01-05T12:59:53-05:00</updated><id>/feed.xml</id><title type="html">Sylvan Zheng</title><subtitle></subtitle><entry><title type="html">Using Amazon EC2 as a development server</title><link href="/2022/01/05/ec2.html" rel="alternate" type="text/html" title="Using Amazon EC2 as a development server" /><published>2022-01-05T00:00:00-05:00</published><updated>2022-01-05T00:00:00-05:00</updated><id>/2022/01/05/ec2</id><content type="html" xml:base="/2022/01/05/ec2.html">&lt;p&gt;I do more and more data analysis and engineering work these days on my local machine, a 2017 MacBook Pro with 16gb of RAM. Ever since the new MacBooks were released I’ve been tempted to upgrade - especially when crunching data in Python or R (in projects like &lt;a href=&quot;/news_map&quot;&gt;Fog of War&lt;/a&gt;, for instance). Running intensive analysis, ML training models, or data transformation jobs locally tends to lock up my computer for tens of minutes at a time, during which I can’t really even use the machine for other tasks at all.&lt;/p&gt;
+
+&lt;p&gt;The new MacBooks are shiny, with impressive CPU benchmarks, but as far as I can tell my actual limiting factor is RAM. The datasets I work with are rarely large enough to really justify investing in actual-big-data infrastructure. They should fit in 16gb of RAM more often than not. The problem is that between terribly inefficient Electron apps like Spotify, Slack, several Firefox tabs, VSCode, Docker, and MacOS itself I rarely have all 16gb of RAM available for use. My machine locks up because it starts using the SSD as swap storage for too-high memory demands once the Python or R process exceeds 3-4GB of memory usage!&lt;/p&gt;
+
+&lt;p&gt;I would love to upgrade my laptop to 32gb, but a new 32gb MacBook runs upward of $3000. Of course, I’d be getting the upgraded M1 mac chip as well, but as I don’t really do much video editing or heavy CPU work in general I’m not totally sure if it’s a very efficient use of the money. Windows/Linux might provide better value for a development machine, but I also value the Mac’s better creative application support - audio tools like Ableton and Max/MSP run much more reliably, and I don’t want to juggle multiple laptops.&lt;/p&gt;
+
+&lt;p&gt;I began to consider renting cloud compute from Amazon. Thanks to git and Docker it shouldn’t require much setup to get code running on a remote server, and all I really need is the ability to ssh in with the command line, and edit the remote filesystem with VSCode. An EC2 t3.xlarge instance comes with 4 vCPUs and 16gb RAM, and costs approximately 16 cents per hour of usage. This comes out to about $1400 per year, which means that buying a new MacBook would easily provide more value after only about two years.&lt;/p&gt;
+
+&lt;p&gt;However, the game changes because Amazon only charges for EC2 when the machine is in the “running” state. If I shut it down and start it up only when needed, the costs should go down dramatically. Realistically, I need the extra resources only occasionally - many tasks can still be done on my local machine, and again Docker and git make the self-collaboration process quite smooth. A conservative estimate of 40h of usage per week brings the estimate down to under $400 per year, which means the new MacBook would take closer to 7 years to break even. In addition, the t3.xlarge instance comes with a blazing fast 5gbps internet connection, which is incredibly useful whenever doing any bulk uploading/downloading work, a benefit that a new laptop can’t provide.&lt;/p&gt;
+
+&lt;p&gt;The biggest obstacle I ran into is that Amazon likes to change the public hostname every time the machine is restarted. This means that it’s slightly nontrivial to easily restart the machine and reconnect the necessary tools. However, it’s nothing a little bit of shell scripting can’t handle. The Amazon CLI tools provide everything needed to automate the process.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;get_ec2_name() {
+  aws ec2 describe-instances --i $EC2_ID --query 'Reservations[].Instances[].PublicDnsName' | grep amazon | tail -n 1 | tr -d '&quot; ,'
+}
+
+start-ec2() {
+  pending=$(aws ec2 start-instances --i $EC2_ID | grep pending);
+  while [ -n &quot;$pending&quot; ]
+  do
+    sleep 0.5;
+    pending=$(aws ec2 start-instances --i $EC2_ID | grep pending);
+  done
+  name=$(get_ec2_name);
+  awk_cmd=&quot;/$EC2_HOST_ALIAS/{ n=NR+1 } NR==n{ \$0=\&quot;    HostName $name\&quot; }1&quot;;
+  cp ~/.ssh/config ~/.ssh/config.bak;
+  awk &quot;$awk_cmd&quot; ~/.ssh/config &amp;gt; ~/.ssh/config;
+  ssh $EC2_HOST_ALIAS;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;get_ec2_name&lt;/code&gt; function uses the instance identifier &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$EC2_ID&lt;/code&gt; - which doesn’t change - to query for the public DNS name. The aws ec2 command returns an array of DNS names, some of them empty strings. The result is piped through grep to only filter for valid DNS names, tail’d to pick the most recent name, and stripped of extra characters.&lt;/p&gt;
+
+&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;start-ec2&lt;/code&gt; function uses the aws cli to issue a start-up request to the instance-id and conveniently returns a JSON object describing the instance’s status. During the startup process the status is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pending&lt;/code&gt;, and once the machine is ready for use the status switches to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;running&lt;/code&gt;. The script simply issues repeated &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;start-instance&lt;/code&gt; commands at half-second intervals until the instance is ready for use. Next, the public hostname is fetched and I use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;awk&lt;/code&gt; to write the new hostname into my ssh config file. The SSH config file describes settings for a remote connection, and you can use an aliases/labels to organize different connections! In this case, the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;awk&lt;/code&gt; script actually looks for the SSH config entry with the label &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$EC2_HOST_ALIAS&lt;/code&gt; and replaces the line immediately following it with the new hostname.
+I also set up the relevant other information in the SSH config, including the username and private key file location.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Host &amp;lt;EC2_HOST_ALIAS&amp;gt;
+    HostName &amp;lt;HOSTNAME&amp;gt;
+    User &amp;lt;User&amp;gt;
+    IdentityFile &amp;lt;Filepath to private key&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Once the ssh file is set up properly, all that’s left is to call &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ssh $EC2_HOST_ALIAS&lt;/code&gt; to connect using the settings in the config. Even better, VSCode’s remote file setup can reference connections in the ssh config file, so it’s super easy to refresh/reconnect VSCode even though the hostnames change throughout.&lt;/p&gt;
+
+&lt;p&gt;My workday now starts with a simple &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;start-ec2&lt;/code&gt; command in the terminal and a handful of mouseclicks in VSCode to get my last session reconnected. At the end of the day I log out/shutdown by issuing the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo shutdown -h&lt;/code&gt; command on the connected instance. I can connect from anywhere, enjoy industrial network speed, the commitment is low, the setup is easy, and I pay a reasonable price that correlates directly to how much I need the extra resources.&lt;/p&gt;</content><author><name></name></author><category term="engineering" /><summary type="html">I do more and more data analysis and engineering work these days on my local machine, a 2017 MacBook Pro with 16gb of RAM. Ever since the new MacBooks were released I’ve been tempted to upgrade - especially when crunching data in Python or R (in projects like Fog of War, for instance). Running intensive analysis, ML training models, or data transformation jobs locally tends to lock up my computer for tens of minutes at a time, during which I can’t really even use the machine for other tasks at all.</summary></entry><entry><title type="html">A war over pistachio ice cream</title><link href="/2021/08/11/ice-cream.html" rel="alternate" type="text/html" title="A war over pistachio ice cream" /><published>2021-08-11T00:00:00-04:00</published><updated>2021-08-11T00:00:00-04:00</updated><id>/2021/08/11/ice-cream</id><content type="html" xml:base="/2021/08/11/ice-cream.html">&lt;p&gt;I recently stepped into a new ice cream shop down the street. Upon scanning the chalkboard menu my eyes were immediately drawn to the red hearts accompanying speculoos cookies and cream, vanilla sweet cream, and fresh strawberry. These are the staff favorites, according to the cheery employee behind the counter.&lt;/p&gt;
 
 &lt;p&gt;Curiously, next to green pistachio lay a suspicious red smudge.&lt;/p&gt;
 
@@ -371,124 +415,4 @@ in traditional and interactive narrative alike.&lt;/p&gt;</content><author><name
 
 &lt;p&gt;Created by Sylvan Zheng&lt;/p&gt;
 
-&lt;p&gt;Special Thanks to Matt Romein&lt;/p&gt;</content><author><name></name></author><category term="project" /><category term="live_image" /><category term="itp" /><category term="visual" /><summary type="html"></summary></entry><entry><title type="html">Inherent Tradeoffs</title><link href="/inherent-tradeoffs/" rel="alternate" type="text/html" title="Inherent Tradeoffs" /><published>2020-04-04T00:00:00-04:00</published><updated>2020-04-04T00:00:00-04:00</updated><id>/inherent_tradeoffs</id><content type="html" xml:base="/inherent-tradeoffs/">&lt;h1&gt;
-      1. Classification
-&lt;/h1&gt;
-&lt;p&gt;
-  When a recruiter considers a stack of resumes, s/he sorts each application into two piles - perhaps labeled &quot;interview&quot; and &quot;reject&quot;.
-  When a bank manager considers a series of loan applications, s/he labels each application &quot;approve&quot; or &quot;reject&quot;.
-  Classification, the general process of sorting cases into piles, forms the backbone of social, financial, and medical systems that
-  have massive impact on people's lives.
-&lt;/p&gt;
-
-&lt;div id=&quot;sketch0&quot; class=&quot;int&quot;&gt;&lt;/div&gt;
-
-&lt;p&gt;
-  As we enter an age where data is frequently compared to powerhouse commodities like oil or gold,
-  many common classification tasks are being performed by complex computer systems instead of individuals.
-  Some examples include:
-&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;a href=&quot;https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing&quot;&gt;
-      Criminal sentencing systems are being used to label defendants as likely or unlikely to commit future crimes
-    &lt;/a&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;a href=&quot;https://news.cornell.edu/stories/2019/11/are-hiring-algorithms-fair-theyre-too-opaque-tell-study-finds&quot;&gt;
-      Hiring systems are screening job applications
-    &lt;/a&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;a href=&quot;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4348437/&quot;&gt;
-      Medical systems give cancer prognoses
-    &lt;/a&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;
-  As these systems grow larger and more influential,
-  it has become a special point of interest to ensure not only a high level of overall performance but also fairness along gender, race, and other protected class lines.
-&lt;/p&gt;
-&lt;h1&gt;
-  2. What is Fair Classification?
-&lt;/h1&gt;
-
-&lt;p&gt;
-  How can we tell if a classification algorithm is unfair?
-&lt;/p&gt;
-&lt;h3&gt;
-  2.1. Balanced Accuracy (Positive Prediction Rate)
-&lt;/h3&gt;
-&lt;p&gt;
-  Perhaps even a highly accurate cancer-prognosis system is mistakenly giving more aggressive prognoses to elderly patients than to young ones,
-  or a hiring system is offering more interviews to unqualified men than to women.
-  In these cases the system's accuracy is significantly different for one group than another, and a hiring manager or doctor using one of these systems
-  might subsequently begin interpreting its recommendations differently depending on the group membership of the person under consideration.
-
-&lt;/p&gt;
-&lt;div id=&quot;sketch1&quot; class=&quot;int&quot;&gt;&lt;/div&gt;
-&lt;p class=&quot;subtitle&quot;&gt;
-  Note: One trivial way of balancing accuracy is to exactly interview all the qualified candidates and none of the unqualified ones (or vice versa).
-  Since these algorithms will never be so perfect, most discussions of fairness ignore these &quot;degenerate&quot; cases.
-&lt;/p&gt;
-&lt;h3&gt;
-  2.2. Balanced Negative And Positive Prediction Rates
-&lt;/h3&gt;
-
-&lt;p&gt;
-  You may have noticed that our measure of accuracy captures how often the algorithm decides to interview a qualified candidate,
-  but ignores the times when someone who deserves an interview is rejected.
-
-If qualified men and women are interviewed at the same rate but many qualified women are rejected (more than the number of rejected, qualified men)
-then that system would still be unfair. After all, if you were a qualified woman it means you would then have a lower chance than an equally qualified man
-of getting an interview!
-
-&lt;/p&gt;
-&lt;p&gt;
-  In order for an algorithm to be fair it must balance both the mistakes it makes in its positive labels (interviews) as well as its negative labels (rejections).
-  You may find it difficult to perfectly balance both in these small-scale examples, but see how close you can get.
-&lt;/p&gt;
-&lt;div id=&quot;sketch2&quot; class=&quot;int&quot;&gt;&lt;/div&gt;
-&lt;p class=&quot;subtitle&quot;&gt;
-    Note how difficult it can be to construct a good test condition for these labels. What does it mean for a candidate to be qualified, and how do you measure it?
-    If you reject someone's loan application, how do you evaluate whether or not they would have been able to pay it back?
-&lt;/p&gt;
-&lt;h3&gt;
-  2.3. Balanced Error Rates
-&lt;/h3&gt;
-&lt;p&gt;
-  So, as long as classification systems make labeling mistakes for the different groups at roughly the same rate,
-  there is nothing to worry about, right?
-
-But another notion of fairness starts to emerge if we consider labeling mistakes within classes instead of class mistakes within labels.
-
-&lt;/p&gt;
-&lt;p&gt;
-  The terminology quickly becomes confusing, so let us return to a concrete example.
-  Suppose a criminal recidivism system mistakenly labels blacks as high-risk more often than whites;
-  say 10% of blacks who never go on to commit another crime are labeled as high risk whereas only 5% of whites who never commit another crime receive that same high risk label.
-  This system is unfair in a distinctly different way; it punishes more blacks with an undeserved high-risk rating which could lead to harsher sentencing among other potential consequences.
-&lt;/p&gt;
-&lt;p class=&quot;subtitle&quot;&gt;
-  Our earlier definition of fairness was concerned with ensuring the predictive power of the system was balanced in the two groups.
-  In the criminal recidivism example, this means making sure that the &quot;high risk&quot; label is as accurate for whites as it is for blacks (and correspondingly, that the &quot;low risk&quot; label is accurate for both groups as well).
-&lt;/p&gt;
-&lt;div id=&quot;sketch3&quot; class=&quot;int&quot;&gt;&lt;/div&gt;
-&lt;h1&gt;Inherent Tradeoffs&lt;/h1&gt;
-&lt;p&gt;
-    Unfortunately, it is actually impossible to satisfy both of the main definitions of fairness we have considered so far without a perfect algorithm (or identical groups)-
-    it is possible to balance the label mistakes within classes, the class mistakes within labels, but not both at once.
-  &lt;/p&gt;
-&lt;p&gt;
-    See for yourself below:
-  &lt;/p&gt;
-&lt;div id=&quot;sketch4&quot; class=&quot;int&quot;&gt;&lt;/div&gt;
-&lt;p&gt;
-&lt;/p&gt;
-
-&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js&quot;&gt;&lt;/script&gt;
-
-&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js&quot;&gt;&lt;/script&gt;
-
-&lt;script src=&quot;/lib/inherent_tradeoffs.js&quot;&gt;&lt;/script&gt;</content><author><name></name></author><category term="project" /><category term="digital" /><category term="tech+politics" /><category term="interactive" /><summary type="html">1. Classification When a recruiter considers a stack of resumes, s/he sorts each application into two piles - perhaps labeled &quot;interview&quot; and &quot;reject&quot;. When a bank manager considers a series of loan applications, s/he labels each application &quot;approve&quot; or &quot;reject&quot;. Classification, the general process of sorting cases into piles, forms the backbone of social, financial, and medical systems that have massive impact on people's lives.</summary></entry></feed>
+&lt;p&gt;Special Thanks to Matt Romein&lt;/p&gt;</content><author><name></name></author><category term="project" /><category term="live_image" /><category term="itp" /><category term="visual" /><summary type="html"></summary></entry></feed>

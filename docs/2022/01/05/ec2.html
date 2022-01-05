@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Synplay: synchronous audio broadcast streaming</title>
-  <meta name="description" content="Would it be cool if everyone’s computers were playing the same song at exactly the same time?">
+  <title>Using Amazon EC2 as a development server</title>
+  <meta name="description" content="I do more and more data analysis and engineering work these days on my local machine, a 2017 MacBook Pro with 16gb of RAM. Ever since the new MacBooks were r...">
 
   <link rel="stylesheet" href="/assets/main.css">
-  <link rel="canonical" href="/project/2016/05/11/synplay.html">
+  <link rel="canonical" href="/2022/01/05/ec2.html">
   <link rel="alternate" type="application/rss+xml" title="Sylvan Zheng" href="/feed.xml">
   
   
@@ -258,29 +258,18 @@ You may NOT sub-license, resell, rent, redistribute or otherwise transfer the ic
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header>
-    <h1 class="post-title" itemprop="name headline">Synplay: synchronous audio broadcast streaming</h1>
-    
-     <p class='post-meta collab'>in collaboration with David Hatch, Charlie Proctor, and Richard Yang</p>
+    <h1 class="post-title" itemprop="name headline">Using Amazon EC2 as a development server</h1>
     
 
     
     <p class='post-meta'>
       <time>
-        May 11, 2016
+        Jan 5, 2022
       </time>
     </p>
     <p class='post-meta'>
       
-      <a class='tag' href="/tag/code">code</a>
-
-      
-      <a class='tag' href="/tag/networking">networking</a>
-
-      
-      <a class='tag' href="/tag/audio">audio</a>
-
-      
-      <a class='tag' href="/tag/C++">C++</a>
+      <a class='tag' href="/tag/engineering">engineering</a>
 
       
     </p>
@@ -290,15 +279,51 @@ You may NOT sub-license, resell, rent, redistribute or otherwise transfer the ic
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    <p>Would it be cool if everyone’s computers were playing the same song at <em>exactly the same time</em>?</p>
+    <p>I do more and more data analysis and engineering work these days on my local machine, a 2017 MacBook Pro with 16gb of RAM. Ever since the new MacBooks were released I’ve been tempted to upgrade - especially when crunching data in Python or R (in projects like <a href="/news_map">Fog of War</a>, for instance). Running intensive analysis, ML training models, or data transformation jobs locally tends to lock up my computer for tens of minutes at a time, during which I can’t really even use the machine for other tasks at all.</p>
 
-<p>We designed a network protocol based on a client-server architecture that would allow audio streaming from a single broadcaster to multiple receivers over a UDP connection. The protocol ensures that the clients are constantly recalibrating their clocks to sync up with each other, since the margin of error in terms of latency is relatively critical in audio applications. The protocol also ensures that a packet loss due to standard UDP network failure is a non-issue.</p>
+<p>The new MacBooks are shiny, with impressive CPU benchmarks, but as far as I can tell my actual limiting factor is RAM. The datasets I work with are rarely large enough to really justify investing in actual-big-data infrastructure. They should fit in 16gb of RAM more often than not. The problem is that between terribly inefficient Electron apps like Spotify, Slack, several Firefox tabs, VSCode, Docker, and MacOS itself I rarely have all 16gb of RAM available for use. My machine locks up because it starts using the SSD as swap storage for too-high memory demands once the Python or R process exceeds 3-4GB of memory usage!</p>
 
-<p>Of course, it’s not actually that much louder thanks to destructive interference. The most interesting application of this project I think would be the streaming and synchronization of different parts of a larger sonic whole across multiple network nodes.</p>
+<p>I would love to upgrade my laptop to 32gb, but a new 32gb MacBook runs upward of $3000. Of course, I’d be getting the upgraded M1 mac chip as well, but as I don’t really do much video editing or heavy CPU work in general I’m not totally sure if it’s a very efficient use of the money. Windows/Linux might provide better value for a development machine, but I also value the Mac’s better creative application support - audio tools like Ableton and Max/MSP run much more reliably, and I don’t want to juggle multiple laptops.</p>
 
-<p><a href="https://github.com/squidgetx/synplay">Github</a></p>
+<p>I began to consider renting cloud compute from Amazon. Thanks to git and Docker it shouldn’t require much setup to get code running on a remote server, and all I really need is the ability to ssh in with the command line, and edit the remote filesystem with VSCode. An EC2 t3.xlarge instance comes with 4 vCPUs and 16gb RAM, and costs approximately 16 cents per hour of usage. This comes out to about $1400 per year, which means that buying a new MacBook would easily provide more value after only about two years.</p>
 
-<p><a href="/docs/synplay.pdf">View the full paper</a></p>
+<p>However, the game changes because Amazon only charges for EC2 when the machine is in the “running” state. If I shut it down and start it up only when needed, the costs should go down dramatically. Realistically, I need the extra resources only occasionally - many tasks can still be done on my local machine, and again Docker and git make the self-collaboration process quite smooth. A conservative estimate of 40h of usage per week brings the estimate down to under $400 per year, which means the new MacBook would take closer to 7 years to break even. In addition, the t3.xlarge instance comes with a blazing fast 5gbps internet connection, which is incredibly useful whenever doing any bulk uploading/downloading work, a benefit that a new laptop can’t provide.</p>
+
+<p>The biggest obstacle I ran into is that Amazon likes to change the public hostname every time the machine is restarted. This means that it’s slightly nontrivial to easily restart the machine and reconnect the necessary tools. However, it’s nothing a little bit of shell scripting can’t handle. The Amazon CLI tools provide everything needed to automate the process.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>get_ec2_name() {
+  aws ec2 describe-instances --i $EC2_ID --query 'Reservations[].Instances[].PublicDnsName' | grep amazon | tail -n 1 | tr -d '" ,'
+}
+
+start-ec2() {
+  pending=$(aws ec2 start-instances --i $EC2_ID | grep pending);
+  while [ -n "$pending" ]
+  do
+    sleep 0.5;
+    pending=$(aws ec2 start-instances --i $EC2_ID | grep pending);
+  done
+  name=$(get_ec2_name);
+  awk_cmd="/$EC2_HOST_ALIAS/{ n=NR+1 } NR==n{ \$0=\"    HostName $name\" }1";
+  cp ~/.ssh/config ~/.ssh/config.bak;
+  awk "$awk_cmd" ~/.ssh/config &gt; ~/.ssh/config;
+  ssh $EC2_HOST_ALIAS;
+}
+</code></pre></div></div>
+
+<p>The <code class="language-plaintext highlighter-rouge">get_ec2_name</code> function uses the instance identifier <code class="language-plaintext highlighter-rouge">$EC2_ID</code> - which doesn’t change - to query for the public DNS name. The aws ec2 command returns an array of DNS names, some of them empty strings. The result is piped through grep to only filter for valid DNS names, tail’d to pick the most recent name, and stripped of extra characters.</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">start-ec2</code> function uses the aws cli to issue a start-up request to the instance-id and conveniently returns a JSON object describing the instance’s status. During the startup process the status is <code class="language-plaintext highlighter-rouge">pending</code>, and once the machine is ready for use the status switches to <code class="language-plaintext highlighter-rouge">running</code>. The script simply issues repeated <code class="language-plaintext highlighter-rouge">start-instance</code> commands at half-second intervals until the instance is ready for use. Next, the public hostname is fetched and I use <code class="language-plaintext highlighter-rouge">awk</code> to write the new hostname into my ssh config file. The SSH config file describes settings for a remote connection, and you can use an aliases/labels to organize different connections! In this case, the <code class="language-plaintext highlighter-rouge">awk</code> script actually looks for the SSH config entry with the label <code class="language-plaintext highlighter-rouge">$EC2_HOST_ALIAS</code> and replaces the line immediately following it with the new hostname.
+I also set up the relevant other information in the SSH config, including the username and private key file location.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Host &lt;EC2_HOST_ALIAS&gt;
+    HostName &lt;HOSTNAME&gt;
+    User &lt;User&gt;
+    IdentityFile &lt;Filepath to private key&gt;
+</code></pre></div></div>
+
+<p>Once the ssh file is set up properly, all that’s left is to call <code class="language-plaintext highlighter-rouge">ssh $EC2_HOST_ALIAS</code> to connect using the settings in the config. Even better, VSCode’s remote file setup can reference connections in the ssh config file, so it’s super easy to refresh/reconnect VSCode even though the hostnames change throughout.</p>
+
+<p>My workday now starts with a simple <code class="language-plaintext highlighter-rouge">start-ec2</code> command in the terminal and a handful of mouseclicks in VSCode to get my last session reconnected. At the end of the day I log out/shutdown by issuing the <code class="language-plaintext highlighter-rouge">sudo shutdown -h</code> command on the connected instance. I can connect from anywhere, enjoy industrial network speed, the commitment is low, the setup is easy, and I pay a reasonable price that correlates directly to how much I need the extra resources.</p>
 
   </div>
 
@@ -308,7 +333,7 @@ You may NOT sub-license, resell, rent, redistribute or otherwise transfer the ic
 <div id='comments_wrapper'>
     <h1>Comments</h1>
 
-    <div id='comments' thread="/project/2016/05/11/synplay.html">
+    <div id='comments' thread="/2022/01/05/ec2.html">
     </div>
 <div class='post-content' >
 
@@ -319,7 +344,7 @@ You may NOT sub-license, resell, rent, redistribute or otherwise transfer the ic
 
 </div>
     <textarea name="comment" id="comment_text" placeholder='your comment' form='comment_form'></textarea>
-    <input type="text" name="thread" id="comment_thread" hidden value="/project/2016/05/11/synplay.html"/>
+    <input type="text" name="thread" id="comment_thread" hidden value="/2022/01/05/ec2.html"/>
     <input type="submit" id='comment_submit' class='submit' disabled>
 </form>
 </div>
