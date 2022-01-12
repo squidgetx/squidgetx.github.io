@@ -4,6 +4,7 @@ title: "Book Review: Walter Lippman, Public Opinion"
 tags:
   - tech+politics
 blog: true
+img: https://images-na.ssl-images-amazon.com/images/I/61H8GrROR-S.jpg
 ---
 
 _Public Opinion_ was published in 1922 by Walter Lippmann, a captain in the US Army during WWI and founding editor of the New Republic. It takes a hard look at the practical realities of democracy in America, focusing especially on the role of the media in influencing thoughts and actions. It has been acclaimed as a seminal text in political and social science, as “the founding book of modern journalism" and also as "the founding book in American media studies". Given the subject matter and its reputation I was quite surprised to find a relative lack of post-2016 contemporary reviews or discussion online or elsewhere. _Public Opinion_ seems more prescient than ever in today’s internet-enabled world-- a serious indictment of many of the core axioms we take for granted when we talk about democracy and the media.
