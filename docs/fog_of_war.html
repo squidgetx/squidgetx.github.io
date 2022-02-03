@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>not no</title>
-  <meta name="description" content="">
+  <title>Fog of War: Mapping the Information Landscape</title>
+  <meta name="description" content="Fog Of War is a transformation of US mainstream news articles into an interactive geographic map. Regions correspond to trending news topics, allowing the us...">
 
   <link rel="stylesheet" href="/assets/main.css">
-  <link rel="canonical" href="/blog">
+  <link rel="canonical" href="/fog_of_war">
   <link rel="alternate" type="application/rss+xml" title="Sylvan Zheng" href="/feed.xml">
   
   
@@ -51,9 +51,8 @@
         
         
         <li>
-        <a class="page-link selected" href="/blog">blog</a>
+        <a class="page-link" href="/blog">blog</a>
         </li>
-
         
         
       
@@ -256,39 +255,32 @@ You may NOT sub-license, resell, rent, redistribute or otherwise transfer the ic
 
         <main class="page-content" aria-label="Content">
       <div class='wrapper-sm'>
-        <header class="post-header">
-   <h1 class="page_title">not no</h1>
-   <p class="page_description">a blog about information science, culture, and new media. <a href="/archive">Archive</a>
-</p>
-</header>
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-<div class="content">
-
-
-
-
-<article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
   <header>
-      <h2 class="post-title">
-        <a href="/fog_of_war">
-            Fog of War: Mapping the Information Landscape
-        </a>
-      </h2>
-    <p class="post-meta">
+    <h1 class="post-title" itemprop="name headline">Fog of War: Mapping the Information Landscape</h1>
+    
+
+    
+    <p class='post-meta'>
       <time>
         Jan 12, 2022
       </time>
     </p>
-    <p class="post-meta">
-        
-          <a class="tag" href="/tag/engineering">engineering</a>
+    <p class='post-meta'>
+      
+      <a class='tag' href="/tag/engineering">engineering</a>
 
-        
-          <a class="tag" href="/tag/itp">itp</a>
+      
+      <a class='tag' href="/tag/itp">itp</a>
 
-        
+      
     </p>
+
+  
+   
   </header>
+
   <div class="post-content" itemprop="articleBody">
     <p><a href="/news_map">Fog Of War</a> is a transformation of US mainstream news articles into an interactive geographic map. Regions correspond to trending news topics, allowing the user to explore news cycles, illustrating which stories are covered most as well as illuminating those stories which are left untold.</p>
 
@@ -389,376 +381,39 @@ You may NOT sub-license, resell, rent, redistribute or otherwise transfer the ic
 
 <p>Benkler, Yochai, Robert Faris, and Hal Roberts. Network propaganda: Manipulation, disinformation, and radicalization in American politics. Oxford University Press, 2018.</p>
 
-  <p style="font-style: italic">
-   
-    <a href="/fog_of_war#comments">View Comments</a>
-  </p>
   </div>
-</article>
 
-
-
-
-<article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
-  <header>
-      <h2 class="post-title">
-        <a href="/2022/01/05/ec2.html">
-            Using Amazon EC2 as a development server
-        </a>
-      </h2>
-    <p class="post-meta">
-      <time>
-        Jan 5, 2022
-      </time>
-    </p>
-    <p class="post-meta">
-        
-          <a class="tag" href="/tag/engineering">engineering</a>
-
-        
-    </p>
-  </header>
-  <div class="post-content" itemprop="articleBody">
-    <p>I do more and more data analysis and engineering work these days on my local machine, a 2017 MacBook Pro with 16gb of RAM. Ever since the new MacBooks were released I’ve been tempted to upgrade - especially when crunching data in Python or R (in projects like <a href="/news_map">Fog of War</a>, for instance). Running intensive analysis, ML training models, or data transformation jobs locally tends to lock up my computer for tens of minutes at a time, during which I can’t really even use the machine for other tasks at all.</p>
-
-<p>The new MacBooks are shiny, with impressive CPU benchmarks, but as far as I can tell my actual limiting factor is RAM. The datasets I work with are rarely large enough to really justify investing in actual-big-data infrastructure. They should fit in 16gb of RAM more often than not. The problem is that between terribly inefficient Electron apps like Spotify, Slack, several Firefox tabs, VSCode, Docker, and MacOS itself I rarely have all 16gb of RAM available for use. My machine locks up because it starts using the SSD as swap storage for too-high memory demands once the Python or R process exceeds 3-4GB of memory usage!</p>
-
-<p>I would love to upgrade my laptop to 32gb, but a new 32gb MacBook runs upward of $3000. Of course, I’d be getting the upgraded M1 mac chip as well, but as I don’t really do much video editing or heavy CPU work in general I’m not totally sure if it’s a very efficient use of the money. Windows/Linux might provide better value for a development machine, but I also value the Mac’s better creative application support - audio tools like Ableton and Max/MSP run much more reliably, and I don’t want to juggle multiple laptops.</p>
-
-<p>I began to consider renting cloud compute from Amazon. Thanks to git and Docker it shouldn’t require much setup to get code running on a remote server, and all I really need is the ability to ssh in with the command line, and edit the remote filesystem with VSCode. An EC2 t3.xlarge instance comes with 4 vCPUs and 16gb RAM, and costs approximately 16 cents per hour of usage. This comes out to about $1400 per year, which means that buying a new MacBook would easily provide more value after only about two years.</p>
-
-<p>However, the game changes because Amazon only charges for EC2 when the machine is in the “running” state. If I shut it down and start it up only when needed, the costs should go down dramatically. Realistically, I need the extra resources only occasionally - many tasks can still be done on my local machine, and again Docker and git make the self-collaboration process quite smooth. A conservative estimate of 40h of usage per week brings the estimate down to under $400 per year, which means the new MacBook would take closer to 7 years to break even. In addition, the t3.xlarge instance comes with a blazing fast 5gbps internet connection, which is incredibly useful whenever doing any bulk uploading/downloading work, a benefit that a new laptop can’t provide.</p>
-
-<p>The biggest obstacle I ran into is that Amazon likes to change the public hostname every time the machine is restarted. This means that it’s slightly nontrivial to easily restart the machine and reconnect the necessary tools. However, it’s nothing a little bit of shell scripting can’t handle. The Amazon CLI tools provide everything needed to automate the process.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>get_ec2_name() {
-  aws ec2 describe-instances --i $EC2_ID --query 'Reservations[].Instances[].PublicDnsName' | grep amazon | tail -n 1 | tr -d '" ,'
-}
-
-start-ec2() {
-  pending=$(aws ec2 start-instances --i $EC2_ID | grep pending);
-  while [ -n "$pending" ]
-  do
-    sleep 0.5;
-    pending=$(aws ec2 start-instances --i $EC2_ID | grep pending);
-  done
-  name=$(get_ec2_name);
-  awk_cmd="/$EC2_HOST_ALIAS/{ n=NR+1 } NR==n{ \$0=\"    HostName $name\" }1";
-  cp ~/.ssh/config ~/.ssh/config.bak;
-  awk "$awk_cmd" ~/.ssh/config &gt; ~/.ssh/config;
-  ssh $EC2_HOST_ALIAS;
-}
-</code></pre></div></div>
-
-<p>The <code class="language-plaintext highlighter-rouge">get_ec2_name</code> function uses the instance identifier <code class="language-plaintext highlighter-rouge">$EC2_ID</code> - which doesn’t change - to query for the public DNS name. The aws ec2 command returns an array of DNS names, some of them empty strings. The result is piped through grep to only filter for valid DNS names, tail’d to pick the most recent name, and stripped of extra characters.</p>
-
-<p>The <code class="language-plaintext highlighter-rouge">start-ec2</code> function uses the aws cli to issue a start-up request to the instance-id and conveniently returns a JSON object describing the instance’s status. During the startup process the status is <code class="language-plaintext highlighter-rouge">pending</code>, and once the machine is ready for use the status switches to <code class="language-plaintext highlighter-rouge">running</code>. The script simply issues repeated <code class="language-plaintext highlighter-rouge">start-instance</code> commands at half-second intervals until the instance is ready for use. Next, the public hostname is fetched and I use <code class="language-plaintext highlighter-rouge">awk</code> to write the new hostname into my ssh config file. The SSH config file describes settings for a remote connection, and you can use an aliases/labels to organize different connections! In this case, the <code class="language-plaintext highlighter-rouge">awk</code> script actually looks for the SSH config entry with the label <code class="language-plaintext highlighter-rouge">$EC2_HOST_ALIAS</code> and replaces the line immediately following it with the new hostname.
-I also set up the relevant other information in the SSH config, including the username and private key file location.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Host &lt;EC2_HOST_ALIAS&gt;
-    HostName &lt;HOSTNAME&gt;
-    User &lt;User&gt;
-    IdentityFile &lt;Filepath to private key&gt;
-</code></pre></div></div>
-
-<p>Once the ssh file is set up properly, all that’s left is to call <code class="language-plaintext highlighter-rouge">ssh $EC2_HOST_ALIAS</code> to connect using the settings in the config. Even better, VSCode’s remote file setup can reference connections in the ssh config file, so it’s super easy to refresh/reconnect VSCode even though the hostnames change throughout.</p>
-
-<p>My workday now starts with a simple <code class="language-plaintext highlighter-rouge">start-ec2</code> command in the terminal and a handful of mouseclicks in VSCode to get my last session reconnected. At the end of the day I log out/shutdown by issuing the <code class="language-plaintext highlighter-rouge">sudo shutdown -h</code> command on the connected instance. I can connect from anywhere, enjoy industrial network speed, the commitment is low, the setup is easy, and I pay a reasonable price that correlates directly to how much I need the extra resources.</p>
-
-  <p style="font-style: italic">
-   
-    <a href="/2022/01/05/ec2.html#comments">View Comments</a>
-  </p>
-  </div>
-</article>
-
-
-
-
-<article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
-  <header>
-      <h2 class="post-title">
-        <a href="/2021/08/11/ice-cream.html">
-            A war over pistachio ice cream
-        </a>
-      </h2>
-    <p class="post-meta">
-      <time>
-        Aug 11, 2021
-      </time>
-    </p>
-    <p class="post-meta">
-        
-    </p>
-  </header>
-  <div class="post-content" itemprop="articleBody">
-    <p>I recently stepped into a new ice cream shop down the street. Upon scanning the chalkboard menu my eyes were immediately drawn to the red hearts accompanying speculoos cookies and cream, vanilla sweet cream, and fresh strawberry. These are the staff favorites, according to the cheery employee behind the counter.</p>
-
-<p>Curiously, next to green pistachio lay a suspicious red smudge.</p>
-
-<p>A new assistant manager had recently revoked green pistachio’s “favorite” status amid outcry from the junior staff. She had attempted to erase the heart from the blackboard menu but ultimately left behind a faint hint of its former glory.</p>
-
-<p>Nothing about the ice cream had changed - so why would its status as favorite be up for debate?</p>
-
-<p>Pistachio is one of those polarizing flavors - I don’t like it at all, while some of my friends order it everywhere they go. For a pistachio-hating customer (and even some pistachio-loving ones), a pistachio recommendation is essentially useless. Put another way, removing pistachio from the favorites list probably doesn’t really affect how many people order it, since the pool of “persuadable” pistachio customers is small compared to other flavors.</p>
-
-<p>The distinction here I think is between judging a recommendation on its utilization versus its objectivity. Assuming the ice cream staff are actually able to make a more objective judgement of flavor quality (I certainly would trust them more than anyone else), it makes a lot of sense for pistachio to keep its favorite status. But if you’re concerned about whether it’s useful to more customers, a great but controversial option will always see less support than a mediocre, but more palatable one.</p>
-
-<p>The philosophy that centers utilization echoes the “data driven” and “user centered” ethos in tech these days. But it commits the cardinal sin of measuring the wrong thing - just because more people engage with a recommendation, feature, or product doesn’t actually mean it’s “better” - one needs more clearly defined goals. Ice cream satisfaction isn’t obviously correlated with recommendation utilization to me, and if you exist in the margin (ie, are a pistachio lover) this philosophy will only ever see your niche flavor preference pushed further and further to the edge.</p>
-
-  <p style="font-style: italic">
-   
-    <a href="/2021/08/11/ice-cream.html#comments">View Comments</a>
-  </p>
-  </div>
-</article>
-
-
-
-<h1>More</h1>
-<ul style="margin-top: -4px" class="post-list">
   
-     
-      <li>
-         <div class="row-left">
 
-  <div class="column">
-    
-    
-        <a href="/2021/06/11/itp.html">
-      
-      <img class="projectimg projectimg-sm" src="/images/itp_still.png" />
-    </a>
-    
-  </div>
+</article>
+<div id='comments_wrapper'>
+    <h1>Comments</h1>
 
-  <div class="column">
-    <span class="post-meta">2021 06 11</span>
-
-    <div class="project-link">
-      
-        <a href="/2021/06/11/itp.html">
-      
-          Should you go to ITP?
-        </a>
+    <div id='comments' thread="/fog_of_war">
     </div>
+<div class='post-content' >
 
-    
+<form method='post' action="/comments/comment" id='comment_form'> 
+    <input type="text" name="username" id="comment_username" placeholder="your name (optional)"/>
 
-    <p class="post-meta excerpt">
-    
-      Reflections on two years
-    
-    </p>
-    </div>
+<div id='comment_secret'>
+
 </div>
-      </li>
-     
-
-
-     
-      <li>
-         <div class="row-left">
-
-  <div class="column">
-    
-    
-        <a href="/2021/01/05/100-days.html">
-      
-      <img class="projectimg projectimg-sm" src="/images/lm-2.jpg" />
-    </a>
-    
-  </div>
-
-  <div class="column">
-    <span class="post-meta">2021 01 05</span>
-
-    <div class="project-link">
-      
-        <a href="/2021/01/05/100-days.html">
-      
-          100 Days of Audiovisual Composition
-        </a>
-    </div>
-
-    
-
-    <p class="post-meta excerpt">
-    
-      a daily practice of audiovisual composition
-    
-    </p>
-    </div>
+    <textarea name="comment" id="comment_text" placeholder='your comment' form='comment_form'></textarea>
+    <input type="text" name="thread" id="comment_thread" hidden value="/fog_of_war"/>
+    <input type="submit" id='comment_submit' class='submit' disabled>
+</form>
 </div>
-      </li>
-     
-
-
-     
-      <li>
-         <div class="row-left">
-
-  <div class="column">
-    
-    
-        <a href="/project/2020/11/01/metaaudio.html">
-      
-      <img class="projectimg projectimg-sm" src="/images/metaaudio.jpg" />
-    </a>
-    
-  </div>
-
-  <div class="column">
-    <span class="post-meta">2020 11 01</span>
-
-    <div class="project-link">
-      
-        <a href="/project/2020/11/01/metaaudio.html">
-      
-          MetaAudio System 1
-        </a>
-    </div>
-
-    
-
-    <p class="post-meta excerpt">
-    
-      a musical composition that generates itself
-    
-    </p>
-    </div>
-</div>
-      </li>
-     
-
-
-     
-      <li>
-         <div class="row-left">
-
-  <div class="column">
-    
-    
-        <a href="/inherent-tradeoffs/">
-      
-      <img class="projectimg projectimg-sm" src="/images/inherent.png" />
-    </a>
-    
-  </div>
-
-  <div class="column">
-    <span class="post-meta">2020 04 04</span>
-
-    <div class="project-link">
-      
-        <a href="/inherent-tradeoffs/">
-      
-          Inherent Tradeoffs
-        </a>
-    </div>
-
-    
-
-    <p class="post-meta excerpt">
-    
-      an interactive essay on the tradeoffs between differing definitions of algorithmic fairness
-    
-    </p>
-    </div>
-</div>
-      </li>
-     
-
-
-     
-      <li>
-         <div class="row-left">
-
-  <div class="column">
-    
-    
-        <a href="/2019/10/14/code-of-music-muse-melody.html">
-      
-      <img class="projectimg projectimg-sm" src="/images/muse.png" />
-    </a>
-    
-  </div>
-
-  <div class="column">
-    <span class="post-meta">2019 10 14</span>
-
-    <div class="project-link">
-      
-        <a href="/2019/10/14/code-of-music-muse-melody.html">
-      
-          Muse
-        </a>
-    </div>
-
-    
-
-    <p class="post-meta excerpt">
-    
-      generating music from text
-    
-    </p>
-    </div>
-</div>
-      </li>
-     
-
-
-     
-      <li>
-         <div class="row-left">
-
-  <div class="column">
-    
-    
-        <a href="/2018/09/08/publicopinion.html">
-      
-      <img class="projectimg projectimg-sm" src="https://images-na.ssl-images-amazon.com/images/I/61H8GrROR-S.jpg" />
-    </a>
-    
-  </div>
-
-  <div class="column">
-    <span class="post-meta">2018 09 08</span>
-
-    <div class="project-link">
-      
-        <a href="/2018/09/08/publicopinion.html">
-      
-          Book Review: Walter Lippman, Public Opinion
-        </a>
-    </div>
-
-    
-
-    <p class="post-meta excerpt">
-    
-      Public Opinion was published in 1922 by Walter Lippmann, a...
-    
-    </p>
-    </div>
-</div>
-      </li>
-     
-
-
-
-</ul>
 </div>
 
-<p class="rss-subscribe"><a href="/feed.xml">RSS</a></p>
 
-<div id="signup_wrapper">
+<div id='signup_wrapper'>
 
-    <p class="heading" style="margin: 0">Sign up for the mailing list</p>
-    <p class="post-meta">Mailing listees receive bespoke handcrafted emails composed of 100% recycled materials.</p>
-<form class="signup" id="email_signup" method="post" action="/email"> 
-<input type="text" id="email_input" name="email" placeholder="your email" />
-<input class="submit" type="submit" />
+    <p class='heading' style='margin: 0'>Sign up for the mailing list</p>
+    <p class='post-meta'>Mailing listees receive bespoke handcrafted emails composed of 100% recycled materials.</p>
+<form class='signup' id='email_signup' method='post' action="/email"> 
+<input type="text" id='email_input' name='email' placeholder='your email' />
+<input class='submit' type="submit" />
 </form>
 </div>
 
