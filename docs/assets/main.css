@@ -324,6 +324,8 @@ h1, h2, h3, h4, h5, h6, .nav, .heading { font-family: "Futura", Helvetica, sans-
 
 .site-header { z-index: 10; }
 
+.awards { font-style: italic; font-size: 0.8em; }
+
 .cover-text { margin-bottom: 38px; }
 
 @media screen and (max-width: 1000px) { .cover-text { height: auto; } }
