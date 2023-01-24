@@ -270,6 +270,46 @@ You may NOT sub-license, resell, rent, redistribute or otherwise transfer the ic
 <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
   <header>
       <h2 class="post-title">
+        <a href="/2023/01/24/compound-interest-2.html">
+            Creative Capital and Compound Interest
+        </a>
+      </h2>
+    <p class="post-meta">
+      <time>
+        Jan 24, 2023
+      </time>
+    </p>
+    <p class="post-meta">
+        
+          <a class="tag" href="/tag/writing">writing</a>
+
+        
+    </p>
+  </header>
+  <div class="post-content" itemprop="articleBody">
+    <p>When I got out of college I took a job at Facebook as a software engineer and mostly hated it (except for the part where I made way more money than any 23 year old has a right to). Privilege acknowledgements notwithstanding, this is a story that isn’t actually that unusual if you spend enough time on software forums like <a href="https://news.ycombinator.com/item?id=21961560">hackernews</a> and reddit. A nontrivial amount of young people in tech (and possibly other industries!) wish they were doing something more creatively or intellectually fulfilling, whether that is social science research, experimental art, screenwriting, ceramics, whathaveyou. At least I was. But I got tempted by the astronomical signing bonus, starting salary, stock options, and the general allure of making a ton of cash as a young person right out of college, and I suspect many of my disenchanted peers fell prey to similar initial motivations.</p>
+
+<p><img src="https://i.insider.com/53ac754b69bedda3512ad279?width=750&amp;format=jpeg&amp;auto=webp" alt="" /></p>
+
+<p>The temptation wasn’t material greed per se, but more security. One corner of the internet I discovered quickly was the <a href="https://old.reddit.com/r/financialindependence/">financial independence subreddit</a>, which is full of people who meticulously save and invest money with the goal of eventually having enough to retire early and do whatever they want. A popular argument is that compound interest in the modern US stock market is so powerful and reliable that it is optimal to save as much as you can early, because that money will be worth twice, four times, eight times as much by the time one reaches retirement age. By the same logic, making more early on is also exponentially useful, and thus a decently large portion of the subreddit holds jobs they don’t love (or actively hate), holding out for one day getting to do what they actually want to do once they’ve saved up enough money for it.</p>
+
+<p>I spent a couple years checking my 401(k) several times per week and projecting out different savings timelines before I said fuck it, quit, and <a href="/2021/06/11/itp.html">went to art school</a>.</p>
+
+<p>Existential suffering aside, I think it’s important to realize that financial capital is not necessarily the most important type of capital you could be accumulating in your early career years. Creative capital is real too, and it also obeys the same laws of compound interest, even if it’s harder to see it. The more you learn and create, the more you can learn and create, and so on. If your actual end goal is to do something interesting with your time (and actually be good at it), it’s far from obvious that the correct path is to not do it so you can make money to do it later.</p>
+
+  <p style="font-style: italic">
+   
+    <a href="/2023/01/24/compound-interest-2.html#comments">View Comments</a>
+  </p>
+  </div>
+</article>
+
+
+
+
+<article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
+  <header>
+      <h2 class="post-title">
         <a href="/2023/01/23/web-21.html">
             Web 2.1
         </a>
@@ -443,85 +483,47 @@ You may NOT sub-license, resell, rent, redistribute or otherwise transfer the ic
 
 
 
-
-<article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
-  <header>
-      <h2 class="post-title">
-        <a href="/2022/01/05/ec2.html">
-            Using Amazon EC2 as a development server
-        </a>
-      </h2>
-    <p class="post-meta">
-      <time>
-        Jan 5, 2022
-      </time>
-    </p>
-    <p class="post-meta">
-        
-          <a class="tag" href="/tag/engineering">engineering</a>
-
-        
-    </p>
-  </header>
-  <div class="post-content" itemprop="articleBody">
-    <p>I do more and more data analysis and engineering work these days on my local machine, a 2017 MacBook Pro with 16gb of RAM. Ever since the new MacBooks were released I’ve been tempted to upgrade - especially when crunching data in Python or R (in projects like <a href="/news_map">Fog of War</a>, for instance). Running intensive analysis, ML training models, or data transformation jobs locally tends to lock up my computer for tens of minutes at a time, during which I can’t really even use the machine for other tasks at all.</p>
-
-<p>The new MacBooks are shiny, with impressive CPU benchmarks, but as far as I can tell my actual limiting factor is RAM. The datasets I work with are rarely large enough to really justify investing in actual-big-data infrastructure. They should fit in 16gb of RAM more often than not. The problem is that between terribly inefficient Electron apps like Spotify, Slack, several Firefox tabs, VSCode, Docker, and MacOS itself I rarely have all 16gb of RAM available for use. My machine locks up because it starts using the SSD as swap storage for too-high memory demands once the Python or R process exceeds 3-4GB of memory usage!</p>
-
-<p>I would love to upgrade my laptop to 32gb, but a new 32gb MacBook runs upward of $3000. Of course, I’d be getting the upgraded M1 mac chip as well, but as I don’t really do much video editing or heavy CPU work in general I’m not totally sure if it’s a very efficient use of the money. Windows/Linux might provide better value for a development machine, but I also value the Mac’s better creative application support - audio tools like Ableton and Max/MSP run much more reliably, and I don’t want to juggle multiple laptops.</p>
-
-<p>I began to consider renting cloud compute from Amazon. Thanks to git and Docker it shouldn’t require much setup to get code running on a remote server, and all I really need is the ability to ssh in with the command line, and edit the remote filesystem with VSCode. An EC2 t3.xlarge instance comes with 4 vCPUs and 16gb RAM, and costs approximately 16 cents per hour of usage. This comes out to about $1400 per year, which means that buying a new MacBook would easily provide more value after only about two years.</p>
-
-<p>However, the game changes because Amazon only charges for EC2 when the machine is in the “running” state. If I shut it down and start it up only when needed, the costs should go down dramatically. Realistically, I need the extra resources only occasionally - many tasks can still be done on my local machine, and again Docker and git make the self-collaboration process quite smooth. A conservative estimate of 40h of usage per week brings the estimate down to under $400 per year, which means the new MacBook would take closer to 7 years to break even. In addition, the t3.xlarge instance comes with a blazing fast 5gbps internet connection, which is incredibly useful whenever doing any bulk uploading/downloading work, a benefit that a new laptop can’t provide.</p>
-
-<p>The biggest obstacle I ran into is that Amazon likes to change the public hostname every time the machine is restarted. This means that it’s slightly nontrivial to easily restart the machine and reconnect the necessary tools. However, it’s nothing a little bit of shell scripting can’t handle. The Amazon CLI tools provide everything needed to automate the process.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>get_ec2_name() {
-  aws ec2 describe-instances --i $EC2_ID --query 'Reservations[].Instances[].PublicDnsName' | grep amazon | tail -n 1 | tr -d '" ,'
-}
-
-start-ec2() {
-  pending=$(aws ec2 start-instances --i $EC2_ID | grep pending);
-  while [ -n "$pending" ]
-  do
-    sleep 0.5;
-    pending=$(aws ec2 start-instances --i $EC2_ID | grep pending);
-  done
-  name=$(get_ec2_name);
-  awk_cmd="/$EC2_HOST_ALIAS/{ n=NR+1 } NR==n{ \$0=\"    HostName $name\" }1";
-  cp ~/.ssh/config ~/.ssh/config.bak;
-  awk "$awk_cmd" ~/.ssh/config &gt; ~/.ssh/config;
-  ssh $EC2_HOST_ALIAS;
-}
-</code></pre></div></div>
-
-<p>The <code class="language-plaintext highlighter-rouge">get_ec2_name</code> function uses the instance identifier <code class="language-plaintext highlighter-rouge">$EC2_ID</code> - which doesn’t change - to query for the public DNS name. The aws ec2 command returns an array of DNS names, some of them empty strings. The result is piped through grep to only filter for valid DNS names, tail’d to pick the most recent name, and stripped of extra characters.</p>
-
-<p>The <code class="language-plaintext highlighter-rouge">start-ec2</code> function uses the aws cli to issue a start-up request to the instance-id and conveniently returns a JSON object describing the instance’s status. During the startup process the status is <code class="language-plaintext highlighter-rouge">pending</code>, and once the machine is ready for use the status switches to <code class="language-plaintext highlighter-rouge">running</code>. The script simply issues repeated <code class="language-plaintext highlighter-rouge">start-instance</code> commands at half-second intervals until the instance is ready for use. Next, the public hostname is fetched and I use <code class="language-plaintext highlighter-rouge">awk</code> to write the new hostname into my ssh config file. The SSH config file describes settings for a remote connection, and you can use an aliases/labels to organize different connections! In this case, the <code class="language-plaintext highlighter-rouge">awk</code> script actually looks for the SSH config entry with the label <code class="language-plaintext highlighter-rouge">$EC2_HOST_ALIAS</code> and replaces the line immediately following it with the new hostname.
-I also set up the relevant other information in the SSH config, including the username and private key file location.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Host &lt;EC2_HOST_ALIAS&gt;
-    HostName &lt;HOSTNAME&gt;
-    User &lt;User&gt;
-    IdentityFile &lt;Filepath to private key&gt;
-</code></pre></div></div>
-
-<p>Once the ssh file is set up properly, all that’s left is to call <code class="language-plaintext highlighter-rouge">ssh $EC2_HOST_ALIAS</code> to connect using the settings in the config. Even better, VSCode’s remote file setup can reference connections in the ssh config file, so it’s super easy to refresh/reconnect VSCode even though the hostnames change throughout.</p>
-
-<p>My workday now starts with a simple <code class="language-plaintext highlighter-rouge">start-ec2</code> command in the terminal and a handful of mouseclicks in VSCode to get my last session reconnected. At the end of the day I log out/shutdown by issuing the <code class="language-plaintext highlighter-rouge">sudo shutdown -h</code> command on the connected instance. I can connect from anywhere, enjoy industrial network speed, the commitment is low, the setup is easy, and I pay a reasonable price that correlates directly to how much I need the extra resources.</p>
-
-  <p style="font-style: italic">
-   
-    <a href="/2022/01/05/ec2.html#comments">View Comments</a>
-  </p>
-  </div>
-</article>
-
-
-
 <h1>More</h1>
 <ul style="margin-top: -4px" class="post-list">
   
+     
+      <li>
+         <div class="row-left">
+
+  <div class="column">
+    
+    
+        <a href="/2022/01/05/ec2.html">
+      
+      <img class="projectimg projectimg-sm" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/AWS_Simple_Icons_Compute_Amazon_EC2_Instances.svg/1200px-AWS_Simple_Icons_Compute_Amazon_EC2_Instances.svg.png" />
+    </a>
+    
+  </div>
+
+  <div class="column">
+    <span class="post-meta">2022 01 05</span>
+
+    <div class="project-link">
+      
+        <a href="/2022/01/05/ec2.html">
+      
+          Using Amazon EC2 as a development server
+        </a>
+    </div>
+
+    
+
+    <p class="post-meta excerpt">
+    
+      A kind of cost effective way to avoid upgrading my laptop.
+    
+    </p>
+    </div>
+</div>
+      </li>
+     
+
+
      
       <li>
          <div class="row-left">
