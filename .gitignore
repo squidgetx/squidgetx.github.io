@@ -5,4 +5,6 @@ node_modules
 static/assets/main.js
 static/.jekyll-cache/
 
-*/.DS_Store
+.DS_Store
+static/.DS_Store
+static/images/.DS_Store
