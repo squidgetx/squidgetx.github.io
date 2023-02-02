@@ -7,7 +7,7 @@ permalink: /about/
 
 <div class='post-content'>
 
-<p>Hi! I'm a researcher, software engineer, artist, and composer based in Brooklyn, NY. Currently I'm studying as a graduate student at NYU Politics. Previously I studied at <a href="/itp-blog">NYU Tisch’s Interactive Telecommunications Program.</a></p>
+<p>Hi! I'm a researcher, software engineer, artist, and composer based in Brooklyn, NY. Currently I'm studying as a PhD student at NYU Politics. Previously I studied at <a href="/itp-blog">NYU Tisch’s Interactive Telecommunications Program.</a></p>
 
 <p>My main research interests include <a href="/tag/tech+politics">impacts of technological systems on political participation and public opinion</a>.</p>
 
