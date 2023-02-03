@@ -17,4 +17,4 @@ try predict which campaign ad persuasive with machine learning? guess probably n
 
 want know which tweet about politics? see if has word "democrats" or "republicans" in it. no build BERT transformer classifier.
 
-sometimes fancy way look good but only from certain angle like grug in mirror.
+sometimes fancy way look good but only from certain angle like [grug](https://grugbrain.dev/) in mirror.
