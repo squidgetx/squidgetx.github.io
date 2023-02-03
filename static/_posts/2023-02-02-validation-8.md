@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2023-01-31
+date: 2023-02-02
 title: "Validate your shit"
 description: "fancy don't make good"
 tags: writing
