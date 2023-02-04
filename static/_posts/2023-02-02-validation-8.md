@@ -5,6 +5,7 @@ title: "Validate your shit"
 description: "fancy don't make good"
 tags: writing
 blog: true
+img: https://grugbrain.dev/grug.png
 ---
 
 when reading paper or at talk with fancy scary machine learning or text analysis technique.

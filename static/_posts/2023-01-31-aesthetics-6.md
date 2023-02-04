@@ -5,6 +5,7 @@ title: "The art and aesthetics of (social) science"
 description: ""
 tags: writing
 blog: true
+img: https://media.nga.gov/iiif/a8c923e1-078d-4f94-b1f4-0e303afe2155/full/!740,560/0/default.jpg
 ---
 
 Sometimes people are surprised that an artist (me) is in a rigorous social science PhD program. The common perception is that the type of thinking that artists do is aesthetic, emotional, subjective, whereas scientists in academia are more often engaged in objective, scientific, logical types of thinking.

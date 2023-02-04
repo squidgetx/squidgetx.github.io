@@ -5,6 +5,7 @@ title: "Creative Capital and Compound Interest"
 description: "contra the financial independence mindset"
 tags: writing
 blog: true
+img: https://i.insider.com/53ac754b69bedda3512ad279?width=750&format=jpeg&auto=webp
 ---
 
 When I got out of college I took a job at Facebook as a software engineer and mostly hated it (except for the part where I made way more money than any 23 year old has a right to). Privilege acknowledgements notwithstanding, this is a story that isn't actually that unusual if you spend enough time on software forums like [hackernews](https://news.ycombinator.com/item?id=21961560) and reddit. A nontrivial amount of young people in tech (and possibly other industries!) wish they were doing something more creatively or intellectually fulfilling, whether that is social science research, experimental art, screenwriting, ceramics, whathaveyou. At least I was. But I got tempted by the astronomical signing bonus, starting salary, stock options, and the general allure of making a ton of cash as a young person right out of college, and I suspect many of my disenchanted peers fell prey to similar initial motivations.
