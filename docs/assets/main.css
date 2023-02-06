@@ -316,7 +316,7 @@ h1, h2, h3, h4, h5, h6, .nav, .heading { font-family: "Futura", Helvetica, sans-
 
 .icon:hover { text-decoration: none; border-bottom: 2.5px solid black; }
 
-.post-content ul, ol { font-size: 0.9em; margin-bottom: 0.9em; list-style-type: lower-alpha; }
+.post-content ul, ol { font-size: 0.9em; margin-bottom: 0.9em; }
 
 .spacer { position: fixed; right: 0; top: 0; z-index: -1; width: 100%; height: 100%; }
 
