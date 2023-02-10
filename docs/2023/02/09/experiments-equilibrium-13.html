@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Hot and Cold Media: Google Maps Edition</title>
-  <meta name="description" content="When you’re using Google Maps navigation, the default perspective is first-person. The map is rotated and scaled to match your perspective as the driver/walk...">
+  <title>Heisenberg Effects in randomized experiments</title>
+  <meta name="description" content="1. RCTs, Causal Inference, and Internal and External Validity">
 
   <link rel="stylesheet" href="/assets/main.css">
-  <link rel="canonical" href="/2023/02/03/maps-9.html">
+  <link rel="canonical" href="/2023/02/09/experiments-equilibrium-13.html">
   <link rel="alternate" type="application/rss+xml" title="Sylvan Zheng" href="/feed.xml">
   
   
@@ -260,18 +260,21 @@ You may NOT sub-license, resell, rent, redistribute or otherwise transfer the ic
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header>
-    <h1 class="post-title" itemprop="name headline">Hot and Cold Media: Google Maps Edition</h1>
+    <h1 class="post-title" itemprop="name headline">Heisenberg Effects in randomized experiments</h1>
     
 
     
     <p class='post-meta'>
       <time>
-        Feb 3, 2023
+        Feb 9, 2023
       </time>
     </p>
     <p class='post-meta'>
       
       <a class='tag' href="/tag/writing">writing</a>
+
+      
+      <a class='tag' href="/tag/causality">causality</a>
 
       
     </p>
@@ -281,27 +284,50 @@ You may NOT sub-license, resell, rent, redistribute or otherwise transfer the ic
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    <p>When you’re using Google Maps navigation, the default perspective is first-person. The map is rotated and scaled to match your perspective as the driver/walker/biker: up is forward, down is backward, left and right both correspond to the real world left and right, assuming you’re holding your phone in its typical orientation. If you make a turn, the whole map rotates with you to maintain the correct first-person perspective.</p>
+    <h1 id="1-rcts-causal-inference-and-internal-and-external-validity">1. RCTs, Causal Inference, and Internal and External Validity</h1>
 
-<p><img src="https://storage.googleapis.com/support-forums-api/attachment/thread-14375376-1383617846373138535.png" width="256px" /></p>
+<h2 id="you-can-skip-this-section-if-you-know-any-of-the-above-words">(you can skip this section if you know any of the above words)</h2>
 
-<p><em>The default Google Maps perspective</em></p>
+<p>RCT (randomized controlled trials) are considered the gold standard in social science for determining causal effects - that is whether some intervention or treatment caused a change or outcome Y. The idea is pretty basic. You randomly split your participants into two groups, give one of them treatment, measure outcomes and argue that the average difference<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup> between the groups represents a causal effect, since there’s absolutely no reason to expect that the groups are different from each other in any meaningful way (because they were assigned randomly).</p>
 
-<p>It’s really easy to see why this might be a good idea. Paper maps are normally oriented north-south, but most of the time when I’m trying to get from point A to point B I don’t care about whether I’m about to turn to the west - I just want to know if I need to go right or left. Paper maps don’t turn automatically, but I used to sometimes physically rotate maps to match the perspective I was seeing, a low-tech way of doing what Google maps navigation does automatically.</p>
+<p>Tech companies have taken this idea and run with it. Facebook is famous for running thousands of experiments on its users simultaneously all the time. Maybe 1% of users are seeing more posts from friends in their news feed compared to everyone else. After two weeks, the team running the experiment will look at some metrics like time spent scrolling News Feed, or number of likes or comments written. If people who see more posts from friends spend more time on Facebook, they’ll roll out the change to everyone. This is roughly how Facebook, and many other companies, “optimize” their product: someone dreams up a change, engineers build it, it gets tested for a bit, and then if the metrics look good it gets shipped.</p>
 
-<p>Marshall Mcluhan might describe this as a “hot” map media experience. The media is “high definition,” a simulation of reality rather than a mere representation. Paper maps are most certainly “cold,” requiring its users to do a fair bit of mental work to translate what they’re seeing on the map to the physical, geospatial reality around them.</p>
+<p>Curiously, in the social sciences many academics would say that a “single experiment is not enough to determine policy,” which is precisely what tech companies use RCTs for (and increasingly NGOs and governments when evaluating policy programs!<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup>). The concerns from academics usually boil down to something called “external vs internal validity.” Internal validity refers to the idea that the effect of the treatment is accurately estimated <em>for the people in your experiment.</em> Most RCTs have near-perfect internal validity. External validity, on the other hand, refers to the idea that the <em>results of the experiment generalize to a larger population</em>.</p>
 
-<p>I don’t miss having to page through an atlas to plan a road trip but I do think that there’s something that is lost when first person Google maps style navigation becomes the primary way used to navigate through place. I notice that I can almost never remember basic directions to routes I’ve driven dozens of times, and even if I might know that place A is 5 minutes away from place B and place C is 10 minutes away from place B, I have no idea where place A might be relative to place C. Google maps enables a kind of shitty teleportation, where I don’t have to pay any attention to my surroundings as I navigate them - I merely follow directions and get to where I’m going, thanks to how “hot” the map technology is (in Mcluhan’s sense of the word).</p>
+<p>There are a bunch of reasons why external validity might be dubious in an RCT. For example, if you only did your experiment on young women, one might be suspicious that the effects generalize to older men. In this post, I want to focus on a specific kind of external validity violation, which I’ll argue is actually a risk for any experiment (ie, is unmitigatable). I still need to comb through the literature to see if there’s a name for this idea already, but for now I’ll call it the “Heiseberg Effect” (of experimental social science)</p>
 
-<p>It’s this kind of thing that makes stories of people following Google/Apple maps into a desert to the point of being stranded seem actually believable.</p>
+<h1 id="2-the-heisenberg-effect">2. The Heisenberg Effect</h1>
 
-<p>You can force north-south orientation even during navigation by tapping the compass icon (at least at the time of this writing). This one weird trick™ already helps to recover some of the “coolness” of a paper map (pun intended). I notice very quickly if I’ve accidentally routed to the wrong place, since I have a vague sense of whether my destination is north/south/east/west of my current location. I can improvise shortcuts and detours around random construction or school buses. I have a sense of where different things are relative to each other, since I’m forced to constantly evaluate relative positions and directions as I navigate.</p>
+<h2 id="a-risk-for-interpreting-the-results-of-any-experiment-to-inform-policy">a risk for interpreting the results of any experiment to inform policy</h2>
 
-<p><img src="https://storage.googleapis.com/support-forums-api/attachment/thread-2851431-14251814094790275470.png" width="256px" /></p>
+<p>The Heisenberg effect (which roughly says that one cannot know both the position and momentum of a particle at a given time) is popularly confused with the observer effect, which says that the act of measuring [the position or momentum of a particle] will actually mess with the position or momentum of that particle, since there’s no way to measure something without actually interacting with it.</p>
 
-<p><em>The north-south orientation navigation view</em></p>
+<p>In a similar way, it’s impossible to know the effect of rolling out a treatment to a large audience based on a randomized experiment involving a smaller sub-audience.</p>
 
-<p>Here’s to hoping that Google never kills this feature. “Cold” tech is a rare thing.</p>
+<p>Call your treatment Z. By construction, everyone in your experiment lives in a world where not-Z is the norm. Your experiment randomly gives Z for half the actors in your experiment. But importantly, you can only measure the effect of “having Z when most people have not-Z.” This is a different effect of “having Z when everyone else also has Z,” which would be the case if you were to “roll out” the policy globally.<sup id="fnref:3" role="doc-noteref"><a href="#fn:3" class="footnote" rel="footnote">3</a></sup></p>
+
+<p>In medicine, this kind of effect doesn’t really matter. Someone’s reaction to a specific type of surgery doesn’t really change if a bunch of other people suddenly get access to that same type of surgery. But in social science, where we study behavior of people, this kind of effect <em>can matter a lot</em><sup id="fnref:4" role="doc-noteref"><a href="#fn:4" class="footnote" rel="footnote">4</a></sup>. This is because people in the world react to policy changes around them.</p>
+
+<p>Maybe an experiment shows that increasing the amount of video in News Feed improves time spent on Facebook. Let’s say that it’s because most of the videos posted to Facebook are actually pretty good and interesting videos, and people like good, interesting content. You roll out the change to 100% of users. Media companies and influencers realize that if they post a video, it’s going to get boosted in feed. Suddenly, tons of content is being produced in video form. A lot of it is actually kind of terrible - it would be better as a news article or a photo. User welfare is actually worse than before, and people start using Facebook less because they’re sick of all the crappy video content.</p>
+
+<p>One way to think about it is that by rolling out the change, you change the “game” (in the game theoretic sense) of the environment, and that the natural equilibrium actions of the actors within your environment will also change. When you run a randomized experiment, it’s really hard to structure it such that the “policy environment” equilibirum shifts at the same time, because by definition you’re not actually changing the policy environment for everyone.</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>Technical note: other estimators for the causal effect exist but for clarity and simplicity I’ll only discuss difference-in-means here <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p>Citation needed. Maybe a good topic for a follow-up post! <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:3" role="doc-endnote">
+      <p>Careful readers will note that the Heisenberg effect is not really the most commesurate analogy. I am open to suggestions for other names. “Policy Environment Equilibrium Effect” doesn’t really have the same ring to it. <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:4" role="doc-endnote">
+      <p>Antibiotic performance is a pretty good counter-example from medicine. The experiment tells you that antibiotics are great, when the status quo is not-very-much antibiotics. But if everyone gets antibiotics, then we breed super-bacteria that are resistant to antibiotics. This result is completely unpredicted by the randomized experiment. <a href="#fnref:4" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
 
   </div>
 
@@ -311,7 +337,7 @@ You may NOT sub-license, resell, rent, redistribute or otherwise transfer the ic
 <div id='comments_wrapper'>
     <h1>Comments</h1>
 
-    <div id='comments' thread="/2023/02/03/maps-9.html">
+    <div id='comments' thread="/2023/02/09/experiments-equilibrium-13.html">
     </div>
 <div class='post-content' >
 
@@ -322,7 +348,7 @@ You may NOT sub-license, resell, rent, redistribute or otherwise transfer the ic
 
 </div>
     <textarea name="comment" id="comment_text" placeholder='your comment' form='comment_form'></textarea>
-    <input type="text" name="thread" id="comment_thread" hidden value="/2023/02/03/maps-9.html"/>
+    <input type="text" name="thread" id="comment_thread" hidden value="/2023/02/09/experiments-equilibrium-13.html"/>
     <input type="submit" id='comment_submit' class='submit' disabled value="Submit Comment"/>
 </form>
 </div>

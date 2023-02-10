@@ -161,6 +161,8 @@
       
         
       
+        
+      
       </ul>
       <ul class="social-media-list">
         
@@ -270,6 +272,84 @@ You may NOT sub-license, resell, rent, redistribute or otherwise transfer the ic
 <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
   <header>
       <h2 class="post-title">
+        <a href="/2023/02/09/experiments-equilibrium-13.html">
+            Heisenberg Effects in randomized experiments
+        </a>
+      </h2>
+    <p class="post-meta">
+      <time>
+        Feb 9, 2023
+      </time>
+    </p>
+    <p class="post-meta">
+        
+          <a class="tag" href="/tag/writing">writing</a>
+
+        
+          <a class="tag" href="/tag/causality">causality</a>
+
+        
+    </p>
+  </header>
+  <div class="post-content" itemprop="articleBody">
+    <h1 id="1-rcts-causal-inference-and-internal-and-external-validity">1. RCTs, Causal Inference, and Internal and External Validity</h1>
+
+<h2 id="you-can-skip-this-section-if-you-know-any-of-the-above-words">(you can skip this section if you know any of the above words)</h2>
+
+<p>RCT (randomized controlled trials) are considered the gold standard in social science for determining causal effects - that is whether some intervention or treatment caused a change or outcome Y. The idea is pretty basic. You randomly split your participants into two groups, give one of them treatment, measure outcomes and argue that the average difference<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup> between the groups represents a causal effect, since there’s absolutely no reason to expect that the groups are different from each other in any meaningful way (because they were assigned randomly).</p>
+
+<p>Tech companies have taken this idea and run with it. Facebook is famous for running thousands of experiments on its users simultaneously all the time. Maybe 1% of users are seeing more posts from friends in their news feed compared to everyone else. After two weeks, the team running the experiment will look at some metrics like time spent scrolling News Feed, or number of likes or comments written. If people who see more posts from friends spend more time on Facebook, they’ll roll out the change to everyone. This is roughly how Facebook, and many other companies, “optimize” their product: someone dreams up a change, engineers build it, it gets tested for a bit, and then if the metrics look good it gets shipped.</p>
+
+<p>Curiously, in the social sciences many academics would say that a “single experiment is not enough to determine policy,” which is precisely what tech companies use RCTs for (and increasingly NGOs and governments when evaluating policy programs!<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup>). The concerns from academics usually boil down to something called “external vs internal validity.” Internal validity refers to the idea that the effect of the treatment is accurately estimated <em>for the people in your experiment.</em> Most RCTs have near-perfect internal validity. External validity, on the other hand, refers to the idea that the <em>results of the experiment generalize to a larger population</em>.</p>
+
+<p>There are a bunch of reasons why external validity might be dubious in an RCT. For example, if you only did your experiment on young women, one might be suspicious that the effects generalize to older men. In this post, I want to focus on a specific kind of external validity violation, which I’ll argue is actually a risk for any experiment (ie, is unmitigatable). I still need to comb through the literature to see if there’s a name for this idea already, but for now I’ll call it the “Heiseberg Effect” (of experimental social science)</p>
+
+<h1 id="2-the-heisenberg-effect">2. The Heisenberg Effect</h1>
+
+<h2 id="a-risk-for-interpreting-the-results-of-any-experiment-to-inform-policy">a risk for interpreting the results of any experiment to inform policy</h2>
+
+<p>The Heisenberg effect (which roughly says that one cannot know both the position and momentum of a particle at a given time) is popularly confused with the observer effect, which says that the act of measuring [the position or momentum of a particle] will actually mess with the position or momentum of that particle, since there’s no way to measure something without actually interacting with it.</p>
+
+<p>In a similar way, it’s impossible to know the effect of rolling out a treatment to a large audience based on a randomized experiment involving a smaller sub-audience.</p>
+
+<p>Call your treatment Z. By construction, everyone in your experiment lives in a world where not-Z is the norm. Your experiment randomly gives Z for half the actors in your experiment. But importantly, you can only measure the effect of “having Z when most people have not-Z.” This is a different effect of “having Z when everyone else also has Z,” which would be the case if you were to “roll out” the policy globally.<sup id="fnref:3" role="doc-noteref"><a href="#fn:3" class="footnote" rel="footnote">3</a></sup></p>
+
+<p>In medicine, this kind of effect doesn’t really matter. Someone’s reaction to a specific type of surgery doesn’t really change if a bunch of other people suddenly get access to that same type of surgery. But in social science, where we study behavior of people, this kind of effect <em>can matter a lot</em><sup id="fnref:4" role="doc-noteref"><a href="#fn:4" class="footnote" rel="footnote">4</a></sup>. This is because people in the world react to policy changes around them.</p>
+
+<p>Maybe an experiment shows that increasing the amount of video in News Feed improves time spent on Facebook. Let’s say that it’s because most of the videos posted to Facebook are actually pretty good and interesting videos, and people like good, interesting content. You roll out the change to 100% of users. Media companies and influencers realize that if they post a video, it’s going to get boosted in feed. Suddenly, tons of content is being produced in video form. A lot of it is actually kind of terrible - it would be better as a news article or a photo. User welfare is actually worse than before, and people start using Facebook less because they’re sick of all the crappy video content.</p>
+
+<p>One way to think about it is that by rolling out the change, you change the “game” (in the game theoretic sense) of the environment, and that the natural equilibrium actions of the actors within your environment will also change. When you run a randomized experiment, it’s really hard to structure it such that the “policy environment” equilibirum shifts at the same time, because by definition you’re not actually changing the policy environment for everyone.</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>Technical note: other estimators for the causal effect exist but for clarity and simplicity I’ll only discuss difference-in-means here <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p>Citation needed. Maybe a good topic for a follow-up post! <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:3" role="doc-endnote">
+      <p>Careful readers will note that the Heisenberg effect is not really the most commesurate analogy. I am open to suggestions for other names. “Policy Environment Equilibrium Effect” doesn’t really have the same ring to it. <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:4" role="doc-endnote">
+      <p>Antibiotic performance is a pretty good counter-example from medicine. The experiment tells you that antibiotics are great, when the status quo is not-very-much antibiotics. But if everyone gets antibiotics, then we breed super-bacteria that are resistant to antibiotics. This result is completely unpredicted by the randomized experiment. <a href="#fnref:4" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+  <p style="font-style: italic">
+   
+    <a href="/2023/02/09/experiments-equilibrium-13.html#comments">View Comments</a>
+  </p>
+  </div>
+</article>
+
+
+
+
+<article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
+  <header>
+      <h2 class="post-title">
         <a href="/2023/02/07/do-what-you-want-12.html">
             Doing things you want
         </a>
@@ -366,51 +446,47 @@ You may NOT sub-license, resell, rent, redistribute or otherwise transfer the ic
 
 
 
-
-<article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
-  <header>
-      <h2 class="post-title">
-        <a href="/2023/02/04/timedelays-10.html">
-            Delay
-        </a>
-      </h2>
-    <p class="post-meta">
-      <time>
-        Feb 4, 2023
-      </time>
-    </p>
-    <p class="post-meta">
-        
-          <a class="tag" href="/tag/writing">writing</a>
-
-        
-    </p>
-  </header>
-  <div class="post-content" itemprop="articleBody">
-    <p><img src="https://nuum.co/wp-content/uploads/2022/01/opening-doctored.png" alt="" /></p>
-
-<p>The performer and her <a href="https://nuum.co/project/doppelganger">doppelganger</a> stand still for a moment. She turns her head to the left. Her doppelganger follows suit. The doppelganger is the performer, but five seconds in the past.</p>
-
-<p>It’s cold today. Wind howls through the street. The farmer’s market is closed.</p>
-
-<p>A tech company starts sending more irrelevant notifications from its app to a random subset of its users. After a couple weeks, those users spend more time using the app compared to the others. The tech company rolls out the change to all of its users. A year later, I uninstall the app because the notifications are too annoying.</p>
-
-<p>The farmer’s market is closed today because twenty years ago there were too many chloroflourocarbons in the atmosphere.</p>
-
-<p>The doppelganger is the performer, but five minutes in the past. The performer turns her head to the right. The doppelganger is sitting in a chair, tying her shoes. Five minutes later, the doppelganger turns her head to the right. But I’ve already forgotten.</p>
-
-  <p style="font-style: italic">
-   
-    <a href="/2023/02/04/timedelays-10.html#comments">View Comments</a>
-  </p>
-  </div>
-</article>
-
-
-
 <h1>More</h1>
 <ul style="margin-top: -4px" class="post-list">
   
+     
+      <li>
+         <div class="row-left">
+
+  <div class="column">
+    
+    
+        <a href="/2023/02/04/timedelays-10.html">
+      
+      <img class="projectimg projectimg-sm" src="https://nuum.co/wp-content/uploads/2022/01/opening-doctored.png" />
+    </a>
+    
+  </div>
+
+  <div class="column">
+    <span class="post-meta">2023 02 04</span>
+
+    <div class="project-link">
+      
+        <a href="/2023/02/04/timedelays-10.html">
+      
+          Delay
+        </a>
+    </div>
+
+    
+
+    <p class="post-meta excerpt">
+    
+      
+    
+    </p>
+    </div>
+</div>
+      </li>
+     
+
+
      
       <li>
          <div class="row-left">
