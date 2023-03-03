@@ -272,8 +272,49 @@ You may NOT sub-license, resell, rent, redistribute or otherwise transfer the ic
 <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
   <header>
       <h2 class="post-title">
+        <a href="/2023/02/09/experiments-equilibrium-14.html">
+            More on experimental equilibrium effects: a story from a particular social media company
+        </a>
+      </h2>
+    <p class="post-meta">
+      <time>
+        Feb 9, 2023
+      </time>
+    </p>
+    <p class="post-meta">
+        
+          <a class="tag" href="/tag/writing">writing</a>
+
+        
+          <a class="tag" href="/tag/causality">causality</a>
+
+        
+    </p>
+  </header>
+  <div class="post-content" itemprop="articleBody">
+    <p>Back in the day when I used to work at a particular social media company I saw an internal report describing how ranking, or the process of changing the order of content in user feeds, was provably a good thing. This was in the face of both <a href="https://www.wired.com/story/how-to-use-facebook-no-algorithm/">public pressure</a> from scholars and commentators describing how content ranking algorithms created bias and opportunities for controversial, divisive content to go viral and other kinds of bad things.</p>
+
+<p>The authors of the report had run a randomized experiment turning off ranking for a small portion of users for a few weeks. They showed that these users spent less time using the social media platform, scrolled past more stories, engaged less with meaningful content, and a whole host of other “negative” effects. Putting aside the obvious conflict of interest of some of these measurements (as in, maybe less time spent is actually a good thing, societally speaking), this is a great example of the research design not taking into account <a href="https://sylvan.fish/2023/02/09/experiments-equilibrium-13.html">equilibrium effects</a>.</p>
+
+<p>For years the existence of the ranking algorithm has influenced both the types of content produced both by content creators and by the social media company itself. Turning off the ranking algorithm for a small subset of users for just a couple weeks is <em>not</em> a good hint at what the world would look like in the absence of a ranking algorithm.</p>
+
+<p>If you have a ranking algorithm, there’s no penalty for just firehosing tons of content into the ether, relying on the algorithm to pick out the cream of the crop to bring to the top. If you turn off the algorithm, everyone will hate you because they are suddenly inundated with terrible content. But in a world that never had an algorithm in the first place, it’s unlikely that so much mediocre content would exist in the first place.</p>
+
+  <p style="font-style: italic">
+   
+    <a href="/2023/02/09/experiments-equilibrium-14.html#comments">View Comments</a>
+  </p>
+  </div>
+</article>
+
+
+
+
+<article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
+  <header>
+      <h2 class="post-title">
         <a href="/2023/02/09/experiments-equilibrium-13.html">
-            Heisenberg Effects in randomized experiments
+            Randomized Experiments Can't Always Detect Equilibrium Effects
         </a>
       </h2>
     <p class="post-meta">
@@ -302,15 +343,15 @@ You may NOT sub-license, resell, rent, redistribute or otherwise transfer the ic
 
 <p>Curiously, in the social sciences many academics would say that a “single experiment is not enough to determine policy,” which is precisely what tech companies use RCTs for (and increasingly NGOs and governments when evaluating policy programs!<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup>). The concerns from academics usually boil down to something called “external vs internal validity.” Internal validity refers to the idea that the effect of the treatment is accurately estimated <em>for the people in your experiment.</em> Most RCTs have near-perfect internal validity. External validity, on the other hand, refers to the idea that the <em>results of the experiment generalize to a larger population</em>.</p>
 
-<p>There are a bunch of reasons why external validity might be dubious in an RCT. For example, if you only did your experiment on young women, one might be suspicious that the effects generalize to older men. In this post, I want to focus on a specific kind of external validity violation, which I’ll argue is actually a risk for any experiment (ie, is unmitigatable). I still need to comb through the literature to see if there’s a name for this idea already, but for now I’ll call it the “Heiseberg Effect” (of experimental social science)</p>
+<p>There are a bunch of reasons why external validity might be dubious in an RCT. For example, if you only did your experiment on young women, one might be suspicious that the effects generalize to older men. In this post, I want to focus on a specific kind of external validity violation, which is actually a risk for many experiments.</p>
 
-<h1 id="2-the-heisenberg-effect">2. The Heisenberg Effect</h1>
+<h1 id="2-equilibrium-effects">2. Equilibrium Effects</h1>
 
 <h2 id="a-risk-for-interpreting-the-results-of-any-experiment-to-inform-policy">a risk for interpreting the results of any experiment to inform policy</h2>
 
 <p>The Heisenberg effect (which roughly says that one cannot know both the position and momentum of a particle at a given time) is popularly confused with the observer effect, which says that the act of measuring [the position or momentum of a particle] will actually mess with the position or momentum of that particle, since there’s no way to measure something without actually interacting with it.</p>
 
-<p>In a similar way, it’s impossible to know the effect of rolling out a treatment to a large audience based on a randomized experiment involving a smaller sub-audience.</p>
+<p>In a similar way, it’s often impossible to know the equilibrium effect of rolling out a treatment to a large audience based on a randomized experiment involving a smaller sub-audience. This is because for most people in the actual world, the status quo hasn’t changed, even if it’s different for people participating in the experiment.</p>
 
 <p>Call your treatment Z. By construction, everyone in your experiment lives in a world where not-Z is the norm. Your experiment randomly gives Z for half the actors in your experiment. But importantly, you can only measure the effect of “having Z when most people have not-Z.” This is a different effect of “having Z when everyone else also has Z,” which would be the case if you were to “roll out” the policy globally.<sup id="fnref:3" role="doc-noteref"><a href="#fn:3" class="footnote" rel="footnote">3</a></sup></p>
 
@@ -394,61 +435,47 @@ You may NOT sub-license, resell, rent, redistribute or otherwise transfer the ic
 
 
 
-
-<article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
-  <header>
-      <h2 class="post-title">
-        <a href="/2023/02/06/diversity-11.html">
-            The Capitalism-ization of Diversity
-        </a>
-      </h2>
-    <p class="post-meta">
-      <time>
-        Feb 6, 2023
-      </time>
-    </p>
-    <p class="post-meta">
-        
-          <a class="tag" href="/tag/writing">writing</a>
-
-        
-    </p>
-  </header>
-  <div class="post-content" itemprop="articleBody">
-    <p>Recently in the L-train subway a new set of subway ads have gone up marketing a Muslim-specific dating app.</p>
-
-<p><img src="https://www.globaldatinginsights.com/wp-content/uploads/2021/11/Screen-Shot-2021-11-18-at-11.49.48.png" alt="" /></p>
-
-<p>I guess this is sort of a good thing, in the sense that Muslims in New York deserve as much as others to participate in the quagmire-hellhole that is online dating. Anything less would smack of inequality of opportunity! But online-dating-culture gripes aside, this feels like it’s part of a growing trend that I’ll ungracefully call “the capitalism-ization of diversity.”</p>
-
-<p>Broadly, it seems like the market has figured out that it can extract value from relatively untapped markets by targeting minority groups with culturally specific marketing and product. Big banks change their logos for Pride or Black History Month, Marvel movies like Shang-Chi and Black Panther get made, and dating apps expand their market to Muslims and Mormons.</p>
-
-<p>Back in the early days of television and mass media all the commentators were worried about mass media causing the <em>homogenization</em> of society. The idea was that it would be easier for advertisers and corporations to sell to a larger group of more similar consumers. Since advertisers and corporations controlled the media, we would naturally see a shift toward social and cultural homogenization. Given this, the capitalism-ization of diversity seems surprising, since we’re seeing what looks like a celebration and highlighting of social and cultural diversity instead. Mass media culture largely ignored alternative culture; certainly, you would never see a subway ad in the early 2000s (well, for a lot of different reasons) that <em>opened</em> with “Halal! Inshallah!”</p>
-
-<p>But another view is that it’s really all just homogenization under the hood; a way to capture and bend even more people to a dominant meta-culture where one expresses themselves primarily through media and product consumption. I think this inherent hypocrisy/subterfuge is what makes this trend so strangely discomforting. There’s no real celebration of counter-culture<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>, merely a perverse reflection of neoliberalist hegemony into different skin tones.</p>
-
-<p>Congratulations, now <code class="language-plaintext highlighter-rouge">insert marginalized community here</code> gets to writhe under the thumb of late stage capitalism and desperately consume to fill the void in their souls just as much as everyone else.</p>
-
-<div class="footnotes" role="doc-endnotes">
-  <ol>
-    <li id="fn:1" role="doc-endnote">
-      <p>I am using cultural/racial diversity, counter-culture, and alternative culture to all reference the same thing in this short piece. They technically refer to pretty different things, but I think one of the most important features of diversity and the whole point of “respecting” or learning about other cultures is that they offer meaningfully different <em>ways of life</em> from each other. The capitalism-ization of diversity threatens to erase those differences and reduce them to surface level traits. <em>DAE muslim??? Halal!!!</em> <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
-
-  <p style="font-style: italic">
-   
-    <a href="/2023/02/06/diversity-11.html#comments">View Comments</a>
-  </p>
-  </div>
-</article>
-
-
-
 <h1>More</h1>
 <ul style="margin-top: -4px" class="post-list">
   
+     
+      <li>
+         <div class="row-left">
+
+  <div class="column">
+    
+    
+        <a href="/2023/02/06/diversity-11.html">
+      
+      <img class="projectimg projectimg-sm" src="https://www.globaldatinginsights.com/wp-content/uploads/2021/11/Screen-Shot-2021-11-18-at-11.49.48.png" />
+    </a>
+    
+  </div>
+
+  <div class="column">
+    <span class="post-meta">2023 02 06</span>
+
+    <div class="project-link">
+      
+        <a href="/2023/02/06/diversity-11.html">
+      
+          The Capitalism-ization of Diversity
+        </a>
+    </div>
+
+    
+
+    <p class="post-meta excerpt">
+    
+      
+    
+    </p>
+    </div>
+</div>
+      </li>
+     
+
+
      
       <li>
          <div class="row-left">
