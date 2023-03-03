@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2023-02-09
+date: 2023-03-03
 title: "More on experimental equilibrium effects: a story from a particular social media company"
 description: ""
 tags: writing  causality
