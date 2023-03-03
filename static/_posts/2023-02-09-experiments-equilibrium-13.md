@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2023-02-09
-title: "Heisenberg Effects in randomized experiments"
+title: "Randomized Experiments Can't Always Detect Equilibrium Effects"
 description: "Internal vs. external validity round 1"
 tags: writing  causality
 blog: true
@@ -18,15 +18,15 @@ Tech companies have taken this idea and run with it. Facebook is famous for runn
 
 Curiously, in the social sciences many academics would say that a "single experiment is not enough to determine policy," which is precisely what tech companies use RCTs for (and increasingly NGOs and governments when evaluating policy programs![^2]). The concerns from academics usually boil down to something called "external vs internal validity." Internal validity refers to the idea that the effect of the treatment is accurately estimated _for the people in your experiment._ Most RCTs have near-perfect internal validity. External validity, on the other hand, refers to the idea that the _results of the experiment generalize to a larger population_.
 
-There are a bunch of reasons why external validity might be dubious in an RCT. For example, if you only did your experiment on young women, one might be suspicious that the effects generalize to older men. In this post, I want to focus on a specific kind of external validity violation, which I'll argue is actually a risk for any experiment (ie, is unmitigatable). I still need to comb through the literature to see if there's a name for this idea already, but for now I'll call it the "Heiseberg Effect" (of experimental social science)
+There are a bunch of reasons why external validity might be dubious in an RCT. For example, if you only did your experiment on young women, one might be suspicious that the effects generalize to older men. In this post, I want to focus on a specific kind of external validity violation, which is actually a risk for many experiments.
 
-# 2. The Heisenberg Effect
+# 2. Equilibrium Effects
 
 ## a risk for interpreting the results of any experiment to inform policy
 
 The Heisenberg effect (which roughly says that one cannot know both the position and momentum of a particle at a given time) is popularly confused with the observer effect, which says that the act of measuring [the position or momentum of a particle] will actually mess with the position or momentum of that particle, since there's no way to measure something without actually interacting with it.
 
-In a similar way, it's impossible to know the effect of rolling out a treatment to a large audience based on a randomized experiment involving a smaller sub-audience.
+In a similar way, it's often impossible to know the equilibrium effect of rolling out a treatment to a large audience based on a randomized experiment involving a smaller sub-audience. This is because for most people in the actual world, the status quo hasn't changed, even if it's different for people participating in the experiment.
 
 Call your treatment Z. By construction, everyone in your experiment lives in a world where not-Z is the norm. Your experiment randomly gives Z for half the actors in your experiment. But importantly, you can only measure the effect of "having Z when most people have not-Z." This is a different effect of "having Z when everyone else also has Z," which would be the case if you were to "roll out" the policy globally.[^3]
 
