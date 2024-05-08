@@ -5,6 +5,7 @@ tags:
   - climbing
   - trad
   - trip report
+img: /images/mtcr/approach1.jpg 
 categories:
 ---
 

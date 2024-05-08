@@ -2,7 +2,7 @@ build :
 	git checkout master && npx webpack && cd static && bundle exec jekyll build -d ../_site && cd ..
 
 serve:
-	cd static && jekyll s
+	cd static && bundle exec jekyll s
 
 deploy : build
 	git checkout site && \
