@@ -20,12 +20,12 @@
     "jsonwebtoken": "^9.0.0",
     "multer": "^1.4.2",
     "pg": "^8.2.1",
-    "sqlite3": "^4.2.0"
+    "sqlite3": "^5.1.7"
   },
   "devDependencies": {
-    "axios": "0.21.2",
+    "axios": "^1.6.8",
     "tar": ">=4.4.18",
-    "webpack": "5.48.0",
+    "webpack": "^5.76.0",
     "webpack-cli": "^4.10.0"
   }
 }
