@@ -1,7 +1,7 @@
 ---
 layout: project
 date: 2019-11-21
-tags: itp code_of_music physical_computing chordal_distance audio
+tags: itp code_of_music physical_computing chordal_distance audio art
 title: Chordal Distance
 categories:
   - project

@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2020-11-01
-tags: itp audiovis audio
+tags: itp audiovis audio art
 title: MetaAudio System 1
 img: /images/metaaudio.jpg
 categories:

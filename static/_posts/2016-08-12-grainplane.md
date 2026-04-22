@@ -12,6 +12,7 @@ tags:
   - audio
   - instrument
   - granular
+  - art
 description: "a new musical interface for granular synthesis"
 ---
 

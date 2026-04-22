@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2019-10-14
-tags: itp code_of_music audio
+tags: itp code_of_music audio art
 blog: true
 img: /images/muse.png
 title: Muse

@@ -1,10 +1,10 @@
 ---
 layout: default-sm
-title: not no
+title: blog
 nav-title: blog
 nav: true
 permalink: /blog
-description: "a blog about information science, culture, and new media"
+description: "updates and short essays"
 ---
 
 <header class='post-header'>

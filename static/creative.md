@@ -1,9 +1,9 @@
 ---
 layout: page
 nav: true
-title: projects
-permalink: /projects
-description: "engineering projects in varying states of polish"
+title: works
+permalink: /works
+description: "<a href='/tag/research'>research</a> | <a href='/tag/art'>art</a>"
 ---
 
 <ul style='margin-top: -4px' class='post-list'>

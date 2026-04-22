@@ -7,14 +7,14 @@ permalink: /about/
 
 <div class='post-content'>
 
-<p>Hi! I'm a researcher, software engineer, artist, and composer based in Brooklyn, NY. Currently I'm studying as a PhD student at NYU Politics. Previously I studied at <a href="/itp-blog">NYU Tisch’s Interactive Telecommunications Program.</a></p>
+<p>Hi! I'm a researcher, engineer, and artist based in Brooklyn, NY. Currently I'm a PhD candidate in the NYU Department of Politics. Previously I studied at NYU Tisch’s Interactive Telecommunications Program.</p>
 
-<p>My main research interests include <a href="/tag/tech+politics">impacts of technological systems on political participation and public opinion</a>.</p>
+<p>I mostly study the <a href="/tag/research">impacts of communication systems systems on institutional trust and public opinion</a>.</p>
 
-<p>I also spend time creating <a href='https://soundcloud.com/mediumeight'>music</a>, <a href="/tag/audio">generative/interactive audio</a>, and <a href='/tag/audiovis'>sound visualization</a>.</p>
+<p>I also like to create <a href='https://soundcloud.com/mediumeight'>recorded music</a> and experiment with <a href="/tag/audio">generative/interactive sound.</a></p>
 
 <p>
-This website holds my <a href='/'>portfolio of creative work</a> as well as a <a href='/blog'>blog for smaller projects, research, and essays</a>.
+This website holds my <a href='/works'>portfolio of work</a> as well as a <a href='/blog'>blog for smaller projects, research, and essays</a>.
 I also write occasionally about <a href="/tag/climbing">rock climbing</a>.
 </p>
 
@@ -22,5 +22,7 @@ I also write occasionally about <a href="/tag/climbing">rock climbing</a>.
 
 <p><a href="/docs/resume.pdf">CV</a></p>
 
-<p class='post-meta'>Website powered by Jekyll, themed by Minima with heavy modification.</p>
+<p class='post-meta'>Website powered by Jekyll, themed by Minima with modification. Pasture raised and LLM-free.</p>
 </div>
+
+{% include signup.html %}

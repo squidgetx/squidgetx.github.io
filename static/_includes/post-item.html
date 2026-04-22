@@ -37,6 +37,10 @@
       </p>
     {% endif %}
 
+    {% if include.post.collaborators %}
+     <p class='post-meta collab'>with {{ include.post.collaborators | array_to_sentence_string }}</p>
+    {% endif %}
+
     <p class="post-meta excerpt">
     {% unless post.description %}
       {{ post.content | strip_html | truncatewords: 10 }}
