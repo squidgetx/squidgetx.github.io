@@ -809,6 +809,10 @@ ol {
   font-size: 0.8em;
 }
 
+.collab {
+  padding-top: 0.5em;
+}
+
 .cover-text {
   margin-bottom: 38px;
 }
