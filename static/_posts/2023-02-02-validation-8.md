@@ -4,7 +4,7 @@ date: 2023-02-02
 title: "Validate your shit"
 description: "fancy don't make good"
 tags: writing
-blog: true
+blog: false
 img: https://grugbrain.dev/grug.png
 ---
 
