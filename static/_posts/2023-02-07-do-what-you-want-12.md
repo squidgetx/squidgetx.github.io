@@ -4,7 +4,7 @@ date: 2023-02-07
 title: "Doing things you want"
 description: ""
 tags: writing
-blog: true
+blog: false
 img:
 ---
 
