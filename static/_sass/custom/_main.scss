@@ -127,8 +127,8 @@ h6,
 .icon > svg {
   display: inline-block;
   vertical-align: middle;
-  height: 30px;
-  width: 30px;
+  height: 24px;
+  width: 24px;
 
   path {
     fill: $text-color !important;
@@ -136,13 +136,13 @@ h6,
 }
 
 .icon--instagram > svg {
-  height: 28px;
-  width: 28px;
+  height: 24px;
+  width: 24px;
 }
 
 .icon {
-  height: 30px;
-  width: 30px;
+  height: 24px;
+  width: 24;
   padding-bottom: 2.5px;
   border-bottom: 2.5px solid $background-color;
 }

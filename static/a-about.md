@@ -9,7 +9,9 @@ permalink: /about/
 
 <p>Hi! I'm a researcher, engineer, and artist based in Brooklyn, NY. Currently I'm a PhD candidate in the NYU Department of Politics. Previously I studied at NYU Tisch’s Interactive Telecommunications Program.</p>
 
-<p>I mostly study the <a href="/tag/research">impacts of communication systems systems on institutional trust and public opinion</a>.</p>
+<p>I study the impacts of media and technology on political behavior: institutional trust, public opinion, and polarization.
+You can see my <a href="sylvanzheng.com">academic website here.</a>
+</p>
 
 <p>I also like to create <a href='https://soundcloud.com/mediumeight'>recorded music</a> and experiment with <a href="/tag/audio">generative/interactive sound.</a></p>
 
