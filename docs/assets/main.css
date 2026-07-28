@@ -253,7 +253,7 @@ ul {
 }
 
 ul.social-media-list {
-  width: 128px;
+  /*width: $nav-width - $spacing-unit * 3;*/
 }
 ul.social-media-list li {
   display: inline-block;
@@ -755,21 +755,21 @@ h6,
 .icon > svg {
   display: inline-block;
   vertical-align: middle;
-  height: 30px;
-  width: 30px;
+  height: 24px;
+  width: 24px;
 }
 .icon > svg path {
   fill: #0a100a !important;
 }
 
 .icon--instagram > svg {
-  height: 28px;
-  width: 28px;
+  height: 24px;
+  width: 24px;
 }
 
 .icon {
-  height: 30px;
-  width: 30px;
+  height: 24px;
+  width: 24;
   padding-bottom: 2.5px;
   border-bottom: 2.5px solid #fffeff;
 }
